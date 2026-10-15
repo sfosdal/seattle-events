@@ -1,0 +1,652 @@
+/**
+ * Build the Seattle events feed.
+ *
+ * Aggregates upcoming events across Seattle into site/events.json and
+ * site/events.ics. Built from the Lower Queen Anne site's build (lqa-events:
+ * the shared modules are theirs, byte for byte, and its Seattle Center,
+ * McCaw Hall, Rep, Showbox, SIFF, KEXP and festival sources stay as they
+ * are), with the rest of the city read by Ticketmaster venue id and four
+ * rooms' own calendars through scripts/feeds.mjs (city.js `feed`): Jazz
+ * Alley and Meany Center (cards), Town Hall and the zoo (Events Calendar).
+ * Pioneer Square's rooms and the Alliance for Pioneer Square's calendar come
+ * from the pioneersquare-events build, as they are there.
+ */
+
+import { writeFileSync, readFileSync } from 'node:fs';
+import { buildIcs } from './ics.mjs';
+import { parseScListing, scListingDates, parseScVenueCats, mapDiceEvents, parseSiffScreenings, mapOtbEvents, mapRepEvents, tmType, scType, mapSccEvents, mccawUrlMap, parseSctCalendar, parseMopopCalendar, parsePacsciEvents, parseKexpEvents, parseBlockPartyArtists, parseBumbershootSchedule, mapPrideFestEvents, parseFolklifeDates, parseShowboxEvents } from './sources.mjs';
+import { mergeWithArchive, unionArchives, eventKey } from './merge.mjs';
+import { feedSources, emptyListGate } from './feeds.mjs';
+import { calmTitle, isNotice } from './titles.mjs';
+import { applySchedules } from './schedules.mjs';
+import { applySetTimes } from './settimes.mjs';
+import { slugify, BADGE_FEEDS, TEAMS, CITY } from './badges.mjs';
+import { ticketWebId } from './ticketweb.mjs';
+
+const JSON_OUT = new URL('../site/events.json', import.meta.url);
+const ICS_OUT = new URL('../site/events.ics', import.meta.url);
+// A full year each way: venues announce whole seasons ahead, and past events
+// are kept for a year (carried forward from the previously published feed —
+// see mergeWithArchive).
+const WINDOW_DAYS = 365;
+// The live feed is read from the site's own domain, the archive from the repo's archive branch.
+const FEED_URL = process.env.FEED_URL || 'https://seattle.here.events/events.json';
+// the second copy of the archive: every past event ever published, kept on
+// the orphan `archive` branch by the workflow after each successful build
+const ARCHIVE_URL = process.env.ARCHIVE_URL || 'https://raw.githubusercontent.com/sfosdal/seattle-events/archive/events-archive.json';
+const ARCHIVE_OUT = new URL('../events-archive.json', import.meta.url); // repo root, ignored; the workflow commits it to the branch
+const MAX_EVENTS = 4000; // sanity cap, not a display cap — a year back plus a year ahead across 14 venues runs ~2,500
+
+const BROWSER_UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36';
+
+// Local runs: when the environment doesn't provide TICKETMASTER_API_KEY (CI
+// passes it as a repo secret), pick it up from an untracked repo-root .env so
+// the localhost preview gets the arena and stadium listings too.
+if (!process.env.TICKETMASTER_API_KEY) {
+  try {
+    const m = readFileSync(new URL('../.env', import.meta.url), 'utf8')
+      .match(/^TICKETMASTER_API_KEY=(.+)$/m);
+    if (m) process.env.TICKETMASTER_API_KEY = m[1].trim();
+  } catch { /* no .env — Ticketmaster sources warn and skip */ }
+}
+
+function decodeEntities(s) {
+  return String(s)
+    .replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"').replace(/&(?:#0?39|apos|rsquo|lsquo);/g, "'")
+    .replace(/&(?:#8211|ndash|#45);/g, '-').replace(/&(?:#8212|mdash);/g, '—')
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&#(\d+);/g, (_, n) => { try { return String.fromCodePoint(Number(n)); } catch { return ''; } })
+    .replace(/\s+/g, ' ').trim();
+}
+
+// --- Ticketmaster Discovery API, by venue id (a keyword search capped at
+//     100 and silently dropped the arena's spring dates), every page ---
+async function ticketmasterVenue({ venueId, venueMatch, label, fallbackUrl, exclude }) {
+  const key = process.env.TICKETMASTER_API_KEY;
+  if (!key) { console.warn('No TICKETMASTER_API_KEY set — skipping Ticketmaster.'); return []; }
+  const all = [];
+  for (let page = 0; page < 5; page++) {
+    const params = new URLSearchParams({ apikey: key, venueId, sort: 'date,asc', size: '200', page: String(page) });
+    const res = await fetch(`https://app.ticketmaster.com/discovery/v2/events.json?${params}`);
+    if (!res.ok) { console.error(`Ticketmaster ${label} page ${page} HTTP ${res.status}`); break; }
+    const data = await res.json();
+    all.push(...(data?._embedded?.events || []));
+    if (page + 1 >= (data?.page?.totalPages || 1)) break;
+  }
+  console.log(`Ticketmaster ${label}: ${all.length} events`);
+  const rows = all
+    .filter((e) => (e._embedded?.venues?.[0]?.name || '').toLowerCase().includes(venueMatch))
+    .filter((e) => !exclude || !exclude.test(e.name || ''));
+  // Ticketmaster's resale marketplace (source "tmr": an id starting "Z7r9j",
+  // a ticketmaster.com/event/ link) lists shows whose box office is elsewhere
+  // — every Showbox night (AXS), and at the Crocodile (TicketWeb, which the
+  // API carries as its own source) a second listing beside the primary, four
+  // of 33 on 2026-10-05, each titled differently so the duplicate guard can't
+  // fold them. A resale listing is kept only when no primary one shares its
+  // date, and it links to the box office the listing names (the Showboxes'
+  // site) or the venue's own page, never to the resale offer.
+  const isResale = (e) => /^Z7r9j/.test(e.id || '');
+  const primaryDates = new Set(rows.filter((e) => !isResale(e)).map((e) => e.dates?.start?.localDate));
+  return rows
+    .filter((e) => !isResale(e) || !primaryDates.has(e.dates?.start?.localDate))
+    .map((e) => {
+      const boxOffice = (e.outlets || []).find((o) => o.type === 'venueBoxOffice')?.url;
+      const ev = {
+        venue: label,
+        title: e.name,
+        date: e.dates?.start?.localDate || '',
+        time: e.dates?.start?.localTime || '',
+        url: isResale(e) ? (boxOffice || fallbackUrl) : (e.url || fallbackUrl),
+      };
+      if (e.ageRestrictions?.legalAgeEnforced) ev.age21 = true;
+      const type = tmType(e.classifications?.[0]);
+      if (type) ev.type = type;
+      // Flex-scheduled games (NFL weekends especially) carry TM's TBD flag:
+      // the listed date is a placeholder the league may still move.
+      if (e.dates?.start?.dateTBD || e.dates?.start?.dateTBA) ev.dateTbd = true;
+      // Ticketmaster keeps a cancelled or postponed show in its listing for a
+      // while, marked in dates.status — pass that on rather than list it as
+      // if it were still happening (the merge step drops it once it vanishes)
+      const code = e.dates?.status?.code;
+      if (code === 'cancelled' || code === 'postponed') ev.status = code;
+      return ev;
+    });
+}
+
+// --- McCaw Hall: the venue's RSS lists each production once (one date), so
+//     the performances themselves come from the Seattle Center sweep; the RSS
+//     just maps a title to the venue's own detail page ---
+async function mccawUrls() {
+  try {
+    const res = await fetch('https://www.mccawhall.com/events/rss');
+    if (!res.ok) { console.error('McCaw Hall RSS HTTP', res.status); return new Map(); }
+    return mccawUrlMap(await res.text());
+  } catch (err) { console.error('McCaw Hall RSS failed:', err.message); return new Map(); }
+}
+// --- Seattle Center's own calendar, every page of the full listing (seven
+//     cards a page, a year runs about a hundred pages), so campus-wide
+//     events with no facility tag — Bumbershoot — are included and no venue
+//     is capped at its first page. Each card's date comes from the listing's
+//     date bars (year inferred: scListingDates) and its venue from the card's
+//     facility tag, matched against the page's own Facility/Venue filter;
+//     untagged events are "Seattle Center". Venues with a dedicated source
+//     above are skipped so the same show isn't listed twice. ---
+const SC_CAL = 'https://www.seattlecenter.com/events/event-calendar';
+const SC_MAX_PAGES = 200;
+// standing daily attractions the calendar lists as an event every single day
+const SC_EXCLUDE = /sculpture walk/i;
+
+// facility labels that are venues of their own on the site
+const SC_VENUE_LABEL = { 'Marion Oliver McCaw Hall': 'McCaw Hall' };
+// The calendar also lists Seattle Rep's performances, untagged (no
+// facility, so they'd read as the grounds) and named the Rep's way with the
+// night's flavour after a colon ("Eureka Day: Preview Performance"); the
+// Rep's own feed supplies them, so a card whose title starts with a Rep
+// show playing that day is that show, and skipped.
+async function seattleCenterSweep(dedicated, mccawUrl) {
+  const existingVenues = [...new Set(dedicated.map((e) => e.venue))];
+  const covered = (label) => existingVenues.some((v) => {
+    const a = v.toLowerCase(), b = label.toLowerCase();
+    return a.includes(b) || b.includes(a);
+  });
+  const repByDate = new Map();
+  for (const e of dedicated) {
+    if (e.venue !== 'Seattle Rep') continue;
+    const base = e.title.toLowerCase().split(':')[0].trim();
+    if (!repByDate.has(e.date)) repByDate.set(e.date, new Set());
+    repByDate.get(e.date).add(base);
+  }
+  const atRep = (c) => [...(repByDate.get(c.date) || [])].some((t) => c.title.toLowerCase().startsWith(t));
+  const today = new Date().toISOString().slice(0, 10);
+  const horizon = new Date(Date.now() + WINDOW_DAYS * 86400e3).toISOString().slice(0, 10);
+
+  let venueLabels = null;
+  const seenUrl = new Set();
+  let cards = [];
+  let pages = 0;
+  for (let page = 1; page <= SC_MAX_PAGES; page++) {
+    const res = await fetch(`${SC_CAL}?page=${page}`, { headers: { 'user-agent': BROWSER_UA } });
+    if (!res.ok) { console.error(`Seattle Center page ${page} HTTP ${res.status}`); break; }
+    const html = await res.text();
+    if (!venueLabels) {
+      venueLabels = parseScVenueCats(html).map((c) => c.label);
+      if (!venueLabels.length) console.error('Seattle Center: no venue categories found — page layout changed? (every event will read as "Seattle Center")');
+    }
+    // past the last page the site serves an empty list — or repeats the last one
+    const found = parseScListing(html).filter((c) => !seenUrl.has(c.url));
+    if (!found.length) break;
+    pages++;
+    found.forEach((c) => seenUrl.add(c.url));
+    cards = cards.concat(found);
+    const dated = scListingDates(cards, today);
+    if (dated[dated.length - 1].date > horizon) break;
+  }
+
+  const events = [];
+  let atOwnSource = 0, standing = 0;
+  for (const c of scListingDates(cards, today)) {
+    if (!c.date) { console.error(`No date bar for ${c.url}`); continue; }
+    if (SC_EXCLUDE.test(c.title)) { standing++; continue; }
+    const venueTag = c.tags.find((t) => venueLabels.includes(t));
+    if ((venueTag && covered(venueTag)) || atRep(c)) { atOwnSource++; continue; }
+    const venue = SC_VENUE_LABEL[venueTag] || venueTag || 'Seattle Center';
+    let url = c.url;
+    if (venue === 'McCaw Hall' && mccawUrl) url = mccawUrl.get(c.title.toLowerCase()) || url;
+    const ev = { venue, title: c.title, date: c.date, time: c.time, url };
+    if (c.free) ev.free = true;
+    const type = scType(c.tags);
+    if (type) ev.type = type;
+    events.push(ev);
+  }
+  console.log(`Seattle Center sweep: ${events.length} events from ${cards.length} cards over ${pages} pages (${atOwnSource} at venues with their own source, ${standing} standing attractions skipped)`);
+  return events;
+}
+
+// --- The Vera Project: DICE ticketing API (the publishable widget key from
+//     theveraproject.org/events — the same call their own embed makes) ---
+async function veraProjectDice() {
+  const params = new URLSearchParams({ 'page[size]': '100' });
+  params.append('filter[venues][]', 'The Vera Project');
+  const res = await fetch(`https://events-api.dice.fm/v1/events?${params}`, {
+    headers: { 'x-api-key': 'zVXg21HmAF43lbgnB79QM5CUzcHYG0Gx5M6DjHdD' },
+  });
+  if (!res.ok) { console.error('DICE (Vera Project) HTTP', res.status); return []; }
+  return mapDiceEvents(await res.json(), 'The Vera Project');
+}
+
+// --- SIFF Cinema Uptown (the LQA movie house on Queen Anne Ave): the
+//     calendar page is server-rendered with a JSON blob per showtime, one
+//     page per day — sweep the next few weeks. parseSiffScreenings collapses
+//     a film's multiple daily showtimes to the earliest one. ---
+async function siffUptown() {
+  const DAYS = 28; // cinema schedules rarely publish further out
+  const events = [];
+  const seen = new Set();
+  for (let i = 0; i < DAYS; i++) {
+    const day = new Date(Date.now() + i * 86400e3).toISOString().slice(0, 10);
+    try {
+      // view=list is explicit: future dates default to the grid view, whose
+      // markup carries the screening blobs but not the detail-page links
+      const res = await fetch(`https://www.siff.net/calendar?view=list&date=${day}`, { headers: { 'user-agent': BROWSER_UA } });
+      if (!res.ok) { console.error(`SIFF calendar ${day} HTTP ${res.status}`); continue; }
+      for (const ev of parseSiffScreenings(await res.text())) {
+        const k = `${ev.title}|${ev.date}`;
+        if (!seen.has(k)) { seen.add(k); events.push({ venue: 'SIFF Cinema Uptown', ...ev }); }
+      }
+    } catch (err) {
+      console.error(`SIFF calendar ${day} failed:`, err.message);
+    }
+  }
+  console.log(`SIFF Uptown: ${events.length} film-days`);
+  return events;
+}
+
+// --- On the Boards (100 W Roy St, a block off the Center): Squarespace
+//     events collection — ?format=json lists the upcoming performance runs;
+//     mapOtbEvents expands each run to one event per night. ---
+async function onTheBoards() {
+  const res = await fetch('https://ontheboards.org/events?format=json', { headers: { 'user-agent': BROWSER_UA } });
+  if (!res.ok) { console.error('On the Boards HTTP', res.status); return []; }
+  return mapOtbEvents(await res.json(), 'On the Boards');
+}
+
+// --- Seattle Rep (Bagley Wright + Leo K. theatres, on the campus): the
+//     Tessitura performance feed its calendar page renders — one row per
+//     performance, sold-out flag included; classes and auditions skipped. ---
+async function seattleRep() {
+  const res = await fetch('https://www.seattlerep.org/plays/json', { headers: { 'user-agent': BROWSER_UA } });
+  if (!res.ok) { console.error('Seattle Rep HTTP', res.status); return []; }
+  const evs = mapRepEvents(await res.json(), 'Seattle Rep');
+  console.log(`Seattle Rep: ${evs.length} performances`);
+  return evs;
+}
+
+// --- Convention Center (Arch + Summit, downtown): the Momentus
+//     calendar behind seattlecc.com/upcoming-events, a year ahead ---
+const SCC_TOKEN = '3fe87903-ad1d-49d8-b838-0ec814bf6aa1'; // the public widget token on the page
+async function seattleConventionCenter() {
+  const from = new Date().toISOString().slice(0, 10);
+  const to = new Date(Date.now() + WINDOW_DAYS * 86400e3).toISOString().slice(0, 10);
+  const params = new URLSearchParams({ fromDate: from, toDate: to, token: SCC_TOKEN });
+  const res = await fetch(`https://calendar-us.ungerboeck.io/api/event/getCalendarEvents?${params}`, { headers: { 'user-agent': BROWSER_UA } });
+  if (!res.ok) { console.error('Convention Center HTTP', res.status); return []; }
+  const data = await res.json();
+  const rows = data?.events?.fields || (Array.isArray(data?.events) ? data.events : []); // {events:{fields:[…]}}
+  const events = mapSccEvents(rows, 'Convention Center');
+  console.log(`Convention Center: ${events.length} event-days from ${rows.length} bookings`);
+  return events;
+}
+
+// --- The campus neighbours Seattle Center's calendar doesn't carry ---
+const MONTH_SLUG = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'];
+async function pageText(url) {
+  const res = await fetch(url, { headers: { 'user-agent': BROWSER_UA } });
+  if (!res.ok) throw new Error(`HTTP ${res.status} ${url}`);
+  return res.text();
+}
+// Children's Theatre (Charlotte Martin + Eve Alvord theatres, on the
+// campus): twelve month grids
+async function seattleChildrensTheatre() {
+  const out = []; const seen = new Set();
+  const now = new Date();
+  for (let i = 0; i < 12; i++) {
+    const d = new Date(now.getFullYear(), now.getMonth() + i, 1);
+    const y = d.getFullYear(), m = d.getMonth() + 1;
+    try {
+      for (const e of parseSctCalendar(await pageText(`https://www.sct.org/tickets-shows/calendar/${y}/${MONTH_SLUG[m - 1]}`), y, m)) {
+        const k = `${e.title}|${e.date}|${e.time}`;
+        if (!seen.has(k)) { seen.add(k); out.push({ venue: "Children's Theatre", ...e }); }
+      }
+    } catch (err) { console.error(`SCT ${y}-${m}:`, err.message); }
+  }
+  console.log(`Children's Theatre: ${out.length} performances`);
+  return out;
+}
+async function mopop() {
+  const evs = parseMopopCalendar(await pageText('https://www.mopop.org/events')).map((e) => ({ venue: 'MoPOP', ...e }));
+  console.log(`MoPOP: ${evs.length} events`);
+  return evs;
+}
+async function pacificScienceCenter() {
+  const evs = parsePacsciEvents(await pageText('https://pacificsciencecenter.org/events/')).map((e) => ({ venue: 'Pacific Science Center', ...e }));
+  console.log(`Pacific Science Center: ${evs.length} events`);
+  return evs;
+}
+// KEXP (the station's home is on the campus): its own list, every page;
+// only what happens at the station — KEXP also lists shows it presents
+// elsewhere in town
+async function kexp() {
+  const out = [];
+  for (let page = 1; page <= 5; page++) {
+    const html = await pageText(`https://www.kexp.org/events/kexp-events/${page > 1 ? `?page=${page}` : ''}`);
+    const evs = parseKexpEvents(html);
+    if (!evs.length) break;
+    for (const e of evs) {
+      if (!/kexp|gathering space|seattle center/i.test(e.location)) continue;
+      const { location, ...ev } = e;
+      out.push({ venue: 'KEXP', ...ev });
+    }
+    if (!/[?&]page=${page + 1}\b/.test(html)) break;
+  }
+  console.log(`KEXP: ${out.length} events at the station`);
+  return out;
+}
+
+
+// ---- Festivals (the panel's Festivals group, 2026-10-05) -----------------
+// A festival is its own venue, named for itself, with one event per
+// festival day; the day's headliners are the title, the whole bill `lineup`
+// (the calendar feed's description) and, where the festival publishes them,
+// the set times `sets` — a stage, its acts in order (the site draws a line
+// per stage on the card and the grid in the sheet). The campus festivals
+// (Bumbershoot, Folklife, PrideFest) show by default; the Block Party is a
+// bus ride away and starts off. Each page carries one year at a time —
+// this year's until the next is announced.
+// Capitol Hill Block Party: the festival's artists page (Squarespace; its
+// JSON view is empty, so the HTML — parseBlockPartyArtists); the set times
+// are posters on its Instagram, transcribed once a year into
+// scripts/data/chbp-settimes.json (Steve, 2026-10-05: "build ig").
+const CHBP_URL = 'https://www.capitolhillblockparty.com/artists';
+async function capitolHillBlockParty() {
+  const days = parseBlockPartyArtists(await pageText(CHBP_URL), new Date().toISOString().slice(0, 10))
+    .map((e) => ({ venue: 'Capitol Hill Block Party', type: 'concert', url: CHBP_URL, ...e }));
+  // the set-times grid (scripts/data/chbp-settimes.json, read off the festival's Instagram posters once a year):
+  // each day it covers gets `sets` and the first set's start as its time, and an event per set after it (the act, its stage and times)
+  let table = {};
+  try { table = JSON.parse(readFileSync(new URL('./data/chbp-settimes.json', import.meta.url), 'utf8')); } catch (err) { console.error('chbp-settimes.json:', err.message); }
+  const evs = applySetTimes(days, table);
+  console.log(`Block Party: ${evs.filter((e) => !e.set).length} days, ${evs.filter((e) => e.sets).length} with set times, ${evs.filter((e) => e.set).length} sets`);
+  return evs;
+}
+// Bumbershoot (Labor Day weekend on the campus): the schedule page, with
+// every slot's stage and set time, and the music-lineup page for the
+// billing order — parseBumbershootSchedule.
+const BUMBERSHOOT_URL = 'https://bumbershoot.com/schedule';
+async function bumbershoot() {
+  const lineup = await pageText('https://bumbershoot.com/music-lineup').catch((err) => { console.error('Bumbershoot lineup:', err.message); return ''; });
+  const evs = parseBumbershootSchedule(await pageText(BUMBERSHOOT_URL), lineup)
+    .map((e) => ({ venue: 'Bumbershoot', type: 'concert', url: BUMBERSHOOT_URL, ...e }));
+  console.log(`Bumbershoot: ${evs.length} days`);
+  return evs;
+}
+// Seattle PrideFest (the last weekend of June: Capitol Hill on the Saturday,
+// the campus on the Sunday; free): the Squarespace events collection's JSON
+// — mapPrideFestEvents. The collection goes back years; last year on is kept.
+const PRIDEFEST_URL = 'https://www.seattlepridefest.org/schedule';
+async function prideFest() {
+  const since = `${new Date().getFullYear() - 1}-01-01`;
+  const evs = mapPrideFestEvents(JSON.parse(await pageText(PRIDEFEST_URL + '?format=json')))
+    .filter((e) => e.date >= since)
+    .map((e) => ({ venue: 'PrideFest', type: 'community', ...e }));
+  console.log(`PrideFest: ${evs.length} days`);
+  return evs;
+}
+// Northwest Folklife (Memorial Day weekend on the campus; free): the
+// festival page's one date line — parseFolklifeDates.
+const FOLKLIFE_URL = 'https://www.nwfolklife.org/festival/';
+async function folklife() {
+  const evs = parseFolklifeDates(await pageText(FOLKLIFE_URL)).map((e) => ({ venue: 'Northwest Folklife', type: 'concert', url: FOLKLIFE_URL, ...e }));
+  console.log(`Folklife: ${evs.length} days`);
+  return evs;
+}
+
+// Showbox at the Market + Showbox SoDo: AEG's whole Northwest listing on
+// one server-rendered page, the two Seattle rooms kept — parseShowboxEvents.
+async function showbox() {
+  const evs = parseShowboxEvents(await pageText('https://www.showboxpresents.com/events/all'));
+  console.log(`Showbox: ${evs.length} shows (${evs.filter((e) => e.venue === 'Showbox SoDo').length} in SoDo)`);
+  return evs;
+}
+
+// Dedicated per-venue sources run first (better times and ticket links)...
+// The Ticketmaster rooms (city.js `tm`), in the city's order: the arena,
+// the SoDo stadiums (not Seattle Center, but big enough to move the whole
+// city), then Around Town's — the Paramount (STG's downtown theatre) and
+// the Crocodile in Belltown, whose box office is TicketWeb (Discovery
+// carries those listings under the same venue id; Madame Lou's and
+// Here-After, the smaller rooms in its building, list under it too). The
+// two Showboxes sell through AXS, so they come from their own listing.
+const ticketmasterRooms = Object.entries(CITY.venues).filter(([, v]) => v.tm)
+  .map(([label, v]) => () => ticketmasterVenue({ venueId: v.tm.id, venueMatch: v.tm.match, label, fallbackUrl: v.tm.fallbackUrl, exclude: v.tm.exclude }));
+const sources = [
+  ...ticketmasterRooms,
+  ...feedSources(CITY, BROWSER_UA), // rooms with their own calendar (city.js `feed`) — none here yet; the sisters use it
+  showbox,
+  // McCaw Hall comes from the Seattle Center sweep below (every performance,
+  // with times); its RSS only supplies the venue's own detail-page links.
+  veraProjectDice,
+  siffUptown,
+  onTheBoards,
+  seattleRep,
+  seattleConventionCenter, // downtown, like the stadiums: big enough to matter
+  seattleChildrensTheatre,
+  mopop,
+  pacificScienceCenter,
+  kexp,
+  capitolHillBlockParty, bumbershoot, prideFest, folklife,
+];
+
+let all = [];
+for (const src of sources) {
+  try { all = all.concat(await src()); }
+  catch (err) { console.error('Source failed:', err.message); }
+}
+
+// ...then the campus-wide sweep fills in every other venue (McCaw Hall included).
+try { all = all.concat(await seattleCenterSweep(all, await mccawUrls())); }
+catch (err) { console.error('Seattle Center sweep failed:', err.message); }
+
+// Collapse the campus's micro-locations (courtyards, lawns, festival stages —
+// whatever sub-spots the sweep discovers) into the one grounds venue. A
+// dozen filter chips for the same lawn helps nobody; only the venues with
+// an identity of their own (city.js) keep their name.
+const CANONICAL_VENUES = new Set(Object.keys(CITY.venues));
+// a venue listed under other spellings (city.js `alias`, a regex: "Everett
+// Memorial Stadium" is Funko Field) folds to its one name first
+const ALIASES = Object.entries(CITY.venues).filter(([, v]) => v.alias).map(([label, v]) => [label, v.alias]);
+const aliasVenue = (name) => { const hit = ALIASES.find(([, re]) => re.test(name || '')); return hit ? hit[0] : name; };
+const normalizeVenue = (e) => {
+  const venue = aliasVenue(e.venue);
+  if (CITY.groundsVenue && !CANONICAL_VENUES.has(venue)) return { ...e, venue: CITY.groundsVenue }; // a city with no grounds venue keeps every name
+  return venue === e.venue ? e : { ...e, venue };
+};
+all = all.map(normalizeVenue);
+
+// window, de-dupe, sort
+const today = new Date().toISOString().slice(0, 10);
+const horizon = new Date(Date.now() + WINDOW_DAYS * 86400e3).toISOString().slice(0, 10);
+const cutoff = new Date(Date.now() - WINDOW_DAYS * 86400e3).toISOString().slice(0, 10);
+const seen = new Set();
+const fresh = all
+  .filter((e) => e.date && e.date >= cutoff && e.date <= horizon)
+  .filter((e) => !isNotice(e.title)) // a closure or construction notice is information, not an event (Steve, 2026-09-18)
+  .map((e) => ({ ...e, title: calmTitle(e.title) })) // shouted titles come down to Title Case (Steve, 2026-09-18)
+  .filter((e) => { const k = eventKey(e); if (seen.has(k)) return false; seen.add(k); return true; }); // venue|title|date|clock (merge.mjs): a second showing on one day is kept
+// the empty-list gate (feeds.mjs): nothing upcoming in this build's own pull means every source
+// is down — say so and stop rather than publish an empty calendar
+if (!emptyListGate(fresh, today, sources.length)) process.exit(1);
+
+// carry past events forward. Two copies of the archive: the live feed and
+// the `archive` branch's file (every past event ever published; the workflow
+// rewrites it after each build). Each is fetched with three tries; the build
+// goes on with the union of whatever it got and stops only when it got
+// neither — on 2026-09-07 a run that couldn't read the (then only) live copy
+// published 3 past events instead of 170 and the year of history was gone.
+// Since the union can only grow, a publish that lost history can no longer
+// shrink the record.
+const cleanArchive = (d) => (Array.isArray(d) ? d : (d.events || []))
+  // Seawolves matches archived before Starfire Stadium was a canonical venue
+  // (2026-09-17) had been renamed "Seattle Center" on read-back, which also
+  // defeated the duplicate guard below — 32 copies of each by the time it
+  // was caught. Put them back so the union folds them onto the real entry.
+  .map((e) => (e.venue === 'Seattle Center' && /^Seattle Seawolves vs /.test(e.title) ? { ...e, venue: 'Starfire Stadium' } : e))
+  .map(normalizeVenue)
+  .filter((e) => !isNotice(e.title)).map((e) => ({ ...e, title: calmTitle(e.title) })) // the same title hygiene as fresh events, so the merge keys agree
+  // normalized too, so past events published under old micro-venue names
+  // don't resurrect their filter chips; backfill the movie flag on entries
+  // archived before it existed
+  .map((e) => (!e.movie && e.url && e.url.includes('/cinema/in-theaters/') ? { ...e, movie: true } : e));
+async function fetchArchive(url, what) {
+  for (let attempt = 1; attempt <= 3; attempt++) {
+    try {
+      const r = await fetch(url, { cache: 'no-store' });
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      return cleanArchive(await r.json());
+    } catch (err) {
+      console.error(`${what} fetch (try ${attempt} of 3) failed: ${err.message}`);
+      if (attempt < 3) await new Promise((r) => setTimeout(r, attempt * 20000));
+    }
+  }
+  return null;
+}
+const [liveArchive, branchArchive] = await Promise.all([
+  fetchArchive(FEED_URL, 'Live feed'),
+  fetchArchive(ARCHIVE_URL, 'Archive branch'),
+]);
+if (liveArchive === null && branchArchive === null && !process.env.ALLOW_NO_ARCHIVE) {
+  console.error('No archive from either copy — not publishing (ALLOW_NO_ARCHIVE=1 to override for a first build)');
+  process.exit(1);
+}
+if (liveArchive === null) console.error('Live feed unreadable — building on the archive branch copy');
+if (branchArchive === null) console.error('Archive branch unreadable — building on the live feed alone');
+const archived = unionArchives(liveArchive || [], branchArchive || []);
+console.log(`Archive: ${(liveArchive || []).length} events in the live feed, ${(branchArchive || []).length} on the archive branch, ${archived.length} in the union`);
+
+const merged = mergeWithArchive(fresh, archived, today, cutoff).slice(-MAX_EVENTS);
+
+// League schedules flag floating dates Ticketmaster doesn't know yet, and
+// the full seasons (home and away) feed the site's Teams view
+let seasons = {}, form = {};
+try { ({ teams: seasons, form } = await applySchedules(merged)); } catch (err) { console.error('Schedules step failed:', err.message); }
+// The clubs whose home games have no ticket feed here (city.js `inject`:
+// the Seawolves at Starfire, the Huskies at Husky Stadium, Everett's
+// AquaSox at Funko Field) enter the listing from the league's schedule —
+// typed sports, the club's ticket page as the link — unless the feed
+// already has that day at that ground
+// (city.js teams, not badges' TEAMS, which carries only slug/label/re — the
+// loop was a no-op from the modularization until 2026-10-11; the game takes
+// the club's own ground name, the league's spelling rarely matching a venue)
+for (const t of CITY.teams.filter((x) => x.inject)) {
+  for (const g of (seasons[t.slug] || []).filter((x) => x.home && x.date >= cutoff)) {
+    const ground = t.inject.venue || t.venue || g.venue;
+    const listed = merged.find((e) => e.date === g.date && (e.venue === ground || e.venue === g.venue));
+    if (listed) { if (!listed.time && g.time && !g.tbd) listed.time = g.time; continue; } // the feed's listing stands; the league's first pitch fills a time it lacks
+    merged.push({ venue: ground, title: `${t.inject.name || t.name || t.label} vs ${g.opp.name}`, date: g.date, time: g.time, url: t.inject.url, type: 'sports', ...(g.tbd ? { dateTbd: true } : {}), ...(g.watch ? { watch: g.watch } : {}) });
+  }
+}
+// March to the Match: the Sounders' supporters gather in Occidental Park and
+// march to Lumen Field before every home game, 90 minutes before kickoff — a
+// Pioneer Square event in its own right, written from the club's schedule
+// (Steve, 2026-10-15, on the Pioneer Square site). The title names the
+// opponent, not the club, so the row stays a community row rather than a game.
+for (const g of (seasons.sounders || []).filter((x) => x.home && x.date >= today && x.time && !x.tbd)) { // from today: no synthetic rows into the archive
+  const [h, m] = g.time.split(':').map(Number); const mins = h * 60 + m - 90;
+  if (mins < 0 || merged.some((e) => e.date === g.date && e.venue === 'Occidental Square' && /march to the match/i.test(e.title))) continue;
+  merged.push({ venue: 'Occidental Square', title: `March to the Match (before the ${g.opp.short || g.opp.name} game)`, date: g.date, time: `${String(Math.floor(mins / 60)).padStart(2, '0')}:${String(mins % 60).padStart(2, '0')}`, url: 'https://weareecs.com/march-to-the-match', type: 'community', free: true });
+}
+// Owl 'n Thistle prints a weekly schedule with no dates (owlnthistle.com/live-music-schedule),
+// so the next ten weeks are written out from it — no clock, since the page prints none;
+// Sunday alternates and is left out. Re-copy the table when the pub changes it.
+const OWL = { 1: 'Aqualizer', 2: "Jazz Jam — Seattle's longest-running jazz night", 4: 'Danny Godinez', 5: 'Irish Cover Band', 6: 'Irish Cover Band' }; // by weekday (Mon=1)
+for (let i = 0; i < 70; i++) {
+  const d = new Date(Date.parse(today + 'T12:00:00Z') + i * 86400e3), dow = d.getUTCDay(), date = d.toISOString().slice(0, 10);
+  if (!OWL[dow] || merged.some((e) => e.venue === "Owl 'n Thistle" && e.date === date)) continue;
+  merged.push({ venue: "Owl 'n Thistle", title: OWL[dow], date, time: '', url: 'https://owlnthistle.com/live-music-schedule', type: 'concert' });
+}
+// Ticket availability for the Ticketmaster venues, from the local checker
+// (scripts/soldout-check.mjs → scripts/data/soldout.json, committed every six
+// hours by its launchd job): each on-sale event's box-office and resale
+// counts and lowest price, and soldOut when the box office has nothing left.
+try {
+  const so = JSON.parse(readFileSync(new URL('./data/soldout.json', import.meta.url), 'utf8'));
+  let n = 0, s = 0;
+  for (const e of merged) {
+    const m = (e.url || '').match(/\/event\/([0-9A-F]{16})/i), tw = ticketWebId(e.url); // Ticketmaster's 16-hex id, or TW<id> for a TicketWeb page (the Crocodile)
+    const r = (m || tw) && (so.events || {})[m ? m[1].toUpperCase() : 'TW' + tw];
+    if (!r || !/^(available|soldout)$/.test(r.status)) continue; // 'none' (nothing seen either way) and 'unknown' say nothing
+    const out = r.status === 'soldout';
+    e.tickets = { box: out ? 0 : (r.primary == null ? null : r.primary), resale: r.resale || 0, checked: r.checked }; // box null: on sale, count unknown (an older page layout)
+    const from = out ? r.fromResale : r.fromPrimary;
+    if (from != null) e.tickets.from = from;
+    if (out) { e.soldOut = true; s++; }
+    n++;
+  }
+  // the home teams' away games (the checker finds the host's listing by club and date): the same counts onto the season schedule
+  let a = 0;
+  for (const r of Object.values(so.events || {})) {
+    if (!r.away || !r.club || !/^(available|soldout)$/.test(r.status) || /half price|\bpromo\b|\bpresale\b/i.test(r.name || '')) continue; // a promo's own listing ("HALF PRICE: …") never speaks for the game
+    const g = (seasons[r.club] || []).find((x) => !x.home && x.date === r.date);
+    if (!g) continue;
+    const out = r.status === 'soldout';
+    g.tickets = { box: out ? 0 : (r.primary == null ? null : r.primary), resale: r.resale || 0, checked: r.checked };
+    const from = out ? r.fromResale : r.fromPrimary; if (from != null) g.tickets.from = from; if (out) g.soldOut = true;
+    a++;
+  }
+  console.log(`soldout: ${n} events with ticket counts (checked ${so.generated}), ${s} sold out, ${a} away games`);
+} catch (err) { console.error('soldout.json:', err.message); }
+merged.sort((a, b) => (a.date + (a.time || '')).localeCompare(b.date + (b.time || '')));
+if (Object.keys(seasons).length) {
+  const postseason = JSON.parse(readFileSync(new URL('./data/postseason.json', import.meta.url), 'utf8')); // each league's playoff rounds (hand-kept), shown until the real games land
+  delete postseason._;
+  writeFileSync(new URL('../site/teams.json', import.meta.url), JSON.stringify({ generated: new Date().toISOString(), teams: seasons, form, postseason }, null, 1) + '\n');
+} else {
+  console.error('teams.json: no season fetched this run, the last one stands');
+}
+
+writeFileSync(JSON_OUT, JSON.stringify({ generated: new Date().toISOString(), events: merged }, null, 2) + '\n');
+// the archive record: this build's past events on top of everything already
+// recorded, never pruned (the feed keeps a year; the branch keeps it all)
+const record = unionArchives(merged.filter((e) => e.date < today), archived.filter((e) => e.date < today));
+writeFileSync(ARCHIVE_OUT, JSON.stringify({ events: record }, null, 1) + '\n'); // no timestamp: the branch commits only when the events change
+console.log(`Archive record: ${record.length} past events`);
+writeFileSync(ICS_OUT, buildIcs(merged));
+
+// Filtered subscribe feeds, one per venue and one per badge, so the site's
+// filter chips can offer a matching calendar subscription.
+const siteDir = new URL('../site/', import.meta.url);
+let nFeeds = 0;
+for (const venue of new Set(merged.map((e) => e.venue))) {
+  const evs = merged.filter((e) => e.venue === venue);
+  writeFileSync(new URL(`events-venue-${slugify(venue)}.ics`, siteDir),
+    buildIcs(evs, new Date(), { calname: `${CITY.ics.short} — ${venue}` }));
+  nFeeds++;
+}
+for (const [slug, [label, pred]] of Object.entries(BADGE_FEEDS)) {
+  writeFileSync(new URL(`events-${slug}.ics`, siteDir),
+    buildIcs(merged.filter(pred), new Date(), { calname: `${CITY.ics.short} — ${label}` }));
+  nFeeds++;
+}
+// The site hides SIFF's daily movie showings by default — publish the
+// matching exclusion feed so a default-view subscription lines up.
+writeFileSync(new URL('events-no-movies.ics', siteDir),
+  buildIcs(merged.filter((e) => !e.movie), new Date(), { calname: `${CITY.ics.short} — no movies` }));
+nFeeds++;
+// Exclusion feeds, one per local team: everything except that team's games.
+for (const t of TEAMS) {
+  writeFileSync(new URL(`events-no-${t.slug}.ics`, siteDir),
+    buildIcs(merged.filter((e) => !t.re.test(e.title || '')), new Date(), { calname: `${CITY.ics.short} — no ${t.label}` }));
+  nFeeds++;
+}
+// Season feeds for the Teams view: each club's whole season, home and away
+// (team-<slug>.ics), and every club's in one (teams.ics). Each game links to
+// the club's page on the site.
+const seasonEvents = (slug, label, games) => games.map((g) => ({
+  title: `${label} ${g.home ? 'vs' : 'at'} ${g.opp.name}${g.pre ? ' (preseason)' : g.playoff ? ' (playoff)' : ''}`,
+  venue: g.venue || (g.home ? '' : g.opp.name), date: g.date, time: g.tbd ? null : g.time, ...(g.tbd ? { dateTbd: true } : {}),
+  url: `${CITY.site}?team=${slug}`,
+}));
+const allSeasons = [];
+for (const t of TEAMS) {
+  if (!seasons[t.slug]) continue;
+  const evs = seasonEvents(t.slug, t.label, seasons[t.slug]);
+  allSeasons.push(...evs);
+  writeFileSync(new URL(`team-${t.slug}.ics`, siteDir), buildIcs(evs, new Date(), { calname: `${t.label} season` }));
+  nFeeds++;
+}
+allSeasons.sort((a, b) => (a.date + (a.time || '')).localeCompare(b.date + (b.time || '')));
+writeFileSync(new URL('teams.ics', siteDir), buildIcs(allSeasons, new Date(), { calname: CITY.ics.teams }));
+nFeeds++;
+
+const nPast = merged.filter((e) => e.date < today).length;
+console.log(`Wrote ${merged.length} events (${nPast} past, ${merged.length - nPast} upcoming) + ${nFeeds} filtered feeds`);
