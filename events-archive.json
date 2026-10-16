@@ -1,0 +1,2219 @@
+{
+ "events": [
+  {
+   "venue": "Starfire Stadium",
+   "title": "Seattle Seawolves vs Hartford Harpooners",
+   "date": "2026-03-28",
+   "time": "16:00:00",
+   "url": "https://tickets.seawolves.rugby/events",
+   "type": "sports"
+  },
+  {
+   "venue": "Starfire Stadium",
+   "title": "Seattle Seawolves vs Old Glory DC",
+   "date": "2026-04-03",
+   "time": "19:30:00",
+   "url": "https://tickets.seawolves.rugby/events",
+   "type": "sports"
+  },
+  {
+   "venue": "Starfire Stadium",
+   "title": "Seattle Seawolves vs Chicago Hounds",
+   "date": "2026-04-24",
+   "time": "19:00:00",
+   "url": "https://tickets.seawolves.rugby/events",
+   "type": "sports"
+  },
+  {
+   "venue": "Starfire Stadium",
+   "title": "Seattle Seawolves vs Anthem Rugby Carolina",
+   "date": "2026-05-17",
+   "time": "13:00:00",
+   "url": "https://tickets.seawolves.rugby/events",
+   "type": "sports"
+  },
+  {
+   "venue": "Starfire Stadium",
+   "title": "Seattle Seawolves vs New England Free Jacks",
+   "date": "2026-05-31",
+   "time": "18:00:00",
+   "url": "https://tickets.seawolves.rugby/events",
+   "type": "sports"
+  },
+  {
+   "venue": "Starfire Stadium",
+   "title": "Seattle Seawolves vs California Legion",
+   "date": "2026-06-07",
+   "time": "18:00:00",
+   "url": "https://tickets.seawolves.rugby/events",
+   "type": "sports"
+  },
+  {
+   "venue": "Starfire Stadium",
+   "title": "Seattle Seawolves vs California Legion",
+   "date": "2026-06-14",
+   "time": "19:30:00",
+   "url": "https://tickets.seawolves.rugby/events",
+   "type": "sports"
+  },
+  {
+   "venue": "PrideFest",
+   "type": "community",
+   "title": "PrideFest Capitol Hill",
+   "date": "2026-06-27",
+   "time": "12:00",
+   "end": "20:00",
+   "url": "https://www.seattlepridefest.org/schedule/2026/6/27/pridefest-capitol-hill",
+   "free": true
+  },
+  {
+   "venue": "PrideFest",
+   "type": "community",
+   "title": "PrideFest Seattle Center",
+   "date": "2026-06-28",
+   "time": "12:00",
+   "end": "20:00",
+   "url": "https://www.seattlepridefest.org/schedule/2026/6/28/pridefest-seattle-center",
+   "free": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "title": "MUNA, Magdalena Bay, DJ Trixie Mattel",
+   "date": "2026-08-07",
+   "time": "14:35",
+   "lineup": [
+    "MUNA",
+    "Magdalena Bay",
+    "DJ Trixie Mattel",
+    "Between Friends",
+    "nimino",
+    "Frost Children",
+    "Ninajirachi",
+    "After",
+    "Aliyah's Interlude",
+    "Gelli Haha",
+    "Otha",
+    "Avery Cochrane",
+    "Dark Chisme",
+    "Casi",
+    "Glass Egg",
+    "Clover",
+    "Fleetwood Snack",
+    "Emi Pop",
+    "Camille Cano",
+    "Drew Martin",
+    "Give Me The Money",
+    "Lovely Colours",
+    "Girl Parallel",
+    "Zailee Haze"
+   ],
+   "sets": [
+    {
+     "stage": "Main Stage",
+     "acts": [
+      {
+       "act": "Avery Cochrane",
+       "start": "15:15",
+       "end": "15:45"
+      },
+      {
+       "act": "Aliyah's Interlude",
+       "start": "16:15",
+       "end": "16:45"
+      },
+      {
+       "act": "nimino",
+       "start": "17:15",
+       "end": "18:00"
+      },
+      {
+       "act": "Between Friends",
+       "start": "18:30",
+       "end": "19:15"
+      },
+      {
+       "act": "DJ Trixie Mattel",
+       "start": "19:30",
+       "end": "20:30"
+      },
+      {
+       "act": "Magdalena Bay",
+       "start": "21:00",
+       "end": "22:00"
+      },
+      {
+       "act": "MUNA",
+       "start": "22:40",
+       "end": "close"
+      }
+     ]
+    },
+    {
+     "stage": "Daydream Stage",
+     "acts": [
+      {
+       "act": "Girl Parallel",
+       "start": "14:35",
+       "end": "15:05"
+      },
+      {
+       "act": "Zailee Haze",
+       "start": "15:35",
+       "end": "16:05"
+      },
+      {
+       "act": "Otha",
+       "start": "16:35",
+       "end": "17:20"
+      },
+      {
+       "act": "Gelli Haha",
+       "start": "17:50",
+       "end": "18:35"
+      },
+      {
+       "act": "After",
+       "start": "19:05",
+       "end": "19:50"
+      },
+      {
+       "act": "Ninajirachi",
+       "start": "20:20",
+       "end": "21:20"
+      },
+      {
+       "act": "Frost Children",
+       "start": "22:00",
+       "end": "23:00"
+      }
+     ]
+    },
+    {
+     "stage": "Neumos Stage",
+     "acts": [
+      {
+       "act": "Camille Cano",
+       "start": "17:45",
+       "end": "18:30"
+      },
+      {
+       "act": "Fleetwood Snack",
+       "start": "19:00",
+       "end": "19:45"
+      },
+      {
+       "act": "Lovely Colours",
+       "start": "20:15",
+       "end": "21:00"
+      },
+      {
+       "act": "Casi",
+       "start": "21:30",
+       "end": "22:15"
+      },
+      {
+       "act": "Dark Chisme",
+       "start": "22:45",
+       "end": "23:30"
+      },
+      {
+       "act": "Afters: Frost Children (DJ set) + DJ Thank You",
+       "start": "23:30",
+       "end": "close"
+      }
+     ]
+    },
+    {
+     "stage": "Barboza Stage",
+     "acts": [
+      {
+       "act": "Give Me The Money",
+       "start": "17:15",
+       "end": "18:00"
+      },
+      {
+       "act": "Emi Pop",
+       "start": "18:30",
+       "end": "19:15"
+      },
+      {
+       "act": "Clover",
+       "start": "19:45",
+       "end": "20:30"
+      },
+      {
+       "act": "Drew Martin",
+       "start": "21:00",
+       "end": "21:45"
+      },
+      {
+       "act": "Glass Egg",
+       "start": "22:15",
+       "end": "23:00"
+      },
+      {
+       "act": "Afters: Double Sunrise Club",
+       "start": "23:30",
+       "end": "close"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-07",
+   "title": "Girl Parallel",
+   "time": "14:35",
+   "end": "15:05",
+   "stage": "Daydream Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-07",
+   "title": "Avery Cochrane",
+   "time": "15:15",
+   "end": "15:45",
+   "stage": "Main Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-07",
+   "title": "Zailee Haze",
+   "time": "15:35",
+   "end": "16:05",
+   "stage": "Daydream Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-07",
+   "title": "Aliyah's Interlude",
+   "time": "16:15",
+   "end": "16:45",
+   "stage": "Main Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-07",
+   "title": "Otha",
+   "time": "16:35",
+   "end": "17:20",
+   "stage": "Daydream Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-07",
+   "title": "Give Me The Money",
+   "time": "17:15",
+   "end": "18:00",
+   "stage": "Barboza Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-07",
+   "title": "nimino",
+   "time": "17:15",
+   "end": "18:00",
+   "stage": "Main Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-07",
+   "title": "Camille Cano",
+   "time": "17:45",
+   "end": "18:30",
+   "stage": "Neumos Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-07",
+   "title": "Gelli Haha",
+   "time": "17:50",
+   "end": "18:35",
+   "stage": "Daydream Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-07",
+   "title": "Emi Pop",
+   "time": "18:30",
+   "end": "19:15",
+   "stage": "Barboza Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-07",
+   "title": "Between Friends",
+   "time": "18:30",
+   "end": "19:15",
+   "stage": "Main Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-07",
+   "title": "Fleetwood Snack",
+   "time": "19:00",
+   "end": "19:45",
+   "stage": "Neumos Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-07",
+   "title": "After",
+   "time": "19:05",
+   "end": "19:50",
+   "stage": "Daydream Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-07",
+   "title": "DJ Trixie Mattel",
+   "time": "19:30",
+   "end": "20:30",
+   "stage": "Main Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-07",
+   "title": "Clover",
+   "time": "19:45",
+   "end": "20:30",
+   "stage": "Barboza Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-07",
+   "title": "Lovely Colours",
+   "time": "20:15",
+   "end": "21:00",
+   "stage": "Neumos Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-07",
+   "title": "Ninajirachi",
+   "time": "20:20",
+   "end": "21:20",
+   "stage": "Daydream Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-07",
+   "title": "Drew Martin",
+   "time": "21:00",
+   "end": "21:45",
+   "stage": "Barboza Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-07",
+   "title": "Magdalena Bay",
+   "time": "21:00",
+   "end": "22:00",
+   "stage": "Main Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-07",
+   "title": "Casi",
+   "time": "21:30",
+   "end": "22:15",
+   "stage": "Neumos Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-07",
+   "title": "Frost Children",
+   "time": "22:00",
+   "end": "23:00",
+   "stage": "Daydream Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-07",
+   "title": "Glass Egg",
+   "time": "22:15",
+   "end": "23:00",
+   "stage": "Barboza Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-07",
+   "title": "MUNA",
+   "time": "22:40",
+   "stage": "Main Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-07",
+   "title": "Dark Chisme",
+   "time": "22:45",
+   "end": "23:30",
+   "stage": "Neumos Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-07",
+   "title": "Afters: Double Sunrise Club",
+   "time": "23:30",
+   "stage": "Barboza Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-07",
+   "title": "Afters: Frost Children (DJ set) + DJ Thank You",
+   "time": "23:30",
+   "stage": "Neumos Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "title": "Disco Lines, Tinashe DJ Set, Amber Mark",
+   "date": "2026-08-08",
+   "time": "14:20",
+   "lineup": [
+    "Disco Lines",
+    "Tinashe DJ Set",
+    "Amber Mark",
+    "Jigitz",
+    "Momma",
+    "Mallrat",
+    "Rochelle Jordan",
+    "Night Tapes",
+    "Whatmore",
+    "MGNA CRRRTA",
+    "Oxis",
+    "Nickcheo",
+    "Samara Lennoxx",
+    "RUB",
+    "Kenshi Killzzz",
+    "J-Henry",
+    "Vika & The Velvets",
+    "slone",
+    "poached",
+    "The Requisite",
+    "Pink Steam",
+    "Tiny Monsters",
+    "The Floor Is Not Lava",
+    "Bazaar",
+    "Rose Peak",
+    "Makenna DeCaro",
+    "Slaone Motion"
+   ],
+   "sets": [
+    {
+     "stage": "Main Stage",
+     "acts": [
+      {
+       "act": "Sloane Motion",
+       "start": "14:45",
+       "end": "15:15"
+      },
+      {
+       "act": "MGNA CRRRTA",
+       "start": "15:45",
+       "end": "16:30"
+      },
+      {
+       "act": "Momma",
+       "start": "17:00",
+       "end": "17:45"
+      },
+      {
+       "act": "Jigitz",
+       "start": "18:15",
+       "end": "19:00"
+      },
+      {
+       "act": "Amber Mark",
+       "start": "19:30",
+       "end": "20:30"
+      },
+      {
+       "act": "Tinashe (DJ set)",
+       "start": "21:00",
+       "end": "22:00"
+      },
+      {
+       "act": "Disco Lines",
+       "start": "22:40",
+       "end": "close"
+      }
+     ]
+    },
+    {
+     "stage": "Daydream Stage",
+     "acts": [
+      {
+       "act": "Makenna DeCaro",
+       "start": "14:20",
+       "end": "14:50"
+      },
+      {
+       "act": "Oxis",
+       "start": "15:20",
+       "end": "16:05"
+      },
+      {
+       "act": "Nickcheo",
+       "start": "16:35",
+       "end": "17:20"
+      },
+      {
+       "act": "Whatmore",
+       "start": "17:50",
+       "end": "18:35"
+      },
+      {
+       "act": "Night Tapes",
+       "start": "19:05",
+       "end": "19:50"
+      },
+      {
+       "act": "Mallrat",
+       "start": "20:20",
+       "end": "21:20"
+      },
+      {
+       "act": "Rochelle Jordan",
+       "start": "22:00",
+       "end": "23:00"
+      }
+     ]
+    },
+    {
+     "stage": "Neumos Stage",
+     "acts": [
+      {
+       "act": "Tiny Monsters",
+       "start": "16:00",
+       "end": "16:45"
+      },
+      {
+       "act": "Samara Lennoxx",
+       "start": "17:15",
+       "end": "18:00"
+      },
+      {
+       "act": "Kenshi Killzzz",
+       "start": "18:30",
+       "end": "19:15"
+      },
+      {
+       "act": "The Requisite",
+       "start": "19:45",
+       "end": "20:30"
+      },
+      {
+       "act": "Vika & The Velvets",
+       "start": "21:00",
+       "end": "21:45"
+      },
+      {
+       "act": "RUB",
+       "start": "22:15",
+       "end": "23:00"
+      },
+      {
+       "act": "Afters: Nickcheo",
+       "start": "23:15",
+       "end": "close"
+      }
+     ]
+    },
+    {
+     "stage": "Barboza Stage",
+     "acts": [
+      {
+       "act": "Rose Peak",
+       "start": "16:15",
+       "end": "16:45"
+      },
+      {
+       "act": "The Floor Is Not Lava",
+       "start": "17:15",
+       "end": "17:45"
+      },
+      {
+       "act": "slone",
+       "start": "18:15",
+       "end": "18:45"
+      },
+      {
+       "act": "poached",
+       "start": "19:15",
+       "end": "19:45"
+      },
+      {
+       "act": "Pink Steam",
+       "start": "20:15",
+       "end": "20:45"
+      },
+      {
+       "act": "J.Henry",
+       "start": "21:15",
+       "end": "21:45"
+      },
+      {
+       "act": "Bazaar",
+       "start": "22:15",
+       "end": "22:45"
+      },
+      {
+       "act": "Afters: DJ_Dave + MGNA CRRRTA (DJ sets)",
+       "start": "23:00",
+       "end": "close"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-08",
+   "title": "Makenna DeCaro",
+   "time": "14:20",
+   "end": "14:50",
+   "stage": "Daydream Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-08",
+   "title": "Sloane Motion",
+   "time": "14:45",
+   "end": "15:15",
+   "stage": "Main Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-08",
+   "title": "Oxis",
+   "time": "15:20",
+   "end": "16:05",
+   "stage": "Daydream Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-08",
+   "title": "Mgna Crrrta",
+   "time": "15:45",
+   "end": "16:30",
+   "stage": "Main Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-08",
+   "title": "Tiny Monsters",
+   "time": "16:00",
+   "end": "16:45",
+   "stage": "Neumos Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-08",
+   "title": "Rose Peak",
+   "time": "16:15",
+   "end": "16:45",
+   "stage": "Barboza Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-08",
+   "title": "Nickcheo",
+   "time": "16:35",
+   "end": "17:20",
+   "stage": "Daydream Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-08",
+   "title": "Momma",
+   "time": "17:00",
+   "end": "17:45",
+   "stage": "Main Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-08",
+   "title": "The Floor Is Not Lava",
+   "time": "17:15",
+   "end": "17:45",
+   "stage": "Barboza Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-08",
+   "title": "Samara Lennoxx",
+   "time": "17:15",
+   "end": "18:00",
+   "stage": "Neumos Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-08",
+   "title": "Whatmore",
+   "time": "17:50",
+   "end": "18:35",
+   "stage": "Daydream Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-08",
+   "title": "slone",
+   "time": "18:15",
+   "end": "18:45",
+   "stage": "Barboza Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-08",
+   "title": "Jigitz",
+   "time": "18:15",
+   "end": "19:00",
+   "stage": "Main Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-08",
+   "title": "Kenshi Killzzz",
+   "time": "18:30",
+   "end": "19:15",
+   "stage": "Neumos Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-08",
+   "title": "Night Tapes",
+   "time": "19:05",
+   "end": "19:50",
+   "stage": "Daydream Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-08",
+   "title": "poached",
+   "time": "19:15",
+   "end": "19:45",
+   "stage": "Barboza Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-08",
+   "title": "Amber Mark",
+   "time": "19:30",
+   "end": "20:30",
+   "stage": "Main Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-08",
+   "title": "The Requisite",
+   "time": "19:45",
+   "end": "20:30",
+   "stage": "Neumos Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-08",
+   "title": "Pink Steam",
+   "time": "20:15",
+   "end": "20:45",
+   "stage": "Barboza Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-08",
+   "title": "Mallrat",
+   "time": "20:20",
+   "end": "21:20",
+   "stage": "Daydream Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-08",
+   "title": "Tinashe (DJ set)",
+   "time": "21:00",
+   "end": "22:00",
+   "stage": "Main Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-08",
+   "title": "Vika & The Velvets",
+   "time": "21:00",
+   "end": "21:45",
+   "stage": "Neumos Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-08",
+   "title": "J.Henry",
+   "time": "21:15",
+   "end": "21:45",
+   "stage": "Barboza Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-08",
+   "title": "Rochelle Jordan",
+   "time": "22:00",
+   "end": "23:00",
+   "stage": "Daydream Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-08",
+   "title": "Bazaar",
+   "time": "22:15",
+   "end": "22:45",
+   "stage": "Barboza Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-08",
+   "title": "RUB",
+   "time": "22:15",
+   "end": "23:00",
+   "stage": "Neumos Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-08",
+   "title": "Disco Lines",
+   "time": "22:40",
+   "stage": "Main Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-08",
+   "title": "Afters: DJ_Dave + Mgna Crrrta (DJ sets)",
+   "time": "23:00",
+   "stage": "Barboza Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-08",
+   "title": "Afters: Nickcheo",
+   "time": "23:15",
+   "stage": "Neumos Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "title": "Wet Leg, Parcels, Zack Fox",
+   "date": "2026-08-09",
+   "time": "13:45",
+   "lineup": [
+    "Wet Leg",
+    "Parcels",
+    "Zack Fox",
+    "MPH",
+    "haute & freddy",
+    "Lucy Bedroque",
+    "Avalon Emerson & The Charm",
+    "babymorocco",
+    "DJ Dave",
+    "Work Wife",
+    "instant crush",
+    "John-Robert",
+    "Henry Mansfield",
+    "Beach Vacation",
+    "Plugged In!",
+    "Rodney Tristan",
+    "dsrt flwr",
+    "Middle Names",
+    "Clouds of the West",
+    "Fatal Femmes",
+    "Scott Yoder",
+    "CSFS",
+    "Rianbow Jackson"
+   ],
+   "sets": [
+    {
+     "stage": "Main Stage",
+     "acts": [
+      {
+       "act": "Instant Crush",
+       "start": "13:45",
+       "end": "14:15"
+      },
+      {
+       "act": "DJ_Dave",
+       "start": "14:45",
+       "end": "15:15"
+      },
+      {
+       "act": "Haute & Freddy",
+       "start": "15:55",
+       "end": "16:40"
+      },
+      {
+       "act": "Zack Fox",
+       "start": "17:20",
+       "end": "18:20"
+      },
+      {
+       "act": "Parcels",
+       "start": "19:00",
+       "end": "20:00"
+      },
+      {
+       "act": "Wet Leg",
+       "start": "20:40",
+       "end": "close"
+      }
+     ]
+    },
+    {
+     "stage": "Daydream Stage",
+     "acts": [
+      {
+       "act": "Cal State Football Stadium",
+       "start": "14:30",
+       "end": "15:00"
+      },
+      {
+       "act": "Rainbow Jackson",
+       "start": "15:30",
+       "end": "16:00"
+      },
+      {
+       "act": "Babymorocco",
+       "start": "16:30",
+       "end": "17:15"
+      },
+      {
+       "act": "Avalon Emerson & The Charm",
+       "start": "17:55",
+       "end": "18:40"
+      },
+      {
+       "act": "Lucy Bedroque",
+       "start": "19:20",
+       "end": "20:20"
+      },
+      {
+       "act": "MPH",
+       "start": "21:00",
+       "end": "close"
+      }
+     ]
+    },
+    {
+     "stage": "Neumos Stage",
+     "acts": [
+      {
+       "act": "Beach Vacation",
+       "start": "16:15",
+       "end": "16:45"
+      },
+      {
+       "act": "John-Robert",
+       "start": "17:30",
+       "end": "18:00"
+      },
+      {
+       "act": "Plugged In!",
+       "start": "18:30",
+       "end": "19:15"
+      },
+      {
+       "act": "Work Wife",
+       "start": "19:45",
+       "end": "20:30"
+      },
+      {
+       "act": "Clouds of the West",
+       "start": "21:00",
+       "end": "21:45"
+      },
+      {
+       "act": "Afters: DJ100PROOF + The Last Skeptik",
+       "start": "22:00",
+       "end": "close"
+      }
+     ]
+    },
+    {
+     "stage": "Barboza Stage",
+     "acts": [
+      {
+       "act": "Scott Yoder",
+       "start": "16:30",
+       "end": "17:00"
+      },
+      {
+       "act": "DSRT FLWR",
+       "start": "17:30",
+       "end": "18:00"
+      },
+      {
+       "act": "Rodney Tristan",
+       "start": "18:30",
+       "end": "19:00"
+      },
+      {
+       "act": "Middle Names",
+       "start": "19:30",
+       "end": "20:00"
+      },
+      {
+       "act": "Henry Mansfield",
+       "start": "20:30",
+       "end": "21:00"
+      },
+      {
+       "act": "Fatal Femmes",
+       "start": "21:30",
+       "end": "22:00"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-09",
+   "title": "Instant Crush",
+   "time": "13:45",
+   "end": "14:15",
+   "stage": "Main Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-09",
+   "title": "Cal State Football Stadium",
+   "time": "14:30",
+   "end": "15:00",
+   "stage": "Daydream Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-09",
+   "title": "DJ_Dave",
+   "time": "14:45",
+   "end": "15:15",
+   "stage": "Main Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-09",
+   "title": "Rainbow Jackson",
+   "time": "15:30",
+   "end": "16:00",
+   "stage": "Daydream Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-09",
+   "title": "Haute & Freddy",
+   "time": "15:55",
+   "end": "16:40",
+   "stage": "Main Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-09",
+   "title": "Beach Vacation",
+   "time": "16:15",
+   "end": "16:45",
+   "stage": "Neumos Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-09",
+   "title": "Scott Yoder",
+   "time": "16:30",
+   "end": "17:00",
+   "stage": "Barboza Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-09",
+   "title": "Babymorocco",
+   "time": "16:30",
+   "end": "17:15",
+   "stage": "Daydream Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-09",
+   "title": "Zack Fox",
+   "time": "17:20",
+   "end": "18:20",
+   "stage": "Main Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-09",
+   "title": "Dsrt Flwr",
+   "time": "17:30",
+   "end": "18:00",
+   "stage": "Barboza Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-09",
+   "title": "John-Robert",
+   "time": "17:30",
+   "end": "18:00",
+   "stage": "Neumos Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-09",
+   "title": "Avalon Emerson & The Charm",
+   "time": "17:55",
+   "end": "18:40",
+   "stage": "Daydream Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-09",
+   "title": "Rodney Tristan",
+   "time": "18:30",
+   "end": "19:00",
+   "stage": "Barboza Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-09",
+   "title": "Plugged In!",
+   "time": "18:30",
+   "end": "19:15",
+   "stage": "Neumos Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-09",
+   "title": "Parcels",
+   "time": "19:00",
+   "end": "20:00",
+   "stage": "Main Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-09",
+   "title": "Lucy Bedroque",
+   "time": "19:20",
+   "end": "20:20",
+   "stage": "Daydream Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-09",
+   "title": "Middle Names",
+   "time": "19:30",
+   "end": "20:00",
+   "stage": "Barboza Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-09",
+   "title": "Work Wife",
+   "time": "19:45",
+   "end": "20:30",
+   "stage": "Neumos Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-09",
+   "title": "Henry Mansfield",
+   "time": "20:30",
+   "end": "21:00",
+   "stage": "Barboza Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-09",
+   "title": "Wet Leg",
+   "time": "20:40",
+   "stage": "Main Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-09",
+   "title": "MPH",
+   "time": "21:00",
+   "stage": "Daydream Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-09",
+   "title": "Clouds of the West",
+   "time": "21:00",
+   "end": "21:45",
+   "stage": "Neumos Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-09",
+   "title": "Fatal Femmes",
+   "time": "21:30",
+   "end": "22:00",
+   "stage": "Barboza Stage",
+   "set": true
+  },
+  {
+   "venue": "Capitol Hill Block Party",
+   "type": "concert",
+   "url": "https://www.capitolhillblockparty.com/artists",
+   "date": "2026-08-09",
+   "title": "Afters: DJ100PROOF + The Last Skeptik",
+   "time": "22:00",
+   "stage": "Neumos Stage",
+   "set": true
+  },
+  {
+   "venue": "Bumbershoot",
+   "type": "concert",
+   "url": "https://bumbershoot.com/schedule",
+   "title": "Turnstile, Blood Orange, Lucy Dacus",
+   "date": "2026-09-05",
+   "time": "13:20",
+   "lineup": [
+    "Turnstile",
+    "Blood Orange",
+    "Lucy Dacus",
+    "Chase & Status",
+    "Bikini Kill",
+    "Molchat Doma",
+    "Joey Valence & Brae",
+    "Peaches",
+    "Die Spitz",
+    "Silvana Estrada",
+    "Pixel Grip",
+    "Cain Culto",
+    "Travis Thompson",
+    "XCOMM",
+    "Sera Cahoone",
+    "Oblé Reed",
+    "Suzzallo",
+    "Anthers",
+    "Juliet Daniel",
+    "Aryana León",
+    "Bexley",
+    "Hard Maybe",
+    "Mofiyah"
+   ],
+   "sets": [
+    {
+     "stage": "Fisher Stage",
+     "acts": [
+      {
+       "act": "Hard Maybe",
+       "start": "13:20",
+       "end": "13:50"
+      },
+      {
+       "act": "Travis Thompson",
+       "start": "14:20",
+       "end": "14:50"
+      },
+      {
+       "act": "Pixel Grip",
+       "start": "15:15",
+       "end": "15:45"
+      },
+      {
+       "act": "Die Spitz",
+       "start": "16:15",
+       "end": "17:00"
+      },
+      {
+       "act": "Joey Valence & Brae",
+       "start": "17:30",
+       "end": "18:15"
+      },
+      {
+       "act": "Lucy Dacus",
+       "start": "18:45",
+       "end": "19:45"
+      },
+      {
+       "act": "Blood Orange",
+       "start": "20:15",
+       "end": "21:30"
+      },
+      {
+       "act": "Turnstile",
+       "start": "22:15",
+       "end": "23:30"
+      }
+     ]
+    },
+    {
+     "stage": "Mural Stage",
+     "acts": [
+      {
+       "act": "XCOMM",
+       "start": "14:00",
+       "end": "14:30"
+      },
+      {
+       "act": "Cain Culto",
+       "start": "14:50",
+       "end": "15:20"
+      },
+      {
+       "act": "Silvana Estrada",
+       "start": "15:50",
+       "end": "16:35"
+      },
+      {
+       "act": "Peaches",
+       "start": "17:00",
+       "end": "17:45"
+      },
+      {
+       "act": "Bikini Kill",
+       "start": "18:15",
+       "end": "19:15"
+      },
+      {
+       "act": "Molchat Doma",
+       "start": "19:45",
+       "end": "20:45"
+      },
+      {
+       "act": "Mofiyah",
+       "start": "21:30",
+       "end": "21:55"
+      },
+      {
+       "act": "Chase & Status",
+       "start": "22:00",
+       "end": "23:15"
+      }
+     ]
+    },
+    {
+     "stage": "Upper NW Courtyard",
+     "acts": [
+      {
+       "act": "Meat Hair",
+       "start": "14:30",
+       "end": "15:00"
+      },
+      {
+       "act": "Bexley",
+       "start": "15:30",
+       "end": "16:00"
+      },
+      {
+       "act": "Aryana León",
+       "start": "16:30",
+       "end": "17:00"
+      },
+      {
+       "act": "Juliet Daniel",
+       "start": "17:40",
+       "end": "18:10"
+      },
+      {
+       "act": "Anthers",
+       "start": "18:50",
+       "end": "19:20"
+      },
+      {
+       "act": "Sera Cahoone",
+       "start": "19:55",
+       "end": "20:40"
+      },
+      {
+       "act": "Oblé Reed",
+       "start": "21:40",
+       "end": "22:40"
+      }
+     ]
+    }
+   ],
+   "arts": 34
+  },
+  {
+   "venue": "Husky Stadium",
+   "title": "Washington Huskies vs Washington State Cougars",
+   "date": "2026-09-06",
+   "time": "13:00:00",
+   "url": "https://gohuskies.com/sports/football/tickets",
+   "type": "sports",
+   "watch": {
+    "tv": [
+     "NBC"
+    ]
+   }
+  },
+  {
+   "venue": "Bumbershoot",
+   "type": "concert",
+   "url": "https://bumbershoot.com/schedule",
+   "title": "Death Cab for Cutie, Orville Peck, De La Soul",
+   "date": "2026-09-06",
+   "time": "13:20",
+   "lineup": [
+    "Death Cab for Cutie",
+    "Orville Peck",
+    "De La Soul",
+    "Sudan Archives",
+    "ATARASHII GAKKO!",
+    "Tokimonsta",
+    "Goldie Boutilier",
+    "Noname - 10th Anniversary of “Telefone”",
+    "Racing Mount Pleasant",
+    "W.I.T.C.H.",
+    "Sextile",
+    "PawPaw Rod",
+    "Takuya Nakamura",
+    "Meat Hair",
+    "Midpak",
+    "Daughters of Venus",
+    "American Flats",
+    "Lucha Luna",
+    "Morgan Paris Lanza",
+    "Hannah Duckworth",
+    "Noire Svlon",
+    "Muckleshoot Canoe Family"
+   ],
+   "sets": [
+    {
+     "stage": "Fisher Stage",
+     "acts": [
+      {
+       "act": "Noire Svlon",
+       "start": "13:20",
+       "end": "13:50"
+      },
+      {
+       "act": "PawPaw Rod",
+       "start": "14:20",
+       "end": "14:50"
+      },
+      {
+       "act": "Sextile",
+       "start": "15:15",
+       "end": "15:45"
+      },
+      {
+       "act": "Muckleshoot",
+       "start": "16:10",
+       "end": "16:20"
+      },
+      {
+       "act": "Racing Mount Pleasant",
+       "start": "16:25",
+       "end": "17:05"
+      },
+      {
+       "act": "ATARASHII GAKKO!",
+       "start": "17:35",
+       "end": "18:15"
+      },
+      {
+       "act": "De La Soul",
+       "start": "18:45",
+       "end": "19:45"
+      },
+      {
+       "act": "Orville Peck",
+       "start": "20:15",
+       "end": "21:30"
+      },
+      {
+       "act": "Death Cab for Cutie",
+       "start": "22:15",
+       "end": "23:30"
+      }
+     ]
+    },
+    {
+     "stage": "Mural Stage",
+     "acts": [
+      {
+       "act": "Takuya Nakamura",
+       "start": "14:00",
+       "end": "15:15"
+      },
+      {
+       "act": "W.I.T.C.H.",
+       "start": "15:45",
+       "end": "16:30"
+      },
+      {
+       "act": "Goldie Boutilier",
+       "start": "17:00",
+       "end": "17:45"
+      },
+      {
+       "act": "Noname - 10th Anniversary of “Telefone”",
+       "start": "18:15",
+       "end": "19:00"
+      },
+      {
+       "act": "Sudan Archives",
+       "start": "19:45",
+       "end": "20:45"
+      },
+      {
+       "act": "Tokimonsta",
+       "start": "21:30",
+       "end": "23:00"
+      }
+     ]
+    },
+    {
+     "stage": "Upper NW Courtyard",
+     "acts": [
+      {
+       "act": "American Flats",
+       "start": "14:30",
+       "end": "15:00"
+      },
+      {
+       "act": "Midpak",
+       "start": "15:30",
+       "end": "16:00"
+      },
+      {
+       "act": "Hannah Duckworth",
+       "start": "16:30",
+       "end": "17:00"
+      },
+      {
+       "act": "Morgan Paris Lanza",
+       "start": "17:40",
+       "end": "18:10"
+      },
+      {
+       "act": "Lucha Luna",
+       "start": "18:50",
+       "end": "19:20"
+      },
+      {
+       "act": "Daughters of Venus",
+       "start": "19:55",
+       "end": "20:40"
+      },
+      {
+       "act": "Suzzallo",
+       "start": "21:40",
+       "end": "22:40"
+      }
+     ]
+    }
+   ],
+   "arts": 32
+  },
+  {
+   "venue": "Husky Stadium",
+   "title": "Washington Huskies vs Utah State Aggies",
+   "date": "2026-09-12",
+   "time": "12:30:00",
+   "url": "https://gohuskies.com/sports/football/tickets",
+   "type": "sports",
+   "watch": {
+    "tv": [
+     "BTN"
+    ]
+   }
+  },
+  {
+   "venue": "Husky Stadium",
+   "title": "Washington Huskies vs Eastern Washington Eagles",
+   "date": "2026-09-19",
+   "time": "16:15:00",
+   "url": "https://gohuskies.com/sports/football/tickets",
+   "type": "sports",
+   "watch": {
+    "tv": [
+     "BTN"
+    ]
+   }
+  },
+  {
+   "venue": "Seattle Rep",
+   "title": "Eureka Day",
+   "date": "2026-09-24",
+   "time": "19:30:00",
+   "url": "https://www.seattlerep.org/plays/202627-season/eureka-day",
+   "type": "arts",
+   "soldOut": true
+  },
+  {
+   "venue": "Seattle Rep",
+   "title": "Eureka Day",
+   "date": "2026-09-25",
+   "time": "19:30:00",
+   "url": "https://www.seattlerep.org/plays/202627-season/eureka-day",
+   "type": "arts",
+   "soldOut": true
+  },
+  {
+   "venue": "Seattle Rep",
+   "title": "Eureka Day",
+   "date": "2026-09-26",
+   "time": "19:30:00",
+   "url": "https://www.seattlerep.org/plays/202627-season/eureka-day",
+   "type": "arts",
+   "soldOut": true
+  },
+  {
+   "venue": "Husky Stadium",
+   "title": "Washington Huskies vs Minnesota Golden Gophers",
+   "date": "2026-09-26",
+   "time": "20:00:00",
+   "url": "https://gohuskies.com/sports/football/tickets",
+   "type": "sports",
+   "watch": {
+    "tv": [
+     "Fox"
+    ]
+   }
+  },
+  {
+   "venue": "Seattle Rep",
+   "title": "Eureka Day",
+   "date": "2026-09-29",
+   "time": "19:30:00",
+   "url": "https://www.seattlerep.org/plays/202627-season/eureka-day",
+   "type": "arts",
+   "soldOut": true
+  },
+  {
+   "venue": "Seattle Rep",
+   "title": "Eureka Day",
+   "date": "2026-09-30",
+   "time": "19:30:00",
+   "url": "https://www.seattlerep.org/plays/202627-season/eureka-day",
+   "type": "arts",
+   "soldOut": true
+  },
+  {
+   "venue": "Seattle Rep",
+   "title": "Eureka Day",
+   "date": "2026-10-01",
+   "time": "19:30:00",
+   "url": "https://www.seattlerep.org/plays/202627-season/eureka-day",
+   "type": "arts",
+   "soldOut": true
+  },
+  {
+   "venue": "Seattle Rep",
+   "title": "Eureka Day",
+   "date": "2026-10-02",
+   "time": "19:30:00",
+   "url": "https://www.seattlerep.org/plays/202627-season/eureka-day",
+   "type": "arts",
+   "soldOut": true
+  },
+  {
+   "venue": "Seattle Rep",
+   "title": "Eureka Day",
+   "date": "2026-10-03",
+   "time": "14:00:00",
+   "url": "https://www.seattlerep.org/plays/202627-season/eureka-day",
+   "type": "arts",
+   "soldOut": true
+  },
+  {
+   "venue": "Seattle Rep",
+   "title": "Eureka Day",
+   "date": "2026-10-03",
+   "time": "19:30:00",
+   "url": "https://www.seattlerep.org/plays/202627-season/eureka-day",
+   "type": "arts",
+   "soldOut": true
+  },
+  {
+   "venue": "Seattle Rep",
+   "title": "Eureka Day",
+   "date": "2026-10-04",
+   "time": "14:00:00",
+   "url": "https://www.seattlerep.org/plays/202627-season/eureka-day",
+   "type": "arts",
+   "soldOut": true
+  },
+  {
+   "venue": "Seattle Rep",
+   "title": "Eureka Day",
+   "date": "2026-10-04",
+   "time": "19:30:00",
+   "url": "https://www.seattlerep.org/plays/202627-season/eureka-day",
+   "type": "arts",
+   "soldOut": true
+  },
+  {
+   "venue": "Pacific Science Center",
+   "title": "Call for Vendors: The Gift Lab",
+   "date": "2026-10-06",
+   "time": "",
+   "url": "https://pacificsciencecenter.org/events/call-for-vendors-the-gift-lab/"
+  },
+  {
+   "venue": "Seattle Rep",
+   "title": "Eureka Day",
+   "date": "2026-10-07",
+   "time": "19:30:00",
+   "url": "https://www.seattlerep.org/plays/202627-season/eureka-day",
+   "type": "arts",
+   "soldOut": true
+  },
+  {
+   "venue": "Seattle Rep",
+   "title": "Eureka Day",
+   "date": "2026-10-08",
+   "time": "19:30:00",
+   "url": "https://www.seattlerep.org/plays/202627-season/eureka-day",
+   "type": "arts",
+   "soldOut": true
+  },
+  {
+   "venue": "Husky Stadium",
+   "title": "Washington Huskies vs Iowa Hawkeyes",
+   "date": "2026-10-09",
+   "time": "18:00:00",
+   "url": "https://gohuskies.com/sports/football/tickets",
+   "type": "sports",
+   "watch": {
+    "tv": [
+     "Fox"
+    ]
+   }
+  },
+  {
+   "venue": "Seattle Rep",
+   "title": "Eureka Day",
+   "date": "2026-10-09",
+   "time": "19:30:00",
+   "url": "https://www.seattlerep.org/plays/202627-season/eureka-day",
+   "type": "arts",
+   "soldOut": true
+  },
+  {
+   "venue": "Seattle Rep",
+   "title": "Eureka Day",
+   "date": "2026-10-10",
+   "time": "14:00:00",
+   "url": "https://www.seattlerep.org/plays/202627-season/eureka-day",
+   "type": "arts",
+   "soldOut": true
+  },
+  {
+   "venue": "Seattle Rep",
+   "title": "Eureka Day",
+   "date": "2026-10-10",
+   "time": "19:30:00",
+   "url": "https://www.seattlerep.org/plays/202627-season/eureka-day",
+   "type": "arts",
+   "soldOut": true
+  },
+  {
+   "venue": "Seattle Rep",
+   "title": "Eureka Day",
+   "date": "2026-10-11",
+   "time": "14:00:00",
+   "url": "https://www.seattlerep.org/plays/202627-season/eureka-day",
+   "type": "arts",
+   "soldOut": true
+  },
+  {
+   "venue": "Seattle Rep",
+   "title": "Eureka Day",
+   "date": "2026-10-14",
+   "time": "14:00:00",
+   "url": "https://www.seattlerep.org/plays/202627-season/eureka-day",
+   "type": "arts",
+   "soldOut": true
+  },
+  {
+   "venue": "Seattle Rep",
+   "title": "Eureka Day",
+   "date": "2026-10-14",
+   "time": "19:30:00",
+   "url": "https://www.seattlerep.org/plays/202627-season/eureka-day",
+   "type": "arts",
+   "soldOut": true
+  },
+  {
+   "venue": "Tacoma Dome",
+   "title": "Tacoma Holiday Festival",
+   "date": "2026-10-15",
+   "time": "",
+   "url": "https://www.ticketmaster.com/tacoma-holiday-festival-tacoma-washington-10-15-2026/event/0F006482CA7A22C8"
+  },
+  {
+   "venue": "Pacific Science Center",
+   "title": "FRACTURE! Matheatre Haunted House",
+   "date": "2026-10-15",
+   "time": "",
+   "url": "https://pacificsciencecenter.org/events/fracture/"
+  },
+  {
+   "venue": "Children's Theatre",
+   "title": "I'll Be Your Superhero",
+   "date": "2026-10-15",
+   "time": "18:00:00",
+   "url": "https://www.sct.org/onstage/productions/ill-be-your-superhero-2026/",
+   "type": "arts"
+  },
+  {
+   "venue": "Around Pioneer Square",
+   "title": "The Dreaming Room",
+   "date": "2026-10-15",
+   "time": "18:30",
+   "url": "https://pioneersquare.org/our-events/the-dreaming-room/",
+   "type": "community"
+  },
+  {
+   "venue": "Around Pioneer Square",
+   "title": "Shannon Lay + Blake Burgess Show",
+   "date": "2026-10-15",
+   "time": "19:00",
+   "url": "https://pioneersquare.org/our-events/shannon-lay-blake-burgess-show/",
+   "type": "community"
+  },
+  {
+   "venue": "Jazz Alley",
+   "title": "Delvon Lamarr Organ Trio with Special Guest Karl Denson",
+   "date": "2026-10-15",
+   "time": "19:30",
+   "url": "https://www.jazzalley.com/www-home/artist.jsp?shownum=8824",
+   "type": "concert"
+  },
+  {
+   "venue": "Around Pioneer Square",
+   "title": "Sculpt & Sip – live nude model – wine – intro sculpting",
+   "date": "2026-10-15",
+   "time": "19:30",
+   "url": "https://pioneersquare.org/our-events/sculpt-sip-live-nude-model-wine-intro-sculpting-4/",
+   "type": "community"
+  },
+  {
+   "venue": "Climate Pledge Arena",
+   "title": "Doja Cat - Tour Ma Vie World Tour",
+   "date": "2026-10-15",
+   "time": "19:30:00",
+   "url": "https://www.ticketmaster.com/doja-cat-tour-ma-vie-world-seattle-washington-10-15-2026/event/0F00633ADD435829",
+   "type": "concert",
+   "tickets": {
+    "box": null,
+    "resale": 0,
+    "checked": "2026-10-15T18:43:30.731Z",
+    "from": 98.75
+   }
+  },
+  {
+   "venue": "On the Boards",
+   "title": "Holland Andrews and yuniya edi kwon",
+   "date": "2026-10-15",
+   "time": "19:30:00",
+   "url": "https://ontheboards.org/events/26-27/hdiftlan"
+  },
+  {
+   "venue": "Seattle Rep",
+   "title": "Eureka Day",
+   "date": "2026-10-15",
+   "time": "19:30:00",
+   "url": "https://www.seattlerep.org/plays/202627-season/eureka-day",
+   "type": "arts",
+   "soldOut": true
+  },
+  {
+   "venue": "Paramount Theatre",
+   "title": "Malcolm Todd: Do That Again Tour",
+   "date": "2026-10-15",
+   "time": "20:00:00",
+   "url": "https://www.ticketmaster.com/malcolm-todd-do-that-again-tour-seattle-washington-10-15-2026/event/0F0064C4A326A7BB",
+   "type": "concert",
+   "tickets": {
+    "box": 0,
+    "resale": 11,
+    "checked": "2026-10-15T19:07:33.664Z",
+    "from": 175
+   },
+   "soldOut": true
+  },
+  {
+   "venue": "Moore Theatre",
+   "title": "Julian Lage Quartet feat. John Medeski, Jorge Roeder, & Kenny Wollesen",
+   "date": "2026-10-15",
+   "time": "20:00:00",
+   "url": "https://www.ticketmaster.com/julian-lage-quartet-feat-john-medeski-seattle-washington-10-15-2026/event/0F006430A9E4886D",
+   "type": "concert"
+  },
+  {
+   "venue": "Clock-Out Lounge",
+   "title": "Ruby Mimosa Presents: BurlesKaraoke",
+   "date": "2026-10-15",
+   "time": "20:00:00",
+   "url": "https://www.ticketweb.com/event/ruby-mimosa-presents-burleskaraoke-clock-out-lounge-tickets/14320684"
+  },
+  {
+   "venue": "Tractor Tavern",
+   "title": "KEXP Presents: Derya Yildirim & Grup Simsek x Thee Marloes",
+   "date": "2026-10-15",
+   "time": "20:00:00",
+   "url": "https://www.ticketweb.com/event/kexp-presents-derya-yildirim-tractor-tickets/15035753",
+   "type": "concert"
+  },
+  {
+   "venue": "Showbox SoDo",
+   "title": "PALACE with Rollo Doherty",
+   "date": "2026-10-15",
+   "time": "20:00:00",
+   "url": "https://www.axs.com/events/1414741/palace-tickets?skin=showboxpresents&src=AEGLIVE_WSHBXSEA030115VEN001"
+  },
+  {
+   "venue": "Chop Suey",
+   "title": "Fiesta De Putxs",
+   "date": "2026-10-15",
+   "time": "21:00:00",
+   "url": "https://www.ticketweb.com/event/fiesta-de-putxs-chop-suey-tickets/14336024",
+   "type": "concert"
+  },
+  {
+   "venue": "Trinity Nightclub",
+   "title": "1st Gen presents W.I.P. At Trinity- Seattle’s #1 Thursday Night Party",
+   "date": "2026-10-15",
+   "time": "22:00",
+   "url": "https://www.eventbrite.com/e/1st-gen-presents-wip-at-trinity-seattles-1-thursday-night-party-tickets-1993025922184",
+   "type": "concert"
+  }
+ ]
+}
