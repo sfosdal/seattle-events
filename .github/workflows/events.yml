@@ -26,6 +26,7 @@ jobs:
       - name: Fetch & aggregate events
         env:
           TICKETMASTER_API_KEY: ${{ secrets.TICKETMASTER_API_KEY }}
+          ALLOW_NO_ARCHIVE: ${{ vars.ALLOW_NO_ARCHIVE }}   # set to 1 for the very first build only (no live feed, no archive branch yet), then delete the variable
         run: node scripts/fetch-events.mjs
       - name: Keep the archive branch (every past event ever published)
         # The build read both copies of the archive (live feed + this branch)
