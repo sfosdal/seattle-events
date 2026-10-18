@@ -2520,6 +2520,476 @@
    "date": "2026-10-16",
    "time": "23:00:00",
    "url": "https://www.axs.com/events/1495183/know-good-tickets?skin=showboxpresents&src=AEGLIVE_WSHBXSEA030115VEN001"
+  },
+  {
+   "venue": "Convention Center",
+   "title": "2026 Seattle National College Fair",
+   "date": "2026-10-17",
+   "time": "",
+   "url": "https://seattlecc.com/upcoming-events/?eventid=37174",
+   "type": "expo",
+   "building": "Arch Building"
+  },
+  {
+   "venue": "Convention Center",
+   "title": "Wscai 2026 CA Day",
+   "date": "2026-10-17",
+   "time": "",
+   "url": "https://www.wscai.org/events/ca-day-2025",
+   "type": "expo",
+   "building": "Arch Building"
+  },
+  {
+   "venue": "Pacific Science Center",
+   "title": "Sensory-Friendly Hours",
+   "date": "2026-10-17",
+   "time": "",
+   "url": "https://pacificsciencecenter.org/events/sensory-hours/"
+  },
+  {
+   "venue": "Seattle Center",
+   "title": "DeafNation Expo",
+   "date": "2026-10-17",
+   "time": "",
+   "url": "https://www.seattlecenter.com/events/event-calendar/deafnation-expo",
+   "free": true,
+   "type": "expo"
+  },
+  {
+   "venue": "Owl 'n Thistle",
+   "title": "Irish Cover Band",
+   "date": "2026-10-17",
+   "time": "",
+   "url": "https://owlnthistle.com/live-music-schedule",
+   "type": "concert"
+  },
+  {
+   "venue": "Town Hall Seattle",
+   "title": "The Okee Dokee Brothers (Sold Out)",
+   "date": "2026-10-17",
+   "time": "11:00",
+   "url": "https://townhallseattle.org/event/the-okee-dokee-brothers-2/",
+   "type": "arts"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "You Can See Everything",
+   "date": "2026-10-17",
+   "time": "11:00:00",
+   "url": "https://www.siff.net/cinema/in-theaters/you-can-see-everything",
+   "movie": true,
+   "end": "13:54:00"
+  },
+  {
+   "venue": "Children's Theatre",
+   "title": "Leonardo! A Wonderful Show about a Terrible Monster",
+   "date": "2026-10-17",
+   "time": "11:00:00",
+   "url": "https://www.sct.org/onstage/productions/leonardo-2026/",
+   "type": "arts"
+  },
+  {
+   "venue": "Occidental Square",
+   "title": "Occidental Square Flea",
+   "date": "2026-10-17",
+   "time": "12:00",
+   "url": "https://downtownseattle.org/event/occidental-square-flea/",
+   "type": "community"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "Glass Art Society x REFRACT Film Festival",
+   "date": "2026-10-17",
+   "time": "12:00:00",
+   "url": "https://www.siff.net/cinema/in-theaters/glass-art-society-x-refract-film-festival",
+   "movie": true,
+   "end": "14:40:00"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "Ken Russell’s The Devils",
+   "date": "2026-10-17",
+   "time": "13:15:00",
+   "url": "https://www.siff.net/cinema/in-theaters/ken-russells-the-devils",
+   "movie": true,
+   "end": "15:09:00"
+  },
+  {
+   "venue": "Taproot Theatre",
+   "title": "Smoke On the Mountain",
+   "date": "2026-10-17",
+   "time": "13:30:00",
+   "url": "https://taproottheatre.org/",
+   "type": "arts"
+  },
+  {
+   "venue": "Around Pioneer Square",
+   "title": "Anarchist Chess Club (free!)",
+   "date": "2026-10-17",
+   "time": "14:00",
+   "url": "https://pioneersquare.org/our-events/anarchist-chess-club-free/",
+   "type": "community"
+  },
+  {
+   "venue": "Around Pioneer Square",
+   "title": "Seattle Battle Jacket Club (free!)",
+   "date": "2026-10-17",
+   "time": "14:00",
+   "url": "https://pioneersquare.org/our-events/seattle-battle-jacket-club-free/",
+   "type": "community"
+  },
+  {
+   "venue": "Taproot Theatre",
+   "title": "Conscience",
+   "date": "2026-10-17",
+   "time": "14:00:00",
+   "url": "https://taproottheatre.org/"
+  },
+  {
+   "venue": "Seattle Rep",
+   "title": "Eureka Day: ASL Interpreted & Audio Described",
+   "date": "2026-10-17",
+   "time": "14:00:00",
+   "url": "https://www.seattlerep.org/plays/202627-season/eureka-day",
+   "type": "arts"
+  },
+  {
+   "venue": "Children's Theatre",
+   "title": "I'll Be Your Superhero",
+   "date": "2026-10-17",
+   "time": "14:00:00",
+   "url": "https://www.sct.org/onstage/productions/ill-be-your-superhero-2026/",
+   "type": "arts"
+  },
+  {
+   "venue": "Seattle Rep",
+   "title": "Eureka Day",
+   "date": "2026-10-17",
+   "time": "14:00:00",
+   "url": "https://www.seattlerep.org/plays/202627-season/eureka-day",
+   "type": "arts",
+   "soldOut": true
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "NAZA",
+   "date": "2026-10-17",
+   "time": "14:45:00",
+   "url": "https://www.siff.net/cinema/in-theaters/naza",
+   "movie": true,
+   "end": "16:05:00"
+  },
+  {
+   "venue": "Children's Theatre",
+   "title": "Leonardo! A Wonderful Show about a Terrible Monster",
+   "date": "2026-10-17",
+   "time": "15:00:00",
+   "url": "https://www.sct.org/onstage/productions/leonardo-2026/",
+   "type": "arts"
+  },
+  {
+   "venue": "Children's Theatre",
+   "title": "NAMI's \"In Our Own Voice\" Workshops",
+   "date": "2026-10-17",
+   "time": "15:05:00",
+   "url": "https://www.sct.org/onstage/productions/nami-workshops-2026/",
+   "type": "community"
+  },
+  {
+   "venue": "Trinity Nightclub",
+   "title": "Party with a Purpose",
+   "date": "2026-10-17",
+   "time": "16:00",
+   "url": "https://www.eventbrite.com/e/party-with-a-purpose-tickets-1999653234654",
+   "type": "concert"
+  },
+  {
+   "venue": "Neptune Theatre",
+   "title": "Maria Bamford",
+   "date": "2026-10-17",
+   "time": "16:00:00",
+   "url": "https://www.ticketmaster.com/maria-bamford-seattle-washington-10-17-2026/event/0F006469D314BEEA",
+   "type": "arts"
+  },
+  {
+   "venue": "Woodland Park Zoo",
+   "title": "A Brush With Nature: Angeline Shrike",
+   "date": "2026-10-17",
+   "time": "16:30",
+   "url": "https://www.zoo.org/brushwithnature",
+   "type": "community"
+  },
+  {
+   "venue": "Chop Suey",
+   "title": "Trans Music Showcase",
+   "date": "2026-10-17",
+   "time": "16:30:00",
+   "url": "https://www.ticketweb.com/event/trans-music-showcase-chop-suey-tickets/14352144",
+   "type": "concert"
+  },
+  {
+   "venue": "Nectar Lounge",
+   "title": "Bangers Before Bed - Ages 21+",
+   "date": "2026-10-17",
+   "time": "17:00:00",
+   "url": "http://nectarlounge.com/"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "The History of Concrete",
+   "date": "2026-10-17",
+   "time": "17:00:00",
+   "url": "https://www.siff.net/cinema/in-theaters/the-history-of-concrete",
+   "movie": true,
+   "end": "18:41:00"
+  },
+  {
+   "venue": "Occidental Square",
+   "title": "March to the Match (before the CF Montréal game)",
+   "date": "2026-10-17",
+   "time": "18:00",
+   "url": "https://weareecs.com/march-to-the-match",
+   "type": "community",
+   "free": true
+  },
+  {
+   "venue": "The Crocodile",
+   "title": "*EARLY* Grindhaus w/ Bosco, Willow Pill, Tenderoni, Vander Von Odd",
+   "date": "2026-10-17",
+   "time": "18:00:00",
+   "url": "https://www.ticketweb.com/event/early-grindhaus-w-bosco-willow-the-crocodile-tickets/14655563",
+   "tickets": {
+    "box": null,
+    "resale": 0,
+    "checked": "2026-10-15T18:42:54.998Z",
+    "from": 34.82
+   }
+  },
+  {
+   "venue": "Neumos",
+   "title": "Gnash (21+)",
+   "date": "2026-10-17",
+   "time": "18:00:00",
+   "url": "http://www.neumos.com",
+   "type": "concert"
+  },
+  {
+   "venue": "The Vera Project",
+   "title": "Fashion Showcase and Punk Show",
+   "date": "2026-10-17",
+   "time": "18:00:00",
+   "url": "https://link.dice.fm/v67fa32e84aa",
+   "type": "concert",
+   "end": "22:00:00"
+  },
+  {
+   "venue": "Children's Theatre",
+   "title": "I'll Be Your Superhero",
+   "date": "2026-10-17",
+   "time": "18:00:00",
+   "url": "https://www.sct.org/onstage/productions/ill-be-your-superhero-2026/",
+   "type": "arts"
+  },
+  {
+   "venue": "accesso ShoWare Center",
+   "title": "Seattle Thunderbirds vs. Spokane Chiefs",
+   "date": "2026-10-17",
+   "time": "18:05:00",
+   "url": "https://www.accessoshowarecenter.com/events",
+   "type": "sports"
+  },
+  {
+   "venue": "Taproot Theatre",
+   "title": "Smoke On the Mountain",
+   "date": "2026-10-17",
+   "time": "19:00:00",
+   "url": "https://taproottheatre.org/",
+   "type": "arts"
+  },
+  {
+   "venue": "Emerald Queen Casino",
+   "title": "WFC 199: World Fighting Championships",
+   "date": "2026-10-17",
+   "time": "19:00:00",
+   "url": "https://www.ticketmaster.com/wfc-199-world-fighting-championships-tacoma-washington-10-17-2026/event/0F006503CC52DE7E",
+   "age21": true,
+   "type": "sports"
+  },
+  {
+   "venue": "Central Saloon",
+   "title": "The Selassie Ites • The Green Room",
+   "date": "2026-10-17",
+   "time": "19:30",
+   "url": "https://centralsaloon.com/events/ska-island-the-green-room-selassie-ites/",
+   "type": "concert"
+  },
+  {
+   "venue": "Seattle Jazz Fellowship",
+   "title": "George Colligan",
+   "date": "2026-10-17",
+   "time": "19:30",
+   "url": "https://seattlejazzfellowship.org/events/jerry-steinhilber-hgztd-929a2-j37rt-rfd6x-jaakk-b7akt-rtx72-9yyjr-7abz6-hs4mh-g4mk9-tsjr7-64hg5-7z83k-3z7y3-3yl2l-5z9gg-4gsmy-67dlj-g4h62-7ccbf-n9am3-49bkd-acxea",
+   "type": "concert"
+  },
+  {
+   "venue": "Jazz Alley",
+   "title": "Delvon Lamarr Organ Trio with Special Guest Karl Denson",
+   "date": "2026-10-17",
+   "time": "19:30",
+   "url": "https://www.jazzalley.com/www-home/artist.jsp?shownum=8824",
+   "type": "concert"
+  },
+  {
+   "venue": "Town Hall Seattle",
+   "title": "Becky Chambers with Caitlin Starling",
+   "date": "2026-10-17",
+   "time": "19:30",
+   "url": "https://townhallseattle.org/event/becky-chambers/",
+   "type": "arts"
+  },
+  {
+   "venue": "Town Hall Seattle",
+   "title": "Tim Disney with Jordan Weisman",
+   "date": "2026-10-17",
+   "time": "19:30",
+   "url": "https://townhallseattle.org/event/tim-disney-with-jordan-weisman/",
+   "type": "arts"
+  },
+  {
+   "venue": "Lumen Field",
+   "title": "Seattle Sounders FC vs. CF Montréal",
+   "date": "2026-10-17",
+   "time": "19:30:00",
+   "url": "https://www.ticketmaster.com/seattle-sounders-fc-vs-cf-montreal-seattle-washington-10-17-2026/event/0F006383C475846F",
+   "type": "sports"
+  },
+  {
+   "venue": "Taproot Theatre",
+   "title": "Conscience",
+   "date": "2026-10-17",
+   "time": "19:30:00",
+   "url": "https://taproottheatre.org/"
+  },
+  {
+   "venue": "On the Boards",
+   "title": "Holland Andrews and yuniya edi kwon",
+   "date": "2026-10-17",
+   "time": "19:30:00",
+   "url": "https://ontheboards.org/events/26-27/hdiftlan"
+  },
+  {
+   "venue": "Seattle Rep",
+   "title": "Eureka Day",
+   "date": "2026-10-17",
+   "time": "19:30:00",
+   "url": "https://www.seattlerep.org/plays/202627-season/eureka-day",
+   "type": "arts",
+   "soldOut": true
+  },
+  {
+   "venue": "McCaw Hall",
+   "title": "Salome",
+   "date": "2026-10-17",
+   "time": "19:30:00",
+   "url": "https://www.mccawhall.com/events/detail/salome",
+   "type": "arts"
+  },
+  {
+   "venue": "Baba Yaga",
+   "title": "Des Santos",
+   "date": "2026-10-17",
+   "time": "20:00",
+   "url": "https://ma.to/event/des-santos-2026-10-17"
+  },
+  {
+   "venue": "Paramount Theatre",
+   "title": "DJ Shadow Celebrates 30 Years of Endtroducing",
+   "date": "2026-10-17",
+   "time": "20:00:00",
+   "url": "https://www.ticketmaster.com/dj-shadow-celebrates-30-years-of-seattle-washington-10-17-2026/event/0F006497DDE129A1",
+   "type": "concert",
+   "tickets": {
+    "box": 652,
+    "resale": 97,
+    "checked": "2026-10-15T19:07:38.426Z",
+    "from": 54.5
+   }
+  },
+  {
+   "venue": "Neptune Theatre",
+   "title": "Maria Bamford",
+   "date": "2026-10-17",
+   "time": "20:00:00",
+   "url": "https://www.ticketmaster.com/maria-bamford-seattle-washington-10-17-2026/event/0F006381B2B26DE6",
+   "type": "arts"
+  },
+  {
+   "venue": "Tractor Tavern",
+   "title": "Satan's Pilgrims w/ The Zack Static Sect, Amy Beth and Thee Creeps",
+   "date": "2026-10-17",
+   "time": "20:00:00",
+   "url": "https://www.ticketweb.com/event/satans-pilgrims-w-the-zack-tractor-tickets/14279134",
+   "type": "concert"
+  },
+  {
+   "venue": "Climate Pledge Arena",
+   "title": "Maná: Vivir Sin Aire Tour",
+   "date": "2026-10-17",
+   "time": "20:30:00",
+   "url": "https://www.ticketmaster.com/mana-vivir-sin-aire-tour-seattle-washington-10-17-2026/event/0F006379C26F7724",
+   "type": "concert",
+   "tickets": {
+    "box": 0,
+    "resale": 0,
+    "checked": "2026-10-15T18:43:50.865Z",
+    "from": 73.6
+   },
+   "soldOut": true
+  },
+  {
+   "venue": "Showbox SoDo",
+   "title": "Tinlicker with Helsloot",
+   "date": "2026-10-17",
+   "time": "20:45:00",
+   "url": "https://www.axs.com/events/1414733/tinlicker-tickets?skin=showboxpresents&src=AEGLIVE_WSHBXSEA030115VEN001"
+  },
+  {
+   "venue": "Chop Suey",
+   "title": "Party Girl: Halloween Edition!",
+   "date": "2026-10-17",
+   "time": "21:00:00",
+   "url": "https://www.ticketweb.com/event/party-girl-halloween-edition-chop-suey-tickets/14316504",
+   "type": "concert"
+  },
+  {
+   "venue": "Clock-Out Lounge",
+   "title": "Clock-Out Lounge Presents: Nekromantix w/ Rezurex",
+   "date": "2026-10-17",
+   "time": "21:00:00",
+   "url": "https://www.ticketweb.com/event/clock-out-lounge-presents-nekromantix-clock-out-lounge-tickets/14277984",
+   "type": "concert"
+  },
+  {
+   "venue": "Showbox at the Market",
+   "title": "Ahee with Mport b2b Xotix, Oddly Eazy, Hotshott",
+   "date": "2026-10-17",
+   "time": "21:00:00",
+   "url": "https://www.axs.com/events/1562026/ahee-tickets?skin=showboxpresents&src=AEGLIVE_WSHBXSEA030115VEN001"
+  },
+  {
+   "venue": "Nectar Lounge",
+   "title": "Club Slayyy",
+   "date": "2026-10-17",
+   "time": "21:30:00",
+   "url": "http://nectarlounge.com/"
+  },
+  {
+   "venue": "Trinity Nightclub",
+   "title": "Reload Saturdays at Trinity • Entertaining Seattle's Dance Community",
+   "date": "2026-10-17",
+   "time": "22:00",
+   "url": "https://www.eventbrite.com/e/reload-saturdays-at-trinity-entertaining-seattles-dance-community-tickets-1992902219185",
+   "type": "concert"
   }
  ]
 }
