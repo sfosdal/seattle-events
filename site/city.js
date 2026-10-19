@@ -756,6 +756,22 @@
       item: /<div class="grid-item"/, title: /<h3><a href="([^"]+)">([^<]+)<\/a>/, when: /<strong>([^<]+)<\/strong>/ },
   ];
 
+  // The panel's Seattle column folds by neighbourhood (Steve, 2026-10-18:
+  // "it's getting too big"): one row per neighbourhood, in this order, the
+  // rooms under a chevron; a room in no list goes under HOODS_REST. Around
+  // the Sound and the festivals keep their own groups.
+  var HOODS = [
+    { label: 'Seattle Center', venues: ['Climate Pledge Arena', 'Seattle Center', 'McCaw Hall', 'Seattle Rep', 'Cornish Playhouse', 'SIFF Cinema Uptown', 'Pacific Science Center', 'MoPOP', 'Children\'s Theatre', 'The Vera Project', 'On the Boards', 'KEXP'] },
+    { label: 'Downtown & Belltown', venues: ['Paramount Theatre', 'Moore Theatre', 'Benaroya Hall', '5th Avenue Theatre', 'ACT Theatre', 'Showbox at the Market', 'The Crocodile', 'Triple Door', 'Jazz Alley', 'Rabbit Box', 'Town Hall Seattle', 'Convention Center', 'Waterfront Park'] },
+    { label: 'Pioneer Square', venues: ['Baba Yaga', 'Central Saloon', 'Seattle Jazz Fellowship', 'Trinity Nightclub', 'Nordo', 'Owl \'n Thistle', 'Occidental Square', 'Klondike Gold Rush NHP', 'Around Pioneer Square'] },
+    { label: 'SoDo & the Stadiums', venues: ['Lumen Field', 'T-Mobile Park', 'WAMU Theater', 'Showbox SoDo'] },
+    { label: 'Capitol Hill', venues: ['Neumos', 'Barboza', 'Chop Suey', 'El Corazon', 'Kerry Hall'] },
+    { label: 'University District', venues: ['Husky Stadium', 'Alaska Airlines Arena', 'Neptune Theatre', 'Meany Center'] },
+    { label: 'Ballard & North', venues: ['Tractor Tavern', 'Sunset Tavern', 'Ballard Homestead', 'Substation', 'Fremont Abbey', 'Nectar Lounge', 'Hidden Hall', 'Woodland Park Zoo', 'Taproot Theatre'] },
+    { label: 'South Seattle', venues: ['Clock-Out Lounge'] },
+  ];
+  var HOODS_REST = 'Elsewhere in Seattle';
+
   // The usual view: every room on but the campus museums, the cinema, the
   // Convention Center, the zoo, the park service and the two neighbourhood
   // catch-alls — the reader is looking for a show, not a lecture series.
@@ -844,6 +860,7 @@
     defaultOff: DEFAULT_OFF,
     prefsKnownFrom: PREFS_KNOWN_FROM,
     feeds: FEEDS,
+    hoods: HOODS, hoodsRest: HOODS_REST,
     types: TYPES,
     movieVenue: MOVIE_VENUE,
     groundsVenue: 'Seattle Center', // where the Seattle Center sweep's unnamed sub-spots (lawns, courtyards, stages) are filed; the Alliance feeds are pinned to Around Pioneer Square instead
