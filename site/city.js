@@ -566,7 +566,7 @@
       color: '#c4a9ef',
       url: 'https://theroyalroomseattle.com/',
       icon: 'https://www.google.com/s2/favicons?domain=theroyalroomseattle.com&sz=128',
-      feed: { kind: 'boldtype', url: 'https://www.strangertickets.com', city: 'Seattle', rooms: /\broyal room\b/i, drop: /season tickets?|gift card/i },
+      feed: { kind: 'boldtype', url: 'https://www.strangertickets.com', city: 'Seattle', rooms: /\broyal room\b/i, drop: /season (?:tickets?|pass(?:es)?)|gift card/i },
       alias: /\broyal room\b/i,
     },
     'El Corazon': { // the Eastlake rock room and its Funhouse next door (the Funhouse's two ids fold in)
