@@ -559,6 +559,16 @@
       icon: 'https://www.google.com/s2/favicons?domain=clockoutlounge.com&sz=128',
       tm: { id: 'rZ7HnEZ1734_P,Z7r9jZadEF', match: 'clock-out', fallbackUrl: 'https://clockoutlounge.com/', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
     },
+    'Royal Room': { // 5000 Rainier Ave S, Columbia City — jazz, soul and songwriter nights; its box office is Stranger Tickets, read from there (2026-10-19)
+      capacity: 200,
+      type: 'concert',
+      cssVar: '--v-royalroom',
+      color: '#c4a9ef',
+      url: 'https://theroyalroomseattle.com/',
+      icon: 'https://www.google.com/s2/favicons?domain=theroyalroomseattle.com&sz=128',
+      feed: { kind: 'boldtype', url: 'https://www.strangertickets.com', city: 'Seattle', rooms: /\broyal room\b/i, drop: /season tickets?|gift card/i },
+      alias: /\broyal room\b/i,
+    },
     'El Corazon': { // the Eastlake rock room and its Funhouse next door (the Funhouse's two ids fold in)
       capacity: 800,
       type: 'concert',
@@ -768,14 +778,14 @@
     { label: 'Capitol Hill', venues: ['Neumos', 'Barboza', 'Chop Suey', 'El Corazon', 'Kerry Hall'] },
     { label: 'University District', venues: ['Husky Stadium', 'Alaska Airlines Arena', 'Neptune Theatre', 'Meany Center'] },
     { label: 'Ballard & North', venues: ['Tractor Tavern', 'Sunset Tavern', 'Ballard Homestead', 'Substation', 'Fremont Abbey', 'Nectar Lounge', 'Hidden Hall', 'Woodland Park Zoo', 'Taproot Theatre'] },
-    { label: 'South Seattle', venues: ['Clock-Out Lounge'] },
+    { label: 'South Seattle', venues: ['Clock-Out Lounge', 'Royal Room'] },
   ];
   var HOODS_REST = 'Elsewhere in Seattle';
 
   // The usual view: every room on but the campus museums, the cinema, the
   // Convention Center, the zoo, the park service and the two neighbourhood
   // catch-alls — the reader is looking for a show, not a lecture series.
-  var DEFAULT_ON = ['Climate Pledge Arena', 'Seattle Center', 'McCaw Hall', 'Seattle Rep', 'Cornish Playhouse', 'The Vera Project', 'On the Boards', 'T-Mobile Park', 'Lumen Field', 'Husky Stadium', 'Paramount Theatre', 'Showbox at the Market', 'Showbox SoDo', 'The Crocodile', 'Baba Yaga', 'Central Saloon', 'Seattle Jazz Fellowship', 'Trinity Nightclub', 'Nordo', 'Occidental Square', 'Owl \'n Thistle', 'WAMU Theater', 'Waterfront Park', 'Neptune Theatre', 'Moore Theatre', 'Benaroya Hall', '5th Avenue Theatre', 'ACT Theatre', 'Taproot Theatre', 'Triple Door', 'Jazz Alley', 'Meany Center', 'Town Hall Seattle', 'Alaska Airlines Arena', 'Neumos', 'Barboza', 'Chop Suey', 'Clock-Out Lounge', 'El Corazon', 'Nectar Lounge', 'Tractor Tavern', 'Sunset Tavern', 'Substation', 'Fremont Abbey', 'Hidden Hall', 'Rabbit Box', 'Ballard Homestead', 'Tacoma Dome', 'White River Amphitheatre', 'accesso ShoWare Center', 'Chateau Ste. Michelle', 'Muckleshoot Casino', 'Emerald Queen Casino', 'Bumbershoot', 'Northwest Folklife', 'PrideFest'];
+  var DEFAULT_ON = ['Climate Pledge Arena', 'Seattle Center', 'McCaw Hall', 'Seattle Rep', 'Cornish Playhouse', 'The Vera Project', 'On the Boards', 'T-Mobile Park', 'Lumen Field', 'Husky Stadium', 'Paramount Theatre', 'Showbox at the Market', 'Showbox SoDo', 'The Crocodile', 'Baba Yaga', 'Central Saloon', 'Seattle Jazz Fellowship', 'Trinity Nightclub', 'Nordo', 'Occidental Square', 'Owl \'n Thistle', 'WAMU Theater', 'Waterfront Park', 'Neptune Theatre', 'Moore Theatre', 'Benaroya Hall', '5th Avenue Theatre', 'ACT Theatre', 'Taproot Theatre', 'Triple Door', 'Jazz Alley', 'Meany Center', 'Town Hall Seattle', 'Alaska Airlines Arena', 'Neumos', 'Barboza', 'Chop Suey', 'Clock-Out Lounge', 'Royal Room', 'El Corazon', 'Nectar Lounge', 'Tractor Tavern', 'Sunset Tavern', 'Substation', 'Fremont Abbey', 'Hidden Hall', 'Rabbit Box', 'Ballard Homestead', 'Tacoma Dome', 'White River Amphitheatre', 'accesso ShoWare Center', 'Chateau Ste. Michelle', 'Muckleshoot Casino', 'Emerald Queen Casino', 'Bumbershoot', 'Northwest Folklife', 'PrideFest'];
   var DEFAULT_OFF = ['SIFF Cinema Uptown', 'Pacific Science Center', 'MoPOP', 'Children\'s Theatre', 'KEXP', 'Convention Center', 'Kerry Hall', 'Klondike Gold Rush NHP', 'Woodland Park Zoo', 'Around Pioneer Square', 'Starfire Stadium', 'Capitol Hill Block Party'];
   var PREFS_KNOWN_FROM = 'SIFF Cinema Uptown'; // the first default-off venue: a fresh site, so every saved pref set already knows them all
 
@@ -800,8 +810,9 @@
   // order and a code is a bitmask over it, so the list is APPEND-ONLY —
   // adding an entry adds a bit and every existing code keeps meaning what
   // it meant; removing or reordering one changes every link out there.
-  // 87 slots from the first build (2026-10-15): 17 base-36 digits.
-  var CODE_LENGTH = 17;
+  // 87 slots from the first build (2026-10-15): 17 base-36 digits; 88 with
+  // the Royal Room (2026-10-19): 18.
+  var CODE_LENGTH = 18;
   var REGISTRY = [
     ['venue', 'Climate Pledge Arena'], ['venue', 'Seattle Center'], ['venue', 'McCaw Hall'],
     ['venue', 'Seattle Rep'], ['venue', 'MoPOP'], ['venue', 'Children\'s Theatre'],
@@ -831,7 +842,7 @@
     ['team', 'mariners'], ['team', 'kraken'], ['team', 'storm'],
     ['team', 'reign'], ['team', 'torrent'], ['team', 'seawolves'],
     ['team', 'huskies'], ['team', 'sounders'], ['cap', 'stadium'],
-    ['cap', 'arena'], ['cap', 'hall'], ['cap', 'room'],
+    ['cap', 'arena'], ['cap', 'hall'], ['cap', 'room'], ['venue', 'Royal Room'],
   ];
 
   // The words the page uses for the place
