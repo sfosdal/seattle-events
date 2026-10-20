@@ -24,6 +24,7 @@ import { slugify, BADGE_FEEDS, TEAMS, CITY } from './badges.mjs';
 import { ticketWebId } from './ticketweb.mjs';
 
 const JSON_OUT = new URL('../site/events.json', import.meta.url);
+const SOLDOUT_URL = 'https://raw.githubusercontent.com/sfosdal/lqa-events/main/scripts/data/soldout.json'; // lqa's sold-out checker (launchd, every six hours)
 const ICS_OUT = new URL('../site/events.ics', import.meta.url);
 // A full year each way: venues announce whole seasons ahead, and past events
 // are kept for a year (carried forward from the previously published feed —
@@ -559,7 +560,16 @@ for (let i = 0; i < 70; i++) {
 // hours by its launchd job): each on-sale event's box-office and resale
 // counts and lowest price, and soldOut when the box office has nothing left.
 try {
-  const so = JSON.parse(readFileSync(new URL('./data/soldout.json', import.meta.url), 'utf8'));
+  // the checker runs for lqa-events only, so the counts are lqa's file as its last run committed it —
+  // never a copy here, which froze on 2026-10-15 and kept calling games sold out (Kraken–Red Wings, 2026-10-20)
+  let so = null;
+  for (let tries = 1; !so; tries++) {
+    try {
+      const r = await fetch(SOLDOUT_URL, { cache: 'no-store', signal: AbortSignal.timeout(30000) });
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      so = await r.json();
+    } catch (err) { if (tries >= 3) throw err; await new Promise((r) => setTimeout(r, tries * 5000)); }
+  }
   let n = 0, s = 0;
   for (const e of merged) {
     const m = (e.url || '').match(/\/event\/([0-9A-F]{16})/i), tw = ticketWebId(e.url); // Ticketmaster's 16-hex id, or TW<id> for a TicketWeb page (the Crocodile)
