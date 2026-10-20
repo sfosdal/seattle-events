@@ -3221,6 +3221,143 @@
    "time": "22:00:00",
    "url": "https://www.ticketweb.com/event/flammable-chop-suey-tickets/14002494",
    "type": "concert"
+  },
+  {
+   "venue": "Owl 'n Thistle",
+   "title": "Aqualizer",
+   "date": "2026-10-19",
+   "time": "",
+   "url": "https://owlnthistle.com/live-music-schedule",
+   "type": "concert"
+  },
+  {
+   "venue": "Around Pioneer Square",
+   "title": "DayJoy Craft Club",
+   "date": "2026-10-19",
+   "time": "09:30",
+   "url": "https://pioneersquare.org/our-events/dayjoy-craft-club-2/",
+   "type": "community"
+  },
+  {
+   "venue": "KEXP",
+   "title": "Slift Live on KEXP in the Gathering Space",
+   "date": "2026-10-19",
+   "time": "13:00:00",
+   "url": "https://www.kexp.org/events/kexp-events/slift-live-on-kexp-in-the-gathering-space/",
+   "end": "13:30:00"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "NAZA",
+   "date": "2026-10-19",
+   "time": "15:50:00",
+   "url": "https://www.siff.net/cinema/in-theaters/naza",
+   "movie": true,
+   "end": "17:10:00"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "The History of Concrete",
+   "date": "2026-10-19",
+   "time": "16:15:00",
+   "url": "https://www.siff.net/cinema/in-theaters/the-history-of-concrete",
+   "movie": true,
+   "end": "17:56:00"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "Ken Russell’s The Devils",
+   "date": "2026-10-19",
+   "time": "16:30:00",
+   "url": "https://www.siff.net/cinema/in-theaters/ken-russells-the-devils",
+   "movie": true,
+   "end": "18:24:00"
+  },
+  {
+   "venue": "Town Hall Seattle",
+   "title": "danah boyd with Ron S. Jarmin",
+   "date": "2026-10-19",
+   "time": "18:00",
+   "url": "https://townhallseattle.org/event/danah-boyd/",
+   "type": "arts"
+  },
+  {
+   "venue": "Baba Yaga",
+   "title": "Disposable Parts Edition 5 Party",
+   "date": "2026-10-19",
+   "time": "19:00",
+   "url": "https://ma.to/event/disposable-parts-edition-5-2026-10-19"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "You Can See Everything",
+   "date": "2026-10-19",
+   "time": "19:15:00",
+   "url": "https://www.siff.net/cinema/in-theaters/you-can-see-everything",
+   "movie": true,
+   "end": "22:09:00"
+  },
+  {
+   "venue": "Seattle Jazz Fellowship",
+   "title": "Fellowship Jam Session",
+   "date": "2026-10-19",
+   "time": "19:30",
+   "url": "https://seattlejazzfellowship.org/events/fellowship-jam-session-wd2l6-yynsx-r7xsj-rne75-nfkxk-efs75",
+   "type": "concert"
+  },
+  {
+   "venue": "Town Hall Seattle",
+   "title": "Elizabeth Acevedo with Dujie Tahat",
+   "date": "2026-10-19",
+   "time": "19:30",
+   "url": "https://townhallseattle.org/event/elizabeth-acevedo/",
+   "type": "arts"
+  },
+  {
+   "venue": "Benaroya Hall",
+   "title": "Barbara Kingsolver",
+   "date": "2026-10-19",
+   "time": "19:30:00",
+   "url": "https://www.seattlesymphony.org/benaroyahall"
+  },
+  {
+   "venue": "Tractor Tavern",
+   "title": "Tractor Tavern & Sonic Boom Record Club",
+   "date": "2026-10-19",
+   "time": "19:30:00",
+   "url": "https://www.ticketweb.com/event/tractor-tavern-sonic-boom-tractor-tickets/14343124",
+   "type": "concert"
+  },
+  {
+   "venue": "Showbox at the Market",
+   "title": "SiM - POSTPONED with Zero 9:36",
+   "date": "2026-10-19",
+   "time": "19:30:00",
+   "url": "https://www.axs.com/events/1454994/sim-postponed-tickets?skin=showboxpresents&src=AEGLIVE_WSHBXSEA030115VEN001",
+   "status": "postponed",
+   "statusSince": "2026-10-16T06:50:11.613Z"
+  },
+  {
+   "venue": "Paramount Theatre",
+   "title": "Sara Bareilles: The Good Grief Tour",
+   "date": "2026-10-19",
+   "time": "19:45:00",
+   "url": "https://www.ticketmaster.com/sara-bareilles-the-good-grief-tour-seattle-washington-10-19-2026/event/0F0064C1F9B4F1E5",
+   "type": "concert",
+   "tickets": {
+    "box": 0,
+    "resale": 69,
+    "checked": "2026-10-15T19:07:41.728Z",
+    "from": 150
+   },
+   "soldOut": true
+  },
+  {
+   "venue": "Baba Yaga",
+   "title": "Music Karaoke",
+   "date": "2026-10-19",
+   "time": "20:00",
+   "url": "https://ma.to/event/music-karaoke-2026-10-19"
   }
  ]
 }
