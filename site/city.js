@@ -129,6 +129,7 @@
   //            'ticketweb' = a plain fetch of the TicketWeb pages
   var VENUES = {
     'Climate Pledge Arena': {
+      geo: [47.6219, -122.35399],
       capacity: 18100,
       type: 'concert',
       cssVar: '--v-cpa',
@@ -139,6 +140,7 @@
       soldOut: 'tm',
     },
     'Seattle Center': {
+      geo: [47.6215, -122.351],
       capacity: 10000,
       type: 'community',
       cssVar: '--v-seactr',
@@ -147,6 +149,7 @@
       icon: 'https://www.seattlecenter.com/Dev/Logos/logobug.png',
     },
     'McCaw Hall': {
+      geo: [47.62398, -122.35039],
       capacity: 2900,
       type: 'arts',
       cssVar: '--v-mccaw',
@@ -154,6 +157,7 @@
       url: 'https://www.mccawhall.com/events',
     },
     'Seattle Rep': {
+      geo: [47.62393, -122.3536],
       capacity: 850,
       type: 'arts',
       cssVar: '--v-rep',
@@ -162,6 +166,7 @@
       icon: 'https://www.google.com/s2/favicons?domain=www.seattlerep.org&sz=128',
     },
     MoPOP: {
+      geo: [47.62146, -122.34818],
       capacity: 800,
       type: 'community',
       cssVar: '--v-mopop',
@@ -169,6 +174,7 @@
       url: 'https://www.mopop.org/events',
     },
     'Children\'s Theatre': {
+      geo: [47.62046, -122.35226],
       capacity: 480,
       type: 'arts',
       cssVar: '--v-sct',
@@ -176,6 +182,7 @@
       url: 'https://www.sct.org/tickets-shows/calendar/',
     },
     'Cornish Playhouse': {
+      geo: [47.62403, -122.35242],
       capacity: 460,
       type: 'arts',
       cssVar: '--v-cornish',
@@ -184,6 +191,7 @@
       icon: 'https://www.google.com/s2/favicons?domain=www.cornish.edu&sz=128',
     },
     'SIFF Cinema Uptown': {
+      geo: [47.62348, -122.35711],
       capacity: 450,
       type: 'community',
       cssVar: '--v-siff',
@@ -192,6 +200,7 @@
       icon: 'https://www.siff.net/images/SIFF_favicon_03.png',
     },
     'Pacific Science Center': {
+      geo: [47.61941, -122.35078],
       capacity: 400,
       type: 'community',
       cssVar: '--v-pacsci',
@@ -199,6 +208,7 @@
       url: 'https://pacificsciencecenter.org/events/',
     },
     'The Vera Project': {
+      geo: [47.6231, -122.35388],
       capacity: 300,
       type: 'concert',
       cssVar: '--v-vera',
@@ -207,6 +217,7 @@
       icon: 'https://www.google.com/s2/favicons?domain=theveraproject.org&sz=128',
     },
     'On the Boards': {
+      geo: [47.62583, -122.35819],
       capacity: 300,
       type: 'arts',
       cssVar: '--v-otb',
@@ -215,6 +226,7 @@
       icon: 'https://www.google.com/s2/favicons?domain=ontheboards.org&sz=128',
     },
     KEXP: {
+      geo: [47.62296, -122.35515],
       capacity: 200,
       type: 'concert',
       cssVar: '--v-kexp',
@@ -222,6 +234,7 @@
       url: 'https://www.kexp.org/events/kexp-events/',
     },
     'T-Mobile Park': {
+      geo: [47.5914, -122.33251],
       capacity: 47900,
       type: 'concert',
       cssVar: '--v-tmobile',
@@ -232,6 +245,7 @@
       soldOut: 'tm',
     },
     'Lumen Field': {
+      geo: [47.59535, -122.33164],
       capacity: 68700,
       type: 'concert',
       cssVar: '--v-lumen',
@@ -242,6 +256,7 @@
       soldOut: 'tm',
     },
     'Husky Stadium': {
+      geo: [47.65037, -122.30198],
       capacity: 70000,
       type: 'concert',
       cssVar: '--v-husky',
@@ -250,6 +265,7 @@
       icon: 'https://www.google.com/s2/favicons?domain=gohuskies.com&sz=128',
     },
     'Convention Center': {
+      geo: [47.61139, -122.33255],
       capacity: 20000,
       type: 'expo',
       cssVar: '--v-scc',
@@ -257,10 +273,13 @@
       url: 'https://seattlecc.com/upcoming-events/',
     },
     'Starfire Stadium': {
+      url: 'https://www.starfiresports.com/',
+      geo: [47.47009, -122.24938],
       capacity: 4500,
       area: 'town',
     },
     'Paramount Theatre': {
+      geo: [47.61324, -122.33136],
       capacity: 2800,
       type: 'concert',
       cssVar: '--v-paramount',
@@ -271,6 +290,7 @@
       soldOut: 'tm',
     },
     'Showbox at the Market': {
+      geo: [47.60851, -122.33947],
       capacity: 1150,
       type: 'concert',
       cssVar: '--v-showbox',
@@ -279,6 +299,7 @@
       icon: 'https://www.google.com/s2/favicons?domain=www.showboxpresents.com&sz=128',
     },
     'Showbox SoDo': {
+      geo: [47.58805, -122.33393],
       capacity: 1800,
       type: 'concert',
       cssVar: '--v-sodo',
@@ -287,6 +308,7 @@
       icon: 'https://www.google.com/s2/favicons?domain=www.showboxpresents.com&sz=128',
     },
     'The Crocodile': {
+      geo: [47.61465, -122.34907],
       capacity: 750,
       type: 'concert',
       cssVar: '--v-croc',
@@ -298,6 +320,7 @@
     },
     // ---- Pioneer Square's rooms (pioneersquare.seattle.here.events, as they are there) ----
     'Baba Yaga': { // 124 S Washington St — the cocktail bar with a stage: shows on TicketWeb, karaoke and trivia on ma.to
+      geo: [47.601, -122.33315],
       capacity: 200,
       type: 'concert',
       cssVar: '--v-baba',
@@ -311,6 +334,7 @@
       alias: /baba yaga/i,
     },
     'Central Saloon': { // 207 1st Ave S, Seattle's oldest bar (1892) and a 300-cap club; its own WordPress calendar
+      geo: [47.6006, -122.3344],
       capacity: 300,
       type: 'concert',
       cssVar: '--v-central',
@@ -322,6 +346,7 @@
       alias: /central saloon/i,
     },
     'Seattle Jazz Fellowship': { // 109 S Washington St — the listening room, five nights a week; Squarespace
+      geo: [47.59993, -122.33364],
       capacity: 100,
       type: 'concert',
       cssVar: '--v-sjf',
@@ -332,6 +357,7 @@
       alias: /jazz fellowship/i,
     },
     'Trinity Nightclub': { // 111 Yesler Way — three rooms, the weekend parties on Eventbrite
+      geo: [47.6016, -122.33325],
       capacity: 1000,
       type: 'concert',
       cssVar: '--v-trinity',
@@ -342,6 +368,7 @@
       alias: /trinity nightclub|trinity seattle/i,
     },
     'Nordo': { // Café Nordo's Culinarium, 109 S Main St — dinner theatre; Squarespace calendar
+      geo: [47.59993, -122.33364],
       capacity: 100,
       type: 'arts',
       cssVar: '--v-nordo',
@@ -352,6 +379,7 @@
       alias: /caf[eé] nordo|nordo'?s? culinarium|culinarium/i,
     },
     'Occidental Square': { // the park — markets, the flea, the art walk; the Downtown Seattle Association programs it
+      geo: [47.60048, -122.33315],
       capacity: 2000,
       type: 'community',
       cssVar: '--v-occidental',
@@ -362,6 +390,7 @@
       alias: /occidental (square|park)/i,
     },
     "Owl 'n Thistle": { // 808 Post Ave — the Irish pub with music most nights; its site prints a weekly schedule, no dates, so the build writes the week out (fetch-events.mjs)
+      geo: [47.60334, -122.33567],
       capacity: 100,
       type: 'concert',
       cssVar: '--v-owl',
@@ -371,6 +400,7 @@
       alias: /owl ?'?n'? ?thistle/i,
     },
     'Klondike Gold Rush NHP': { // 319 2nd Ave S — the National Park Service's Seattle unit, in the Cadillac Hotel: ranger talks, Living Voices
+      geo: [47.59938, -122.33186],
       capacity: 100,
       type: 'community',
       cssVar: '--v-klondike',
@@ -381,6 +411,7 @@
       alias: /klondike|cadillac hotel/i,
     },
     'Around Pioneer Square': { // everything else the Alliance's neighbourhood calendar lists — galleries, museums, walks, pop-ups (groundsVenue)
+      geo: [47.60186, -122.33392],
       capacity: 500,
       type: 'community',
       cssVar: '--v-around',
@@ -389,6 +420,7 @@
       icon: 'https://www.google.com/s2/favicons?domain=pioneersquare.org&sz=128',
     },
     'WAMU Theater': { // inside Lumen Field's event centre, 7,000 standing
+      geo: [47.59315, -122.3329],
       capacity: 7000,
       type: 'concert',
       cssVar: '--v-wamu',
@@ -399,6 +431,7 @@
       alias: /wamu theat/i,
     },
     'Waterfront Park': { // Pier 62 and the new park along Alaskan Way, a ten-minute walk west — Friends of Waterfront Park's tours, films, dances and markets, from the cards on its events page
+      geo: [47.60711, -122.34142],
       capacity: 2000,
       type: 'community',
       cssVar: '--v-waterfront',
@@ -412,6 +445,7 @@
     },
     // ---- the rest of the city, and the sheds a drive away (area 'town') ----
     'Neptune Theatre': { // STG's University District house, under two Ticketmaster ids
+      geo: [47.66114, -122.31403],
       capacity: 800,
       type: 'concert',
       cssVar: '--v-neptune',
@@ -421,6 +455,7 @@
       tm: { id: 'KovZpZAFnltA,rZ7HnEZ17fdqg', match: 'neptune', fallbackUrl: 'https://www.stgpresents.org/stg-venues/neptune-theatre/', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
     },
     'Moore Theatre': { // STG's old Belltown house
+      geo: [47.61173, -122.34111],
       capacity: 1800,
       type: 'concert',
       cssVar: '--v-moore',
@@ -430,6 +465,7 @@
       tm: { id: 'KovZpZA1vFJA', match: 'moore', fallbackUrl: 'https://www.stgpresents.org/stg-venues/moore-theatre/', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
     },
     'Benaroya Hall': { // the Seattle Symphony's hall and its Taper Auditorium and recital hall, three Ticketmaster ids
+      geo: [47.60812, -122.33697],
       capacity: 2500,
       type: 'arts',
       cssVar: '--v-benaroya',
@@ -439,6 +475,7 @@
       tm: { id: 'Z6r9jZeFde,Z7r9jZadcG,KovZpZAaIEvA', match: 'benaroya', fallbackUrl: 'https://www.benaroyahall.org/', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
     },
     '5th Avenue Theatre': { // the musicals house
+      geo: [47.60917, -122.33398],
       capacity: 2130,
       type: 'arts',
       cssVar: '--v-fifth',
@@ -448,6 +485,7 @@
       tm: { id: 'KovZpa3Mze,ZAr9jZ6ehK', match: '5th avenue', fallbackUrl: 'https://www.5thavenue.org/shows/', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
     },
     'ACT Theatre': { // A Contemporary Theatre, listed on Ticketmaster as the Union Arts Center (its Eagles Auditorium building's new name)
+      geo: [47.61085, -122.33233],
       capacity: 400,
       type: 'arts',
       cssVar: '--v-act',
@@ -457,6 +495,7 @@
       tm: { id: 'ZAr9jZ1e-x', match: 'union arts', fallbackUrl: 'https://www.acttheatre.org/', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
     },
     'Taproot Theatre': { // Greenwood's playhouse
+      geo: [47.6908, -122.35628],
       capacity: 225,
       type: 'arts',
       cssVar: '--v-taproot',
@@ -466,6 +505,7 @@
       tm: { id: 'ZFr9jZe66d', match: 'taproot', fallbackUrl: 'https://taproottheatre.org/', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
     },
     'Triple Door': { // the supper club under Wild Ginger, two ids
+      geo: [47.60864, -122.33768],
       capacity: 300,
       type: 'concert',
       cssVar: '--v-tripledoor',
@@ -475,6 +515,7 @@
       tm: { id: 'ZFr9jZAFvA,KovZpZA1ekJA', match: 'triple door', fallbackUrl: 'https://www.thetripledoor.net/', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
     },
     'Jazz Alley': { // Dimitriou's Jazz Alley — its own calendar page (cards: a run of nights is one row per night; sets are 7:30, with a 9:30 late set on weekends)
+      geo: [47.61458, -122.33915],
       capacity: 450,
       type: 'concert',
       cssVar: '--v-jazzalley',
@@ -486,6 +527,7 @@
         when: /<em class="date">(?:[A-Za-z]{3}, )?([A-Za-z]{3} \d{1,2})( - )?(?:[A-Za-z]{3}, )?((?:[A-Za-z]{3} \d{1,2})?, \d{4})/ },
     },
     'Meany Center': { // UW's performing-arts hall — the season page's cards (the opening night of each run; no clock printed)
+      geo: [47.65566, -122.31066],
       capacity: 1200,
       type: 'arts',
       cssVar: '--v-meany',
@@ -497,6 +539,7 @@
         when: /<span class='month'>([^<]+)<\/span><span class='date'>([^<]+)<\/span>/ },
     },
     'Town Hall Seattle': { // talks, readings and concerts in the First Hill hall — its Events Calendar feed, the rows at its own rooms only (it also lists partner events across town)
+      geo: [47.60902, -122.32994],
       capacity: 850,
       type: 'arts',
       cssVar: '--v-townhall',
@@ -506,6 +549,7 @@
       feed: { kind: 'tribe', url: 'https://townhallseattle.org/wp-json/tribe/events/v1/events', rooms: /great hall|forum|wyncote|town hall/i },
     },
     'Woodland Park Zoo': { // ZooTunes in summer, the zoo's own event days the rest of the year — its Events Calendar feed
+      geo: [47.66914, -122.35096],
       capacity: 5000,
       type: 'community',
       cssVar: '--v-zoo',
@@ -515,6 +559,7 @@
       feed: { kind: 'tribe', url: 'https://www.zoo.org/wp-json/tribe/events/v1/events', drop: /member|volunteer|camp\b|class\b/i },
     },
     'Alaska Airlines Arena': { // Hec Edmundson Pavilion — Huskies basketball and volleyball, graduations
+      geo: [47.65218, -122.30212],
       capacity: 10000,
       type: 'sports',
       cssVar: '--v-heced',
@@ -524,6 +569,7 @@
       tm: { id: 'Z6r9jZFeae', match: 'alaska airlines arena', fallbackUrl: 'https://gohuskies.com/', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
     },
     Neumos: { // Capitol Hill's Pike Street room (box office on AXS; Ticketmaster carries the listings)
+      geo: [47.61383, -122.31963],
       capacity: 650,
       type: 'concert',
       cssVar: '--v-neumos',
@@ -533,6 +579,7 @@
       tm: { id: 'ZFr9jZAFvF', match: 'neumos', fallbackUrl: 'https://www.neumos.com/events', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
     },
     Barboza: { // the basement room under Neumos
+      geo: [47.61383, -122.31963],
       capacity: 200,
       type: 'concert',
       cssVar: '--v-barboza',
@@ -542,6 +589,7 @@
       tm: { id: 'Z7r9jZaetY', match: 'barboza', fallbackUrl: 'https://www.neumos.com/events', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
     },
     'Chop Suey': { // Capitol Hill's Madison Street club
+      geo: [47.61353, -122.31446],
       capacity: 500,
       type: 'concert',
       cssVar: '--v-chopsuey',
@@ -551,6 +599,7 @@
       tm: { id: 'rZ7HnEZa7ck', match: 'chop suey', fallbackUrl: 'https://chopsuey.com/calendar', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
     },
     'Clock-Out Lounge': { // Beacon Hill's bar and pizza stage, two ids
+      geo: [47.55905, -122.30374],
       capacity: 300,
       type: 'concert',
       cssVar: '--v-clockout',
@@ -560,6 +609,7 @@
       tm: { id: 'rZ7HnEZ1734_P,Z7r9jZadEF', match: 'clock-out', fallbackUrl: 'https://clockoutlounge.com/', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
     },
     'Royal Room': { // 5000 Rainier Ave S, Columbia City — jazz, soul and songwriter nights; its box office is Stranger Tickets, read from there (2026-10-19)
+      geo: [47.5569, -122.28427],
       capacity: 200,
       type: 'concert',
       cssVar: '--v-royalroom',
@@ -570,6 +620,7 @@
       alias: /\broyal room\b/i,
     },
     'El Corazon': { // the Eastlake rock room and its Funhouse next door (the Funhouse's two ids fold in)
+      geo: [47.61889, -122.32932],
       capacity: 800,
       type: 'concert',
       cssVar: '--v-elcorazon',
@@ -579,6 +630,7 @@
       tm: { id: 'ZFr9jZAa7a,Z7r9jZadJk,rZ7HnEZ1734qg', match: 'corazon', fallbackUrl: 'https://elcorazonseattle.com/calendar', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
     },
     'Nectar Lounge': { // Fremont's club, two ids
+      geo: [47.65239, -122.35385],
       capacity: 400,
       type: 'concert',
       cssVar: '--v-nectar',
@@ -588,6 +640,7 @@
       tm: { id: 'ZFr9jZ6e67,rZ7HnEZakFh', match: 'nectar', fallbackUrl: 'https://www.nectarlounge.com/events', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
     },
     'Tractor Tavern': { // Ballard Avenue's roots room (TicketWeb primaries through Ticketmaster)
+      geo: [47.66571, -122.3828],
       capacity: 400,
       type: 'concert',
       cssVar: '--v-tractor',
@@ -597,6 +650,7 @@
       tm: { id: 'rZ7HnEZa7PM', match: 'tractor', fallbackUrl: 'https://www.tractortavern.com/calendar', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
     },
     'Sunset Tavern': { // Ballard Avenue's small stage (Ticketmaster carries its listings; the bar sells on DICE)
+      geo: [47.66812, -122.38599],
       capacity: 250,
       type: 'concert',
       cssVar: '--v-sunset',
@@ -606,6 +660,7 @@
       tm: { id: 'rZ7HnEZa7IN', match: 'sunset tavern', fallbackUrl: 'https://sunsettavern.com/shows', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
     },
     Substation: { // the Ballard club on 15th
+      geo: [47.66136, -122.36544],
       capacity: 300,
       type: 'concert',
       cssVar: '--v-substation',
@@ -615,6 +670,7 @@
       tm: { id: 'rZ7HnEZ17fekA', match: 'substation', fallbackUrl: 'https://www.substationseattle.com/', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
     },
     'Fremont Abbey': { // the arts hall in the old church
+      geo: [47.65919, -122.34968],
       capacity: 300,
       type: 'concert',
       cssVar: '--v-abbey',
@@ -624,6 +680,7 @@
       tm: { id: 'rZ7HnEZ173bFA', match: 'fremont abbey', fallbackUrl: 'https://fremontabbey.org/events', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
     },
     'Hidden Hall': { // Fremont's High Dive, renamed in 2026
+      geo: [47.65162, -122.35421],
       capacity: 400,
       type: 'concert',
       cssVar: '--v-hiddenhall',
@@ -633,6 +690,7 @@
       tm: { id: 'rZ7HnEZ17q0Of', match: 'hidden hall', fallbackUrl: 'https://highdiveseattle.com/events', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
     },
     'Rabbit Box': { // the Pike Place Market theatre and comedy room
+      geo: [47.60886, -122.34057],
       capacity: 150,
       type: 'arts',
       cssVar: '--v-rabbitbox',
@@ -642,6 +700,7 @@
       tm: { id: 'rZ7HnEZ174kAI', match: 'rabbit box', fallbackUrl: 'https://www.rabbitboxseattle.com/', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
     },
     'Ballard Homestead': { // the Fremont Abbey's second room, a hall in old Ballard
+      geo: [47.67704, -122.38675],
       capacity: 150,
       type: 'concert',
       cssVar: '--v-homestead',
@@ -651,6 +710,7 @@
       tm: { id: 'rZ7HnEZ17fvaP', match: 'ballard homestead', fallbackUrl: 'https://ballardhomestead.org/', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
     },
     'Kerry Hall': { // Cornish's Capitol Hill hall: recitals, dance, the odd touring show
+      geo: [47.62532, -122.32307],
       capacity: 400,
       type: 'arts',
       cssVar: '--v-kerry',
@@ -660,6 +720,7 @@
       tm: { id: 'KovZ917AYPu', match: 'kerry hall', fallbackUrl: 'https://www.cornish.edu/events/', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
     },
     'Tacoma Dome': { // the arena tours that skip Climate Pledge, 35 miles south
+      geo: [47.23689, -122.42695],
       capacity: 23000,
       area: 'town',
       type: 'concert',
@@ -670,6 +731,7 @@
       tm: { id: 'KovZpa3zGe', match: 'tacoma dome', fallbackUrl: 'https://www.tacomadome.org/events', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
     },
     'White River Amphitheatre': { // Auburn's summer shed (May to September)
+      geo: [47.228, -122.084], // placed by hand
       capacity: 20000,
       area: 'town',
       type: 'concert',
@@ -680,6 +742,7 @@
       tm: { id: 'KovZpZAEkd1A', match: 'white river', fallbackUrl: 'https://www.whiteriveramphitheatre.com/', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
     },
     'accesso ShoWare Center': { // Kent — the Thunderbirds' rink and mid-size shows
+      geo: [47.38766, -122.24],
       capacity: 6500,
       area: 'town',
       type: 'sports',
@@ -690,6 +753,7 @@
       tm: { id: 'ZFr9jZ6aAe', match: 'showare', fallbackUrl: 'https://www.accessoshowarecenter.com/events', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
     },
     'Chateau Ste. Michelle': { // Woodinville's winery lawn, summer concerts only
+      geo: [47.72929, -122.14937],
       capacity: 4300,
       area: 'town',
       type: 'concert',
@@ -700,6 +764,7 @@
       tm: { id: 'KovZpZAFkkJA', match: 'ste. michelle', fallbackUrl: 'https://www.ste-michelle.com/visit-us/summer-concerts', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
     },
     'Muckleshoot Casino': { // Auburn — the casino's events center
+      geo: [47.29033, -122.19559],
       capacity: 2500,
       area: 'town',
       type: 'concert',
@@ -710,6 +775,7 @@
       tm: { id: 'KovZ917AJEj', match: 'muckleshoot', fallbackUrl: 'https://www.muckleshootcasino.com/entertainment', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
     },
     'Emerald Queen Casino': { // Tacoma — the casino's showroom
+      geo: [47.23787, -122.40825],
       capacity: 2000,
       area: 'town',
       type: 'concert',
@@ -721,6 +787,7 @@
     },
     // ---- the festivals ----
     Bumbershoot: {
+      geo: [47.6225, -122.3505], // placed by hand
       capacity: 25000,
       festival: true,
       cssVar: '--v-bumber',
@@ -729,6 +796,7 @@
       icon: 'https://www.google.com/s2/favicons?domain=bumbershoot.com&sz=128',
     },
     'Northwest Folklife': {
+      geo: [47.6208, -122.3498], // placed by hand
       capacity: 50000,
       festival: true,
       cssVar: '--v-folklife',
@@ -737,6 +805,7 @@
       icon: 'https://www.google.com/s2/favicons?domain=nwfolklife.org&sz=128',
     },
     PrideFest: {
+      geo: [47.62, -122.3522], // placed by hand
       capacity: 50000,
       festival: true,
       cssVar: '--v-pride',
@@ -745,6 +814,7 @@
       icon: 'https://www.google.com/s2/favicons?domain=www.seattlepridefest.org&sz=128',
     },
     'Capitol Hill Block Party': {
+      geo: [47.6142, -122.3185], // placed by hand
       capacity: 30000,
       festival: true,
       cssVar: '--v-chbp',
@@ -866,6 +936,48 @@
     ics: { name: 'Seattle Events', short: 'Seattle Events', teams: 'Seattle home teams — every season', prodid: '-//here.events//seattle-events//EN', uidDomain: 'fosdal.net',
       desc: 'Upcoming events across Seattle — Climate Pledge Arena\\, the stadiums\\, the theatres and the music rooms' },
     teams: TEAMS,
+    // the Map view (site/local-map.js, the Map stop): the ground scripts/build-local-map.mjs draws into site/local-map.json
+    // — the shoreline, the named lakes and the main roads inside bbox, read once from OpenStreetMap at build time (© OSM
+    // contributors, ODbL, credited in Sources) — with a pin on every room above that carries geo: [lat, lon] (Nominatim once,
+    // the festivals and White River by hand). Steve, 2026-10-24: Kona first ("local map view for event locations"), then lqa and Seattle.
+    map: {
+      kind: 'urban',
+      bbox: [47.2, -122.56, 47.76, -122.05], // south, west, north, east — Tacoma and White River at the foot, Woodinville at the top right
+      home: [47.548, -122.43, 47.7, -122.27], // the view at first: the city itself; the fit button shows the whole Sound
+      roads: ['motorway', 'trunk', 'primary'],
+      tolerance: 0.8,
+      labels: [
+        { name: 'Ballard', lat: 47.6685, lon: -122.3846, anchor: 'end' },
+        { name: 'Fremont', lat: 47.651, lon: -122.35, anchor: 'start' },
+        { name: 'Greenwood', lat: 47.6905, lon: -122.355, anchor: 'end' },
+        { name: 'University District', lat: 47.661, lon: -122.313, anchor: 'start' },
+        { name: 'Capitol Hill', lat: 47.623, lon: -122.318, anchor: 'start' },
+        { name: 'Queen Anne', lat: 47.637, lon: -122.357, anchor: 'end' },
+        { name: 'Downtown', lat: 47.608, lon: -122.336, anchor: 'end' },
+        { name: 'Pioneer Square', lat: 47.6015, lon: -122.333, anchor: 'end' },
+        { name: 'SoDo', lat: 47.588, lon: -122.33, anchor: 'end' },
+        { name: 'Beacon Hill', lat: 47.566, lon: -122.311, anchor: 'start' },
+        { name: 'Columbia City', lat: 47.559, lon: -122.287, anchor: 'start' },
+        { name: 'West Seattle', lat: 47.568, lon: -122.386, anchor: 'end' },
+        { name: 'Shoreline', lat: 47.756, lon: -122.341, anchor: 'end' },
+        { name: 'Kirkland', lat: 47.677, lon: -122.206, anchor: 'start' },
+        { name: 'Bellevue', lat: 47.61, lon: -122.201, anchor: 'start' },
+        { name: 'Redmond', lat: 47.674, lon: -122.121, anchor: 'start' },
+        { name: 'Woodinville', lat: 47.754, lon: -122.163, anchor: 'start' },
+        { name: 'Renton', lat: 47.483, lon: -122.217, anchor: 'start' },
+        { name: 'Tukwila', lat: 47.474, lon: -122.26, anchor: 'end' },
+        { name: 'Kent', lat: 47.381, lon: -122.235, anchor: 'start' },
+        { name: 'Federal Way', lat: 47.322, lon: -122.313, anchor: 'end' },
+        { name: 'Auburn', lat: 47.307, lon: -122.229, anchor: 'start' },
+        { name: 'Tacoma', lat: 47.253, lon: -122.444, anchor: 'end' },
+        { name: 'Puget Sound', lat: 47.52, lon: -122.47, kind: 'water', anchor: 'middle' },
+        { name: 'Elliott Bay', lat: 47.603, lon: -122.368, kind: 'water', anchor: 'middle' },
+        { name: 'Lake Washington', lat: 47.62, lon: -122.25, kind: 'water', anchor: 'middle' },
+        { name: 'Lake Union', lat: 47.639, lon: -122.335, kind: 'water', anchor: 'middle' },
+        { name: 'Lake Sammamish', lat: 47.6, lon: -122.09, kind: 'water', anchor: 'middle' },
+        { name: 'Commencement Bay', lat: 47.285, lon: -122.43, kind: 'water', anchor: 'middle' },
+      ],
+    },
     venues: VENUES,
     defaultOn: DEFAULT_ON,
     defaultOff: DEFAULT_OFF,
