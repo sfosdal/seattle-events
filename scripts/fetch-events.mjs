@@ -23,6 +23,7 @@ import { applySchedules } from './schedules.mjs';
 import { applySetTimes } from './settimes.mjs';
 import { slugify, BADGE_FEEDS, TEAMS, CITY } from './badges.mjs';
 import { ticketWebId } from './ticketweb.mjs';
+import { tmFetch } from './tm-fetch.mjs';
 
 const JSON_OUT = new URL('../site/events.json', import.meta.url);
 const SOLDOUT_URL = 'https://raw.githubusercontent.com/sfosdal/lqa-events/main/scripts/data/soldout.json'; // lqa's sold-out checker (launchd, every six hours)
@@ -70,7 +71,7 @@ async function ticketmasterVenue({ venueId, venueMatch, label, fallbackUrl, excl
   const all = [];
   for (let page = 0; page < 5; page++) {
     const params = new URLSearchParams({ apikey: key, venueId, sort: 'date,asc', size: '200', page: String(page) });
-    const res = await fetch(`https://app.ticketmaster.com/discovery/v2/events.json?${params}`);
+    const res = await tmFetch(`https://app.ticketmaster.com/discovery/v2/events.json?${params}`);
     if (!res.ok) { console.error(`Ticketmaster ${label} page ${page} HTTP ${res.status}`); break; }
     const data = await res.json();
     all.push(...(data?._embedded?.events || []));
