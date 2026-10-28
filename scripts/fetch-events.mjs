@@ -15,7 +15,7 @@
 import { writeFileSync, readFileSync } from 'node:fs';
 import { buildIcs } from './ics.mjs';
 import { parseScListing, scListingDates, parseScVenueCats, mapDiceEvents, parseSiffScreenings, mapOtbEvents, mapRepEvents, tmType, scType, mapSccEvents, mccawUrlMap, parseSctCalendar, parseMopopCalendar, parsePacsciEvents, parseKexpEvents, parseBlockPartyArtists, parseBumbershootSchedule, mapPrideFestEvents, parseFolklifeDates, parseShowboxEvents } from './sources.mjs';
-import { mergeWithArchive, unionArchives, eventKey } from './merge.mjs';
+import { mergeWithArchive, unionArchives, eventKey, dropClashes } from './merge.mjs';
 import { fixLinks } from './links.mjs';
 import { feedSources, emptyListGate } from './feeds.mjs';
 import { calmTitle, isNotice } from './titles.mjs';
@@ -410,11 +410,22 @@ async function showbox() {
 // carries those listings under the same venue id; Madame Lou's and
 // Here-After, the smaller rooms in its building, list under it too). The
 // two Showboxes sell through AXS, so they come from their own listing.
-const ticketmasterRooms = Object.entries(CITY.venues).filter(([, v]) => v.tm)
-  .map(([label, v]) => () => ticketmasterVenue({ venueId: v.tm.id, venueMatch: v.tm.match, label, fallbackUrl: v.tm.fallbackUrl, exclude: v.tm.exclude }));
+// Every venue is read from Ticketmaster AND its own events site (Steve, 2026-10-26). One of the
+// two leads — the box office with the richer rows — and the other is SECONDARY (city.js
+// `tm.secondary` / `feed.secondary`): read after everything else and kept only where nothing
+// already sits at that venue on that date with the same clock or title (merge.mjs dropClashes).
+const tmVenue = ([label, v]) => () => ticketmasterVenue({ venueId: v.tm.id, venueMatch: v.tm.match, label, fallbackUrl: v.tm.fallbackUrl, exclude: v.tm.exclude });
+const ticketmasterRooms = Object.entries(CITY.venues).filter(([, v]) => v.tm && !v.tm.secondary).map(tmVenue);
+const ticketmasterSecond = Object.entries(CITY.venues).filter(([, v]) => v.tm && v.tm.secondary).map(tmVenue);
+const splitVenues = (keep) => Object.fromEntries(Object.entries(CITY.venues).filter(([, v]) => keep(v)));
+const feedsFirst = feedSources({ ...CITY, venues: splitVenues((v) => !v.feed?.secondary) }, BROWSER_UA); // venues whose own calendar leads (city.js `feed`) + the city-wide `feeds`
+const feedsSecond = feedSources({ ...CITY, venues: splitVenues((v) => v.feed?.secondary), feeds: [] }, BROWSER_UA); // venues whose own calendar fills in behind Ticketmaster
+// ...and the secondary listings: a venue's Ticketmaster read behind its own calendar, or its own
+// calendar behind Ticketmaster — city.js says which (tm.secondary / feed.secondary).
+const secondary = [...ticketmasterSecond, ...feedsSecond];
 const sources = [
   ...ticketmasterRooms,
-  ...feedSources(CITY, BROWSER_UA), // rooms with their own calendar (city.js `feed`) — none here yet; the sisters use it
+  ...feedsFirst, // venues whose own calendar leads (city.js `feed`)
   showbox,
   // McCaw Hall comes from the Seattle Center sweep below (every performance,
   // with times); its RSS only supplies the venue's own detail-page links.
@@ -456,6 +467,18 @@ const normalizeVenue = (e) => {
 };
 all = all.map(normalizeVenue);
 
+// ...and last the secondary listings, each row kept only where the venue has nothing on that
+// date at that clock or under that title already
+for (const src of secondary) {
+  try {
+    const rows = (await src()).map(normalizeVenue).map((r) => ({ ...r, type: r.type || CITY.venues[r.venue]?.type || r.type })); // a typeless Ticketmaster row takes its venue's type
+    const kept = dropClashes(rows, all); // nothing already at that venue on that date with the same clock or title (merge.mjs)
+    if (rows.length) console.log(`  secondary ${rows[0].venue}: ${kept.length} of ${rows.length} rows new`);
+    all = all.concat(kept);
+  }
+  catch (err) { console.error('Source failed:', err.message); }
+}
+
 // window, de-dupe, sort
 const today = new Date().toISOString().slice(0, 10);
 const horizon = new Date(Date.now() + WINDOW_DAYS * 86400e3).toISOString().slice(0, 10);
@@ -468,7 +491,7 @@ const fresh = all
   .filter((e) => { const k = eventKey(e); if (seen.has(k)) return false; seen.add(k); return true; }); // venue|title|date|clock (merge.mjs): a second showing on one day is kept
 // the empty-list gate (feeds.mjs): nothing upcoming in this build's own pull means every source
 // is down — say so and stop rather than publish an empty calendar
-if (!emptyListGate(fresh, today, sources.length)) process.exit(1);
+if (!emptyListGate(fresh, today, sources.length + secondary.length)) process.exit(1);
 
 // carry past events forward. Two copies of the archive: the live feed and
 // the `archive` branch's file (every past event ever published; the workflow
