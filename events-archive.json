@@ -5340,6 +5340,212 @@
    "time": "20:30:00",
    "url": "https://www.ticketmaster.com/the-chicks-taking-the-long-way-seattle-washington-10-26-2026/event/0F0064B3EA4A10AB",
    "type": "concert"
+  },
+  {
+   "venue": "Owl 'n Thistle",
+   "title": "Jazz Jam — Seattle's longest-running jazz night",
+   "date": "2026-10-27",
+   "time": "",
+   "url": "https://owlnthistle.com/live-music-schedule",
+   "type": "concert"
+  },
+  {
+   "venue": "Woodland Park Zoo",
+   "title": "Animal Ofrenda",
+   "date": "2026-10-27",
+   "time": "09:30",
+   "url": "https://zoo.org/ofrenda/",
+   "type": "community"
+  },
+  {
+   "venue": "KEXP",
+   "title": "Modest Mouse Live on KEXP (Open To The Public)",
+   "date": "2026-10-27",
+   "time": "12:00:00",
+   "url": "https://www.kexp.org/events/kexp-events/modest-mouse-live-on-kexp-kexp_519064/",
+   "end": "12:30:00"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "You Can See Everything",
+   "date": "2026-10-27",
+   "time": "15:45:00",
+   "url": "https://www.siff.net/cinema/in-theaters/you-can-see-everything",
+   "movie": true,
+   "end": "18:39:00"
+  },
+  {
+   "venue": "Around Pioneer Square",
+   "title": "Fall Community Networking Event",
+   "date": "2026-10-27",
+   "time": "16:00",
+   "url": "https://pioneersquare.org/our-events/fall-community-networking-event/",
+   "type": "community"
+  },
+  {
+   "venue": "The Vera Project",
+   "title": "Screen Printing Open Session",
+   "date": "2026-10-27",
+   "time": "16:00:00",
+   "url": "https://link.dice.fm/x83ce7784c5a",
+   "type": "community",
+   "end": "20:00:00",
+   "soldOut": true
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "Wicker",
+   "date": "2026-10-27",
+   "time": "16:00:00",
+   "url": "https://www.siff.net/cinema/in-theaters/wicker",
+   "movie": true,
+   "end": "17:45:00"
+  },
+  {
+   "venue": "Clock-Out Lounge",
+   "title": "Raised By TV Events Presents: all ages Twilight Films Trivia Night",
+   "date": "2026-10-27",
+   "time": "18:30:00",
+   "url": "https://www.ticketweb.com/event/raised-by-tv-events-presents-clock-out-lounge-tickets/15033023"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "Seattle 48 Hour Horror Film Project",
+   "date": "2026-10-27",
+   "time": "18:45:00",
+   "url": "https://www.siff.net/cinema/in-theaters/seattle-48-hour-horror-film-project-2026",
+   "movie": true,
+   "end": "20:25:00"
+  },
+  {
+   "venue": "The Crocodile",
+   "title": "Pouya w/ Ramirez",
+   "date": "2026-10-27",
+   "time": "19:00:00",
+   "url": "https://calendar.thecrocodile.com/shows/pouya-the-forever-glades-tour-27-oct#tickets",
+   "type": "concert"
+  },
+  {
+   "venue": "ACT Theatre",
+   "title": "Table 17",
+   "date": "2026-10-27",
+   "time": "19:00:00",
+   "url": "https://acttheatre.org/"
+  },
+  {
+   "venue": "Neumos",
+   "title": "Protomartyr (21 and Over)",
+   "date": "2026-10-27",
+   "time": "19:00:00",
+   "url": "http://www.neumos.com",
+   "type": "concert"
+  },
+  {
+   "venue": "Chop Suey",
+   "title": "Scrambler Jam!",
+   "date": "2026-10-27",
+   "time": "19:00:00",
+   "url": "https://www.ticketweb.com/event/scrambler-jam-chop-suey-tickets/14087404",
+   "type": "concert"
+  },
+  {
+   "venue": "Showbox SoDo",
+   "title": "Basement with High Vis, Big Boy and Lowertown",
+   "date": "2026-10-27",
+   "time": "19:00:00",
+   "url": "https://www.axs.com/events/1435443/basement-tickets?skin=showboxpresents&src=AEGLIVE_WSHBXSEA030115VEN001"
+  },
+  {
+   "venue": "Seattle Jazz Fellowship",
+   "title": "Julian Speaks",
+   "date": "2026-10-27",
+   "time": "19:30",
+   "url": "https://seattlejazzfellowship.org/events/julian-speaks-1",
+   "type": "concert"
+  },
+  {
+   "venue": "Jazz Alley",
+   "title": "The Lao Tizer Quintet featuring American Idol Finalist Elliott Yamin, with Special Guest Jeff Kashiwa",
+   "date": "2026-10-27",
+   "time": "19:30",
+   "url": "https://www.jazzalley.com/www-home/artist.jsp?shownum=8822",
+   "type": "concert"
+  },
+  {
+   "venue": "Royal Room",
+   "title": "Critical Mass Big Band",
+   "date": "2026-10-27",
+   "time": "19:30",
+   "url": "https://www.strangertickets.com/events/184272326/critical-mass-big-band",
+   "type": "concert"
+  },
+  {
+   "venue": "Climate Pledge Arena",
+   "title": "Kacey Musgraves - Middle of Nowhere Tour ",
+   "date": "2026-10-27",
+   "time": "19:30:00",
+   "url": "https://www.ticketmaster.com/kacey-musgraves-middle-of-nowhere-tour-seattle-washington-10-27-2026/event/0F00649CAFFEADD8",
+   "type": "concert",
+   "tickets": {
+    "box": 3630,
+    "resale": 0,
+    "checked": "2026-10-22T00:36:33.327Z",
+    "from": 40.5
+   }
+  },
+  {
+   "venue": "El Corazon",
+   "title": "Febuary",
+   "date": "2026-10-27",
+   "time": "19:30:00",
+   "url": "https://www.elcorazonseattle.com/",
+   "type": "concert"
+  },
+  {
+   "venue": "Seattle Center",
+   "title": "Kacey Musgraves: Middle of Nowhere Tour",
+   "date": "2026-10-27",
+   "time": "19:30:00",
+   "url": "https://www.seattlecenter.com/events/event-calendar/kacey-musgraves-middle-of-nowhere-tour",
+   "type": "concert"
+  },
+  {
+   "venue": "Baba Yaga",
+   "title": "She's Green: Swallowtail Tour",
+   "date": "2026-10-27",
+   "time": "20:00",
+   "url": "https://ma.to/event/shes-green-27-oct-2026"
+  },
+  {
+   "venue": "Baba Yaga",
+   "title": "Shes Green",
+   "date": "2026-10-27",
+   "time": "20:00:00",
+   "url": "https://babayagaseattle.com/"
+  },
+  {
+   "venue": "Neptune Theatre",
+   "title": "The Dillinger Escape Plan",
+   "date": "2026-10-27",
+   "time": "20:00:00",
+   "url": "https://www.ticketmaster.com/the-dillinger-escape-plan-seattle-washington-10-27-2026/event/0F0064CBCE3BBCA0",
+   "type": "concert"
+  },
+  {
+   "venue": "Tractor Tavern",
+   "title": "Tractor Presents: Abby Webster w/ Alex Dunn (trio), guests",
+   "date": "2026-10-27",
+   "time": "20:00:00",
+   "url": "https://www.ticketweb.com/event/tractor-presents-abby-webster-w-tractor-tickets/14309294",
+   "type": "concert"
+  },
+  {
+   "venue": "Tractor Tavern",
+   "title": "Olive Klug w/ Frail Talk",
+   "date": "2026-10-27",
+   "time": "20:00:00",
+   "url": "https://www.ticketweb.com/event/olive-klug-w-frail-talk-tractor-tickets/14993633",
+   "type": "concert"
   }
  ]
 }
