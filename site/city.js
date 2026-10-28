@@ -137,6 +137,7 @@
       url: 'https://climatepledgearena.com/events/',
       icon: 'https://www.google.com/s2/favicons?domain=climatepledgearena.com&sz=128',
       tm: { id: 'KovZ917Ahkk', match: 'climate pledge', fallbackUrl: 'https://climatepledgearena.com/events/', exclude: /climate pledge arena tours?|all access pass/i },
+      feed: { kind: 'tribe', secondary: true, url: 'https://climatepledgearena.com/wp-json/tribe/events/v1/events', drop: /^private event/i }, // the arena's own calendar (The Events Calendar), filling what Ticketmaster lacks (2026-10-26)
       soldOut: 'tm',
     },
     'Seattle Center': {
@@ -253,6 +254,10 @@
       url: 'https://www.lumenfield.com/',
       icon: 'https://www.google.com/s2/favicons?domain=www.lumenfield.com&sz=128',
       tm: { id: 'KovZpZAEknnA', match: 'lumen field', fallbackUrl: 'https://www.lumenfield.com/', exclude: /stadium tour|notification list/i },
+      // the stadium's own calendar (Webflow: concerts, home games and multi-day lists on one page; the WAMU Theater's cards share it, kept out by `venues`), secondary behind Ticketmaster (2026-10-26)
+      feed: { kind: 'cards', secondary: true, url: 'https://www.lumenfield.com/events-tickets/event-calendar', venues: /lumen field/i,
+        item: /<div role="listitem" class="db-(?:ft-events|home-sports|ft-multi-day)-item w-dyn-item">/, title: /<a href="([^"]+)" class="ft-card[\s\S]*?(?:<h3 class="card-title-h3">|<div class="main-title-vs">)([\s\S]*?)<div class="ft-info-sup/, // a concert card's h3, or a home game's "Sounders FC / vs / Houston Dynamo FC" blocks read as one line
+        when: /fs-cmssort-field="date, year" class="filter-item-hidden">(\d{4}-\d{2}-\d{2})<[\s\S]*?(?:ft-card-time">([^<]*)<|card-title-h3)/, place: /fs-cmsfilter-field="event-venue" class="filter-item-hidden">([^<]+)</ },
       soldOut: 'tm',
     },
     'Husky Stadium': {
@@ -287,6 +292,7 @@
       url: 'https://www.stgpresents.org/stg-venues/paramount-theatre/',
       icon: 'https://www.google.com/s2/favicons?domain=www.stgpresents.org&sz=128',
       tm: { id: 'KovZpZAFkvEA', match: 'paramount', fallbackUrl: 'https://www.stgpresents.org/stg-venues/paramount-theatre/', exclude: /theatre tours?/i },
+      feed: { kind: 'mec', secondary: true, url: 'https://www.stgpresents.org/events/', venues: /^the paramount theatre$/i, drop: /paramount tour|theatre tours?/i }, // STG's own listing (every venue it presents in; the Paramount's cards kept), secondary behind Ticketmaster (2026-10-26)
       soldOut: 'tm',
     },
     'Showbox at the Market': {
@@ -316,6 +322,10 @@
       url: 'https://calendar.thecrocodile.com/',
       icon: 'https://www.google.com/s2/favicons?domain=www.thecrocodile.com&sz=128',
       tm: { id: 'KovZpZA1vFtA,rZ7HnEZae-Y,ZFr9jZ7kkv', match: 'crocodile', fallbackUrl: 'https://calendar.thecrocodile.com/' },
+      // the club's own calendar (Webflow: two cards a show — the TicketWeb link, then a hidden one with the clock and the show page, read here; its promotions at other clubs are kept out by `venues`), secondary behind Ticketmaster (2026-10-26)
+      feed: { kind: 'cards', secondary: true, url: 'https://calendar.thecrocodile.com/', venues: /crocodile/i,
+        item: /<div role="listitem" class="uui-layout88_item w-dyn-item">/, title: /<a href="(\/shows\/[^"]+)"[^>]*>[\s\S]*?<h3 class="uui-heading-xxsmall-2">([^<]+)</,
+        when: /cal-start-date">([A-Z][a-z]{2} \d{1,2}, \d{4}[^<]*)</, place: /venue-blcok uui-event_time-wrapper"><div class="text-block-71 cal-start-date">([^<]+)</ },
       soldOut: 'ticketweb',
     },
     // ---- Pioneer Square's rooms (pioneersquare.seattle.here.events, as they are there) ----
@@ -428,6 +438,9 @@
       url: 'https://www.wamutheater.com/',
       icon: 'https://www.google.com/s2/favicons?domain=www.wamutheater.com&sz=128',
       tm: { id: 'KovZpZAFFE7A', match: 'wamu', fallbackUrl: 'https://www.wamutheater.com/', exclude: /amplified access|parking/i },
+      // the theater's own calendar (Webflow, the Lumen Field template: a card's clock and a hidden ISO sort date), secondary behind Ticketmaster (2026-10-27)
+      feed: { kind: 'cards', secondary: true, url: 'https://www.wamutheater.com/event-calendar', item: /<div role="listitem" class="dbc-home-feat-item w-dyn-item">/,
+        title: /<a href="(\/events\/[^"]+)" class="feat-art-artist[\s\S]*?<h2 class="card-feature-headline">([^<]+)</, when: /feature-card-time">([^<]*)<[\s\S]*?class="filter-item-hidden">(\d{4}-\d{2}-\d{2})</ },
       alias: /wamu theat/i,
     },
     'Waterfront Park': { // Pier 62 and the new park along Alaskan Way, a ten-minute walk west — Friends of Waterfront Park's tours, films, dances and markets, from the cards on its events page
@@ -453,6 +466,7 @@
       url: 'https://www.stgpresents.org/stg-venues/neptune-theatre/',
       icon: 'https://www.google.com/s2/favicons?domain=www.stgpresents.org&sz=128',
       tm: { id: 'KovZpZAFnltA,rZ7HnEZ17fdqg', match: 'neptune', fallbackUrl: 'https://www.stgpresents.org/stg-venues/neptune-theatre/', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
+      feed: { kind: 'mec', secondary: true, url: 'https://www.stgpresents.org/events/', venues: /^the neptune theatre$/i, drop: /theatre tours?/i }, // STG's own listing, the Neptune's cards kept, secondary behind Ticketmaster (2026-10-27)
     },
     'Moore Theatre': { // STG's old Belltown house
       geo: [47.61173, -122.34111],
@@ -463,6 +477,7 @@
       url: 'https://www.stgpresents.org/stg-venues/moore-theatre/',
       icon: 'https://www.google.com/s2/favicons?domain=www.stgpresents.org&sz=128',
       tm: { id: 'KovZpZA1vFJA', match: 'moore', fallbackUrl: 'https://www.stgpresents.org/stg-venues/moore-theatre/', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
+      feed: { kind: 'mec', secondary: true, url: 'https://www.stgpresents.org/events/', venues: /^the moore theatre$/i, drop: /theatre tours?/i }, // STG's own listing, the Moore's cards kept, secondary behind Ticketmaster (2026-10-27)
     },
     'Benaroya Hall': { // the Seattle Symphony's hall and its Taper Auditorium and recital hall, three Ticketmaster ids
       geo: [47.60812, -122.33697],
@@ -512,7 +527,9 @@
       color: '#b6e985',
       url: 'https://www.thetripledoor.net/',
       icon: 'https://www.google.com/s2/favicons?domain=www.thetripledoor.net&sz=128',
-      tm: { id: 'ZFr9jZAFvA,KovZpZA1ekJA', match: 'triple door', fallbackUrl: 'https://www.thetripledoor.net/', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
+      tm: { id: 'ZFr9jZAFvA,KovZpZA1ekJA', match: 'triple door', fallbackUrl: 'https://www.thetripledoor.net/', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i, secondary: true }, // Ticketmaster, read behind the venue's own listing — every venue both ways (Steve, 2026-10-26)
+      // the club's own month calendar (Zoogle): every show's popup page carries schema.org MusicEvent markup with the stage as the location — read link by link; the grid is one month deep, so rows run to the end of the current month (2026-10-27)
+      feed: { kind: 'linked', url: 'https://www.thetripledoor.net/mainstage-calendar', match: /\/go\/events\/\d+$/, max: 60, at: /mainstage|mq stage|triple door/i, drop: /closed for a private event/i },
     },
     'Jazz Alley': { // Dimitriou's Jazz Alley — its own calendar page (cards: a run of nights is one row per night; sets are 7:30, with a 9:30 late set on weekends)
       geo: [47.61458, -122.33915],
@@ -567,6 +584,8 @@
       url: 'https://gohuskies.com/',
       icon: 'https://www.google.com/s2/favicons?domain=gohuskies.com&sz=128',
       tm: { id: 'Z6r9jZFeae', match: 'alaska airlines arena', fallbackUrl: 'https://gohuskies.com/', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
+      // the Huskies' Sidearm calendar (one season file, every sport, away games too): the arena's own dates — basketball, volleyball, gymnastics — behind Ticketmaster (2026-10-27)
+      feed: { kind: 'icsfile', secondary: true, url: 'https://gohuskies.com/calendar.ashx/calendar.ics', venues: /alaska airlines arena/i, rename: [[/^\[[A-Z]\]\s*/, ''], [/^Washington\b/, 'Huskies']] },
     },
     Neumos: { // Capitol Hill's Pike Street room (box office on AXS; Ticketmaster carries the listings)
       geo: [47.61383, -122.31963],
@@ -576,7 +595,10 @@
       color: '#85e9c4',
       url: 'https://www.neumos.com/events',
       icon: 'https://www.google.com/s2/favicons?domain=www.neumos.com&sz=128',
-      tm: { id: 'ZFr9jZAFvF', match: 'neumos', fallbackUrl: 'https://www.neumos.com/events', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
+      tm: { id: 'ZFr9jZAFvF', match: 'neumos', fallbackUrl: 'https://www.neumos.com/events', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i, secondary: true }, // Ticketmaster, read behind the venue's own listing — every venue both ways (Steve, 2026-10-26)
+      // the club's own listing (AXS-fed Carbonhouse cards: a yearless date, the doors clock), 60-odd shows to Ticketmaster's score — the listing leads (2026-10-27)
+      feed: { kind: 'cards', url: 'https://www.neumos.com/events/all', item: /<div class="eventItem entry/, title: /<h3 class="title[^"]*">\s*<a href="([^"]+)"[^>]*>([^<]+)</,
+        when: /<div class="date[^"]*" aria-label="([^"]+)"[\s\S]*?<div class="time">\s*(?:Doors:\s*)?([^<]*)</, place: /<div class="date ([a-z]+)"/, venues: /neumos/i },
     },
     Barboza: { // the basement room under Neumos
       geo: [47.61383, -122.31963],
@@ -586,7 +608,10 @@
       color: '#85e9d7',
       url: 'https://www.neumos.com/events',
       icon: 'https://www.google.com/s2/favicons?domain=www.neumos.com&sz=128',
-      tm: { id: 'Z7r9jZaetY', match: 'barboza', fallbackUrl: 'https://www.neumos.com/events', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
+      tm: { id: 'Z7r9jZaetY', match: 'barboza', fallbackUrl: 'https://www.neumos.com/events', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i, secondary: true }, // Ticketmaster, read behind the venue's own listing — every venue both ways (Steve, 2026-10-26)
+      // the basement's own listing (thebarboza.com, the Neumos template), 50-odd shows to Ticketmaster's three — the listing leads (2026-10-27)
+      feed: { kind: 'cards', url: 'https://www.thebarboza.com/events/all', item: /<div class="eventItem entry/, title: /<h3 class="title[^"]*">\s*<a href="([^"]+)"[^>]*>([^<]+)</,
+        when: /<div class="date[^"]*" aria-label="([^"]+)"[\s\S]*?<div class="time">\s*(?:Doors:\s*)?([^<]*)</, place: /<div class="date ([a-z]+)"/, venues: /barboza/i },
     },
     'Chop Suey': { // Capitol Hill's Madison Street club
       geo: [47.61353, -122.31446],
@@ -597,6 +622,8 @@
       url: 'https://chopsuey.com/calendar',
       icon: 'https://www.google.com/s2/favicons?domain=chopsuey.com&sz=128',
       tm: { id: 'rZ7HnEZa7ck', match: 'chop suey', fallbackUrl: 'https://chopsuey.com/calendar', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
+      // the club's own list page (the TicketWeb WordPress plugin: the date prints as "10.27", so the day-month-clock is read from the link's title attribute), secondary behind Ticketmaster (2026-10-27)
+      feed: { kind: 'cards', secondary: true, url: 'https://chopsuey.com/', item: /<div class="tw-section">/, title: /<div class="tw-name">\s*<a href="([^"]+)"[^>]*>([^<]+)</, when: /title="Event Name - [^"]*\| (\d{1,2} [A-Za-z]+ [^"]*)"/ },
     },
     'Clock-Out Lounge': { // Beacon Hill's bar and pizza stage, two ids
       geo: [47.55905, -122.30374],
@@ -607,6 +634,8 @@
       url: 'https://clockoutlounge.com/',
       icon: 'https://www.google.com/s2/favicons?domain=clockoutlounge.com&sz=128',
       tm: { id: 'rZ7HnEZ1734_P,Z7r9jZadEF', match: 'clock-out', fallbackUrl: 'https://clockoutlounge.com/', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
+      // the bar's own list page (the TicketWeb WordPress plugin: a full date and the doors clock), secondary behind Ticketmaster (2026-10-27)
+      feed: { kind: 'cards', secondary: true, url: 'https://clockoutlounge.com/', item: /<div class="tw-section">/, title: /<div class="tw-name">\s*<a href="([^"]+)"[^>]*>([^<]+)</, when: /tw-event-date">([^<]+)<(?:[\s\S]*?tw-event-door-time">([^<]+)<)?/ },
     },
     'Royal Room': { // 5000 Rainier Ave S, Columbia City — jazz, soul and songwriter nights; its box office is Stranger Tickets, read from there (2026-10-19)
       geo: [47.5569, -122.28427],
@@ -627,7 +656,10 @@
       color: '#85c3e9',
       url: 'https://elcorazonseattle.com/calendar',
       icon: 'https://www.google.com/s2/favicons?domain=elcorazonseattle.com&sz=128',
-      tm: { id: 'ZFr9jZAa7a,Z7r9jZadJk,rZ7HnEZ1734qg', match: 'corazon', fallbackUrl: 'https://elcorazonseattle.com/calendar', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
+      tm: { id: 'ZFr9jZAa7a,Z7r9jZadJk,rZ7HnEZ1734qg', match: 'corazon', fallbackUrl: 'https://elcorazonseattle.com/calendar', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i, secondary: true }, // Ticketmaster, read behind the venue's own listing — every venue both ways (Steve, 2026-10-26)
+      // the venue's own Webflow calendar (both rooms, El Corazón and the Funhouse, with doors and show clocks), 70 shows to Ticketmaster's 33 — the calendar leads (2026-10-27)
+      feed: { kind: 'cards', url: 'https://www.elcorazonseattle.com/calendar', item: /<div role="listitem" class="ec-col-item w-dyn-item">/, title: /<div class="title"><div>(?=[\s\S]*?<a href="(\/shows\/[^"]+)")([^<]+)</,
+        when: /<div class="start-date"><div>([^<]+)<\/div>[\s\S]*?show-time-cal"><div>([^<]*)</, place: /<div class="venue"><div>([^<]+)</, venues: /coraz[oó]n|funhouse/i },
     },
     'Nectar Lounge': { // Fremont's club, two ids
       geo: [47.65239, -122.35385],
@@ -648,6 +680,9 @@
       url: 'https://www.tractortavern.com/calendar',
       icon: 'https://www.google.com/s2/favicons?domain=www.tractortavern.com&sz=128',
       tm: { id: 'rZ7HnEZa7PM', match: 'tractor', fallbackUrl: 'https://www.tractortavern.com/calendar', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
+      // the tavern's own listing is an Opendate embed (its iframe page is server-rendered: full date, doors and show clocks; the first page of fifty), secondary behind Ticketmaster (2026-10-27)
+      feed: { kind: 'cards', secondary: true, url: 'https://app.opendate.io/c/tractor-tavern-13?layout=iframe', item: /<div class='card confirm-card'/, title: /<a[^>]*href="(https:\/\/app\.opendate\.io\/e\/[^"]+)"><strong>\s*([^<]+?)\s*<\/strong>/,
+        when: /public-listing-date[^>]*>\s*([A-Z][a-z]+ \d{1,2}, \d{4})\s*<\/p>(?:\s*<p[^>]*public-listing-date[^>]*>[^<]*?Show:\s*([^<]*?)\s*<\/p>)?/, place: /title='([^']*) • /, venues: /tractor/i },
     },
     'Sunset Tavern': { // Ballard Avenue's small stage (Ticketmaster carries its listings; the bar sells on DICE)
       geo: [47.66812, -122.38599],
@@ -667,7 +702,9 @@
       color: '#9285e9',
       url: 'https://www.substationseattle.com/',
       icon: 'https://www.google.com/s2/favicons?domain=www.substationseattle.com&sz=128',
-      tm: { id: 'rZ7HnEZ17fekA', match: 'substation', fallbackUrl: 'https://www.substationseattle.com/', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
+      tm: { id: 'rZ7HnEZ17fekA', match: 'substation', fallbackUrl: 'https://www.substationseattle.com/', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i, secondary: true }, // Ticketmaster, read behind the venue's own listing — every venue both ways (Steve, 2026-10-26)
+      // the venue's own listing (Astro, server-rendered from Eventbrite: full date, show clock, the Eventbrite link), 50-odd shows to Ticketmaster's one — the listing leads (2026-10-27)
+      feed: { kind: 'cards', url: 'https://substationseattle.com/', item: /<article class="event">/, title: /<h3>(?=[\s\S]*?class="button" href="([^"]+)")([^<]+)<\/h3>/, when: /<span>([A-Z][a-z]+ \d{1,2}, \d{4})<\/span><span>([^<]*)<\/span><\/time>/ },
     },
     'Fremont Abbey': { // the arts hall in the old church
       geo: [47.65919, -122.34968],
@@ -697,7 +734,9 @@
       color: '#cb85e9',
       url: 'https://www.rabbitboxseattle.com/',
       icon: 'https://www.google.com/s2/favicons?domain=www.rabbitboxseattle.com&sz=128',
-      tm: { id: 'rZ7HnEZ174kAI', match: 'rabbit box', fallbackUrl: 'https://www.rabbitboxseattle.com/', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
+      tm: { id: 'rZ7HnEZ174kAI', match: 'rabbit box', fallbackUrl: 'https://www.rabbitboxseattle.com/', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i, secondary: true }, // Ticketmaster, read behind the venue's own listing — every venue both ways (Steve, 2026-10-26)
+      // rabbitboxseattle.com no longer resolves (2026-10-27); the Triple Door books the room and its month calendar lists the shows "at The Rabbit Box" — the same popup pages, kept by `at`
+      feed: { kind: 'linked', url: 'https://www.thetripledoor.net/mainstage-calendar', match: /\/go\/events\/\d+$/, max: 60, at: /rabbit box/i, drop: /closed for a private event/i },
     },
     'Ballard Homestead': { // the Fremont Abbey's second room, a hall in old Ballard
       geo: [47.67704, -122.38675],
@@ -717,7 +756,8 @@
       color: '#e985e2',
       url: 'https://www.cornish.edu/events/',
       icon: 'https://www.google.com/s2/favicons?domain=www.cornish.edu&sz=128',
-      tm: { id: 'KovZ917AYPu', match: 'kerry hall', fallbackUrl: 'https://www.cornish.edu/events/', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
+      tm: { id: 'KovZ917AYPu', match: 'kerry hall', fallbackUrl: 'https://www.cornish.edu/events/', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i, secondary: true }, // Ticketmaster, read behind the venue's own listing — every venue both ways (Steve, 2026-10-26)
+      feed: { kind: 'mec', url: 'https://www.stgpresents.org/events/', venues: /^kerry hall$/i }, // STG programmes the hall and lists it on stgpresents.org (Cornish's own calendar is 2019 leftovers); Ticketmaster has nothing here, so STG's listing leads (2026-10-27)
     },
     'Tacoma Dome': { // the arena tours that skip Climate Pledge, 35 miles south
       geo: [47.23689, -122.42695],
@@ -729,6 +769,9 @@
       url: 'https://www.tacomadome.org/events',
       icon: 'https://www.google.com/s2/favicons?domain=www.tacomadome.org&sz=128',
       tm: { id: 'KovZpa3zGe', match: 'tacoma dome', fallbackUrl: 'https://www.tacomadome.org/events', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
+      // the Dome's own list (Carbonhouse cards: the date's aria-label, a multi-day run read as its first day, the start clock), secondary behind Ticketmaster (2026-10-27)
+      feed: { kind: 'cards', secondary: true, url: 'https://www.tacomadome.org/events/all', item: /<div class="eventItem entry/, title: /<h3 class="title[^"]*">\s*<a href="([^"]+)"[^>]*>([^<]+)</,
+        when: /<div class="date" aria-label="([A-Za-z]+ +\d{1,2})(?: to [A-Za-z]+ \d{1,2})? (\d{4})"(?:[\s\S]*?<span class="start">([^<]*)<)?/ },
     },
     'White River Amphitheatre': { // Auburn's summer shed (May to September)
       geo: [47.228, -122.084], // placed by hand
@@ -740,6 +783,7 @@
       url: 'https://www.whiteriveramphitheatre.com/',
       icon: 'https://www.google.com/s2/favicons?domain=www.whiteriveramphitheatre.com&sz=128',
       tm: { id: 'KovZpZAEkd1A', match: 'white river', fallbackUrl: 'https://www.whiteriveramphitheatre.com/', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
+      feed: { kind: 'jsonld', secondary: true, url: 'https://www.whiteriveramphitheatre.com/', at: /white river/i, drop: /season tickets?/i }, // Live Nation's venue page marks its shows up as schema.org MusicEvent, secondary behind Ticketmaster (2026-10-27)
     },
     'accesso ShoWare Center': { // Kent — the Thunderbirds' rink and mid-size shows
       geo: [47.38766, -122.24],
@@ -784,6 +828,8 @@
       url: 'https://www.emeraldqueen.com/',
       icon: 'https://www.google.com/s2/favicons?domain=www.emeraldqueen.com&sz=128',
       tm: { id: 'KovZpa3qIe', match: 'emerald queen', fallbackUrl: 'https://www.emeraldqueen.com/', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
+      // the casino's own Concerts & Events page (MotoCMS text widgets: a shouted title, "Saturday, November 7, 2026 • 8PM", a Learn More link), secondary behind Ticketmaster (2026-10-27)
+      feed: { kind: 'cards', secondary: true, url: 'https://www.emeraldqueen.com/tickets/', item: /moto-text_system_8"/, title: /^(?=[\s\S]*?href="(\/[a-z0-9-]+\/)"[^>]*moto-link")[^>]*>(?:<(?:font|span|strong|b)[^>]*>)*([^<]+)</, when: /moto-color_custom4">([^<]*\d{4}[^<]*)</ },
     },
     // ---- the festivals ----
     Bumbershoot: {
