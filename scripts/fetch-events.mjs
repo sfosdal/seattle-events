@@ -14,7 +14,7 @@
 
 import { writeFileSync, readFileSync } from 'node:fs';
 import { buildIcs } from './ics.mjs';
-import { parseScListing, scListingDates, parseScVenueCats, mapDiceEvents, parseSiffScreenings, mapOtbEvents, mapRepEvents, tmType, scType, mapSccEvents, mccawUrlMap, parseSctCalendar, parseMopopCalendar, parsePacsciEvents, parseKexpEvents, parseBlockPartyArtists, parseBumbershootSchedule, mapPrideFestEvents, parseFolklifeDates, parseShowboxEvents } from './sources.mjs';
+import { parseScListing, scListingDates, parseScVenueCats, mapDiceEvents, parseSiffScreenings, mapOtbEvents, mapRepEvents, tmType, scType, mapSccEvents, mccawUrlMap, parseSctCalendar, parseMopopCalendar, parsePacsciEvents, parseKexpEvents, parseBlockPartyArtists, parseBumbershootSchedule, mapPrideFestEvents, parseFolklifeDates, parseShowboxEvents, BABA_OBSCURA_URL, parseBabaObscuraSchedule, babaObscuraRows, festivalOwnsNights } from './sources.mjs';
 import { mergeWithArchive, unionArchives, eventKey, dropClashes } from './merge.mjs';
 import { fixLinks } from './links.mjs';
 import { feedSources, emptyListGate } from './feeds.mjs';
@@ -394,6 +394,19 @@ async function folklife() {
   return evs;
 }
 
+// Baba Obscura (Baba Yaga & Desert Daze, Pioneer Square + Pike Place, Nov 2026; Steve, 2026-10-29): the
+// festival's schedule page, a schema.org MusicEvent per set — parseBabaObscuraSchedule. The festival is
+// its own venue (a row a night with the grid) and every set also sits at its own venue; the billed
+// headliners are the artists the home page features.
+const BABA_STAGE_VENUE = (s) => (/^Baba Yaga/.test(s) ? 'Baba Yaga' : /^Axis/.test(s) ? 'Axis Pioneer Square' : CITY.venues[s] ? s : null);
+async function babaObscura() {
+  const home = await pageText('https://babaobscura.com/').catch((err) => { console.error('Baba Obscura home:', err.message); return ''; });
+  const headliners = [...new Set([...home.matchAll(/href="\/artists\/([a-z0-9-]+)"/g)].map((m) => m[1].replace(/-/g, ' ')))];
+  const evs = babaObscuraRows(parseBabaObscuraSchedule(await pageText(BABA_OBSCURA_URL)), { headliners, stageVenue: BABA_STAGE_VENUE });
+  console.log(`Baba Obscura: ${evs.filter((e) => !e.set).length} nights, ${evs.filter((e) => e.set).length} sets at their venues`);
+  return evs;
+}
+
 // Showbox at the Market + Showbox SoDo: AEG's whole Northwest listing on
 // one server-rendered page, the two Seattle rooms kept — parseShowboxEvents.
 async function showbox() {
@@ -438,7 +451,7 @@ const sources = [
   mopop,
   pacificScienceCenter,
   kexp,
-  capitolHillBlockParty, bumbershoot, prideFest, folklife,
+  capitolHillBlockParty, bumbershoot, prideFest, folklife, babaObscura,
 ];
 
 let all = [];
@@ -478,6 +491,9 @@ for (const src of secondary) {
   }
   catch (err) { console.error('Source failed:', err.message); }
 }
+
+// the festival owns its nights at the venues it plays: their placeholder rows give way, a set the venue lists itself stays the venue's
+all = festivalOwnsNights(all);
 
 // window, de-dupe, sort
 const today = new Date().toISOString().slice(0, 10);

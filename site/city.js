@@ -343,6 +343,15 @@
       feed: { kind: 'jsonld', url: 'https://ma.to/venue/babayagaseattle', drop: /taco tuesday/i },
       alias: /baba yaga/i,
     },
+    'Axis Pioneer Square': { // 308 1st Ave S — the club with two rooms (North 400, South 150), both Baba Obscura stages (Nov 2026); its own calendar not scouted yet
+      geo: [47.59935, -122.33425], // placed by hand, from the address
+      capacity: 550,
+      type: 'concert',
+      cssVar: '--v-axis',
+      color: '#86a6ea',
+      url: 'https://babaobscura.com/stages',
+      icon: 'https://www.google.com/s2/favicons?domain=babaobscura.com&sz=128',
+    },
     'Central Saloon': { // 207 1st Ave S, Seattle's oldest bar (1892) and a 300-cap club; its own WordPress calendar
       geo: [47.6006, -122.3344],
       capacity: 300,
@@ -859,6 +868,15 @@
       url: 'https://www.seattlepridefest.org/schedule',
       icon: 'https://www.google.com/s2/favicons?domain=www.seattlepridefest.org&sz=128',
     },
+    'Baba Obscura': { // Baba Yaga & Desert Daze's roving festival, Nov 5–8 2026: six stages at Baba Yaga, Axis, the Central and the Showbox at the Market (Steve, 2026-10-29)
+      geo: [47.6003, -122.3338], // placed by hand: Pioneer Square, between its stages
+      capacity: 2500, // the six stages together (the festival's own capacities)
+      festival: true,
+      cssVar: '--v-obscura',
+      color: '#c79bea',
+      url: 'https://babaobscura.com/schedule',
+      icon: 'https://www.google.com/s2/favicons?domain=babaobscura.com&sz=128',
+    },
     'Capitol Hill Block Party': {
       geo: [47.6142, -122.3185], // placed by hand
       capacity: 30000,
@@ -889,7 +907,7 @@
   var HOODS = [
     { label: 'Seattle Center', venues: ['Climate Pledge Arena', 'Seattle Center', 'McCaw Hall', 'Seattle Rep', 'Cornish Playhouse', 'SIFF Cinema Uptown', 'Pacific Science Center', 'MoPOP', 'Children\'s Theatre', 'The Vera Project', 'On the Boards', 'KEXP'] },
     { label: 'Downtown & Belltown', venues: ['Paramount Theatre', 'Moore Theatre', 'Benaroya Hall', '5th Avenue Theatre', 'ACT Theatre', 'Showbox at the Market', 'The Crocodile', 'Triple Door', 'Jazz Alley', 'Rabbit Box', 'Town Hall Seattle', 'Convention Center', 'Waterfront Park'] },
-    { label: 'Pioneer Square', venues: ['Baba Yaga', 'Central Saloon', 'Seattle Jazz Fellowship', 'Trinity Nightclub', 'Nordo', 'Owl \'n Thistle', 'Occidental Square', 'Klondike Gold Rush NHP', 'Around Pioneer Square'] },
+    { label: 'Pioneer Square', venues: ['Baba Yaga', 'Axis Pioneer Square', 'Central Saloon', 'Seattle Jazz Fellowship', 'Trinity Nightclub', 'Nordo', 'Owl \'n Thistle', 'Occidental Square', 'Klondike Gold Rush NHP', 'Around Pioneer Square'] },
     { label: 'SoDo & the Stadiums', venues: ['Lumen Field', 'T-Mobile Park', 'WAMU Theater', 'Showbox SoDo'] },
     { label: 'Capitol Hill', venues: ['Neumos', 'Barboza', 'Chop Suey', 'El Corazon', 'Kerry Hall'] },
     { label: 'University District', venues: ['Husky Stadium', 'Alaska Airlines Arena', 'Neptune Theatre', 'Meany Center'] },
@@ -901,7 +919,7 @@
   // The usual view: every room on but the campus museums, the cinema, the
   // Convention Center, the zoo, the park service and the two neighbourhood
   // catch-alls — the reader is looking for a show, not a lecture series.
-  var DEFAULT_ON = ['Climate Pledge Arena', 'Seattle Center', 'McCaw Hall', 'Seattle Rep', 'Cornish Playhouse', 'The Vera Project', 'On the Boards', 'T-Mobile Park', 'Lumen Field', 'Husky Stadium', 'Paramount Theatre', 'Showbox at the Market', 'Showbox SoDo', 'The Crocodile', 'Baba Yaga', 'Central Saloon', 'Seattle Jazz Fellowship', 'Trinity Nightclub', 'Nordo', 'Occidental Square', 'Owl \'n Thistle', 'WAMU Theater', 'Waterfront Park', 'Neptune Theatre', 'Moore Theatre', 'Benaroya Hall', '5th Avenue Theatre', 'ACT Theatre', 'Taproot Theatre', 'Triple Door', 'Jazz Alley', 'Meany Center', 'Town Hall Seattle', 'Alaska Airlines Arena', 'Neumos', 'Barboza', 'Chop Suey', 'Clock-Out Lounge', 'Royal Room', 'El Corazon', 'Nectar Lounge', 'Tractor Tavern', 'Sunset Tavern', 'Substation', 'Fremont Abbey', 'Hidden Hall', 'Rabbit Box', 'Ballard Homestead', 'Tacoma Dome', 'White River Amphitheatre', 'accesso ShoWare Center', 'Chateau Ste. Michelle', 'Muckleshoot Casino', 'Emerald Queen Casino', 'Bumbershoot', 'Northwest Folklife', 'PrideFest'];
+  var DEFAULT_ON = ['Climate Pledge Arena', 'Seattle Center', 'McCaw Hall', 'Seattle Rep', 'Cornish Playhouse', 'The Vera Project', 'On the Boards', 'T-Mobile Park', 'Lumen Field', 'Husky Stadium', 'Paramount Theatre', 'Showbox at the Market', 'Showbox SoDo', 'The Crocodile', 'Baba Yaga', 'Axis Pioneer Square', 'Central Saloon', 'Seattle Jazz Fellowship', 'Trinity Nightclub', 'Nordo', 'Occidental Square', 'Owl \'n Thistle', 'WAMU Theater', 'Waterfront Park', 'Neptune Theatre', 'Moore Theatre', 'Benaroya Hall', '5th Avenue Theatre', 'ACT Theatre', 'Taproot Theatre', 'Triple Door', 'Jazz Alley', 'Meany Center', 'Town Hall Seattle', 'Alaska Airlines Arena', 'Neumos', 'Barboza', 'Chop Suey', 'Clock-Out Lounge', 'Royal Room', 'El Corazon', 'Nectar Lounge', 'Tractor Tavern', 'Sunset Tavern', 'Substation', 'Fremont Abbey', 'Hidden Hall', 'Rabbit Box', 'Ballard Homestead', 'Tacoma Dome', 'White River Amphitheatre', 'accesso ShoWare Center', 'Chateau Ste. Michelle', 'Muckleshoot Casino', 'Emerald Queen Casino', 'Bumbershoot', 'Northwest Folklife', 'PrideFest', 'Baba Obscura'];
   var DEFAULT_OFF = ['SIFF Cinema Uptown', 'Pacific Science Center', 'MoPOP', 'Children\'s Theatre', 'KEXP', 'Convention Center', 'Kerry Hall', 'Klondike Gold Rush NHP', 'Woodland Park Zoo', 'Around Pioneer Square', 'Starfire Stadium', 'Capitol Hill Block Party'];
   var PREFS_KNOWN_FROM = 'SIFF Cinema Uptown'; // the first default-off venue: a fresh site, so every saved pref set already knows them all
 
@@ -959,6 +977,7 @@
     ['team', 'reign'], ['team', 'torrent'], ['team', 'seawolves'],
     ['team', 'huskies'], ['team', 'sounders'], ['cap', 'stadium'],
     ['cap', 'arena'], ['cap', 'hall'], ['cap', 'room'], ['venue', 'Royal Room'],
+    ['venue', 'Axis Pioneer Square'], ['venue', 'Baba Obscura'], // 2026-10-29: 90 slots, still 18 digits
   ];
 
   // The words the page uses for the place
