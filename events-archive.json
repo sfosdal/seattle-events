@@ -1907,6 +1907,38 @@
    }
   },
   {
+   "venue": "Rabbit Box",
+   "title": "The Ghost of Buena Vista Past, Shadow Theater & Songs by Michelle Lassaline at The Rabbit Box",
+   "date": "2026-09-27",
+   "time": "15:00",
+   "url": "https://thetripledoor.net/event/6646333/770137113/the-ghost-of-buena-vista-past-shadow-theater-songs-by-michelle-lassaline-at-the-rabbit-box",
+   "type": "arts"
+  },
+  {
+   "venue": "Triple Door",
+   "title": "The 18th Annual Sister City Female Jazz Vocalist Audition",
+   "date": "2026-09-27",
+   "time": "18:00",
+   "url": "https://thetripledoor.net/event/6663487/772067671/the-18th-annual-sister-city-female-jazz-vocalist-audition",
+   "type": "concert"
+  },
+  {
+   "venue": "Triple Door",
+   "title": "Kanekoa",
+   "date": "2026-09-29",
+   "time": "19:30",
+   "url": "https://thetripledoor.net/event/6556682/761272470/kanekoa",
+   "type": "concert"
+  },
+  {
+   "venue": "Rabbit Box",
+   "title": "Federico Aubele @ The Rabbit Box",
+   "date": "2026-09-29",
+   "time": "19:30",
+   "url": "https://thetripledoor.net/event/6627298/768073647/federico-aubele-the-rabbit-box",
+   "type": "arts"
+  },
+  {
    "venue": "Seattle Rep",
    "title": "Eureka Day",
    "date": "2026-09-29",
@@ -1925,6 +1957,14 @@
    "soldOut": true
   },
   {
+   "venue": "Rabbit Box",
+   "title": "Alicia Witt – Album Release Show - Between Heaven and Earth (and David Lynch) @ The Rabbit Box",
+   "date": "2026-10-01",
+   "time": "19:30",
+   "url": "https://thetripledoor.net/event/6627277/768073625/alicia-witt-album-release-show-between-heaven-and-earth-and-david-lynch-the-rabbit-box",
+   "type": "arts"
+  },
+  {
    "venue": "Seattle Rep",
    "title": "Eureka Day",
    "date": "2026-10-01",
@@ -1932,6 +1972,14 @@
    "url": "https://www.seattlerep.org/plays/202627-season/eureka-day",
    "type": "arts",
    "soldOut": true
+  },
+  {
+   "venue": "Triple Door",
+   "title": "The Rumba Kings",
+   "date": "2026-10-02",
+   "time": "19:30",
+   "url": "https://thetripledoor.net/event/6113344/754736228/the-rumba-kings",
+   "type": "concert"
   },
   {
    "venue": "Seattle Rep",
@@ -1952,6 +2000,14 @@
    "soldOut": true
   },
   {
+   "venue": "Triple Door",
+   "title": "The Rumba Kings",
+   "date": "2026-10-03",
+   "time": "18:00",
+   "url": "https://thetripledoor.net/event/5909072/754736231/the-rumba-kings",
+   "type": "concert"
+  },
+  {
    "venue": "Seattle Rep",
    "title": "Eureka Day",
    "date": "2026-10-03",
@@ -1959,6 +2015,14 @@
    "url": "https://www.seattlerep.org/plays/202627-season/eureka-day",
    "type": "arts",
    "soldOut": true
+  },
+  {
+   "venue": "Triple Door",
+   "title": "The Rumba Kings",
+   "date": "2026-10-03",
+   "time": "21:00",
+   "url": "https://thetripledoor.net/event/6113346/754736235/the-rumba-kings",
+   "type": "concert"
   },
   {
    "venue": "Seattle Rep",
@@ -1970,6 +2034,14 @@
    "soldOut": true
   },
   {
+   "venue": "Triple Door",
+   "title": "Carbon Leaf",
+   "date": "2026-10-04",
+   "time": "17:00",
+   "url": "https://thetripledoor.net/event/6095635/751938958/carbon-leaf",
+   "type": "concert"
+  },
+  {
    "venue": "Seattle Rep",
    "title": "Eureka Day",
    "date": "2026-10-04",
@@ -1979,11 +2051,35 @@
    "soldOut": true
   },
   {
+   "venue": "Triple Door",
+   "title": "Carbon Leaf",
+   "date": "2026-10-04",
+   "time": "20:00",
+   "url": "https://thetripledoor.net/event/6095637/751938961/carbon-leaf",
+   "type": "concert"
+  },
+  {
    "venue": "Pacific Science Center",
    "title": "Call for Vendors: The Gift Lab",
    "date": "2026-10-06",
    "time": "",
    "url": "https://pacificsciencecenter.org/events/call-for-vendors-the-gift-lab/"
+  },
+  {
+   "venue": "Triple Door",
+   "title": "Masters of Hawaiian Music - George Kahumoku, Led Kaapana, Jeff Peterson",
+   "date": "2026-10-06",
+   "time": "19:30",
+   "url": "https://thetripledoor.net/event/6575931/762932118/masters-of-hawaiian-music-george-kahumoku-led-kaapana-jeff-peterson",
+   "type": "concert"
+  },
+  {
+   "venue": "Triple Door",
+   "title": "Stanley Jordan (solo)",
+   "date": "2026-10-07",
+   "time": "19:30",
+   "url": "https://thetripledoor.net/event/6598916/765240417/stanley-jordan-solo",
+   "type": "concert"
   },
   {
    "venue": "Seattle Rep",
@@ -1993,6 +2089,14 @@
    "url": "https://www.seattlerep.org/plays/202627-season/eureka-day",
    "type": "arts",
    "soldOut": true
+  },
+  {
+   "venue": "Triple Door",
+   "title": "Skerryvore",
+   "date": "2026-10-08",
+   "time": "19:30",
+   "url": "https://thetripledoor.net/event/6305179/739878840/skerryvore",
+   "type": "concert"
   },
   {
    "venue": "Seattle Rep",
@@ -2017,6 +2121,22 @@
    }
   },
   {
+   "venue": "Triple Door",
+   "title": "Lloyd Cole",
+   "date": "2026-10-09",
+   "time": "19:30",
+   "url": "https://thetripledoor.net/event/6510654/757415445/lloyd-cole",
+   "type": "concert"
+  },
+  {
+   "venue": "Rabbit Box",
+   "title": "Kim Richey at The Rabbit Box",
+   "date": "2026-10-09",
+   "time": "19:30",
+   "url": "https://thetripledoor.net/event/6450666/752701722/kim-richey-at-the-rabbit-box",
+   "type": "arts"
+  },
+  {
    "venue": "Seattle Rep",
    "title": "Eureka Day",
    "date": "2026-10-09",
@@ -2035,6 +2155,14 @@
    "soldOut": true
   },
   {
+   "venue": "Triple Door",
+   "title": "An Evening with Mike Dawes",
+   "date": "2026-10-10",
+   "time": "17:00",
+   "url": "https://thetripledoor.net/event/6009377/751937245/an-evening-with-mike-dawes",
+   "type": "concert"
+  },
+  {
    "venue": "Seattle Rep",
    "title": "Eureka Day",
    "date": "2026-10-10",
@@ -2044,6 +2172,14 @@
    "soldOut": true
   },
   {
+   "venue": "Triple Door",
+   "title": "An Evening with Mike Dawes",
+   "date": "2026-10-10",
+   "time": "20:00",
+   "url": "https://thetripledoor.net/event/6440522/751937248/an-evening-with-mike-dawes",
+   "type": "concert"
+  },
+  {
    "venue": "Seattle Rep",
    "title": "Eureka Day",
    "date": "2026-10-11",
@@ -2051,6 +2187,14 @@
    "url": "https://www.seattlerep.org/plays/202627-season/eureka-day",
    "type": "arts",
    "soldOut": true
+  },
+  {
+   "venue": "Triple Door",
+   "title": "Gary Bartz and NTU Troop",
+   "date": "2026-10-11",
+   "time": "19:30",
+   "url": "https://thetripledoor.net/event/6714900/777882566/gary-bartz-and-ntu-troop",
+   "type": "concert"
   },
   {
    "venue": "Seattle Rep",
@@ -2397,6 +2541,14 @@
    "date": "2026-10-16",
    "time": "19:30",
    "url": "https://townhallseattle.org/event/as-many-weirdos-as-possible-3/",
+   "type": "arts"
+  },
+  {
+   "venue": "Rabbit Box",
+   "title": "Liz Longley at The Rabbit Box",
+   "date": "2026-10-16",
+   "time": "19:30",
+   "url": "https://thetripledoor.net/event/5754351/748643303/liz-longley-at-the-rabbit-box",
    "type": "arts"
   },
   {
@@ -3710,6 +3862,14 @@
    "type": "concert"
   },
   {
+   "venue": "Rabbit Box",
+   "title": "Alexandr Misko at The Rabbit Box",
+   "date": "2026-10-21",
+   "time": "19:30",
+   "url": "https://thetripledoor.net/event/6698247/776071541/alexandr-misko-at-the-rabbit-box",
+   "type": "arts"
+  },
+  {
    "venue": "Taproot Theatre",
    "title": "Conscience",
    "date": "2026-10-21",
@@ -4643,6 +4803,14 @@
    "type": "concert"
   },
   {
+   "venue": "Rabbit Box",
+   "title": "Griffin House at The Rabbit Box",
+   "date": "2026-10-24",
+   "time": "19:30",
+   "url": "https://thetripledoor.net/event/6480811/754993772/griffin-house-at-the-rabbit-box",
+   "type": "arts"
+  },
+  {
    "venue": "Taproot Theatre",
    "title": "Conscience",
    "date": "2026-10-24",
@@ -4990,6 +5158,14 @@
    "type": "community"
   },
   {
+   "venue": "Triple Door",
+   "title": "This Is Halloween",
+   "date": "2026-10-25",
+   "time": "17:00",
+   "url": "https://thetripledoor.net/event/6513954/757669519/this-is-halloween",
+   "type": "concert"
+  },
+  {
    "venue": "Lumen Field",
    "title": "Seattle Seahawks vs. Kansas City Chiefs",
    "date": "2026-10-25",
@@ -5124,6 +5300,14 @@
      "NBC"
     ]
    }
+  },
+  {
+   "venue": "Triple Door",
+   "title": "This Is Halloween",
+   "date": "2026-10-25",
+   "time": "20:00",
+   "url": "https://thetripledoor.net/event/6513955/757669511/this-is-halloween",
+   "type": "concert"
   },
   {
    "venue": "The Crocodile",
@@ -5545,6 +5729,293 @@
    "date": "2026-10-27",
    "time": "20:00:00",
    "url": "https://www.ticketweb.com/event/olive-klug-w-frail-talk-tractor-tickets/14993633",
+   "type": "concert"
+  },
+  {
+   "venue": "Pacific Science Center",
+   "title": "Laser One Night Only: Noah Kahan & Lorde",
+   "date": "2026-10-28",
+   "time": "",
+   "url": "https://pacificsciencecenter.org/events/laser-one-night/"
+  },
+  {
+   "venue": "Woodland Park Zoo",
+   "title": "Animal Ofrenda",
+   "date": "2026-10-28",
+   "time": "09:30",
+   "url": "https://zoo.org/ofrenda/",
+   "type": "community"
+  },
+  {
+   "venue": "Around Pioneer Square",
+   "title": "Celebrating Theodore Roosevelt’s 168th Birthday at The Beautiful Things Exhibit",
+   "date": "2026-10-28",
+   "time": "12:00",
+   "url": "https://pioneersquare.org/our-events/celebrating-theodore-roosevelts-168th-birthday-at-the-beautiful-things-exhibit/",
+   "type": "community"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "You Can See Everything",
+   "date": "2026-10-28",
+   "time": "15:45:00",
+   "url": "https://www.siff.net/cinema/in-theaters/you-can-see-everything",
+   "movie": true,
+   "end": "18:39:00"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "Wicker",
+   "date": "2026-10-28",
+   "time": "16:15:00",
+   "url": "https://www.siff.net/cinema/in-theaters/wicker",
+   "movie": true,
+   "end": "18:00:00"
+  },
+  {
+   "venue": "Baba Yaga",
+   "title": "Seattle Photo Book Club",
+   "date": "2026-10-28",
+   "time": "17:00",
+   "url": "https://ma.to/event/seattle-photo-book-club-2026-10-28",
+   "type": "concert"
+  },
+  {
+   "venue": "Occidental Square",
+   "title": "March to the Match (before the Houston game)",
+   "date": "2026-10-28",
+   "time": "18:00",
+   "url": "https://weareecs.com/events/",
+   "type": "community",
+   "free": true
+  },
+  {
+   "venue": "Central Saloon",
+   "title": "The Entourage",
+   "date": "2026-10-28",
+   "time": "19:00",
+   "url": "https://centralsaloon.com/events/the-entourage/",
+   "type": "concert"
+  },
+  {
+   "venue": "Town Hall Seattle",
+   "title": "Behind the Byline: Education in Washington",
+   "date": "2026-10-28",
+   "time": "19:00",
+   "url": "https://townhallseattle.org/event/behind-the-byline-education/",
+   "type": "arts"
+  },
+  {
+   "venue": "Around Pioneer Square",
+   "title": "Tending the Altar | Little Altars Everywhere",
+   "date": "2026-10-28",
+   "time": "19:00",
+   "url": "https://pioneersquare.org/our-events/tending-the-altar-little-altars-everywhere/",
+   "type": "community"
+  },
+  {
+   "venue": "Barboza",
+   "title": "Faux Real",
+   "date": "2026-10-28",
+   "time": "19:00",
+   "url": "https://www.thebarboza.com/events/detail/faux-real-tickets-1493746",
+   "type": "concert"
+  },
+  {
+   "venue": "Climate Pledge Arena",
+   "title": "Seattle Kraken vs. Toronto Maple Leafs",
+   "date": "2026-10-28",
+   "time": "19:00:00",
+   "url": "https://www.ticketmaster.com/seattle-kraken-vs-toronto-maple-leafs-seattle-washington-10-28-2026/event/0F0064C4A04FA269",
+   "type": "sports",
+   "watch": {
+    "tv": [
+     "Prime Video",
+     "KING",
+     "KONG"
+    ]
+   },
+   "tickets": {
+    "box": 0,
+    "resale": 0,
+    "checked": "2026-10-28T22:08:52.400Z",
+    "from": 54.12
+   },
+   "soldOut": true
+  },
+  {
+   "venue": "ACT Theatre",
+   "title": "Table 17",
+   "date": "2026-10-28",
+   "time": "19:00:00",
+   "url": "https://acttheatre.org/"
+  },
+  {
+   "venue": "Showbox SoDo",
+   "title": "Catch Your Breath with Tx2, Arankai and Colorblind",
+   "date": "2026-10-28",
+   "time": "19:00:00",
+   "url": "https://www.axs.com/events/1462631/catch-your-breath-tickets?skin=showboxpresents&src=AEGLIVE_WSHBXSEA030115VEN001"
+  },
+  {
+   "venue": "The Vera Project",
+   "title": "WEATHERDAY",
+   "date": "2026-10-28",
+   "time": "19:00:00",
+   "url": "https://link.dice.fm/p32bd47cc53f",
+   "type": "concert",
+   "end": "23:00:00"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "Seattle 48 Hour Horror Film Project",
+   "date": "2026-10-28",
+   "time": "19:00:00",
+   "url": "https://www.siff.net/cinema/in-theaters/seattle-48-hour-horror-film-project-2026",
+   "movie": true,
+   "end": "20:40:00"
+  },
+  {
+   "venue": "Seattle Jazz Fellowship",
+   "title": "Bruce Phares",
+   "date": "2026-10-28",
+   "time": "19:30",
+   "url": "https://seattlejazzfellowship.org/events/jerry-steinhilber-hgztd-929a2-j37rt-rfd6x-jaakk-b7akt-rtx72-9yyjr-7abz6-hs4mh-g4mk9-tsjr7-64hg5-7z83k-3z7y3-3yl2l-5z9gg-4gsmy-67dlj-g4h62-7ccbf-n9am3-49bkd-acxea-zjbns-p4t3h-kmw77-s2zb7-fxsn8-psg6t",
+   "type": "concert"
+  },
+  {
+   "venue": "Jazz Alley",
+   "title": "The Lao Tizer Quintet featuring American Idol Finalist Elliott Yamin, with Special Guest Jeff Kashiwa",
+   "date": "2026-10-28",
+   "time": "19:30",
+   "url": "https://www.jazzalley.com/www-home/artist.jsp?shownum=8822",
+   "type": "concert"
+  },
+  {
+   "venue": "Town Hall Seattle",
+   "title": "Thomas Frank",
+   "date": "2026-10-28",
+   "time": "19:30",
+   "url": "https://townhallseattle.org/event/thomas-frank/",
+   "type": "arts"
+  },
+  {
+   "venue": "Triple Door",
+   "title": "This Is Halloween",
+   "date": "2026-10-28",
+   "time": "19:30",
+   "url": "https://thetripledoor.net/event/6513964/757669562/this-is-halloween",
+   "type": "concert"
+  },
+  {
+   "venue": "El Corazon",
+   "title": "Fenix Flexin - The Rubberz Tour",
+   "date": "2026-10-28",
+   "time": "19:30",
+   "url": "https://www.elcorazonseattle.com/shows/fenix-flexin-the-rubberz-tour-28-oct",
+   "type": "concert"
+  },
+  {
+   "venue": "Lumen Field",
+   "title": "Seattle Sounders FC vs. Houston Dynamo",
+   "date": "2026-10-28",
+   "time": "19:30:00",
+   "url": "https://www.ticketmaster.com/seattle-sounders-fc-vs-houston-dynamo-seattle-washington-10-28-2026/event/0F006383ED639A54",
+   "type": "sports"
+  },
+  {
+   "venue": "Baba Yaga",
+   "title": "The Haunt (21+ Event)",
+   "date": "2026-10-28",
+   "time": "19:30:00",
+   "url": "https://babayagaseattle.com/",
+   "type": "concert"
+  },
+  {
+   "venue": "El Corazon",
+   "title": "Fenix Flexin",
+   "date": "2026-10-28",
+   "time": "19:30:00",
+   "url": "https://www.elcorazonseattle.com/",
+   "type": "concert"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "Stolen Kisses",
+   "date": "2026-10-28",
+   "time": "19:30:00",
+   "url": "https://www.siff.net/programs-and-events/nouvelles-femmes/stolen-kisses",
+   "end": "21:00:00"
+  },
+  {
+   "venue": "Seattle Rep",
+   "title": "Eureka Day: Best Availability",
+   "date": "2026-10-28",
+   "time": "19:30:00",
+   "url": "https://www.seattlerep.org/plays/202627-season/eureka-day",
+   "type": "arts"
+  },
+  {
+   "venue": "McCaw Hall",
+   "title": "Salome",
+   "date": "2026-10-28",
+   "time": "19:30:00",
+   "url": "https://www.mccawhall.com/events/detail/salome",
+   "type": "arts"
+  },
+  {
+   "venue": "Baba Yaga",
+   "title": "Karaoke with a Guest Band",
+   "date": "2026-10-28",
+   "time": "20:00",
+   "url": "https://ma.to/event/karaoke-with-a-guest-band-2026-10-28",
+   "type": "concert"
+  },
+  {
+   "venue": "The Crocodile",
+   "title": "Bunii - Buniiversity Tour",
+   "date": "2026-10-28",
+   "time": "20:00",
+   "url": "https://calendar.thecrocodile.com/shows/bunii-buniiversity-tour-28-oct",
+   "type": "concert"
+  },
+  {
+   "venue": "Moore Theatre",
+   "title": "Julia Jacklin",
+   "date": "2026-10-28",
+   "time": "20:00",
+   "url": "https://www.stgpresents.org/events/julia-jacklin/",
+   "type": "concert"
+  },
+  {
+   "venue": "Chop Suey",
+   "title": "Halloween with Sleepy Haunts, Pink Moss, and Understater",
+   "date": "2026-10-28",
+   "time": "20:00:00",
+   "url": "https://www.ticketweb.com/event/halloween-with-sleepy-haunts-pink-chop-suey-tickets/14297284",
+   "type": "concert"
+  },
+  {
+   "venue": "Tractor Tavern",
+   "title": "STG Presents: An Evening with Juana Molina",
+   "date": "2026-10-28",
+   "time": "20:00:00",
+   "url": "https://www.ticketweb.com/event/stg-presents-an-evening-with-tractor-tickets/14257364",
+   "type": "concert"
+  },
+  {
+   "venue": "Showbox at the Market",
+   "title": "Medium Build Presents The King of Having Fun on Tour with Merle Law",
+   "date": "2026-10-28",
+   "time": "20:00:00",
+   "url": "https://www.axs.com/events/1493715/medium-build-presents-the-king-of-having-fun-on-tour-tickets?skin=showboxpresents&src=AEGLIVE_WSHBXSEA030115VEN001"
+  },
+  {
+   "venue": "Substation",
+   "title": "Shiverz",
+   "date": "2026-10-28",
+   "time": "21:00",
+   "url": "https://www.eventbrite.com/e/shiverz-tickets-2001094620879",
    "type": "concert"
   }
  ]
