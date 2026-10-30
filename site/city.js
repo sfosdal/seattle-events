@@ -405,7 +405,7 @@
       color: '#86ea9a',
       url: 'https://www.downtownseattle.org/places/occidental-square/',
       icon: 'https://www.google.com/s2/favicons?domain=www.downtownseattle.org&sz=128',
-      feed: { kind: 'tribe', url: 'https://www.downtownseattle.org/wp-json/tribe/events/v1/events?venue=53729' },
+      feed: { kind: 'tribe', chrome: true, url: 'https://www.downtownseattle.org/wp-json/tribe/events/v1/events?venue=53729' },
       alias: /occidental (square|park)/i,
     },
     "Owl 'n Thistle": { // 808 Post Ave — the Irish pub with music most nights; its site prints a weekly schedule, no dates, so the build writes the week out (fetch-events.mjs)
@@ -606,7 +606,7 @@
       icon: 'https://www.google.com/s2/favicons?domain=www.neumos.com&sz=128',
       tm: { id: 'ZFr9jZAFvF', match: 'neumos', fallbackUrl: 'https://www.neumos.com/events', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i, secondary: true }, // Ticketmaster, read behind the venue's own listing — every venue both ways (Steve, 2026-10-26)
       // the club's own listing (AXS-fed Carbonhouse cards: a yearless date, the doors clock), 60-odd shows to Ticketmaster's score — the listing leads (2026-10-27)
-      feed: { kind: 'cards', url: 'https://www.neumos.com/events/all', item: /<div class="eventItem entry/, title: /<h3 class="title[^"]*">\s*<a href="([^"]+)"[^>]*>([^<]+)</,
+      feed: { kind: 'cards', chrome: true, url: 'https://www.neumos.com/events/all', item: /<div class="eventItem entry/, title: /<h3 class="title[^"]*">\s*<a href="([^"]+)"[^>]*>([^<]+)</,
         when: /<div class="date[^"]*" aria-label="([^"]+)"[\s\S]*?<div class="time">\s*(?:Doors:\s*)?([^<]*)</, place: /<div class="date ([a-z]+)"/, venues: /neumos/i },
     },
     Barboza: { // the basement room under Neumos
@@ -779,7 +779,7 @@
       icon: 'https://www.google.com/s2/favicons?domain=www.tacomadome.org&sz=128',
       tm: { id: 'KovZpa3zGe', match: 'tacoma dome', fallbackUrl: 'https://www.tacomadome.org/events', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
       // the Dome's own list (Carbonhouse cards: the date's aria-label, a multi-day run read as its first day, the start clock), secondary behind Ticketmaster (2026-10-27)
-      feed: { kind: 'cards', secondary: true, url: 'https://www.tacomadome.org/events/all', item: /<div class="eventItem entry/, title: /<h3 class="title[^"]*">\s*<a href="([^"]+)"[^>]*>([^<]+)</,
+      feed: { kind: 'cards', chrome: true, secondary: true, url: 'https://www.tacomadome.org/events/all', item: /<div class="eventItem entry/, title: /<h3 class="title[^"]*">\s*<a href="([^"]+)"[^>]*>([^<]+)</,
         when: /<div class="date" aria-label="([A-Za-z]+ +\d{1,2})(?: to [A-Za-z]+ \d{1,2})? (\d{4})"(?:[\s\S]*?<span class="start">([^<]*)<)?/ },
     },
     'White River Amphitheatre': { // Auburn's summer shed (May to September)
