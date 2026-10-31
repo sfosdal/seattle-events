@@ -15,7 +15,7 @@
 import './failures.mjs'; // first: every outside call retried, the ones still failing written to failures.json (Steve, 2026-10-29)
 import { writeFileSync, readFileSync } from 'node:fs';
 import { buildIcs } from './ics.mjs';
-import { parseScListing, scListingDates, parseScVenueCats, mapDiceEvents, parseSiffScreenings, mapOtbEvents, mapRepEvents, tmType, scType, mapSccEvents, mccawUrlMap, parseSctCalendar, parseMopopCalendar, parsePacsciEvents, parseKexpEvents, parseBlockPartyArtists, parseBumbershootSchedule, mapPrideFestEvents, parseFolklifeDates, parseShowboxEvents, BABA_OBSCURA_URL, parseBabaObscuraSchedule, babaObscuraRows, festivalOwnsNights } from './sources.mjs';
+import { parseScListing, scListingDates, parseScVenueCats, mapDiceEvents, parseSiffScreenings, mapOtbEvents, mapRepEvents, tmType, scType, mapSccEvents, mccawUrlMap, parseSctCalendar, parseMopopCalendar, parsePacsciEvents, parseKexpEvents, parseBlockPartyArtists, parseBumbershootSchedule, mapPrideFestEvents, parseFolklifeDates, parseShowboxEvents, BABA_OBSCURA_URL, parseBabaObscuraSchedule, babaObscuraRows, festivalOwnsNights, parseMarinersIndex, parseMarinersEvent } from './sources.mjs';
 import { mergeWithArchive, unionArchives, eventKey, dropClashes } from './merge.mjs';
 import { fixLinks } from './links.mjs';
 import { feedSources, emptyListGate, feedFailedVenues, chromeFetch } from './feeds.mjs';
@@ -312,6 +312,21 @@ async function pageText(url) {
   if (!res.ok) throw new Error(`HTTP ${res.status} ${url}`);
   return res.text();
 }
+// T-Mobile Park's own events page (mlb.com/mariners/tickets/events): the events the club sells
+// itself, which Ticketmaster never lists (Banana Ball, lottery-ticketed). lqa-events' reader,
+// copied 2026-10-30 (parseMarinersIndex / parseMarinersEvent): every venue from Ticketmaster AND
+// its own site. Home games come from the Mariners' schedule as before.
+const MARINERS_EVENTS = 'https://www.mlb.com/mariners/tickets/events';
+async function marinersEvents() {
+  const index = parseMarinersIndex(await pageText(MARINERS_EVENTS));
+  const out = [];
+  for (const it of index) {
+    try { out.push(...parseMarinersEvent(await pageText(it.url), it)); }
+    catch (err) { console.error(`T-Mobile Park ${it.url}: ${err.message}`); }
+  }
+  console.log(`T-Mobile Park (Mariners events page): ${out.length} rows from ${index.length} events`);
+  return out;
+}
 // Children's Theatre (Charlotte Martin + Eve Alvord theatres, on the
 // campus): twelve month grids
 async function seattleChildrensTheatre() {
@@ -469,6 +484,7 @@ const sources = [
   ...ticketmasterRooms,
   ...feedsFirst, // venues whose own calendar leads (city.js `feed`)
   showbox,
+  marinersEvents, // T-Mobile Park's own events page, beside its Ticketmaster listing
   // McCaw Hall comes from the Seattle Center sweep below (every performance,
   // with times); its RSS only supplies the venue's own detail-page links.
   veraProjectDice,
