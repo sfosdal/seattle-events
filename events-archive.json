@@ -6359,6 +6359,354 @@
    "time": "22:00",
    "url": "https://www.eventbrite.com/e/y2k-thursdays-at-trinity-seattles-1-thursday-night-party-tickets-1997645315915",
    "type": "concert"
+  },
+  {
+   "venue": "Convention Center",
+   "title": "AAP 2026 Annual Meeting",
+   "date": "2026-10-30",
+   "time": "",
+   "url": "https://seattlecc.com/upcoming-events/?eventid=34804",
+   "type": "expo",
+   "building": "Arch Building"
+  },
+  {
+   "venue": "Owl 'n Thistle",
+   "title": "Irish Cover Band",
+   "date": "2026-10-30",
+   "time": "",
+   "url": "https://owlnthistle.com/live-music-schedule",
+   "type": "concert"
+  },
+  {
+   "venue": "Woodland Park Zoo",
+   "title": "Animal Ofrenda",
+   "date": "2026-10-30",
+   "time": "09:30",
+   "url": "https://zoo.org/ofrenda/",
+   "type": "community"
+  },
+  {
+   "venue": "WAMU Theater",
+   "title": "Boo! Seattle",
+   "date": "2026-10-30",
+   "time": "12:00:00",
+   "url": "https://on.fgtix.com/trk/YXGQ",
+   "type": "concert"
+  },
+  {
+   "venue": "Paramount Theatre",
+   "title": "Dance Theatre of Harlem",
+   "date": "2026-10-30",
+   "time": "13:00",
+   "url": "https://www.stgpresents.org/events/dance-theatre-of-harlem/",
+   "type": "concert"
+  },
+  {
+   "venue": "Around Pioneer Square",
+   "title": "Live Jazz: Mark Lewis Quartet",
+   "date": "2026-10-30",
+   "time": "16:00",
+   "url": "https://pioneersquare.org/our-events/live-jazz-mark-lewis-quartet/",
+   "type": "community"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "Fatherland",
+   "date": "2026-10-30",
+   "time": "16:15:00",
+   "url": "https://www.siff.net/cinema/in-theaters/fatherland",
+   "movie": true,
+   "end": "17:37:00"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "Wicker",
+   "date": "2026-10-30",
+   "time": "16:45:00",
+   "url": "https://www.siff.net/cinema/in-theaters/wicker",
+   "movie": true,
+   "end": "18:30:00"
+  },
+  {
+   "venue": "Around Pioneer Square",
+   "title": "Ghost Stories at Pioneer Park",
+   "date": "2026-10-30",
+   "time": "17:00",
+   "url": "https://pioneersquare.org/our-events/ghost-stories-at-pioneer-park/",
+   "type": "community"
+  },
+  {
+   "venue": "WAMU Theater",
+   "title": "BOO Seattle",
+   "date": "2026-10-30",
+   "time": "17:00",
+   "url": "https://www.wamutheater.com/events/boo-seattle-2026-october-30",
+   "type": "concert"
+  },
+  {
+   "venue": "Children's Theatre",
+   "title": "Leonardo! A Wonderful Show about a Terrible Monster",
+   "date": "2026-10-30",
+   "time": "17:00:00",
+   "url": "https://www.sct.org/onstage/productions/leonardo-2026/",
+   "type": "arts"
+  },
+  {
+   "venue": "Nectar Lounge",
+   "title": "Lindstrom and the Limit - Ages 21+",
+   "date": "2026-10-30",
+   "time": "17:30:00",
+   "url": "http://nectarlounge.com/"
+  },
+  {
+   "venue": "Triple Door",
+   "title": "This Is Halloween",
+   "date": "2026-10-30",
+   "time": "18:00",
+   "url": "https://thetripledoor.net/event/6513946/757669555/this-is-halloween",
+   "type": "concert"
+  },
+  {
+   "venue": "Around Pioneer Square",
+   "title": "La Dolce Vita Aperitivo🫒",
+   "date": "2026-10-30",
+   "time": "18:00",
+   "url": "https://pioneersquare.org/our-events/la-dolce-vita-aperitivo%f0%9f%ab%92/",
+   "type": "community"
+  },
+  {
+   "venue": "Children's Theatre",
+   "title": "I'll Be Your Superhero",
+   "date": "2026-10-30",
+   "time": "18:00:00",
+   "url": "https://www.sct.org/onstage/productions/ill-be-your-superhero-2026/",
+   "type": "arts"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "You Can See Everything",
+   "date": "2026-10-30",
+   "time": "18:45:00",
+   "url": "https://www.siff.net/cinema/in-theaters/you-can-see-everything",
+   "movie": true,
+   "end": "21:39:00"
+  },
+  {
+   "venue": "Central Saloon",
+   "title": "Halloween Friday w/ DIO(ish) + Open Veins + Hellslaught",
+   "date": "2026-10-30",
+   "time": "19:00",
+   "url": "https://centralsaloon.com/events/halloween-friday-w-dioish-open-veins-hellslaught/",
+   "type": "concert"
+  },
+  {
+   "venue": "El Corazon",
+   "title": "Kurt Travis",
+   "date": "2026-10-30",
+   "time": "19:00",
+   "url": "https://www.elcorazonseattle.com/shows/kurt-travis-30-oct",
+   "type": "concert"
+  },
+  {
+   "venue": "Alaska Airlines Arena",
+   "title": "Washington Huskies Womens Volleyball vs. Iowa Hawkeyes Womens Volleyball",
+   "date": "2026-10-30",
+   "time": "19:00:00",
+   "url": "https://gohuskies.com/",
+   "type": "sports"
+  },
+  {
+   "venue": "Tractor Tavern",
+   "title": "Cumbia de Muertos V - Tractor, Conor Byrne Pub, Cloudburst Brewing, Percy's",
+   "date": "2026-10-30",
+   "time": "19:00:00",
+   "url": "https://www.ticketweb.com/event/cumbia-de-muertos-v-tractor-tickets/14296574",
+   "type": "concert"
+  },
+  {
+   "venue": "Muckleshoot Casino",
+   "title": "Rainier Rumble Boxing",
+   "date": "2026-10-30",
+   "time": "19:00:00",
+   "url": "https://www.ticketmaster.com/rainier-rumble-boxing-auburn-washington-10-30-2026/event/0F0064A6CACA18B1",
+   "age21": true,
+   "type": "sports",
+   "status": "cancelled",
+   "statusSince": "2026-10-16T06:50:11.613Z"
+  },
+  {
+   "venue": "Seattle Jazz Fellowship",
+   "title": "Butch Harrison",
+   "date": "2026-10-30",
+   "time": "19:30",
+   "url": "https://seattlejazzfellowship.org/events/jerry-steinhilber-hgztd-929a2-j37rt-rfd6x-jaakk-b7akt-rtx72-9yyjr-7abz6-hs4mh-g4mk9-tsjr7-64hg5-7z83k-3z7y3-3yl2l-5z9gg-4gsmy-67dlj-g4h62-7ccbf-n9am3-49bkd-acxea-zjbns-p4t3h-kmw77-s2zb7-fxsn8-2m8mh",
+   "type": "concert"
+  },
+  {
+   "venue": "Jazz Alley",
+   "title": "Jon Cleary & The Absolute Monster Gentlemen",
+   "date": "2026-10-30",
+   "time": "19:30",
+   "url": "https://www.jazzalley.com/www-home/artist.jsp?shownum=8823",
+   "type": "concert"
+  },
+  {
+   "venue": "Royal Room",
+   "title": "Forever Young: The Music of Bob Dylan",
+   "date": "2026-10-30",
+   "time": "19:30",
+   "url": "https://www.strangertickets.com/events/185177579/forever-young-the-music-of-bob-dylan",
+   "type": "concert"
+  },
+  {
+   "venue": "El Corazon",
+   "title": "Seraphic / Viriscent / Focal Point / Coming of Age",
+   "date": "2026-10-30",
+   "time": "19:30",
+   "url": "https://www.elcorazonseattle.com/shows/viriscent-seraphic-focal-point-coming-of-age-30-oct",
+   "type": "concert"
+  },
+  {
+   "venue": "Around Pioneer Square",
+   "title": "Charcoal & Sip – live nude model – instruction & supplies",
+   "date": "2026-10-30",
+   "time": "19:30",
+   "url": "https://pioneersquare.org/our-events/charcoal-sip-live-nude-model-instruction-supplies-3/",
+   "type": "community"
+  },
+  {
+   "venue": "Paramount Theatre",
+   "title": "Dance Theatre of Harlem",
+   "date": "2026-10-30",
+   "time": "19:30:00",
+   "url": "https://www.ticketmaster.com/dance-theatre-of-harlem-seattle-washington-10-30-2026/event/0F0064C1F1EFE80D",
+   "type": "arts",
+   "tickets": {
+    "box": 1461,
+    "resale": 3,
+    "checked": "2026-10-31T00:57:22.738Z",
+    "from": 25.8
+   }
+  },
+  {
+   "venue": "Seattle Rep",
+   "title": "Eureka Day",
+   "date": "2026-10-30",
+   "time": "19:30:00",
+   "url": "https://www.seattlerep.org/plays/202627-season/eureka-day",
+   "type": "arts",
+   "soldOut": true
+  },
+  {
+   "venue": "Baba Yaga",
+   "title": "Frankie and the Witch Fingers",
+   "date": "2026-10-30",
+   "time": "20:00",
+   "url": "https://ma.to/event/frankie-and-the-witch-fingers-31-oct-2026",
+   "type": "concert"
+  },
+  {
+   "venue": "Substation",
+   "title": "TR/ST (DJ Set) x Marie Davidson x Dark Chisme x Møaa",
+   "date": "2026-10-30",
+   "time": "20:00",
+   "url": "https://www.eventbrite.com/e/trst-dj-set-x-marie-davidson-x-dark-chisme-x-maa-tickets-1995508424415",
+   "type": "concert"
+  },
+  {
+   "venue": "Moore Theatre",
+   "title": "Joy Oladokun",
+   "date": "2026-10-30",
+   "time": "20:00",
+   "url": "https://www.stgpresents.org/events/joy-oladokun/",
+   "type": "concert"
+  },
+  {
+   "venue": "Baba Yaga",
+   "title": "Frankie and the Witch Fingers (21+ Event)",
+   "date": "2026-10-30",
+   "time": "20:00:00",
+   "url": "https://babayagaseattle.com/",
+   "type": "concert"
+  },
+  {
+   "venue": "Neptune Theatre",
+   "title": "The Brothers Comatose",
+   "date": "2026-10-30",
+   "time": "20:00:00",
+   "url": "https://www.ticketmaster.com/the-brothers-comatose-seattle-washington-10-30-2026/event/0F0064C2E005BBB0",
+   "type": "concert"
+  },
+  {
+   "venue": "Showbox at the Market",
+   "title": "Rebecca Black with BAYLI",
+   "date": "2026-10-30",
+   "time": "20:00:00",
+   "url": "https://www.axs.com/events/1527342/rebecca-black-tickets?skin=showboxpresents&src=AEGLIVE_WSHBXSEA030115VEN001"
+  },
+  {
+   "venue": "Triple Door",
+   "title": "This Is Halloween",
+   "date": "2026-10-30",
+   "time": "21:00",
+   "url": "https://thetripledoor.net/event/6513947/757669549/this-is-halloween",
+   "type": "concert"
+  },
+  {
+   "venue": "Neumos",
+   "title": "Halloweekend",
+   "date": "2026-10-30",
+   "time": "21:00",
+   "url": "https://www.neumos.com/events/detail/halloweekend-tickets-1642391",
+   "type": "concert"
+  },
+  {
+   "venue": "Chop Suey",
+   "title": "Fun House: A Hauntingly Freakish Dance Party!",
+   "date": "2026-10-30",
+   "time": "21:00:00",
+   "url": "https://www.ticketweb.com/event/fun-house-a-hauntingly-freakish-chop-suey-tickets/14296504",
+   "type": "concert"
+  },
+  {
+   "venue": "Clock-Out Lounge",
+   "title": "*Sold Out* Clock-Out Lounge Presents: Tush!",
+   "date": "2026-10-30",
+   "time": "21:00:00",
+   "url": "https://www.ticketweb.com/event/sold-out-clock-out-lounge-clock-out-lounge-tickets/14302144"
+  },
+  {
+   "venue": "Nectar Lounge",
+   "title": "I'm Not Okay!! An Emo & Pop Punk Halloween Party!! w/ DJ Baby Van Beezly - Ages 21+",
+   "date": "2026-10-30",
+   "time": "21:30:00",
+   "url": "http://nectarlounge.com/",
+   "type": "concert"
+  },
+  {
+   "venue": "Trinity Nightclub",
+   "title": "Halloween Friday at Trinity • Seattle's Biggest Party",
+   "date": "2026-10-30",
+   "time": "22:00",
+   "url": "https://www.eventbrite.com/e/halloween-friday-at-trinity-seattles-biggest-party-tickets-1999437700987",
+   "type": "concert"
+  },
+  {
+   "venue": "The Crocodile",
+   "title": "DIMELO: Quiébrala",
+   "date": "2026-10-30",
+   "time": "22:00",
+   "url": "https://calendar.thecrocodile.com/shows/dimelo-quiebrala-30-oct",
+   "type": "concert"
+  },
+  {
+   "venue": "Trinity Nightclub",
+   "title": "Tickets Available At The Door Halloween Friday at Trinity",
+   "date": "2026-10-30",
+   "time": "22:00",
+   "url": "https://www.eventbrite.com/e/tickets-available-at-the-door-halloween-friday-at-trinity-tickets-1999437700987",
+   "soldOut": true,
+   "type": "concert"
   }
  ]
 }
