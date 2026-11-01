@@ -246,7 +246,10 @@ async function veraProjectDice() {
 // --- SIFF Cinema Uptown (the LQA movie house on Queen Anne Ave): the
 //     calendar page is server-rendered with a JSON blob per showtime, one
 //     page per day — sweep the next few weeks. parseSiffScreenings collapses
-//     a film's multiple daily showtimes to the earliest one. ---
+//     a film's multiple daily showtimes to the earliest one. The same pages
+//     carry the Film Center at Seattle Center (2026-10-31), read off them per
+//     house — no extra requests. (SIFF left the Egyptian in October 2025.) ---
+const SIFF_HOUSES = [['SIFF Cinema Uptown', /^SIFF Cinema Uptown/], ['SIFF Film Center', /^SIFF Film Center/]];
 async function siffUptown() {
   const DAYS = 28; // cinema schedules rarely publish further out
   const events = [];
@@ -258,15 +261,18 @@ async function siffUptown() {
       // markup carries the screening blobs but not the detail-page links
       const res = await fetch(`https://www.siff.net/calendar?view=list&date=${day}`, { headers: { 'user-agent': BROWSER_UA } });
       if (!res.ok) { console.error(`SIFF calendar ${day} HTTP ${res.status}`); continue; }
-      for (const ev of parseSiffScreenings(await res.text())) {
-        const k = `${ev.title}|${ev.date}`;
-        if (!seen.has(k)) { seen.add(k); events.push({ venue: 'SIFF Cinema Uptown', ...ev }); }
+      const html = await res.text();
+      for (const [venue, re] of SIFF_HOUSES) {
+        for (const ev of parseSiffScreenings(html, re)) {
+          const k = `${venue}|${ev.title}|${ev.date}`;
+          if (!seen.has(k)) { seen.add(k); events.push({ venue, ...ev }); }
+        }
       }
     } catch (err) {
       console.error(`SIFF calendar ${day} failed:`, err.message);
     }
   }
-  console.log(`SIFF Uptown: ${events.length} film-days`);
+  for (const [venue] of SIFF_HOUSES) console.log(`SIFF ${venue.replace(/^SIFF (?:Cinema )?/, '')}: ${events.filter((e) => e.venue === venue).length} film-days`);
   return events;
 }
 
@@ -519,7 +525,11 @@ const CANONICAL_VENUES = new Set(Object.keys(CITY.venues));
 // Memorial Stadium" is Funko Field) folds to its one name first
 const ALIASES = Object.entries(CITY.venues).filter(([, v]) => v.alias).map(([label, v]) => [label, v.alias]);
 const aliasVenue = (name) => { const hit = ALIASES.find(([, re]) => re.test(name || '')); return hit ? hit[0] : name; };
-const normalizeVenue = (e) => {
+// a calendar's inline markup in a title ("<em>Unrecognized</em> Duwamish Film Screening", MOHAI's
+// Events Calendar, 2026-10-31) goes; the words stay
+const untag = (t) => (typeof t === 'string' && /<\/?(?:em|i|b|strong|span|br)\b/i.test(t) ? t.replace(/<\/?(?:em|i|b|strong|span|br)\b[^>]*>/gi, '').replace(/\s+/g, ' ').trim() : t);
+const normalizeVenue = (e0) => {
+  const e = untag(e0.title) === e0.title ? e0 : { ...e0, title: untag(e0.title) };
   const venue = aliasVenue(e.venue);
   if (CITY.groundsVenue && !CANONICAL_VENUES.has(venue)) return { ...e, venue: CITY.groundsVenue }; // a city with no grounds venue keeps every name
   return venue === e.venue ? e : { ...e, venue };
