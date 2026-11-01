@@ -209,6 +209,15 @@
       url: 'https://www.siff.net/calendar',
       icon: 'https://www.siff.net/images/SIFF_favicon_03.png',
     },
+    'SIFF Cinema Downtown': { // the old Cinerama (2100 4th Ave), SIFF's since 2023 — read off the same calendar pages as the Uptown (2026-10-31)
+      geo: [47.61420, -122.34135],
+      capacity: 563, // SIFF's rental page: 384 main floor + 172 balcony + 7 accessible
+      type: 'community',
+      cssVar: '--v-siffdt',
+      color: '#9a88d0',
+      url: 'https://www.siff.net/calendar',
+      icon: 'https://www.siff.net/images/SIFF_favicon_03.png',
+    },
     'Pacific Science Center': {
       geo: [47.61941, -122.35078],
       capacity: 400,
@@ -939,7 +948,7 @@
   // the Sound and the festivals keep their own groups.
   var HOODS = [
     { label: 'Seattle Center', venues: ['Climate Pledge Arena', 'Seattle Center', 'McCaw Hall', 'Seattle Rep', 'Cornish Playhouse', 'SIFF Cinema Uptown', 'SIFF Film Center', 'Pacific Science Center', 'MoPOP', 'Children\'s Theatre', 'The Vera Project', 'On the Boards', 'KEXP'] },
-    { label: 'Downtown & Belltown', venues: ['Paramount Theatre', 'Moore Theatre', 'Benaroya Hall', '5th Avenue Theatre', 'ACT Theatre', 'Showbox at the Market', 'The Crocodile', 'Triple Door', 'Jazz Alley', 'Rabbit Box', 'Town Hall Seattle', 'Convention Center', 'Waterfront Park', 'The Rendezvous', 'MOHAI'] },
+    { label: 'Downtown & Belltown', venues: ['Paramount Theatre', 'Moore Theatre', 'Benaroya Hall', '5th Avenue Theatre', 'ACT Theatre', 'Showbox at the Market', 'The Crocodile', 'Triple Door', 'Jazz Alley', 'Rabbit Box', 'Town Hall Seattle', 'Convention Center', 'Waterfront Park', 'The Rendezvous', 'MOHAI', 'SIFF Cinema Downtown'] },
     { label: 'Pioneer Square', venues: ['Baba Yaga', 'Axis Pioneer Square', 'Central Saloon', 'Seattle Jazz Fellowship', 'Trinity Nightclub', 'Nordo', 'Owl \'n Thistle', 'Occidental Square', 'Klondike Gold Rush NHP', 'Around Pioneer Square'] },
     { label: 'SoDo & the Stadiums', venues: ['Lumen Field', 'T-Mobile Park', 'WAMU Theater', 'Showbox SoDo'] },
     { label: 'Capitol Hill', venues: ['Neumos', 'Barboza', 'Chop Suey', 'El Corazon', 'Kerry Hall'] },
@@ -953,7 +962,7 @@
   // Convention Center, the zoo, the park service and the two neighbourhood
   // catch-alls — the reader is looking for a show, not a lecture series.
   var DEFAULT_ON = ['Climate Pledge Arena', 'Seattle Center', 'McCaw Hall', 'Seattle Rep', 'Cornish Playhouse', 'The Vera Project', 'On the Boards', 'T-Mobile Park', 'Lumen Field', 'Husky Stadium', 'Paramount Theatre', 'Showbox at the Market', 'Showbox SoDo', 'The Crocodile', 'Baba Yaga', 'Axis Pioneer Square', 'Central Saloon', 'Seattle Jazz Fellowship', 'Trinity Nightclub', 'Nordo', 'Occidental Square', 'Owl \'n Thistle', 'WAMU Theater', 'Waterfront Park', 'Neptune Theatre', 'Moore Theatre', 'Benaroya Hall', '5th Avenue Theatre', 'ACT Theatre', 'Taproot Theatre', 'Triple Door', 'Jazz Alley', 'Meany Center', 'Town Hall Seattle', 'Alaska Airlines Arena', 'Neumos', 'Barboza', 'Chop Suey', 'Clock-Out Lounge', 'Royal Room', 'El Corazon', 'Nectar Lounge', 'Tractor Tavern', 'Sunset Tavern', 'Substation', 'Fremont Abbey', 'Hidden Hall', 'Rabbit Box', 'Ballard Homestead', 'Tacoma Dome', 'White River Amphitheatre', 'accesso ShoWare Center', 'Chateau Ste. Michelle', 'Muckleshoot Casino', 'Emerald Queen Casino', 'Bumbershoot', 'Northwest Folklife', 'PrideFest', 'Baba Obscura', 'The Rendezvous'];
-  var DEFAULT_OFF = ['SIFF Cinema Uptown', 'Pacific Science Center', 'MoPOP', 'Children\'s Theatre', 'KEXP', 'Convention Center', 'Kerry Hall', 'Klondike Gold Rush NHP', 'Woodland Park Zoo', 'Around Pioneer Square', 'Starfire Stadium', 'Capitol Hill Block Party', 'MOHAI', 'SIFF Film Center'];
+  var DEFAULT_OFF = ['SIFF Cinema Uptown', 'Pacific Science Center', 'MoPOP', 'Children\'s Theatre', 'KEXP', 'Convention Center', 'Kerry Hall', 'Klondike Gold Rush NHP', 'Woodland Park Zoo', 'Around Pioneer Square', 'Starfire Stadium', 'Capitol Hill Block Party', 'MOHAI', 'SIFF Film Center', 'SIFF Cinema Downtown'];
   var PREFS_KNOWN_FROM = 'SIFF Cinema Uptown'; // the first default-off venue: a fresh site, so every saved pref set already knows them all
 
   // Event types: every event lands in exactly one, from its flags, title,
@@ -979,8 +988,9 @@
   // it meant; removing or reordering one changes every link out there.
   // 87 slots from the first build (2026-10-15): 17 base-36 digits; 88 with
   // the Royal Room (2026-10-19): 18, which holds 93 (reached 2026-10-31 with
-  // MOHAI, SIFF Film Center and the Rendezvous) — the 94th slot needs 19.
-  var CODE_LENGTH = 18;
+  // MOHAI, SIFF Film Center and the Rendezvous); 94 with SIFF Cinema
+  // Downtown (2026-10-31): 19, which holds 98.
+  var CODE_LENGTH = 19;
   var REGISTRY = [
     ['venue', 'Climate Pledge Arena'], ['venue', 'Seattle Center'], ['venue', 'McCaw Hall'],
     ['venue', 'Seattle Rep'], ['venue', 'MoPOP'], ['venue', 'Children\'s Theatre'],
@@ -1013,6 +1023,7 @@
     ['cap', 'arena'], ['cap', 'hall'], ['cap', 'room'], ['venue', 'Royal Room'],
     ['venue', 'Axis Pioneer Square'], ['venue', 'Baba Obscura'], // 2026-10-29: 90 slots, still 18 digits
     ['venue', 'MOHAI'], ['venue', 'SIFF Film Center'], ['venue', 'The Rendezvous'], // 2026-10-31: 93 slots, the most 18 digits hold
+    ['venue', 'SIFF Cinema Downtown'], // 2026-10-31: 94 slots, 19 digits
   ];
 
   // The words the page uses for the place

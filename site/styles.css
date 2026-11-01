@@ -23,7 +23,7 @@
   --v-seactr: #4048c8;
   --v-lumen: #6b6fcf;
   --v-husky: #8a5fd0;
-  --v-siff: #8f6fc9; --v-sifffc: #7d63b8; /* SIFF Film Center, a shade off the Uptown (2026-10-31) */
+  --v-siff: #8f6fc9; --v-sifffc: #7d63b8; --v-siffdt: #6b58a6; /* SIFF Film Center and SIFF Cinema Downtown, shades off the Uptown (2026-10-31) */
   --v-vera: #7a3fc4;
   --v-otb: #c04fc0;
   --v-mccaw: #a32a7a;
@@ -74,7 +74,7 @@
     --sky: #141a20; --mist: #1d252e; --ink: #e8edf1; --ink-soft: #9aa7b2; --ink-bright: #ffffff;
     --line: #333f4a; --gold: #f08a33; --gold-soft: #3a2a1a;
     --v-cornish: #3ecf97; --v-cpa: #4da3f0; --v-tmobile: #8ad8e0; --v-seactr: #6a72e6;
-    --v-lumen: #8b8fe8; --v-husky: #c4a0f0; --v-siff: #b596e0; --v-sifffc: #a68fd6; --v-vera: #a26be6; --v-otb: #e07ae0; --v-mccaw: #d158a7;
+    --v-lumen: #8b8fe8; --v-husky: #c4a0f0; --v-siff: #b596e0; --v-sifffc: #a68fd6; --v-siffdt: #9a88d0; --v-vera: #a26be6; --v-otb: #e07ae0; --v-mccaw: #d158a7;
     --v-scc: #7fa7cc; --v-sct: #6cc9db; --v-mopop: #e88ad8; --v-pacsci: #62b8f7; --v-kexp: #b48cf5; --v-goat: #5fb3a1; --v-rep: #f0827a;
     --v-paramount: #e39a6e; --v-showbox: #e8c45a; --v-sodo: #aab8d6; --v-croc: #7ed67f;
     --v-baba: #ea8686; --v-central: #eab486; --v-sjf: #eadb86; --v-trinity: #c486ea; --v-nordo: #ea86c8; --v-occidental: #86ea9a; --v-around: #86d9ea; --v-owl: #b8ea86; --v-klondike: #eac786; --v-wamu: #a6a1ea; --v-waterfront: #86c9ea; --v-axis: #86a6ea; --v-obscura: #c79bea;
@@ -95,7 +95,7 @@
   --sky: #141a20; --mist: #1d252e; --ink: #e8edf1; --ink-soft: #9aa7b2; --ink-bright: #ffffff;
   --line: #333f4a; --gold: #f08a33; --gold-soft: #3a2a1a;
   --v-cornish: #3ecf97; --v-cpa: #4da3f0; --v-tmobile: #8ad8e0; --v-seactr: #6a72e6;
-  --v-lumen: #8b8fe8; --v-husky: #c4a0f0; --v-siff: #b596e0; --v-sifffc: #a68fd6; --v-vera: #a26be6; --v-otb: #e07ae0; --v-mccaw: #d158a7;
+  --v-lumen: #8b8fe8; --v-husky: #c4a0f0; --v-siff: #b596e0; --v-sifffc: #a68fd6; --v-siffdt: #9a88d0; --v-vera: #a26be6; --v-otb: #e07ae0; --v-mccaw: #d158a7;
   --v-scc: #7fa7cc; --v-sct: #6cc9db; --v-mopop: #e88ad8; --v-pacsci: #62b8f7; --v-kexp: #b48cf5; --v-goat: #5fb3a1; --v-rep: #f0827a;
   --v-paramount: #e39a6e; --v-showbox: #e8c45a; --v-sodo: #aab8d6; --v-croc: #7ed67f;
   --v-baba: #ea8686; --v-central: #eab486; --v-sjf: #eadb86; --v-trinity: #c486ea; --v-nordo: #ea86c8; --v-occidental: #86ea9a; --v-around: #86d9ea; --v-owl: #b8ea86; --v-klondike: #eac786; --v-wamu: #a6a1ea; --v-waterfront: #86c9ea; --v-axis: #86a6ea; --v-obscura: #c79bea;

@@ -247,9 +247,10 @@ async function veraProjectDice() {
 //     calendar page is server-rendered with a JSON blob per showtime, one
 //     page per day — sweep the next few weeks. parseSiffScreenings collapses
 //     a film's multiple daily showtimes to the earliest one. The same pages
-//     carry the Film Center at Seattle Center (2026-10-31), read off them per
+//     carry the Film Center at Seattle Center and SIFF Cinema Downtown (the old
+//     Cinerama, 2100 4th Ave) (2026-10-31), read off them per
 //     house — no extra requests. (SIFF left the Egyptian in October 2025.) ---
-const SIFF_HOUSES = [['SIFF Cinema Uptown', /^SIFF Cinema Uptown/], ['SIFF Film Center', /^SIFF Film Center/]];
+const SIFF_HOUSES = [['SIFF Cinema Uptown', /^SIFF Cinema Uptown/], ['SIFF Film Center', /^SIFF Film Center/], ['SIFF Cinema Downtown', /^SIFF Cinema Downtown/]];
 async function siffUptown() {
   const DAYS = 28; // cinema schedules rarely publish further out
   const events = [];
