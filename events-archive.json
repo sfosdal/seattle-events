@@ -7105,6 +7105,22 @@
    "type": "concert"
   },
   {
+   "venue": "Clock-Out Lounge",
+   "title": "Clock-Out Lounge Presents: The Lovecats (Tribute to The Cure) + Sour Times (Tribute to Portishead)",
+   "date": "2026-10-31",
+   "time": "20:00",
+   "url": "https://clockoutlounge.com/tm-event/clock-out-lounge-presents-the-lovecats-tribute-to-the-cure-sour-times-tribute-to-portishead/",
+   "type": "concert"
+  },
+  {
+   "venue": "Emerald Queen Casino",
+   "title": "Eqc After Dark: Midnight Manor",
+   "date": "2026-10-31",
+   "time": "20:00",
+   "url": "https://www.emeraldqueen.com/midnight-manor/",
+   "type": "concert"
+  },
+  {
    "venue": "Neptune Theatre",
    "title": "Buena Vista Orchestra",
    "date": "2026-10-31",
@@ -7181,14 +7197,15 @@
    "date": "2026-10-31",
    "time": "21:00",
    "url": "https://www.eventbrite.com/e/txts-avail-door-also-sections21-hit-up-vipservicetrinitygmailcom-tickets-1999438868479",
+   "soldOut": true,
    "type": "concert"
   },
   {
    "venue": "Chop Suey",
    "title": "GHOULFEST: A Halloween Club Night!",
    "date": "2026-10-31",
-   "time": "21:00:00",
-   "url": "https://www.ticketweb.com/event/ghoulfest-a-halloween-club-night-chop-suey-tickets/15014633",
+   "time": "21:00",
+   "url": "https://chopsuey.com/tm-event/ghoulfest-a-halloween-club-night/",
    "type": "concert"
   },
   {
