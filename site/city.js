@@ -1053,6 +1053,7 @@
     // the festivals and White River by hand). Steve, 2026-10-24: Kona first ("local map view for event locations"), then lqa and Seattle.
     map: {
       kind: 'urban',
+      boundary: { osm: 237385 }, // the city line, always drawn (Steve, 2026-11-02): OpenStreetMap's boundary relation for Seattle
       bbox: [47.2, -122.56, 47.76, -122.05], // south, west, north, east — Tacoma and White River at the foot, Woodinville at the top right
       home: [47.548, -122.43, 47.7, -122.27], // the view at first: the city itself; the fit button shows the whole Sound
       roads: ['motorway', 'trunk', 'primary'],
