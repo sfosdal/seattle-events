@@ -7519,6 +7519,214 @@
    "time": "22:00:00",
    "url": "https://www.ticketweb.com/event/flammable-chop-suey-tickets/14002244",
    "type": "concert"
+  },
+  {
+   "venue": "Alaska Airlines Arena",
+   "title": "Washington Huskies Womens Basketball vs. UC San Diego Tritons Womens Basketball",
+   "date": "2026-11-02",
+   "time": "",
+   "url": "https://gohuskies.com/",
+   "type": "sports"
+  },
+  {
+   "venue": "Owl 'n Thistle",
+   "title": "Aqualizer",
+   "date": "2026-11-02",
+   "time": "",
+   "url": "https://owlnthistle.com/live-music-schedule",
+   "type": "concert"
+  },
+  {
+   "venue": "KEXP",
+   "title": "Greg Freeman Live on KEXP (Open To The Public)",
+   "date": "2026-11-02",
+   "time": "12:00:00",
+   "url": "https://www.kexp.org/events/kexp-events/greg-freeman-live-on-kexp-kexp_521488/",
+   "end": "12:30:00"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "You Can See Everything",
+   "date": "2026-11-02",
+   "time": "15:30:00",
+   "url": "https://www.siff.net/cinema/in-theaters/you-can-see-everything",
+   "movie": true,
+   "end": "18:24:00"
+  },
+  {
+   "venue": "Emerald Queen Casino",
+   "title": "Seattle Football Watch Party",
+   "date": "2026-11-02",
+   "time": "16:15",
+   "url": "https://www.emeraldqueen.com/seattle-football-watch-party/",
+   "type": "concert"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "Fatherland",
+   "date": "2026-11-02",
+   "time": "16:15:00",
+   "url": "https://www.siff.net/cinema/in-theaters/fatherland",
+   "movie": true,
+   "end": "17:37:00"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "Wicker",
+   "date": "2026-11-02",
+   "time": "16:30:00",
+   "url": "https://www.siff.net/cinema/in-theaters/wicker",
+   "movie": true,
+   "end": "18:15:00"
+  },
+  {
+   "venue": "Lumen Field",
+   "title": "Seattle Seahawks vs. Chicago Bears",
+   "date": "2026-11-02",
+   "time": "17:15:00",
+   "url": "https://www.ticketmaster.com/seattle-seahawks-vs-chicago-bears-seattle-washington-11-02-2026/event/0F006482E68774AB",
+   "type": "sports",
+   "watch": {
+    "tv": [
+     "ESPN"
+    ]
+   },
+   "tickets": {
+    "box": 0,
+    "resale": 363,
+    "checked": "2026-11-03T00:08:59.982Z",
+    "from": 200
+   },
+   "soldOut": true
+  },
+  {
+   "venue": "Clock-Out Lounge",
+   "title": "Monday Night Football- Seahawks vs Bears viewing party",
+   "date": "2026-11-02",
+   "time": "17:15:00",
+   "url": "https://www.ticketweb.com/event/monday-night-football-seahawks-clock-out-lounge-tickets/14397514",
+   "type": "sports",
+   "watch": {
+    "tv": [
+     "ESPN"
+    ]
+   }
+  },
+  {
+   "venue": "SIFF Cinema Downtown",
+   "title": "Kwaidan",
+   "date": "2026-11-02",
+   "time": "18:00:00",
+   "url": "https://www.siff.net/cinema/in-theaters/kwaidan",
+   "movie": true,
+   "end": "21:03:00"
+  },
+  {
+   "venue": "Kerry Hall",
+   "title": "Party Dances with Amy O’Neal",
+   "date": "2026-11-02",
+   "time": "18:30",
+   "url": "https://www.stgpresents.org/events/party-dances-with-amy-oneal/",
+   "type": "arts"
+  },
+  {
+   "venue": "Neumos",
+   "title": "Katie Pruitt",
+   "date": "2026-11-02",
+   "time": "19:00",
+   "url": "https://www.neumos.com/events/detail/katie-pruitt-tickets-1486745",
+   "type": "concert"
+  },
+  {
+   "venue": "Barboza",
+   "title": "Lime Garden",
+   "date": "2026-11-02",
+   "time": "19:00",
+   "url": "https://www.thebarboza.com/events/detail/lime-garden-tickets-1372738",
+   "type": "concert"
+  },
+  {
+   "venue": "Alaska Airlines Arena",
+   "title": "Washington Huskies Mens Basketball vs. Colgate University Raiders Mens Basketball",
+   "date": "2026-11-02",
+   "time": "19:00:00",
+   "url": "https://gohuskies.com/",
+   "type": "sports"
+  },
+  {
+   "venue": "SIFF Film Center",
+   "title": "Two Lane Blacktop",
+   "date": "2026-11-02",
+   "time": "19:00:00",
+   "url": "https://www.siff.net/programs-and-events/the-open-road/two-lane-blacktop",
+   "end": "20:42:00"
+  },
+  {
+   "venue": "Seattle Jazz Fellowship",
+   "title": "Fellowship Jam Session",
+   "date": "2026-11-02",
+   "time": "19:30",
+   "url": "https://seattlejazzfellowship.org/events/fellowship-jam-session-wd2l6-yynsx-r7xsj-rne75-nfkxk-nj5nl-e53h6",
+   "type": "concert"
+  },
+  {
+   "venue": "Town Hall Seattle",
+   "title": "Allison Aubrey with Katie Campbell",
+   "date": "2026-11-02",
+   "time": "19:30",
+   "url": "https://townhallseattle.org/event/allison-aubrey/",
+   "type": "arts"
+  },
+  {
+   "venue": "Royal Room",
+   "title": "What's Going On: New Music Mondays",
+   "date": "2026-11-02",
+   "time": "19:30",
+   "url": "https://www.strangertickets.com/events/186962194/what-s-going-on-new-music-mondays",
+   "type": "concert"
+  },
+  {
+   "venue": "Benaroya Hall",
+   "title": "Battling Bloodsuckers - National Geographic Live",
+   "date": "2026-11-02",
+   "time": "19:30:00",
+   "url": "https://www.seattlesymphony.org/benaroyahall"
+  },
+  {
+   "venue": "Central Saloon",
+   "title": "Seahawks vs Bears Afterparty with Wavvvy",
+   "date": "2026-11-02",
+   "time": "20:00",
+   "url": "https://centralsaloon.com/events/seahawks-vs-bears-afterparty-with-wavvvy/",
+   "type": "concert",
+   "watch": {
+    "tv": [
+     "ESPN"
+    ]
+   }
+  },
+  {
+   "venue": "The Crocodile",
+   "title": "Fox Stevenson / Mystery Skulls",
+   "date": "2026-11-02",
+   "time": "20:00",
+   "url": "https://calendar.thecrocodile.com/shows/fox-stevenson-mystery-skulls-02-nov",
+   "type": "concert"
+  },
+  {
+   "venue": "Tractor Tavern",
+   "title": "Tractor Presents Greg Freeman",
+   "date": "2026-11-02",
+   "time": "20:00:00",
+   "url": "https://www.ticketweb.com/event/tractor-presents-greg-freeman-tractor-tickets/14219084",
+   "type": "concert"
+  },
+  {
+   "venue": "Showbox SoDo",
+   "title": "Sienna Spiro with Summer Joy",
+   "date": "2026-11-02",
+   "time": "20:00:00",
+   "url": "https://www.axs.com/events/1480581/sienna-spiro-tickets?skin=showboxpresents&src=AEGLIVE_WSHBXSEA030115VEN001"
   }
  ]
 }
