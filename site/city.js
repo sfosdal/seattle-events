@@ -929,6 +929,62 @@
       url: 'https://www.capitolhillblockparty.com/artists',
       icon: 'https://www.google.com/s2/favicons?domain=www.capitolhillblockparty.com&sz=128',
     },
+    // --- On DICE (2026-11-03, Steve: "add all dice venues in cities/neighborhoods covered"): every venue on DICE's Seattle city page inside the map, read from its public DICE venue page ---
+    'The Black Lodge': { // on DICE (429 Eastlake Avenue East, Seattle, Washington 98109); its DICE venue page is the listing (2026-11-03)
+      geo: [47.62295, -122.32946],
+      type: 'concert',
+      cssVar: '--v-blacklodge',
+      color: '#86eacf',
+      url: 'https://theveraproject.org/blacklodge/',
+      icon: 'https://www.google.com/s2/favicons?domain=theveraproject.org&sz=128',
+      feed: { kind: 'dice', url: 'https://dice.fm/venue/12012' },
+    },
+    'The Shop': { // on DICE (2233 6th Avenue South, Seattle, Washington 98134); its DICE venue page is the listing (2026-11-03)
+      geo: [47.58276, -122.32658],
+      capacity: 2500,
+      type: 'concert',
+      cssVar: '--v-shop',
+      color: '#f0a8bb',
+      url: 'https://dice.fm/venue/19093',
+      icon: 'https://www.google.com/s2/favicons?domain=dice.fm&sz=128',
+      feed: { kind: 'dice', url: 'https://dice.fm/venue/19093' },
+    },
+    'Belltown Yacht Club': { // on DICE (2320 1st Avenue, Seattle, Washington 98121); its DICE venue page is the listing (2026-11-03)
+      geo: [47.61402, -122.34694],
+      type: 'concert',
+      cssVar: '--v-belltownyachtc',
+      color: '#dfe363',
+      url: 'https://dice.fm/venue/11202',
+      icon: 'https://www.google.com/s2/favicons?domain=dice.fm&sz=128',
+      feed: { kind: 'dice', url: 'https://dice.fm/venue/11202' },
+    },
+    'Quality Flea Center': { // on DICE (416 15th Avenue East, Seattle, Washington 98112); its DICE venue page is the listing (2026-11-03)
+      geo: [47.62267, -122.31234],
+      type: 'concert',
+      cssVar: '--v-qualityfleacen',
+      color: '#86eaaa',
+      url: 'https://dice.fm/venue/20350',
+      icon: 'https://www.google.com/s2/favicons?domain=dice.fm&sz=128',
+      feed: { kind: 'dice', url: 'https://dice.fm/venue/20350' },
+    },
+    'queer/bar': { // on DICE (1518 11th Avenue, Seattle, Washington 98122); its DICE venue page is the listing (2026-11-03)
+      geo: [47.61475, -122.31795],
+      type: 'concert',
+      cssVar: '--v-queerbar',
+      color: '#a8f0ce',
+      url: 'https://dice.fm/venue/19752',
+      icon: 'https://www.google.com/s2/favicons?domain=dice.fm&sz=128',
+      feed: { kind: 'dice', url: 'https://dice.fm/venue/19752' },
+    },
+    'Victory Hall': { // on DICE (1201 1st Avenue South, Seattle, Washington 98134); its DICE venue page is the listing (2026-11-03)
+      geo: [47.59192, -122.33478],
+      type: 'concert',
+      cssVar: '--v-victoryhall',
+      color: '#b0e363',
+      url: 'https://dice.fm/venue/16066',
+      icon: 'https://www.google.com/s2/favicons?domain=dice.fm&sz=128',
+      feed: { kind: 'dice', url: 'https://dice.fm/venue/16066' },
+    },
   };
 
   // City-wide feeds — neighbourhood calendars that name their own rooms.
@@ -949,10 +1005,10 @@
   // the Sound and the festivals keep their own groups.
   var HOODS = [
     { label: 'Seattle Center', venues: ['Climate Pledge Arena', 'Seattle Center', 'McCaw Hall', 'Seattle Rep', 'Cornish Playhouse', 'SIFF Cinema Uptown', 'SIFF Film Center', 'Pacific Science Center', 'MoPOP', 'Children\'s Theatre', 'The Vera Project', 'On the Boards', 'KEXP'] },
-    { label: 'Downtown & Belltown', venues: ['Paramount Theatre', 'Moore Theatre', 'Benaroya Hall', '5th Avenue Theatre', 'ACT Theatre', 'Showbox at the Market', 'The Crocodile', 'Triple Door', 'Jazz Alley', 'Rabbit Box', 'Town Hall Seattle', 'Convention Center', 'Waterfront Park', 'The Rendezvous', 'MOHAI', 'SIFF Cinema Downtown'] },
+    { label: 'Downtown & Belltown', venues: ['Paramount Theatre', 'Moore Theatre', 'Benaroya Hall', '5th Avenue Theatre', 'ACT Theatre', 'Showbox at the Market', 'The Crocodile', 'Triple Door', 'Jazz Alley', 'Rabbit Box', 'Town Hall Seattle', 'Convention Center', 'Waterfront Park', 'The Rendezvous', 'MOHAI', 'SIFF Cinema Downtown', 'Belltown Yacht Club'] },
     { label: 'Pioneer Square', venues: ['Baba Yaga', 'Axis Pioneer Square', 'Central Saloon', 'Seattle Jazz Fellowship', 'Trinity Nightclub', 'Nordo', 'Owl \'n Thistle', 'Occidental Square', 'Klondike Gold Rush NHP', 'Around Pioneer Square'] },
-    { label: 'SoDo & the Stadiums', venues: ['Lumen Field', 'T-Mobile Park', 'WAMU Theater', 'Showbox SoDo'] },
-    { label: 'Capitol Hill', venues: ['Neumos', 'Barboza', 'Chop Suey', 'El Corazon', 'Kerry Hall'] },
+    { label: 'SoDo & the Stadiums', venues: ['Lumen Field', 'T-Mobile Park', 'WAMU Theater', 'Showbox SoDo', 'The Shop', 'Victory Hall'] },
+    { label: 'Capitol Hill', venues: ['Neumos', 'Barboza', 'Chop Suey', 'El Corazon', 'Kerry Hall', 'The Black Lodge', 'Quality Flea Center', 'queer/bar'] },
     { label: 'University District', venues: ['Husky Stadium', 'Alaska Airlines Arena', 'Neptune Theatre', 'Meany Center'] },
     { label: 'Ballard & North', venues: ['Tractor Tavern', 'Sunset Tavern', 'Ballard Homestead', 'Substation', 'Fremont Abbey', 'Nectar Lounge', 'Hidden Hall', 'Woodland Park Zoo', 'Taproot Theatre'] },
     { label: 'South Seattle', venues: ['Clock-Out Lounge', 'Royal Room'] },
@@ -962,7 +1018,7 @@
   // The usual view: every room on but the campus museums, the cinema, the
   // Convention Center, the zoo, the park service and the two neighbourhood
   // catch-alls — the reader is looking for a show, not a lecture series.
-  var DEFAULT_ON = ['Climate Pledge Arena', 'Seattle Center', 'McCaw Hall', 'Seattle Rep', 'Cornish Playhouse', 'The Vera Project', 'On the Boards', 'T-Mobile Park', 'Lumen Field', 'Husky Stadium', 'Paramount Theatre', 'Showbox at the Market', 'Showbox SoDo', 'The Crocodile', 'Baba Yaga', 'Axis Pioneer Square', 'Central Saloon', 'Seattle Jazz Fellowship', 'Trinity Nightclub', 'Nordo', 'Occidental Square', 'Owl \'n Thistle', 'WAMU Theater', 'Waterfront Park', 'Neptune Theatre', 'Moore Theatre', 'Benaroya Hall', '5th Avenue Theatre', 'ACT Theatre', 'Taproot Theatre', 'Triple Door', 'Jazz Alley', 'Meany Center', 'Town Hall Seattle', 'Alaska Airlines Arena', 'Neumos', 'Barboza', 'Chop Suey', 'Clock-Out Lounge', 'Royal Room', 'El Corazon', 'Nectar Lounge', 'Tractor Tavern', 'Sunset Tavern', 'Substation', 'Fremont Abbey', 'Hidden Hall', 'Rabbit Box', 'Ballard Homestead', 'Tacoma Dome', 'White River Amphitheatre', 'accesso ShoWare Center', 'Chateau Ste. Michelle', 'Muckleshoot Casino', 'Emerald Queen Casino', 'Bumbershoot', 'Northwest Folklife', 'PrideFest', 'Baba Obscura', 'The Rendezvous'];
+  var DEFAULT_ON = ['Climate Pledge Arena', 'Seattle Center', 'McCaw Hall', 'Seattle Rep', 'Cornish Playhouse', 'The Vera Project', 'On the Boards', 'T-Mobile Park', 'Lumen Field', 'Husky Stadium', 'Paramount Theatre', 'Showbox at the Market', 'Showbox SoDo', 'The Crocodile', 'Baba Yaga', 'Axis Pioneer Square', 'Central Saloon', 'Seattle Jazz Fellowship', 'Trinity Nightclub', 'Nordo', 'Occidental Square', 'Owl \'n Thistle', 'WAMU Theater', 'Waterfront Park', 'Neptune Theatre', 'Moore Theatre', 'Benaroya Hall', '5th Avenue Theatre', 'ACT Theatre', 'Taproot Theatre', 'Triple Door', 'Jazz Alley', 'Meany Center', 'Town Hall Seattle', 'Alaska Airlines Arena', 'Neumos', 'Barboza', 'Chop Suey', 'Clock-Out Lounge', 'Royal Room', 'El Corazon', 'Nectar Lounge', 'Tractor Tavern', 'Sunset Tavern', 'Substation', 'Fremont Abbey', 'Hidden Hall', 'Rabbit Box', 'Ballard Homestead', 'Tacoma Dome', 'White River Amphitheatre', 'accesso ShoWare Center', 'Chateau Ste. Michelle', 'Muckleshoot Casino', 'Emerald Queen Casino', 'Bumbershoot', 'Northwest Folklife', 'PrideFest', 'Baba Obscura', 'The Rendezvous', 'The Black Lodge', 'The Shop', 'Belltown Yacht Club', 'Quality Flea Center', 'queer/bar', 'Victory Hall'];
   var DEFAULT_OFF = ['SIFF Cinema Uptown', 'Pacific Science Center', 'MoPOP', 'Children\'s Theatre', 'KEXP', 'Convention Center', 'Kerry Hall', 'Klondike Gold Rush NHP', 'Woodland Park Zoo', 'Around Pioneer Square', 'Starfire Stadium', 'Capitol Hill Block Party', 'MOHAI', 'SIFF Film Center', 'SIFF Cinema Downtown'];
   var PREFS_KNOWN_FROM = 'SIFF Cinema Uptown'; // the first default-off venue: a fresh site, so every saved pref set already knows them all
 
@@ -991,7 +1047,7 @@
   // the Royal Room (2026-10-19): 18, which holds 93 (reached 2026-10-31 with
   // MOHAI, SIFF Film Center and the Rendezvous); 94 with SIFF Cinema
   // Downtown (2026-10-31): 19, which holds 98.
-  var CODE_LENGTH = 19;
+  var CODE_LENGTH = 20; // 2026-11-03: 100 slots with the DICE venues
   var REGISTRY = [
     ['venue', 'Climate Pledge Arena'], ['venue', 'Seattle Center'], ['venue', 'McCaw Hall'],
     ['venue', 'Seattle Rep'], ['venue', 'MoPOP'], ['venue', 'Children\'s Theatre'],
@@ -1025,6 +1081,8 @@
     ['venue', 'Axis Pioneer Square'], ['venue', 'Baba Obscura'], // 2026-10-29: 90 slots, still 18 digits
     ['venue', 'MOHAI'], ['venue', 'SIFF Film Center'], ['venue', 'The Rendezvous'], // 2026-10-31: 93 slots, the most 18 digits hold
     ['venue', 'SIFF Cinema Downtown'], // 2026-10-31: 94 slots, 19 digits
+    ['venue', 'The Black Lodge'], ['venue', 'The Shop'], ['venue', 'Belltown Yacht Club'], ['venue', 'Quality Flea Center'],
+    ['venue', 'queer/bar'], ['venue', 'Victory Hall'], // 2026-11-03: the DICE venues, 100 slots, 20 digits
   ];
 
   // The words the page uses for the place
