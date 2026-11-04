@@ -735,7 +735,7 @@
       feed: { kind: 'cards', secondary: true, url: 'https://app.opendate.io/c/tractor-tavern-13?layout=iframe', item: /<div class='card confirm-card'/, title: /<a[^>]*href="(https:\/\/app\.opendate\.io\/e\/[^"]+)"><strong>\s*([^<]+?)\s*<\/strong>/,
         when: /public-listing-date[^>]*>\s*([A-Z][a-z]+ \d{1,2}, \d{4})\s*<\/p>(?:\s*<p[^>]*public-listing-date[^>]*>[^<]*?Show:\s*([^<]*?)\s*<\/p>)?/, place: /title='([^']*) • /, venues: /tractor/i },
     },
-    'Sunset Tavern': { // Ballard Avenue's small stage (Ticketmaster carries its listings; the bar sells on DICE)
+    'Sunset Tavern': { // Ballard Avenue's small stage: the bar sells on DICE (its /shows page is DICE's widget), so DICE's public venue page leads and Ticketmaster stands behind it (2026-11-03)
       geo: [47.66812, -122.38599],
       capacity: 250,
       type: 'concert',
@@ -743,7 +743,8 @@
       color: '#858be9',
       url: 'https://sunsettavern.com/shows',
       icon: 'https://www.google.com/s2/favicons?domain=sunsettavern.com&sz=128',
-      tm: { id: 'rZ7HnEZa7IN', match: 'sunset tavern', fallbackUrl: 'https://sunsettavern.com/shows', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
+      tm: { id: 'rZ7HnEZa7IN', match: 'sunset tavern', fallbackUrl: 'https://sunsettavern.com/shows', secondary: true, exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
+      feed: { kind: 'dice', url: 'https://dice.fm/venue/10639' }, // the next ~30 shows; Ticketmaster's later ones still come in behind
     },
     Substation: { // the Ballard club on 15th
       geo: [47.66136, -122.36544],
