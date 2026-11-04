@@ -7727,6 +7727,220 @@
    "date": "2026-11-02",
    "time": "20:00:00",
    "url": "https://www.axs.com/events/1480581/sienna-spiro-tickets?skin=showboxpresents&src=AEGLIVE_WSHBXSEA030115VEN001"
+  },
+  {
+   "venue": "Convention Center",
+   "title": "Smartsheet ENGAGE 2026",
+   "date": "2026-11-03",
+   "time": "",
+   "url": "https://www.smartsheet.com/engage?srsltid=AfmBOopZMvo7xeAgpx8pBLlReJHoB_gJRiQ4nxkE_tJ0lJAzlKbRVg17",
+   "type": "expo",
+   "building": "Summit Building"
+  },
+  {
+   "venue": "Owl 'n Thistle",
+   "title": "Jazz Jam — Seattle's longest-running jazz night",
+   "date": "2026-11-03",
+   "time": "",
+   "url": "https://owlnthistle.com/live-music-schedule",
+   "type": "concert"
+  },
+  {
+   "venue": "Waterfront Park",
+   "title": "Secrets of Seattle’s Historic Shoreline Walking Tour",
+   "date": "2026-11-03",
+   "time": "10:00",
+   "url": "https://waterfrontparkseattle.org/blog/event/secrets-of-seattles-historic-shoreline-walking-tour/?date=202611031000",
+   "type": "community"
+  },
+  {
+   "venue": "KEXP",
+   "title": "Lime Garden Live on KEXP (Open To The Public)",
+   "date": "2026-11-03",
+   "time": "12:00:00",
+   "url": "https://www.kexp.org/events/kexp-events/lime-garden-live-on-kexp-kexp_521489/",
+   "end": "12:30:00"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "You Can See Everything",
+   "date": "2026-11-03",
+   "time": "15:30:00",
+   "url": "https://www.siff.net/cinema/in-theaters/you-can-see-everything",
+   "movie": true,
+   "end": "18:24:00"
+  },
+  {
+   "venue": "SIFF Cinema Downtown",
+   "title": "Ken Russell’s The Devils",
+   "date": "2026-11-03",
+   "time": "16:00:00",
+   "url": "https://www.siff.net/cinema/in-theaters/ken-russells-the-devils",
+   "movie": true,
+   "end": "17:54:00"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "Fatherland",
+   "date": "2026-11-03",
+   "time": "16:15:00",
+   "url": "https://www.siff.net/cinema/in-theaters/fatherland",
+   "movie": true,
+   "end": "17:37:00"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "Wicker",
+   "date": "2026-11-03",
+   "time": "16:30:00",
+   "url": "https://www.siff.net/cinema/in-theaters/wicker",
+   "movie": true,
+   "end": "18:15:00"
+  },
+  {
+   "venue": "Kerry Hall",
+   "title": "STG’s Local Vocals Choir Class",
+   "date": "2026-11-03",
+   "time": "18:00",
+   "url": "https://www.stgpresents.org/events/stgs-local-vocals-choir-class/",
+   "type": "arts"
+  },
+  {
+   "venue": "Clock-Out Lounge",
+   "title": "Election Night Party- hosted by Rob Foxcurran",
+   "date": "2026-11-03",
+   "time": "18:30:00",
+   "url": "https://www.ticketweb.com/event/election-night-party-hosted-clock-out-lounge-tickets/14381414"
+  },
+  {
+   "venue": "Baba Yaga",
+   "title": "Ian Sweet with Luella",
+   "date": "2026-11-03",
+   "time": "19:00",
+   "url": "https://ma.to/event/ian-sweet-03-nov-2026",
+   "type": "concert"
+  },
+  {
+   "venue": "Barboza",
+   "title": "Kennedy Ryon",
+   "date": "2026-11-03",
+   "time": "19:00",
+   "url": "https://www.thebarboza.com/events/detail/kennedy-ryon-tickets-1541713",
+   "type": "concert"
+  },
+  {
+   "venue": "El Corazon",
+   "title": "Icon For Hire – “Scripted” 15 Year Anniversary Tour",
+   "date": "2026-11-03",
+   "time": "19:00",
+   "url": "https://www.elcorazonseattle.com/shows/icon-for-hire-scripted-15-year-anniversary-tour-03-nov",
+   "type": "concert"
+  },
+  {
+   "venue": "El Corazon",
+   "title": "KARAOKE",
+   "date": "2026-11-03",
+   "time": "19:00",
+   "url": "https://www.elcorazonseattle.com/shows/karaoke-03-nov",
+   "type": "concert"
+  },
+  {
+   "venue": "Jazz Alley",
+   "title": "Kenny Garrett and Sounds From The Ancestors",
+   "date": "2026-11-03",
+   "time": "19:30",
+   "url": "https://www.jazzalley.com/www-home/artist.jsp?shownum=8831",
+   "type": "concert"
+  },
+  {
+   "venue": "Royal Room",
+   "title": "Robot Sunsets & Lago Vista Social Club",
+   "date": "2026-11-03",
+   "time": "19:30",
+   "url": "https://www.strangertickets.com/events/187267471/robot-sunsets-lago-vista-social-club",
+   "type": "concert"
+  },
+  {
+   "venue": "Paramount Theatre",
+   "title": "Oh, Mary! (Touring)",
+   "date": "2026-11-03",
+   "time": "19:30:00",
+   "url": "https://www.ticketmaster.com/oh-mary-touring-seattle-washington-11-03-2026/event/0F0064E9B2B790FD",
+   "type": "arts",
+   "tickets": {
+    "box": 9,
+    "resale": 18,
+    "checked": "2026-11-03T23:48:24.843Z",
+    "from": 130
+   }
+  },
+  {
+   "venue": "Benaroya Hall",
+   "title": "Battling Bloodsuckers - National Geographic Live",
+   "date": "2026-11-03",
+   "time": "19:30:00",
+   "url": "https://www.seattlesymphony.org/benaroyahall"
+  },
+  {
+   "venue": "SIFF Cinema Downtown",
+   "title": "Godzilla Minus Zero",
+   "date": "2026-11-03",
+   "time": "19:30:00",
+   "url": "https://www.siff.net/cinema/in-theaters/godzilla-minus-zero",
+   "movie": true,
+   "end": "21:45:00"
+  },
+  {
+   "venue": "Neptune Theatre",
+   "title": "The Aces (RESCHEDULED)",
+   "date": "2026-11-03",
+   "time": "20:00",
+   "url": "https://www.stgpresents.org/events/the-aces/",
+   "type": "concert"
+  },
+  {
+   "venue": "The Crocodile",
+   "title": "BAHAMAS: Industrial Sport & Sound Tour with Sister Ray",
+   "date": "2026-11-03",
+   "time": "20:00:00",
+   "url": "https://www.ticketweb.com/event/bahamas-industrial-sport-sound-the-crocodile-tickets/14768243",
+   "type": "concert",
+   "tickets": {
+    "box": null,
+    "resale": 0,
+    "checked": "2026-11-03T23:07:15.790Z",
+    "from": 49.36
+   }
+  },
+  {
+   "venue": "WAMU Theater",
+   "title": "Jessie Reyez: A Little Vengeance Tour",
+   "date": "2026-11-03",
+   "time": "20:00:00",
+   "url": "https://www.ticketmaster.com/jessie-reyez-a-little-vengeance-tour-seattle-washington-11-03-2026/event/0F006514DBD57BB1",
+   "type": "concert"
+  },
+  {
+   "venue": "WAMU Theater",
+   "title": "WAMU Theater Amplified: Jessie Reyez (Not an Event Ticket)",
+   "date": "2026-11-03",
+   "time": "20:00:00",
+   "url": "https://www.ticketmaster.com/wamu-theater-amplified-jessie-reyez-not-seattle-washington-11-03-2026/event/0F006518A64C9B19"
+  },
+  {
+   "venue": "Tractor Tavern",
+   "title": "Brendan James w/ guests (partially seated)",
+   "date": "2026-11-03",
+   "time": "20:00:00",
+   "url": "https://www.ticketweb.com/event/brendan-james-w-guests-partially-tractor-tickets/14273854",
+   "type": "concert"
+  },
+  {
+   "venue": "Showbox at the Market",
+   "title": "Pinhead Gunpowder with Constant Insult and Dead Bars",
+   "date": "2026-11-03",
+   "time": "20:00:00",
+   "url": "https://www.axs.com/events/1454914/pinhead-gunpowder-tickets?skin=showboxpresents&src=AEGLIVE_WSHBXSEA030115VEN001"
   }
  ]
 }
