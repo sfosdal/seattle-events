@@ -7941,6 +7941,264 @@
    "date": "2026-11-03",
    "time": "20:00:00",
    "url": "https://www.axs.com/events/1454914/pinhead-gunpowder-tickets?skin=showboxpresents&src=AEGLIVE_WSHBXSEA030115VEN001"
+  },
+  {
+   "venue": "Convention Center",
+   "title": "A4LE LearningSCAPES 2026",
+   "date": "2026-11-04",
+   "time": "",
+   "url": "https://learningscapes.a4le.org/",
+   "type": "expo",
+   "building": "Arch Building"
+  },
+  {
+   "venue": "Convention Center",
+   "title": "Smartsheet ENGAGE 2026",
+   "date": "2026-11-04",
+   "time": "",
+   "url": "https://www.smartsheet.com/engage?srsltid=AfmBOopZMvo7xeAgpx8pBLlReJHoB_gJRiQ4nxkE_tJ0lJAzlKbRVg17",
+   "type": "expo",
+   "building": "Summit Building"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "You Can See Everything",
+   "date": "2026-11-04",
+   "time": "15:30:00",
+   "url": "https://www.siff.net/cinema/in-theaters/you-can-see-everything",
+   "movie": true,
+   "end": "18:24:00"
+  },
+  {
+   "venue": "The Vera Project",
+   "title": "Screen Printing Open Session",
+   "date": "2026-11-04",
+   "time": "16:00:00",
+   "url": "https://link.dice.fm/E287ea11a8a3",
+   "type": "community",
+   "end": "20:00:00",
+   "soldOut": true
+  },
+  {
+   "venue": "SIFF Cinema Downtown",
+   "title": "Ken Russell’s The Devils",
+   "date": "2026-11-04",
+   "time": "16:00:00",
+   "url": "https://www.siff.net/cinema/in-theaters/ken-russells-the-devils",
+   "movie": true,
+   "end": "17:54:00"
+  },
+  {
+   "venue": "KEXP",
+   "title": "Dabda Live on KEXP (Open To The Public)",
+   "date": "2026-11-04",
+   "time": "16:00:00",
+   "url": "https://www.kexp.org/events/kexp-events/dabda-live-on-kexp-kexp_521549/",
+   "end": "16:30:00"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "Wicker",
+   "date": "2026-11-04",
+   "time": "16:15:00",
+   "url": "https://www.siff.net/cinema/in-theaters/wicker",
+   "movie": true,
+   "end": "18:00:00"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "Fatherland",
+   "date": "2026-11-04",
+   "time": "16:30:00",
+   "url": "https://www.siff.net/cinema/in-theaters/fatherland",
+   "movie": true,
+   "end": "17:52:00"
+  },
+  {
+   "venue": "Kerry Hall",
+   "title": "Gone Guys Film Screening & Community Conversation",
+   "date": "2026-11-04",
+   "time": "18:30",
+   "url": "https://www.stgpresents.org/events/gone-guys-film-screening-community-conversation/",
+   "type": "arts"
+  },
+  {
+   "venue": "Clock-Out Lounge",
+   "title": "Raised By TV Events Presents: all ages Scooby Doo 1 & 2 films Trivia Night",
+   "date": "2026-11-04",
+   "time": "18:30:00",
+   "url": "https://www.ticketweb.com/event/raised-by-tv-events-presents-clock-out-lounge-tickets/14309584"
+  },
+  {
+   "venue": "Neumos",
+   "title": "King Buffalo",
+   "date": "2026-11-04",
+   "time": "19:00",
+   "url": "https://www.neumos.com/events/detail/king-buffalo-tickets-1451706",
+   "type": "concert"
+  },
+  {
+   "venue": "Climate Pledge Arena",
+   "title": "Seattle Kraken vs. Calgary Flames",
+   "date": "2026-11-04",
+   "time": "19:00:00",
+   "url": "https://www.ticketmaster.com/seattle-kraken-vs-calgary-flames-seattle-washington-11-04-2026/event/0F0064C4A055A26F",
+   "type": "sports",
+   "watch": {
+    "tv": [
+     "Prime Video",
+     "KONG"
+    ]
+   },
+   "tickets": {
+    "box": 30,
+    "resale": 294,
+    "checked": "2026-11-05T01:53:56.445Z",
+    "from": 65.79
+   }
+  },
+  {
+   "venue": "The Crocodile",
+   "title": "Plini - An Unnameable Desire North American Tour w/ Night Verses & Portraits",
+   "date": "2026-11-04",
+   "time": "19:00:00",
+   "url": "https://www.ticketweb.com/event/plini-an-unnameable-the-crocodile-tickets/14958123",
+   "type": "concert",
+   "tickets": {
+    "box": null,
+    "resale": 0,
+    "checked": "2026-11-05T01:53:38.249Z",
+    "from": 42.09
+   }
+  },
+  {
+   "venue": "The Vera Project",
+   "title": "Worst Party Ever x Equipment",
+   "date": "2026-11-04",
+   "time": "19:00:00",
+   "url": "https://link.dice.fm/w414e3fce031",
+   "type": "concert",
+   "end": "23:00:00"
+  },
+  {
+   "venue": "SIFF Cinema Downtown",
+   "title": "The Shining",
+   "date": "2026-11-04",
+   "time": "19:00:00",
+   "url": "https://www.siff.net/cinema/in-theaters/the-shining",
+   "movie": true,
+   "end": "21:24:00"
+  },
+  {
+   "venue": "Triple Door",
+   "title": "Murray Hill \"Showbiz! The Tour\"",
+   "date": "2026-11-04",
+   "time": "19:30",
+   "url": "https://thetripledoor.net/event/6587306/763958799/murray-hill-showbiz-the-tour",
+   "type": "concert"
+  },
+  {
+   "venue": "Jazz Alley",
+   "title": "Kenny Garrett and Sounds From The Ancestors",
+   "date": "2026-11-04",
+   "time": "19:30",
+   "url": "https://www.jazzalley.com/www-home/artist.jsp?shownum=8831",
+   "type": "concert"
+  },
+  {
+   "venue": "Town Hall Seattle",
+   "title": "Claudia Rankine",
+   "date": "2026-11-04",
+   "time": "19:30",
+   "url": "https://lectures.org",
+   "type": "arts"
+  },
+  {
+   "venue": "Paramount Theatre",
+   "title": "Oh, Mary! (Touring)",
+   "date": "2026-11-04",
+   "time": "19:30:00",
+   "url": "https://www.ticketmaster.com/oh-mary-touring-seattle-washington-11-04-2026/event/0F0064E9B2BC910D",
+   "type": "arts",
+   "tickets": {
+    "box": 0,
+    "resale": 1,
+    "checked": "2026-11-05T02:17:12.759Z",
+    "from": 167
+   },
+   "soldOut": true
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "A Man and A Woman",
+   "date": "2026-11-04",
+   "time": "19:30:00",
+   "url": "https://www.siff.net/programs-and-events/nouvelles-femmes/a-man-and-a-woman",
+   "end": "21:12:00"
+  },
+  {
+   "venue": "Seattle Rep",
+   "title": "Eureka Day: Best Availability",
+   "date": "2026-11-04",
+   "time": "19:30:00",
+   "url": "https://www.seattlerep.org/plays/202627-season/eureka-day",
+   "type": "arts"
+  },
+  {
+   "venue": "Baba Yaga",
+   "title": "Moon Panda: Satellite Tour",
+   "date": "2026-11-04",
+   "time": "20:00",
+   "url": "https://ma.to/event/moon-panda-satellite-tour-2026-11-04",
+   "type": "concert"
+  },
+  {
+   "venue": "Sunset Tavern",
+   "title": "Tagua Tagua, Orlas",
+   "date": "2026-11-04",
+   "time": "20:00",
+   "url": "https://dice.fm/event/6a6a5bbe760a37000111c4b3",
+   "end": "23:00",
+   "type": "concert"
+  },
+  {
+   "venue": "Neptune Theatre",
+   "title": "Big Star Quintet",
+   "date": "2026-11-04",
+   "time": "20:00:00",
+   "url": "https://www.ticketmaster.com/big-star-quintet-seattle-washington-11-04-2026/event/0F006503B11EAB78",
+   "type": "concert"
+  },
+  {
+   "venue": "Chop Suey",
+   "title": "Best, The Linens, Deep Contact",
+   "date": "2026-11-04",
+   "time": "20:00:00",
+   "url": "https://www.ticketweb.com/event/best-the-linens-deep-contact-chop-suey-tickets/15041603",
+   "type": "concert"
+  },
+  {
+   "venue": "Tractor Tavern",
+   "title": "Jeffrey Martin w/ Sam Weber (partially seated)",
+   "date": "2026-11-04",
+   "time": "20:00:00",
+   "url": "https://www.ticketweb.com/event/jeffrey-martin-w-sam-weber-tractor-tickets/14993053",
+   "type": "concert"
+  },
+  {
+   "venue": "Showbox at the Market",
+   "title": "The Best One Yet - Limited Seating",
+   "date": "2026-11-04",
+   "time": "20:00:00",
+   "url": "https://www.axs.com/events/1446394/the-best-one-yet-limited-seating-tickets?skin=showboxpresents&src=AEGLIVE_WSHBXSEA030115VEN001"
+  },
+  {
+   "venue": "Substation",
+   "title": "Cut Copy (DJ Set)",
+   "date": "2026-11-04",
+   "time": "21:00",
+   "url": "https://www.eventbrite.com/e/cut-copy-dj-set-tickets-1986264694169",
+   "type": "concert"
   }
  ]
 }
