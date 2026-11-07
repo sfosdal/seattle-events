@@ -135,7 +135,7 @@
       cssVar: '--v-cpa',
       color: '#4da3f0',
       url: 'https://climatepledgearena.com/events/',
-      icon: 'https://www.google.com/s2/favicons?domain=climatepledgearena.com&sz=128',
+      icon: 'marks/venues/climatepledgearena.com.png',
       tm: { id: 'KovZ917Ahkk', match: 'climate pledge', fallbackUrl: 'https://climatepledgearena.com/events/', exclude: /climate pledge arena tours?|all access pass/i },
       feed: { kind: 'tribe', secondary: true, url: 'https://climatepledgearena.com/wp-json/tribe/events/v1/events', drop: /^private event/i }, // the arena's own calendar (The Events Calendar), filling what Ticketmaster lacks (2026-10-26)
       soldOut: 'tm',
@@ -147,7 +147,7 @@
       cssVar: '--v-seactr',
       color: '#6a72e6',
       url: 'https://www.seattlecenter.com/events/event-calendar',
-      icon: 'https://www.seattlecenter.com/Dev/Logos/logobug.png',
+      icon: 'marks/venues/seattlecenter.com-logobug.png',
     },
     'McCaw Hall': {
       geo: [47.62398, -122.35039],
@@ -164,7 +164,7 @@
       cssVar: '--v-rep',
       color: '#f0827a',
       url: 'https://www.seattlerep.org/plays/calendar',
-      icon: 'https://www.google.com/s2/favicons?domain=www.seattlerep.org&sz=128',
+      icon: 'marks/venues/seattlerep.org.png',
     },
     MoPOP: {
       geo: [47.62146, -122.34818],
@@ -189,7 +189,7 @@
       cssVar: '--v-cornish',
       color: '#3ecf97',
       url: 'https://www.seattlecenter.com/events/event-calendar?cats=173',
-      icon: 'https://www.google.com/s2/favicons?domain=www.cornish.edu&sz=128',
+      icon: 'marks/venues/cornish.edu.png',
     },
     'SIFF Cinema Uptown': {
       geo: [47.62348, -122.35711],
@@ -198,7 +198,7 @@
       cssVar: '--v-siff',
       color: '#b596e0',
       url: 'https://www.siff.net/calendar',
-      icon: 'https://www.siff.net/images/SIFF_favicon_03.png',
+      icon: 'marks/venues/siff.net-siff_favicon_03.png',
     },
     'SIFF Film Center': { // SIFF's screening room in the Seattle Center Northwest Rooms (305 Harrison St) — read off the same calendar pages as the Uptown (2026-10-31)
       geo: [47.62312, -122.35319],
@@ -207,7 +207,7 @@
       cssVar: '--v-sifffc',
       color: '#a68fd6',
       url: 'https://www.siff.net/calendar',
-      icon: 'https://www.siff.net/images/SIFF_favicon_03.png',
+      icon: 'marks/venues/siff.net-siff_favicon_03.png',
     },
     'SIFF Cinema Downtown': { // the old Cinerama (2100 4th Ave), SIFF's since 2023 — read off the same calendar pages as the Uptown (2026-10-31)
       geo: [47.61420, -122.34135],
@@ -216,7 +216,7 @@
       cssVar: '--v-siffdt',
       color: '#9a88d0',
       url: 'https://www.siff.net/calendar',
-      icon: 'https://www.siff.net/images/SIFF_favicon_03.png',
+      icon: 'marks/venues/siff.net-siff_favicon_03.png',
     },
     'Pacific Science Center': {
       geo: [47.61941, -122.35078],
@@ -233,7 +233,7 @@
       cssVar: '--v-vera',
       color: '#a26be6',
       url: 'https://theveraproject.org/events/',
-      icon: 'https://www.google.com/s2/favicons?domain=theveraproject.org&sz=128',
+      icon: 'marks/venues/theveraproject.org.png',
     },
     'On the Boards': {
       geo: [47.62583, -122.35819],
@@ -242,7 +242,7 @@
       cssVar: '--v-otb',
       color: '#e07ae0',
       url: 'https://ontheboards.org/events',
-      icon: 'https://www.google.com/s2/favicons?domain=ontheboards.org&sz=128',
+      icon: 'marks/venues/ontheboards.org.png',
     },
     KEXP: {
       geo: [47.62296, -122.35515],
@@ -259,7 +259,7 @@
       cssVar: '--v-tmobile',
       color: '#8ad8e0',
       url: 'https://www.mlb.com/mariners/ballpark/events',
-      icon: 'https://www.google.com/s2/favicons?domain=www.mlb.com&sz=128',
+      icon: 'marks/venues/mlb.com.png',
       tm: { id: 'KovZpZAEevAA', match: 't-mobile park', fallbackUrl: 'https://www.mlb.com/mariners', exclude: /ballpark tour|flex membership/i },
       soldOut: 'tm',
     },
@@ -270,7 +270,7 @@
       cssVar: '--v-lumen',
       color: '#8b8fe8',
       url: 'https://www.lumenfield.com/events-tickets/event-calendar',
-      icon: 'https://www.google.com/s2/favicons?domain=www.lumenfield.com&sz=128',
+      icon: 'marks/venues/lumenfield.com.png',
       tm: { id: 'KovZpZAEknnA', match: 'lumen field', fallbackUrl: 'https://www.lumenfield.com/events-tickets/event-calendar', exclude: /stadium tour|notification list/i },
       // the stadium's own calendar (Webflow: concerts, home games and multi-day lists on one page; the WAMU Theater's cards share it, kept out by `venues`), secondary behind Ticketmaster (2026-10-26)
       feed: { kind: 'cards', secondary: true, url: 'https://www.lumenfield.com/events-tickets/event-calendar', venues: /lumen field/i,
@@ -285,7 +285,7 @@
       cssVar: '--v-husky',
       color: '#c4a0f0',
       url: 'https://gohuskies.com/sports/football/schedule',
-      icon: 'https://www.google.com/s2/favicons?domain=gohuskies.com&sz=128',
+      icon: 'marks/venues/gohuskies.com.png',
     },
     'Convention Center': {
       geo: [47.61139, -122.33255],
@@ -308,7 +308,7 @@
       cssVar: '--v-paramount',
       color: '#e39a6e',
       url: 'https://www.stgpresents.org/calendar/',
-      icon: 'https://www.google.com/s2/favicons?domain=www.stgpresents.org&sz=128',
+      icon: 'marks/venues/stgpresents.org.png',
       tm: { id: 'KovZpZAFkvEA', match: 'paramount', fallbackUrl: 'https://www.stgpresents.org/calendar/', exclude: /theatre tours?/i },
       feed: { kind: 'mec', secondary: true, url: 'https://www.stgpresents.org/events/', venues: /^the paramount theatre$/i, drop: /paramount tour|theatre tours?/i }, // STG's own listing (every venue it presents in; the Paramount's cards kept), secondary behind Ticketmaster (2026-10-26)
       soldOut: 'tm',
@@ -320,7 +320,7 @@
       cssVar: '--v-showbox',
       color: '#e8c45a',
       url: 'https://www.showboxpresents.com/events',
-      icon: 'https://www.google.com/s2/favicons?domain=www.showboxpresents.com&sz=128',
+      icon: 'marks/venues/showboxpresents.com.png',
     },
     'Showbox SoDo': {
       geo: [47.58805, -122.33393],
@@ -329,7 +329,7 @@
       cssVar: '--v-sodo',
       color: '#aab8d6',
       url: 'https://www.showboxpresents.com/events',
-      icon: 'https://www.google.com/s2/favicons?domain=www.showboxpresents.com&sz=128',
+      icon: 'marks/venues/showboxpresents.com.png',
     },
     'The Crocodile': {
       geo: [47.61465, -122.34907],
@@ -338,7 +338,7 @@
       cssVar: '--v-croc',
       color: '#7ed67f',
       url: 'https://calendar.thecrocodile.com/',
-      icon: 'https://www.google.com/s2/favicons?domain=www.thecrocodile.com&sz=128',
+      icon: 'marks/venues/thecrocodile.com.png',
       tm: { id: 'KovZpZA1vFtA,rZ7HnEZae-Y,ZFr9jZ7kkv', match: 'crocodile', fallbackUrl: 'https://calendar.thecrocodile.com/' },
       // the club's own calendar (Webflow: two cards a show — the TicketWeb link, then a hidden one with the clock and the show page, read here; its promotions at other clubs are kept out by `venues`), secondary behind Ticketmaster (2026-10-26)
       feed: { kind: 'cards', secondary: true, url: 'https://calendar.thecrocodile.com/', venues: /crocodile/i,
@@ -354,7 +354,7 @@
       cssVar: '--v-baba',
       color: '#ea8686',
       url: 'https://babayagaseattle.com/seattle-pioneer-square-baba-yaga-events-days',
-      icon: 'https://www.google.com/s2/favicons?domain=babayagaseattle.com&sz=128',
+      icon: 'marks/venues/babayagaseattle.com.png',
       tm: { id: 'rZ7HnEZ17jbAS', match: 'baba yaga', fallbackUrl: 'https://babayagaseattle.com/seattle-pioneer-square-baba-yaga-events-days' },
       // no soldOut tag: its TicketWeb pages answer 506 to a plain fetch and a bare page to a browser-impersonating one (2026-10-15), so there is no status to read
       // the bar's own site says "we are updating our events" (SpotHopper, empty API); ma.to's venue page carries the weekly nights as schema.org Events
@@ -368,7 +368,7 @@
       cssVar: '--v-axis',
       color: '#86a6ea',
       url: 'https://babaobscura.com/schedule',
-      icon: 'https://www.google.com/s2/favicons?domain=babaobscura.com&sz=128',
+      icon: 'marks/venues/babaobscura.com.png',
     },
     'Central Saloon': { // 207 1st Ave S, Seattle's oldest bar (1892) and a 300-cap club; its own WordPress calendar
       geo: [47.6006, -122.3344],
@@ -377,7 +377,7 @@
       cssVar: '--v-central',
       color: '#eab486',
       url: 'https://centralsaloon.com/events/',
-      icon: 'https://www.google.com/s2/favicons?domain=centralsaloon.com&sz=128',
+      icon: 'marks/venues/centralsaloon.com.jpg',
       // Modern Events Calendar list: its JSON-LD has the dates but no clocks, so the cards are read (date span + time span); TM KovZpZA1kaJA is empty
       feed: { kind: 'cards', url: 'https://centralsaloon.com/events/', item: /<article class="mec-event-article/, title: /class="mec-event-title"><a[^>]*href="([^"]+)"[^>]*>([^<]+)</, when: /mec-start-date-label">([^<]+)<\/span>[\s\S]{0,800}?mec-start-time">([^<]+)</ },
       alias: /central saloon/i,
@@ -389,7 +389,7 @@
       cssVar: '--v-sjf',
       color: '#eadb86',
       url: 'https://seattlejazzfellowship.org/events',
-      icon: 'https://www.google.com/s2/favicons?domain=seattlejazzfellowship.org&sz=128',
+      icon: 'marks/venues/seattlejazzfellowship.org.png',
       feed: { kind: 'squarespace', url: 'https://seattlejazzfellowship.org/events' },
       alias: /jazz fellowship/i,
     },
@@ -400,7 +400,7 @@
       cssVar: '--v-trinity',
       color: '#c486ea',
       url: 'https://www.trinitynightclub.com/',
-      icon: 'https://www.google.com/s2/favicons?domain=www.trinitynightclub.com&sz=128',
+      icon: 'marks/venues/trinitynightclub.com.png',
       feed: { kind: 'linked', url: 'https://www.trinitynightclub.com/', match: /eventbrite\.com\/e\//, max: 40 },
       alias: /trinity nightclub|trinity seattle/i,
     },
@@ -411,7 +411,7 @@
       cssVar: '--v-nordo',
       color: '#ea86c8',
       url: 'https://www.cafenordo.com/calendar',
-      icon: 'https://www.google.com/s2/favicons?domain=www.cafenordo.com&sz=128',
+      icon: 'marks/venues/cafenordo.com.png',
       feed: { kind: 'squarespace', url: 'https://www.cafenordo.com/calendar' },
       alias: /caf[eé] nordo|nordo'?s? culinarium|culinarium/i,
     },
@@ -422,7 +422,7 @@
       cssVar: '--v-occidental',
       color: '#86ea9a',
       url: 'https://www.downtownseattle.org/places/occidental-square/',
-      icon: 'https://www.google.com/s2/favicons?domain=www.downtownseattle.org&sz=128',
+      icon: 'marks/venues/downtownseattle.org.png',
       feed: { kind: 'tribe', chrome: true, url: 'https://www.downtownseattle.org/wp-json/tribe/events/v1/events?venue=53729' },
       alias: /occidental (square|park)/i,
     },
@@ -433,7 +433,7 @@
       cssVar: '--v-owl',
       color: '#b8ea86',
       url: 'https://owlnthistle.com/live-music-schedule',
-      icon: 'https://www.google.com/s2/favicons?domain=owlnthistle.com&sz=128',
+      icon: 'marks/venues/owlnthistle.com.png',
       alias: /owl ?'?n'? ?thistle/i,
     },
     'Klondike Gold Rush NHP': { // 319 2nd Ave S — the National Park Service's Seattle unit, in the Cadillac Hotel: ranger talks, Living Voices
@@ -443,7 +443,7 @@
       cssVar: '--v-klondike',
       color: '#eac786',
       url: 'https://www.nps.gov/klse/planyourvisit/calendar.htm',
-      icon: 'https://www.google.com/s2/favicons?domain=www.nps.gov&sz=128',
+      icon: 'marks/venues/nps.gov.png',
       feed: { kind: 'nps', url: 'https://developer.nps.gov/api/v1/events?parkCode=klse' },
       alias: /klondike|cadillac hotel/i,
     },
@@ -454,7 +454,7 @@
       cssVar: '--v-around',
       color: '#86d9ea',
       url: 'https://pioneersquare.org/events/',
-      icon: 'https://www.google.com/s2/favicons?domain=pioneersquare.org&sz=128',
+      icon: 'marks/venues/pioneersquare.org.png',
     },
     'WAMU Theater': { // inside Lumen Field's event centre, 7,000 standing
       geo: [47.59315, -122.3329],
@@ -463,7 +463,7 @@
       cssVar: '--v-wamu',
       color: '#a6a1ea',
       url: 'https://www.wamutheater.com/event-calendar',
-      icon: 'https://www.google.com/s2/favicons?domain=www.wamutheater.com&sz=128',
+      icon: 'marks/venues/wamutheater.com.jpg',
       tm: { id: 'KovZpZAFFE7A', match: 'wamu', fallbackUrl: 'https://www.wamutheater.com/event-calendar', exclude: /amplified access|parking/i },
       // the theater's own calendar (Webflow, the Lumen Field template: a card's clock and a hidden ISO sort date), secondary behind Ticketmaster (2026-10-27)
       feed: { kind: 'cards', secondary: true, url: 'https://www.wamutheater.com/event-calendar', item: /<div role="listitem" class="dbc-home-feat-item w-dyn-item">/,
@@ -477,7 +477,7 @@
       cssVar: '--v-waterfront',
       color: '#86c9ea',
       url: 'https://waterfrontparkseattle.org/events/',
-      icon: 'https://www.google.com/s2/favicons?domain=waterfrontparkseattle.org&sz=128',
+      icon: 'marks/venues/waterfrontparkseattle.org.png',
       feed: { kind: 'cards', url: 'https://waterfrontparkseattle.org/events/',
         item: /<div class="grid-item"/, title: /<a href="([^"]+)">[\s\S]*?<h4 class="widont ">([\s\S]*?)<\/h4>/,
         when: /<h3 class="widont ">([\s\S]*?)<\/h3><h3 class="widont date-time">([^<]*)<\/h3>/ },
@@ -491,7 +491,7 @@
       cssVar: '--v-neptune',
       color: '#e9ab85',
       url: 'https://www.stgpresents.org/calendar/',
-      icon: 'https://www.google.com/s2/favicons?domain=www.stgpresents.org&sz=128',
+      icon: 'marks/venues/stgpresents.org.png',
       tm: { id: 'KovZpZAFnltA,rZ7HnEZ17fdqg', match: 'neptune', fallbackUrl: 'https://www.stgpresents.org/calendar/', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
       feed: { kind: 'mec', secondary: true, url: 'https://www.stgpresents.org/events/', venues: /^the neptune theatre$/i, drop: /theatre tours?/i }, // STG's own listing, the Neptune's cards kept, secondary behind Ticketmaster (2026-10-27)
     },
@@ -502,7 +502,7 @@
       cssVar: '--v-moore',
       color: '#e9be85',
       url: 'https://www.stgpresents.org/calendar/',
-      icon: 'https://www.google.com/s2/favicons?domain=www.stgpresents.org&sz=128',
+      icon: 'marks/venues/stgpresents.org.png',
       tm: { id: 'KovZpZA1vFJA', match: 'moore', fallbackUrl: 'https://www.stgpresents.org/calendar/', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
       feed: { kind: 'mec', secondary: true, url: 'https://www.stgpresents.org/events/', venues: /^the moore theatre$/i, drop: /theatre tours?/i }, // STG's own listing, the Moore's cards kept, secondary behind Ticketmaster (2026-10-27)
     },
@@ -513,7 +513,7 @@
       cssVar: '--v-benaroya',
       color: '#e9d185',
       url: 'https://www.benaroyahall.org/',
-      icon: 'https://www.google.com/s2/favicons?domain=www.benaroyahall.org&sz=128',
+      icon: 'marks/venues/benaroyahall.org.png',
       tm: { id: 'Z6r9jZeFde,Z7r9jZadcG,KovZpZAaIEvA', match: 'benaroya', fallbackUrl: 'https://www.benaroyahall.org/', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
     },
     '5th Avenue Theatre': { // the musicals house
@@ -523,7 +523,7 @@
       cssVar: '--v-fifth',
       color: '#e9e485',
       url: 'https://www.5thavenue.org/shows/',
-      icon: 'https://www.google.com/s2/favicons?domain=www.5thavenue.org&sz=128',
+      icon: 'marks/venues/5thavenue.org.png',
       tm: { id: 'KovZpa3Mze,ZAr9jZ6ehK', match: '5th avenue', fallbackUrl: 'https://www.5thavenue.org/shows/', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
     },
     'ACT Theatre': { // A Contemporary Theatre, listed on Ticketmaster as the Union Arts Center (its Eagles Auditorium building's new name)
@@ -533,7 +533,7 @@
       cssVar: '--v-act',
       color: '#dce985',
       url: 'https://order.unionartscenter.org/events',
-      icon: 'https://www.google.com/s2/favicons?domain=order.unionartscenter.org&sz=128',
+      icon: 'marks/venues/order.unionartscenter.org.png',
       tm: { id: 'ZAr9jZ1e-x', match: 'union arts', fallbackUrl: 'https://order.unionartscenter.org/events', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
     },
     'Taproot Theatre': { // Greenwood's playhouse
@@ -543,7 +543,7 @@
       cssVar: '--v-taproot',
       color: '#c9e985',
       url: 'https://taproottheatre.org/',
-      icon: 'https://www.google.com/s2/favicons?domain=taproottheatre.org&sz=128',
+      icon: 'marks/venues/taproottheatre.org.png',
       tm: { id: 'ZFr9jZe66d', match: 'taproot', fallbackUrl: 'https://taproottheatre.org/', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
     },
     'Triple Door': { // the supper club under Wild Ginger, two ids
@@ -553,7 +553,7 @@
       cssVar: '--v-tripledoor',
       color: '#b6e985',
       url: 'https://www.thetripledoor.net/',
-      icon: 'https://www.google.com/s2/favicons?domain=www.thetripledoor.net&sz=128',
+      icon: 'marks/venues/thetripledoor.net.png',
       tm: { id: 'ZFr9jZAFvA,KovZpZA1ekJA', match: 'triple door', fallbackUrl: 'https://www.thetripledoor.net/', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i, secondary: true }, // Ticketmaster, read behind the venue's own listing — every venue both ways (Steve, 2026-10-26)
       // the club's own month calendar (Zoogle): every show's popup page carries schema.org MusicEvent markup with the stage as the location — read link by link; the grid is one month deep, so rows run to the end of the current month (2026-10-27)
       feed: { kind: 'linked', url: 'https://www.thetripledoor.net/mainstage-calendar', match: /\/go\/events\/\d+$/, max: 60, at: /mainstage|mq stage|triple door/i, drop: /closed for a private event/i },
@@ -565,7 +565,7 @@
       cssVar: '--v-jazzalley',
       color: '#a4e985',
       url: 'https://www.jazzalley.com/www-home/calendar.jsp',
-      icon: 'https://www.google.com/s2/favicons?domain=www.jazzalley.com&sz=128',
+      icon: 'marks/venues/jazzalley.com.png',
       feed: { kind: 'cards', url: 'https://www.jazzalley.com/www-home/calendar.jsp', time: '19:30',
         item: /<div class="news-box"/, title: /<a href="([^"]+)"><h2>([^<]+)<\/h2>/,
         when: /<em class="date">(?:[A-Za-z]{3}, )?([A-Za-z]{3} \d{1,2})( - )?(?:[A-Za-z]{3}, )?((?:[A-Za-z]{3} \d{1,2})?, \d{4})/ },
@@ -577,7 +577,7 @@
       cssVar: '--v-meany',
       color: '#91e985',
       url: 'https://meanycenter.org/tickets/season',
-      icon: 'https://www.google.com/s2/favicons?domain=meanycenter.org&sz=128',
+      icon: 'marks/venues/meanycenter.org.png',
       feed: { kind: 'cards', url: 'https://meanycenter.org/tickets/season',
         item: /class="views-row/, title: /<div class="listing-title"><a href="([^"]+)">([^<]+)<\/a>/,
         when: /<span class='month'>([^<]+)<\/span><span class='date'>([^<]+)<\/span>/ },
@@ -589,7 +589,7 @@
       cssVar: '--v-townhall',
       color: '#85e98c',
       url: 'https://townhallseattle.org/events/',
-      icon: 'https://www.google.com/s2/favicons?domain=townhallseattle.org&sz=128',
+      icon: 'marks/venues/townhallseattle.org.png',
       feed: { kind: 'tribe', url: 'https://townhallseattle.org/wp-json/tribe/events/v1/events', rooms: /great hall|forum|wyncote|town hall/i },
     },
     'Woodland Park Zoo': { // ZooTunes in summer, the zoo's own event days the rest of the year — its Events Calendar feed
@@ -599,7 +599,7 @@
       cssVar: '--v-zoo',
       color: '#85e99f',
       url: 'https://www.zoo.org/events',
-      icon: 'https://www.google.com/s2/favicons?domain=www.zoo.org&sz=128',
+      icon: 'marks/venues/zoo.org.jpg',
       feed: { kind: 'tribe', url: 'https://www.zoo.org/wp-json/tribe/events/v1/events', drop: /member|volunteer|camp\b|class\b/i },
     },
     'Alaska Airlines Arena': { // Hec Edmundson Pavilion — Huskies basketball and volleyball, graduations
@@ -609,7 +609,7 @@
       cssVar: '--v-heced',
       color: '#85e9b2',
       url: 'https://gohuskies.com/',
-      icon: 'https://www.google.com/s2/favicons?domain=gohuskies.com&sz=128',
+      icon: 'marks/venues/gohuskies.com.png',
       tm: { id: 'Z6r9jZFeae', match: 'alaska airlines arena', fallbackUrl: 'https://gohuskies.com/', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
       // the Huskies' Sidearm calendar (one season file, every sport, away games too): the arena's own dates — basketball, volleyball, gymnastics — behind Ticketmaster (2026-10-27)
       feed: { kind: 'icsfile', secondary: true, url: 'https://gohuskies.com/calendar.ashx/calendar.ics', venues: /alaska airlines arena/i, rename: [[/^\[[A-Z]\]\s*/, ''], [/^Washington\b/, 'Huskies']] },
@@ -621,7 +621,7 @@
       cssVar: '--v-neumos',
       color: '#85e9c4',
       url: 'https://www.neumos.com/events',
-      icon: 'https://www.google.com/s2/favicons?domain=www.neumos.com&sz=128',
+      icon: 'marks/venues/neumos.com.png',
       tm: { id: 'ZFr9jZAFvF', match: 'neumos', fallbackUrl: 'https://www.neumos.com/events', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i, secondary: true }, // Ticketmaster, read behind the venue's own listing — every venue both ways (Steve, 2026-10-26)
       // the club's own listing (AXS-fed Carbonhouse cards: a yearless date, the doors clock), 60-odd shows to Ticketmaster's score — the listing leads (2026-10-27)
       feed: { kind: 'cards', chrome: true, url: 'https://www.neumos.com/events/all', item: /<div class="eventItem entry/, title: /<h3 class="title[^"]*">\s*<a href="([^"]+)"[^>]*>([^<]+)</,
@@ -634,7 +634,7 @@
       cssVar: '--v-barboza',
       color: '#85e9d7',
       url: 'https://www.neumos.com/events',
-      icon: 'https://www.google.com/s2/favicons?domain=www.neumos.com&sz=128',
+      icon: 'marks/venues/neumos.com.png',
       tm: { id: 'Z7r9jZaetY', match: 'barboza', fallbackUrl: 'https://www.neumos.com/events', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i, secondary: true }, // Ticketmaster, read behind the venue's own listing — every venue both ways (Steve, 2026-10-26)
       // the basement's own listing (thebarboza.com, the Neumos template), 50-odd shows to Ticketmaster's three — the listing leads (2026-10-27)
       feed: { kind: 'cards', url: 'https://www.thebarboza.com/events/all', item: /<div class="eventItem entry/, title: /<h3 class="title[^"]*">\s*<a href="([^"]+)"[^>]*>([^<]+)</,
@@ -647,7 +647,6 @@
       cssVar: '--v-chopsuey',
       color: '#85e8e9',
       url: 'https://chopsuey.com/calendar',
-      icon: 'https://www.google.com/s2/favicons?domain=chopsuey.com&sz=128',
       tm: { id: 'rZ7HnEZa7ck', match: 'chop suey', fallbackUrl: 'https://chopsuey.com/calendar', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
       // the club's own list page (the TicketWeb WordPress plugin: the date prints as "10.27", so the day-month-clock is read from the link's title attribute), secondary behind Ticketmaster (2026-10-27)
       feed: { kind: 'cards', secondary: true, url: 'https://chopsuey.com/', item: /<div class="tw-section">/, title: /<div class="tw-name">\s*<a href="([^"]+)"[^>]*>([^<]+)</, when: /title="Event Name - [^"]*\| (\d{1,2} [A-Za-z]+ [^"]*)"/ },
@@ -659,7 +658,7 @@
       cssVar: '--v-clockout',
       color: '#85d6e9',
       url: 'https://clockoutlounge.com/',
-      icon: 'https://www.google.com/s2/favicons?domain=clockoutlounge.com&sz=128',
+      icon: 'marks/venues/clockoutlounge.com.png',
       tm: { id: 'rZ7HnEZ1734_P,Z7r9jZadEF', match: 'clock-out', fallbackUrl: 'https://clockoutlounge.com/', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
       // the bar's own list page (the TicketWeb WordPress plugin: a full date and the doors clock), secondary behind Ticketmaster (2026-10-27)
       feed: { kind: 'cards', secondary: true, url: 'https://clockoutlounge.com/', item: /<div class="tw-section">/, title: /<div class="tw-name">\s*<a href="([^"]+)"[^>]*>([^<]+)</, when: /tw-event-date">([^<]+)<(?:[\s\S]*?tw-event-door-time">([^<]+)<)?/ },
@@ -671,7 +670,6 @@
       cssVar: '--v-royalroom',
       color: '#c4a9ef',
       url: 'https://theroyalroomseattle.com/events/',
-      icon: 'https://www.google.com/s2/favicons?domain=theroyalroomseattle.com&sz=128',
       feed: { kind: 'boldtype', url: 'https://www.strangertickets.com', city: 'Seattle', rooms: /\broyal room\b/i, drop: /season (?:tickets?|pass(?:es)?)|gift card/i },
       alias: /\broyal room\b/i,
     },
@@ -682,7 +680,7 @@
       cssVar: '--v-mohai',
       color: '#85d0da',
       url: 'https://mohai.org/events/',
-      icon: 'https://www.google.com/s2/favicons?domain=mohai.org&sz=128',
+      icon: 'marks/venues/mohai.org.png',
       tm: { id: 'KovZpZA11l7A', match: 'museum of history', fallbackUrl: 'https://mohai.org/events/', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i, secondary: true },
       feed: { kind: 'tribe', url: 'https://mohai.org/wp-json/tribe/events/v1/events' },
       alias: /\bmohai\b|museum of history (?:and|&|&amp;) industry/i,
@@ -694,7 +692,7 @@
       cssVar: '--v-rendezvous',
       color: '#e985b0',
       url: 'https://therendezvous.strangertickets.com/calendar',
-      icon: 'https://www.google.com/s2/favicons?domain=therendezvous.rocks&sz=128',
+      icon: 'marks/venues/therendezvous.rocks.png',
       tm: { id: 'rZ7HnEZ17fbC4', match: 'rendezvous', fallbackUrl: 'https://therendezvous.strangertickets.com/calendar', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i, secondary: true },
       feed: { kind: 'boldtype', url: 'https://www.strangertickets.com', city: 'Seattle', venues: /\brendezvous\b|\bjewelbox theat(?:er|re)\b/i, drop: /season (?:tickets?|pass(?:es)?)|gift card/i },
       alias: /\brendezvous\b|\bjewelbox theat(?:er|re)\b/i,
@@ -706,7 +704,7 @@
       cssVar: '--v-elcorazon',
       color: '#85c3e9',
       url: 'https://elcorazonseattle.com/calendar',
-      icon: 'https://www.google.com/s2/favicons?domain=elcorazonseattle.com&sz=128',
+      icon: 'marks/venues/elcorazonseattle.com.jpg',
       tm: { id: 'ZFr9jZAa7a,Z7r9jZadJk,rZ7HnEZ1734qg', match: 'corazon', fallbackUrl: 'https://elcorazonseattle.com/calendar', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i, secondary: true }, // Ticketmaster, read behind the venue's own listing — every venue both ways (Steve, 2026-10-26)
       // the venue's own Webflow calendar (both rooms, El Corazón and the Funhouse, with doors and show clocks), 70 shows to Ticketmaster's 33 — the calendar leads (2026-10-27)
       feed: { kind: 'cards', url: 'https://www.elcorazonseattle.com/calendar', item: /<div role="listitem" class="ec-col-item w-dyn-item">/, title: /<div class="title"><div>(?=[\s\S]*?<a href="(\/shows\/[^"]+)")([^<]+)</,
@@ -719,7 +717,7 @@
       cssVar: '--v-nectar',
       color: '#85b0e9',
       url: 'https://www.nectarlounge.com/events/calendar/',
-      icon: 'https://www.google.com/s2/favicons?domain=www.nectarlounge.com&sz=128',
+      icon: 'marks/venues/nectarlounge.com.png',
       tm: { id: 'ZFr9jZ6e67,rZ7HnEZakFh', match: 'nectar', fallbackUrl: 'https://www.nectarlounge.com/events/calendar/', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
     },
     'Tractor Tavern': { // Ballard Avenue's roots room (TicketWeb primaries through Ticketmaster)
@@ -729,7 +727,6 @@
       cssVar: '--v-tractor',
       color: '#859de9',
       url: 'https://www.tractortavern.com/calendar',
-      icon: 'https://www.google.com/s2/favicons?domain=www.tractortavern.com&sz=128',
       tm: { id: 'rZ7HnEZa7PM', match: 'tractor', fallbackUrl: 'https://www.tractortavern.com/calendar', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
       // the tavern's own listing is an Opendate embed (its iframe page is server-rendered: full date, doors and show clocks; the first page of fifty), secondary behind Ticketmaster (2026-10-27)
       feed: { kind: 'cards', secondary: true, url: 'https://app.opendate.io/c/tractor-tavern-13?layout=iframe', item: /<div class='card confirm-card'/, title: /<a[^>]*href="(https:\/\/app\.opendate\.io\/e\/[^"]+)"><strong>\s*([^<]+?)\s*<\/strong>/,
@@ -742,7 +739,7 @@
       cssVar: '--v-sunset',
       color: '#858be9',
       url: 'https://sunsettavern.com/shows',
-      icon: 'https://www.google.com/s2/favicons?domain=sunsettavern.com&sz=128',
+      icon: 'marks/venues/sunsettavern.com.png',
       tm: { id: 'rZ7HnEZa7IN', match: 'sunset tavern', fallbackUrl: 'https://sunsettavern.com/shows', secondary: true, exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
       feed: { kind: 'dice', url: 'https://dice.fm/venue/10639' }, // the next ~30 shows; Ticketmaster's later ones still come in behind
     },
@@ -753,7 +750,7 @@
       cssVar: '--v-substation',
       color: '#9285e9',
       url: 'https://www.substationseattle.com/',
-      icon: 'https://www.google.com/s2/favicons?domain=www.substationseattle.com&sz=128',
+      icon: 'marks/venues/substationseattle.com.png',
       tm: { id: 'rZ7HnEZ17fekA', match: 'substation', fallbackUrl: 'https://www.substationseattle.com/', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i, secondary: true }, // Ticketmaster, read behind the venue's own listing — every venue both ways (Steve, 2026-10-26)
       // the venue's own listing (Astro, server-rendered from Eventbrite: full date, show clock, the Eventbrite link), 50-odd shows to Ticketmaster's one — the listing leads (2026-10-27)
       feed: { kind: 'cards', url: 'https://substationseattle.com/', item: /<article class="event">/, title: /<h3>(?=[\s\S]*?class="button" href="([^"]+)")([^<]+)<\/h3>/, when: /<span>([A-Z][a-z]+ \d{1,2}, \d{4})<\/span><span>([^<]*)<\/span><\/time>/ },
@@ -765,7 +762,6 @@
       cssVar: '--v-abbey',
       color: '#a585e9',
       url: 'https://fremontabbey.org/events',
-      icon: 'https://www.google.com/s2/favicons?domain=fremontabbey.org&sz=128',
       tm: { id: 'rZ7HnEZ173bFA', match: 'fremont abbey', fallbackUrl: 'https://fremontabbey.org/events', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
     },
     'Hidden Hall': { // Fremont's High Dive, renamed in 2026
@@ -775,7 +771,7 @@
       cssVar: '--v-hiddenhall',
       color: '#b885e9',
       url: 'https://hiddenhall.com/events/calendar/',
-      icon: 'https://www.google.com/s2/favicons?domain=hiddenhall.com&sz=128',
+      icon: 'marks/venues/hiddenhall.com.png',
       tm: { id: 'rZ7HnEZ17q0Of', match: 'hidden hall', fallbackUrl: 'https://hiddenhall.com/events/calendar/', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
     },
     'Rabbit Box': { // the Pike Place Market theatre and comedy room
@@ -785,7 +781,7 @@
       cssVar: '--v-rabbitbox',
       color: '#cb85e9',
       url: 'https://www.therabbitboxseattle.com/events',
-      icon: 'https://www.google.com/s2/favicons?domain=www.therabbitboxseattle.com&sz=128',
+      icon: 'marks/venues/therabbitboxseattle.com.png',
       tm: { id: 'rZ7HnEZ174kAI', match: 'rabbit box', fallbackUrl: 'https://www.therabbitboxseattle.com/events', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i, secondary: true }, // Ticketmaster, read behind the venue's own listing — every venue both ways (Steve, 2026-10-26)
       // rabbitboxseattle.com no longer resolves (2026-10-27); the Triple Door books the room and its month calendar lists the shows "at The Rabbit Box" — the same popup pages, kept by `at`
       feed: { kind: 'linked', url: 'https://www.thetripledoor.net/mainstage-calendar', match: /\/go\/events\/\d+$/, max: 60, at: /rabbit box/i, drop: /closed for a private event/i },
@@ -797,7 +793,6 @@
       cssVar: '--v-homestead',
       color: '#dd85e9',
       url: 'https://www.fremontabbey.org/events/',
-      icon: 'https://www.google.com/s2/favicons?domain=www.fremontabbey.org&sz=128',
       tm: { id: 'rZ7HnEZ17fvaP', match: 'ballard homestead', fallbackUrl: 'https://www.fremontabbey.org/events/', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
     },
     'Kerry Hall': { // Cornish's Capitol Hill hall: recitals, dance, the odd touring show
@@ -807,7 +802,7 @@
       cssVar: '--v-kerry',
       color: '#e985e2',
       url: 'https://www.cornish.edu/events/',
-      icon: 'https://www.google.com/s2/favicons?domain=www.cornish.edu&sz=128',
+      icon: 'marks/venues/cornish.edu.png',
       tm: { id: 'KovZ917AYPu', match: 'kerry hall', fallbackUrl: 'https://www.cornish.edu/events/', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i, secondary: true }, // Ticketmaster, read behind the venue's own listing — every venue both ways (Steve, 2026-10-26)
       feed: { kind: 'mec', url: 'https://www.stgpresents.org/events/', venues: /^kerry hall$/i }, // STG programmes the hall and lists it on stgpresents.org (Cornish's own calendar is 2019 leftovers); Ticketmaster has nothing here, so STG's listing leads (2026-10-27)
     },
@@ -819,7 +814,7 @@
       cssVar: '--v-tacomadome',
       color: '#e985cf',
       url: 'https://www.tacomadome.org/events',
-      icon: 'https://www.google.com/s2/favicons?domain=www.tacomadome.org&sz=128',
+      icon: 'marks/venues/tacomadome.org.png',
       tm: { id: 'KovZpa3zGe', match: 'tacoma dome', fallbackUrl: 'https://www.tacomadome.org/events', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
       // the Dome's own list (Carbonhouse cards: the date's aria-label, a multi-day run read as its first day, the start clock), secondary behind Ticketmaster (2026-10-27)
       feed: { kind: 'cards', chrome: true, secondary: true, url: 'https://www.tacomadome.org/events/all', item: /<div class="eventItem entry/, title: /<h3 class="title[^"]*">\s*<a href="([^"]+)"[^>]*>([^<]+)</,
@@ -833,7 +828,7 @@
       cssVar: '--v-whiteriver',
       color: '#e985bd',
       url: 'https://www.whiteriveramphitheatre.com/',
-      icon: 'https://www.google.com/s2/favicons?domain=www.whiteriveramphitheatre.com&sz=128',
+      icon: 'marks/venues/whiteriveramphitheatre.com.png',
       tm: { id: 'KovZpZAEkd1A', match: 'white river', fallbackUrl: 'https://www.whiteriveramphitheatre.com/', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
       feed: { kind: 'jsonld', secondary: true, url: 'https://www.whiteriveramphitheatre.com/', at: /white river/i, drop: /season tickets?/i }, // Live Nation's venue page marks its shows up as schema.org MusicEvent, secondary behind Ticketmaster (2026-10-27)
     },
@@ -845,7 +840,7 @@
       cssVar: '--v-showare',
       color: '#e985aa',
       url: 'https://www.accessoshowarecenter.com/events',
-      icon: 'https://www.google.com/s2/favicons?domain=www.accessoshowarecenter.com&sz=128',
+      icon: 'marks/venues/accessoshowarecenter.com.png',
       tm: { id: 'ZFr9jZ6aAe', match: 'showare', fallbackUrl: 'https://www.accessoshowarecenter.com/events', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
     },
     'Chateau Ste. Michelle': { // Woodinville's winery lawn, summer concerts only
@@ -856,7 +851,7 @@
       cssVar: '--v-stemichelle',
       color: '#e98597',
       url: 'https://www.ste-michelle.com/visit-us/summer-concerts',
-      icon: 'https://www.google.com/s2/favicons?domain=www.ste-michelle.com&sz=128',
+      icon: 'marks/venues/ste-michelle.com.png',
       tm: { id: 'KovZpZAFkkJA', match: 'ste. michelle', fallbackUrl: 'https://www.ste-michelle.com/visit-us/summer-concerts', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
     },
     'Muckleshoot Casino': { // Auburn — the casino's events center
@@ -867,7 +862,7 @@
       cssVar: '--v-muckleshoot',
       color: '#e98685',
       url: 'https://www.muckleshootcasino.com/entertainment',
-      icon: 'https://www.google.com/s2/favicons?domain=www.muckleshootcasino.com&sz=128',
+      icon: 'marks/venues/muckleshootcasino.com.png',
       tm: { id: 'KovZ917AJEj', match: 'muckleshoot', fallbackUrl: 'https://www.muckleshootcasino.com/entertainment', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
     },
     'Emerald Queen Casino': { // Tacoma — the casino's showroom
@@ -878,7 +873,7 @@
       cssVar: '--v-eqc',
       color: '#e99985',
       url: 'https://www.emeraldqueen.com/',
-      icon: 'https://www.google.com/s2/favicons?domain=www.emeraldqueen.com&sz=128',
+      icon: 'marks/venues/emeraldqueen.com.jpg',
       tm: { id: 'KovZpa3qIe', match: 'emerald queen', fallbackUrl: 'https://www.emeraldqueen.com/', exclude: /\bparking\b|\btours?\b|season (?:tickets?|pass)|membership|club (?:level|seating)/i },
       // the casino's own Concerts & Events page (MotoCMS text widgets: a shouted title, "Saturday, November 7, 2026 • 8PM", a Learn More link), secondary behind Ticketmaster (2026-10-27)
       feed: { kind: 'cards', secondary: true, url: 'https://www.emeraldqueen.com/tickets/', item: /moto-text_system_8"/, title: /^(?=[\s\S]*?href="(\/[a-z0-9-]+\/)"[^>]*moto-link")[^>]*>(?:<(?:font|span|strong|b)[^>]*>)*([^<]+)</, when: /moto-color_custom4">([^<]*\d{4}[^<]*)</ },
@@ -891,7 +886,7 @@
       cssVar: '--v-bumber',
       color: '#e8a35a',
       url: 'https://bumbershoot.com/schedule',
-      icon: 'https://www.google.com/s2/favicons?domain=bumbershoot.com&sz=128',
+      icon: 'marks/venues/bumbershoot.com.png',
     },
     'Northwest Folklife': {
       geo: [47.6208, -122.3498], // placed by hand
@@ -900,7 +895,7 @@
       cssVar: '--v-folklife',
       color: '#8fc26a',
       url: 'https://www.nwfolklife.org/festival/',
-      icon: 'https://www.google.com/s2/favicons?domain=nwfolklife.org&sz=128',
+      icon: 'marks/venues/nwfolklife.org.png',
     },
     PrideFest: {
       geo: [47.62, -122.3522], // placed by hand
@@ -909,7 +904,7 @@
       cssVar: '--v-pride',
       color: '#e07bb5',
       url: 'https://www.seattlepridefest.org/schedule',
-      icon: 'https://www.google.com/s2/favicons?domain=www.seattlepridefest.org&sz=128',
+      icon: 'marks/venues/seattlepridefest.org.png',
     },
     'Baba Obscura': { // Baba Yaga & Desert Daze's roving festival, Nov 5–8 2026: six stages at Baba Yaga, Axis, the Central and the Showbox at the Market (Steve, 2026-10-29)
       geo: [47.6003, -122.3338], // placed by hand: Pioneer Square, between its stages
@@ -918,7 +913,7 @@
       cssVar: '--v-obscura',
       color: '#c79bea',
       url: 'https://babaobscura.com/schedule',
-      icon: 'https://www.google.com/s2/favicons?domain=babaobscura.com&sz=128',
+      icon: 'marks/venues/babaobscura.com.png',
     },
     'Capitol Hill Block Party': {
       geo: [47.6142, -122.3185], // placed by hand
@@ -927,7 +922,7 @@
       cssVar: '--v-chbp',
       color: '#a6b85a',
       url: 'https://www.capitolhillblockparty.com/artists',
-      icon: 'https://www.google.com/s2/favicons?domain=www.capitolhillblockparty.com&sz=128',
+      icon: 'marks/venues/capitolhillblockparty.com.png',
     },
     // --- On DICE (2026-11-03, Steve: "add all dice venues in cities/neighborhoods covered"): every venue on DICE's Seattle city page inside the map, read from its public DICE venue page ---
     'The Black Lodge': { // on DICE (429 Eastlake Avenue East, Seattle, Washington 98109); its DICE venue page is the listing (2026-11-03)
@@ -936,7 +931,7 @@
       cssVar: '--v-blacklodge',
       color: '#86eacf',
       url: 'https://theveraproject.org/blacklodge/',
-      icon: 'https://www.google.com/s2/favicons?domain=theveraproject.org&sz=128',
+      icon: 'marks/venues/theveraproject.org.png',
       feed: { kind: 'dice', url: 'https://dice.fm/venue/12012' },
     },
     'The Shop': { // on DICE (2233 6th Avenue South, Seattle, Washington 98134); its DICE venue page is the listing (2026-11-03)
@@ -946,7 +941,7 @@
       cssVar: '--v-shop',
       color: '#f0a8bb',
       url: 'https://dice.fm/venue/19093',
-      icon: 'https://www.google.com/s2/favicons?domain=dice.fm&sz=128',
+      icon: 'marks/venues/dice.fm.png',
       feed: { kind: 'dice', url: 'https://dice.fm/venue/19093' },
     },
     'Belltown Yacht Club': { // on DICE (2320 1st Avenue, Seattle, Washington 98121); its DICE venue page is the listing (2026-11-03)
@@ -955,7 +950,7 @@
       cssVar: '--v-belltownyachtc',
       color: '#dfe363',
       url: 'https://dice.fm/venue/11202',
-      icon: 'https://www.google.com/s2/favicons?domain=dice.fm&sz=128',
+      icon: 'marks/venues/dice.fm.png',
       feed: { kind: 'dice', url: 'https://dice.fm/venue/11202' },
     },
     'Quality Flea Center': { // on DICE (416 15th Avenue East, Seattle, Washington 98112); its DICE venue page is the listing (2026-11-03)
@@ -964,7 +959,7 @@
       cssVar: '--v-qualityfleacen',
       color: '#86eaaa',
       url: 'https://dice.fm/venue/20350',
-      icon: 'https://www.google.com/s2/favicons?domain=dice.fm&sz=128',
+      icon: 'marks/venues/dice.fm.png',
       feed: { kind: 'dice', url: 'https://dice.fm/venue/20350' },
     },
     'queer/bar': { // on DICE (1518 11th Avenue, Seattle, Washington 98122); its DICE venue page is the listing (2026-11-03)
@@ -973,7 +968,7 @@
       cssVar: '--v-queerbar',
       color: '#a8f0ce',
       url: 'https://dice.fm/venue/19752',
-      icon: 'https://www.google.com/s2/favicons?domain=dice.fm&sz=128',
+      icon: 'marks/venues/dice.fm.png',
       feed: { kind: 'dice', url: 'https://dice.fm/venue/19752' },
     },
     'Victory Hall': { // on DICE (1201 1st Avenue South, Seattle, Washington 98134); its DICE venue page is the listing (2026-11-03)
@@ -982,7 +977,7 @@
       cssVar: '--v-victoryhall',
       color: '#b0e363',
       url: 'https://dice.fm/venue/16066',
-      icon: 'https://www.google.com/s2/favicons?domain=dice.fm&sz=128',
+      icon: 'marks/venues/dice.fm.png',
       feed: { kind: 'dice', url: 'https://dice.fm/venue/16066' },
     },
   };
