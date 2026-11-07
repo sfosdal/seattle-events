@@ -1672,7 +1672,7 @@
    "title": "Washington Huskies vs Washington State Cougars",
    "date": "2026-09-06",
    "time": "13:00:00",
-   "url": "https://gohuskies.com/sports/football/tickets",
+   "url": "https://gohuskies.com/sports/football/schedule",
    "type": "sports",
    "watch": {
     "tv": [
@@ -1845,7 +1845,7 @@
    "title": "Washington Huskies vs Utah State Aggies",
    "date": "2026-09-12",
    "time": "12:30:00",
-   "url": "https://gohuskies.com/sports/football/tickets",
+   "url": "https://gohuskies.com/sports/football/schedule",
    "type": "sports",
    "watch": {
     "tv": [
@@ -1858,7 +1858,7 @@
    "title": "Washington Huskies vs Eastern Washington Eagles",
    "date": "2026-09-19",
    "time": "16:15:00",
-   "url": "https://gohuskies.com/sports/football/tickets",
+   "url": "https://gohuskies.com/sports/football/schedule",
    "type": "sports",
    "watch": {
     "tv": [
@@ -1898,7 +1898,7 @@
    "title": "Washington Huskies vs Minnesota Golden Gophers",
    "date": "2026-09-26",
    "time": "20:00:00",
-   "url": "https://gohuskies.com/sports/football/tickets",
+   "url": "https://gohuskies.com/sports/football/schedule",
    "type": "sports",
    "watch": {
     "tv": [
@@ -2112,7 +2112,7 @@
    "title": "Washington Huskies vs Iowa Hawkeyes",
    "date": "2026-10-09",
    "time": "18:00:00",
-   "url": "https://gohuskies.com/sports/football/tickets",
+   "url": "https://gohuskies.com/sports/football/schedule",
    "type": "sports",
    "watch": {
     "tv": [
@@ -8954,6 +8954,175 @@
    "set": true
   },
   {
+   "venue": "Baba Obscura",
+   "type": "concert",
+   "url": "https://babaobscura.com/schedule",
+   "date": "2026-11-06",
+   "time": "18:20",
+   "title": "Rose City Band",
+   "lineup": [
+    "Muneca",
+    "Erica Rose and the Ragged School",
+    "Emily Kokal (Warpaint)",
+    "Shifters!!",
+    "New Stallions",
+    "Carrion Kids",
+    "Biblioteka",
+    "CASI",
+    "jjuujjuu",
+    "Naked Giants",
+    "Spoon Benders",
+    "Serpentfoot",
+    "Skating Polly",
+    "Mdou Moctar",
+    "Packaging",
+    "Alex Vile",
+    "Downtown Boys",
+    "The Macks",
+    "King Youngblood",
+    "Night Beats",
+    "DJ Sarah Savannah",
+    "Rose City Band"
+   ],
+   "sets": [
+    {
+     "stage": "Baba Yaga Up",
+     "acts": [
+      {
+       "act": "Muneca",
+       "start": "18:20",
+       "end": "18:50"
+      },
+      {
+       "act": "Carrion Kids",
+       "start": "19:40",
+       "end": "20:25"
+      },
+      {
+       "act": "Spoon Benders",
+       "start": "21:05",
+       "end": "21:50"
+      },
+      {
+       "act": "Downtown Boys",
+       "start": "22:40",
+       "end": "23:35"
+      },
+      {
+       "act": "DJ Sarah Savannah",
+       "start": "23:45",
+       "end": "01:00"
+      }
+     ]
+    },
+    {
+     "stage": "Axis North",
+     "acts": [
+      {
+       "act": "Erica Rose and the Ragged School",
+       "start": "18:45",
+       "end": "19:30"
+      },
+      {
+       "act": "Biblioteka",
+       "start": "20:00",
+       "end": "20:45"
+      },
+      {
+       "act": "Skating Polly",
+       "start": "21:25",
+       "end": "22:10"
+      },
+      {
+       "act": "The Macks",
+       "start": "23:00",
+       "end": "23:50"
+      }
+     ]
+    },
+    {
+     "stage": "Baba Yaga Down",
+     "acts": [
+      {
+       "act": "Emily Kokal (Warpaint)",
+       "start": "18:50",
+       "end": "19:45"
+      },
+      {
+       "act": "jjuujjuu",
+       "start": "20:25",
+       "end": "21:05"
+      },
+      {
+       "act": "Mdou Moctar",
+       "start": "21:50",
+       "end": "22:45"
+      },
+      {
+       "act": "Night Beats",
+       "start": "23:40",
+       "end": "00:40"
+      }
+     ]
+    },
+    {
+     "stage": "Central Saloon",
+     "acts": [
+      {
+       "act": "Shifters!!",
+       "start": "19:30",
+       "end": "20:00"
+      },
+      {
+       "act": "CASI",
+       "start": "20:20",
+       "end": "21:00"
+      },
+      {
+       "act": "Serpentfoot",
+       "start": "21:20",
+       "end": "22:00"
+      },
+      {
+       "act": "Alex Vile",
+       "start": "22:20",
+       "end": "23:05"
+      },
+      {
+       "act": "King Youngblood",
+       "start": "23:30",
+       "end": "00:20"
+      }
+     ]
+    },
+    {
+     "stage": "Axis South",
+     "acts": [
+      {
+       "act": "New Stallions",
+       "start": "19:30",
+       "end": "20:00"
+      },
+      {
+       "act": "Naked Giants",
+       "start": "20:40",
+       "end": "21:15"
+      },
+      {
+       "act": "Packaging",
+       "start": "22:10",
+       "end": "23:00"
+      },
+      {
+       "act": "Rose City Band",
+       "start": "00:00",
+       "end": "01:00"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "venue": "Moore Theatre",
    "title": "Periphery",
    "date": "2026-11-06",
@@ -9067,7 +9236,8 @@
    "date": "2026-11-06",
    "time": "19:30:00",
    "url": "https://www.seattlerep.org/plays/202627-season/eureka-day",
-   "type": "arts"
+   "type": "arts",
+   "soldOut": true
   },
   {
    "venue": "McCaw Hall",
