@@ -400,7 +400,6 @@
       cssVar: '--v-trinity',
       color: '#c486ea',
       url: 'https://www.trinitynightclub.com/',
-      icon: 'marks/venues/trinitynightclub.com.png',
       feed: { kind: 'linked', url: 'https://www.trinitynightclub.com/', match: /eventbrite\.com\/e\//, max: 40 },
       alias: /trinity nightclub|trinity seattle/i,
     },
@@ -941,7 +940,7 @@
       cssVar: '--v-shop',
       color: '#f0a8bb',
       url: 'https://dice.fm/venue/19093',
-      icon: 'marks/venues/dice.fm.png',
+      icon: 'marks/venues/theshopclubs.com.png',
       feed: { kind: 'dice', url: 'https://dice.fm/venue/19093' },
     },
     'Belltown Yacht Club': { // on DICE (2320 1st Avenue, Seattle, Washington 98121); its DICE venue page is the listing (2026-11-03)
@@ -950,7 +949,6 @@
       cssVar: '--v-belltownyachtc',
       color: '#dfe363',
       url: 'https://dice.fm/venue/11202',
-      icon: 'marks/venues/dice.fm.png',
       feed: { kind: 'dice', url: 'https://dice.fm/venue/11202' },
     },
     'Quality Flea Center': { // on DICE (416 15th Avenue East, Seattle, Washington 98112); its DICE venue page is the listing (2026-11-03)
@@ -959,7 +957,6 @@
       cssVar: '--v-qualityfleacen',
       color: '#86eaaa',
       url: 'https://dice.fm/venue/20350',
-      icon: 'marks/venues/dice.fm.png',
       feed: { kind: 'dice', url: 'https://dice.fm/venue/20350' },
     },
     'queer/bar': { // on DICE (1518 11th Avenue, Seattle, Washington 98122); its DICE venue page is the listing (2026-11-03)
@@ -968,7 +965,6 @@
       cssVar: '--v-queerbar',
       color: '#a8f0ce',
       url: 'https://dice.fm/venue/19752',
-      icon: 'marks/venues/dice.fm.png',
       feed: { kind: 'dice', url: 'https://dice.fm/venue/19752' },
     },
     'Victory Hall': { // on DICE (1201 1st Avenue South, Seattle, Washington 98134); its DICE venue page is the listing (2026-11-03)
@@ -977,7 +973,7 @@
       cssVar: '--v-victoryhall',
       color: '#b0e363',
       url: 'https://dice.fm/venue/16066',
-      icon: 'marks/venues/dice.fm.png',
+      icon: 'marks/venues/victoryhallsea.com.png',
       feed: { kind: 'dice', url: 'https://dice.fm/venue/16066' },
     },
   };
