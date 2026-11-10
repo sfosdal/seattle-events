@@ -11162,6 +11162,188 @@
    "time": "22:00:00",
    "url": "https://www.ticketweb.com/event/flammable-chop-suey-tickets/14002644",
    "type": "concert"
+  },
+  {
+   "venue": "Owl 'n Thistle",
+   "title": "Aqualizer",
+   "date": "2026-11-09",
+   "time": "",
+   "url": "https://owlnthistle.com/live-music-schedule",
+   "type": "concert"
+  },
+  {
+   "venue": "KEXP",
+   "title": "Genesis Owusu Live on KEXP (Open To The Public)",
+   "date": "2026-11-09",
+   "time": "11:00:00",
+   "url": "https://www.kexp.org/events/kexp-events/genesis-owusu-live-on-kexp-kexp_505797/",
+   "end": "11:30:00"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "Wild Horse Nine",
+   "date": "2026-11-09",
+   "time": "15:30:00",
+   "url": "https://www.siff.net/cinema/in-theaters/wild-horse-nine",
+   "movie": true,
+   "end": "17:28:00"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "You Can See Everything",
+   "date": "2026-11-09",
+   "time": "15:45:00",
+   "url": "https://www.siff.net/cinema/in-theaters/you-can-see-everything",
+   "movie": true,
+   "end": "18:39:00"
+  },
+  {
+   "venue": "SIFF Cinema Downtown",
+   "title": "Godzilla Minus Zero",
+   "date": "2026-11-09",
+   "time": "16:00:00",
+   "url": "https://www.siff.net/cinema/in-theaters/godzilla-minus-zero",
+   "movie": true,
+   "end": "18:15:00"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "Wicker",
+   "date": "2026-11-09",
+   "time": "16:20:00",
+   "url": "https://www.siff.net/cinema/in-theaters/wicker",
+   "movie": true,
+   "end": "18:05:00"
+  },
+  {
+   "venue": "SIFF Film Center",
+   "title": "Fatherland",
+   "date": "2026-11-09",
+   "time": "17:15:00",
+   "url": "https://www.siff.net/cinema/in-theaters/fatherland",
+   "movie": true,
+   "end": "18:37:00"
+  },
+  {
+   "venue": "Kerry Hall",
+   "title": "Industry Dance Series",
+   "date": "2026-11-09",
+   "time": "18:30",
+   "url": "https://www.stgpresents.org/events/industry-dance-series/",
+   "type": "arts"
+  },
+  {
+   "venue": "Kerry Hall",
+   "title": "Party Dances with Amy O’Neal",
+   "date": "2026-11-09",
+   "time": "18:30",
+   "url": "https://www.stgpresents.org/events/party-dances-with-amy-oneal/",
+   "type": "arts"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "The Discreet Charm of the Bourgeoisie",
+   "date": "2026-11-09",
+   "time": "18:30:00",
+   "url": "https://www.siff.net/programs-and-events/siff-movie-club/the-discreet-charm-of-the-bourgeoisie",
+   "end": "20:12:00"
+  },
+  {
+   "venue": "Central Saloon",
+   "title": "Askysoblack • O Miles Per Hour • Commoner • Bonney Rubble",
+   "date": "2026-11-09",
+   "time": "19:00",
+   "url": "https://centralsaloon.com/events/askysoblack-o-miles-per-hour-commoner-bonny-rubble/",
+   "type": "concert"
+  },
+  {
+   "venue": "Town Hall Seattle",
+   "title": "2026 Honor Awards for Washington Architecture",
+   "date": "2026-11-09",
+   "time": "19:00",
+   "url": "https://townhallseattle.org/event/2026-honor-awards-for-washington-architecture/",
+   "type": "arts"
+  },
+  {
+   "venue": "Barboza",
+   "title": "AZ Chike",
+   "date": "2026-11-09",
+   "time": "19:00",
+   "url": "https://www.thebarboza.com/events/detail/az-chike-tickets-1586336",
+   "type": "concert"
+  },
+  {
+   "venue": "Alaska Airlines Arena",
+   "title": "Washington Huskies Mens Basketball vs. Mississippi Valley State Devils Mens Basketball",
+   "date": "2026-11-09",
+   "time": "19:00:00",
+   "url": "https://gohuskies.com/",
+   "type": "sports"
+  },
+  {
+   "venue": "Seattle Jazz Fellowship",
+   "title": "Fellowship Jam Session",
+   "date": "2026-11-09",
+   "time": "19:30",
+   "url": "https://seattlejazzfellowship.org/events/fellowship-jam-session-wd2l6-yynsx-r7xsj-rne75-nfkxk-nj5nl-k9lrz",
+   "type": "concert"
+  },
+  {
+   "venue": "Triple Door",
+   "title": "Emma Nissen",
+   "date": "2026-11-09",
+   "time": "19:30",
+   "url": "https://thetripledoor.net/event/6707621/777100219/emma-nissen",
+   "type": "concert"
+  },
+  {
+   "venue": "Royal Room",
+   "title": "What's Going On: New Music Mondays",
+   "date": "2026-11-09",
+   "time": "19:30",
+   "url": "https://www.strangertickets.com/events/186962330/what-s-going-on-new-music-mondays",
+   "type": "concert"
+  },
+  {
+   "venue": "El Corazon",
+   "title": "Cherokee Social",
+   "date": "2026-11-09",
+   "time": "19:30",
+   "url": "https://www.elcorazonseattle.com/shows/cherokee-social-09-nov",
+   "type": "concert"
+  },
+  {
+   "venue": "Sunset Tavern",
+   "title": "The Crocodile Presents: Jon Spencer w/Genre Is Death",
+   "date": "2026-11-09",
+   "time": "20:00",
+   "url": "https://dice.fm/event/69fe5e3560f3180001d1e63f",
+   "end": "23:00",
+   "soldOut": true,
+   "type": "concert"
+  },
+  {
+   "venue": "Clock-Out Lounge",
+   "title": "Clock-Out Lounge Presents: Collide-O-Scope",
+   "date": "2026-11-09",
+   "time": "20:00:00",
+   "url": "https://www.ticketweb.com/event/clock-out-lounge-presents-collide-clock-out-lounge-tickets/14946983",
+   "type": "arts"
+  },
+  {
+   "venue": "Tractor Tavern",
+   "title": "River Shook w/ Ismay",
+   "date": "2026-11-09",
+   "time": "20:00:00",
+   "url": "https://www.ticketweb.com/event/river-shook-w-ismay-tractor-tickets/15010073",
+   "type": "concert"
+  },
+  {
+   "venue": "Showbox at the Market",
+   "title": "Lucy Bedroque with pinponpanpon",
+   "date": "2026-11-09",
+   "time": "20:00:00",
+   "url": "https://www.axs.com/events/1572733/lucy-bedroque-tickets?skin=showboxpresents&src=AEGLIVE_WSHBXSEA030115VEN001"
   }
  ]
 }
