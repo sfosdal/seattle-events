@@ -11018,6 +11018,14 @@
    "set": true
   },
   {
+   "venue": "Paramount Theatre",
+   "title": "Jimmy Carr",
+   "date": "2026-11-08",
+   "time": "19:00",
+   "url": "https://www.stgpresents.org/events/jimmy-carr/",
+   "type": "concert"
+  },
+  {
    "venue": "The Vera Project",
    "title": "Roman Candle",
    "date": "2026-11-08",
@@ -11344,6 +11352,297 @@
    "date": "2026-11-09",
    "time": "20:00:00",
    "url": "https://www.axs.com/events/1572733/lucy-bedroque-tickets?skin=showboxpresents&src=AEGLIVE_WSHBXSEA030115VEN001"
+  },
+  {
+   "venue": "Meany Center",
+   "title": "Janice Carissa",
+   "date": "2026-11-10",
+   "time": "",
+   "url": "https://meanycenter.org/tickets/2026-11/production/janice-carissa",
+   "type": "arts"
+  },
+  {
+   "venue": "Convention Center",
+   "title": "AMP 2026 Annual Meeting & Expo",
+   "date": "2026-11-10",
+   "time": "",
+   "url": "https://seattlecc.com/upcoming-events/?eventid=36236",
+   "type": "expo",
+   "building": "Arch Building"
+  },
+  {
+   "venue": "Owl 'n Thistle",
+   "title": "Jazz Jam — Seattle's longest-running jazz night",
+   "date": "2026-11-10",
+   "time": "",
+   "url": "https://owlnthistle.com/live-music-schedule",
+   "type": "concert"
+  },
+  {
+   "venue": "Baba Yaga",
+   "title": "Tasty Tuesdays",
+   "date": "2026-11-10",
+   "time": "07:00",
+   "url": "https://ma.to/event/tasty-tuesdays-10-nov-2026",
+   "type": "concert"
+  },
+  {
+   "venue": "KEXP",
+   "title": "Allison Russell Live on KEXP (Open To The Public)",
+   "date": "2026-11-10",
+   "time": "15:00:00",
+   "url": "https://www.kexp.org/events/kexp-events/allison-russell-live-on-kexp-kexp_521452/",
+   "end": "15:30:00"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "You Can See Everything",
+   "date": "2026-11-10",
+   "time": "15:45:00",
+   "url": "https://www.siff.net/cinema/in-theaters/you-can-see-everything",
+   "movie": true,
+   "end": "18:39:00"
+  },
+  {
+   "venue": "The Vera Project",
+   "title": "Screen Printing Open Session",
+   "date": "2026-11-10",
+   "time": "16:00:00",
+   "url": "https://link.dice.fm/F024f1b76898",
+   "type": "community",
+   "end": "20:00:00",
+   "soldOut": true
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "Wild Horse Nine",
+   "date": "2026-11-10",
+   "time": "16:00:00",
+   "url": "https://www.siff.net/cinema/in-theaters/wild-horse-nine",
+   "movie": true,
+   "end": "17:58:00"
+  },
+  {
+   "venue": "SIFF Cinema Downtown",
+   "title": "Godzilla Minus Zero",
+   "date": "2026-11-10",
+   "time": "16:00:00",
+   "url": "https://www.siff.net/cinema/in-theaters/godzilla-minus-zero",
+   "movie": true,
+   "end": "18:15:00"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "Wicker",
+   "date": "2026-11-10",
+   "time": "16:20:00",
+   "url": "https://www.siff.net/cinema/in-theaters/wicker",
+   "movie": true,
+   "end": "18:05:00"
+  },
+  {
+   "venue": "SIFF Film Center",
+   "title": "Fatherland",
+   "date": "2026-11-10",
+   "time": "17:15:00",
+   "url": "https://www.siff.net/cinema/in-theaters/fatherland",
+   "movie": true,
+   "end": "18:37:00"
+  },
+  {
+   "venue": "Kerry Hall",
+   "title": "STG’s Local Vocals Choir Class",
+   "date": "2026-11-10",
+   "time": "18:00",
+   "url": "https://www.stgpresents.org/events/stgs-local-vocals-choir-class/",
+   "type": "arts"
+  },
+  {
+   "venue": "Central Saloon",
+   "title": "Accendino • 4Ust Collective // Live Band In Seattle Taping!",
+   "date": "2026-11-10",
+   "time": "18:30",
+   "url": "https://centralsaloon.com/events/clinton-fearon-the-boogie-brown-band-accendino-live-band-in-seattle-taping/",
+   "type": "concert"
+  },
+  {
+   "venue": "Town Hall Seattle",
+   "title": "Champions of Collaboration Awards 2026",
+   "date": "2026-11-10",
+   "time": "18:30",
+   "url": "https://townhallseattle.org/event/champions-of-collaboration-awards-2026/",
+   "type": "arts"
+  },
+  {
+   "venue": "Clock-Out Lounge",
+   "title": "Raised By TV Events Presents: all ages Seinfeld Trivia Night",
+   "date": "2026-11-10",
+   "time": "18:30:00",
+   "url": "https://www.ticketweb.com/event/raised-by-tv-events-presents-clock-out-lounge-tickets/14294634"
+  },
+  {
+   "venue": "The Vera Project",
+   "title": "Oso Oso",
+   "date": "2026-11-10",
+   "time": "18:30:00",
+   "url": "https://link.dice.fm/r6edaf8f48f2",
+   "type": "concert",
+   "end": "23:00:00"
+  },
+  {
+   "venue": "Neumos",
+   "title": "Vansire",
+   "date": "2026-11-10",
+   "time": "19:00",
+   "url": "https://www.neumos.com/events/detail/vansire-tickets-1540239",
+   "type": "concert"
+  },
+  {
+   "venue": "Barboza",
+   "title": "The Hails",
+   "date": "2026-11-10",
+   "time": "19:00",
+   "url": "https://www.thebarboza.com/events/detail/the-hails-tickets-1498847",
+   "type": "concert"
+  },
+  {
+   "venue": "The Black Lodge",
+   "title": "cici's revenge tour kickoff",
+   "date": "2026-11-10",
+   "time": "19:00",
+   "url": "https://dice.fm/event/6ac2cbf52f95f80001b9a56e",
+   "end": "23:00",
+   "type": "concert"
+  },
+  {
+   "venue": "accesso ShoWare Center",
+   "title": "Seattle Thunderbirds vs. Victoria Royals",
+   "date": "2026-11-10",
+   "time": "19:05:00",
+   "url": "https://www.accessoshowarecenter.com/events",
+   "type": "sports"
+  },
+  {
+   "venue": "Seattle Jazz Fellowship",
+   "title": "All Ages Jam Session",
+   "date": "2026-11-10",
+   "time": "19:30",
+   "url": "https://seattlejazzfellowship.org/events/all-ages-jam-session-etyrm-2jj4l-pgb9y-k3mnj",
+   "type": "concert"
+  },
+  {
+   "venue": "Triple Door",
+   "title": "Emma Nissen",
+   "date": "2026-11-10",
+   "time": "19:30",
+   "url": "https://thetripledoor.net/event/6633809/768848120/emma-nissen",
+   "type": "concert"
+  },
+  {
+   "venue": "Jazz Alley",
+   "title": "Frank Vignola and Pasquale Grasso",
+   "date": "2026-11-10",
+   "time": "19:30",
+   "url": "https://www.jazzalley.com/www-home/artist.jsp?shownum=8832",
+   "type": "concert"
+  },
+  {
+   "venue": "Royal Room",
+   "title": "É.T.É",
+   "date": "2026-11-10",
+   "time": "19:30",
+   "url": "https://www.strangertickets.com/events/186969908/t",
+   "type": "concert"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "Pierrot le Fou",
+   "date": "2026-11-10",
+   "time": "19:30:00",
+   "url": "https://www.siff.net/programs-and-events/nouvelles-femmes/pierrot-le-fou",
+   "end": "21:20:00"
+  },
+  {
+   "venue": "Baba Yaga",
+   "title": "James Ivy with Harry Teardrop",
+   "date": "2026-11-10",
+   "time": "20:00",
+   "url": "https://ma.to/event/james-ivy-with-harry-teardrop-10-nov-2026",
+   "type": "concert"
+  },
+  {
+   "venue": "Sunset Tavern",
+   "title": "Tiny Vipers, Evelyn Frances, Estate Plan",
+   "date": "2026-11-10",
+   "time": "20:00",
+   "url": "https://dice.fm/event/6a3c509221ceb10001eb3a5b",
+   "end": "23:00",
+   "type": "concert"
+  },
+  {
+   "venue": "Climate Pledge Arena",
+   "title": "Ms Lauryn Hill & Wyclef Jean: Celebrating 30 Years of Fugees'The Score",
+   "date": "2026-11-10",
+   "time": "20:00:00",
+   "url": "https://www.ticketmaster.com/ms-lauryn-hill-wyclef-jean-celebrating-seattle-washington-11-10-2026/event/0F006514BB51AC7E",
+   "type": "concert",
+   "tickets": {
+    "box": null,
+    "resale": 0,
+    "checked": "2026-11-10T22:53:32.859Z",
+    "from": 74.5
+   }
+  },
+  {
+   "venue": "Paramount Theatre",
+   "title": "Isaiah Rashad: Lil Sunny's Awful Road Trip",
+   "date": "2026-11-10",
+   "time": "20:00:00",
+   "url": "https://www.ticketmaster.com/isaiah-rashad-lil-sunnys-awful-road-seattle-washington-11-10-2026/event/0F006524C7B5EA35",
+   "type": "concert",
+   "tickets": {
+    "box": 234,
+    "resale": 44,
+    "checked": "2026-11-10T23:15:48.653Z",
+    "from": 39.5
+   }
+  },
+  {
+   "venue": "The Crocodile",
+   "title": "Tank and The Bangas - The Last Balloon Tour 2026 w/ Ariel J. & Zeus",
+   "date": "2026-11-10",
+   "time": "20:00:00",
+   "url": "https://www.ticketweb.com/event/tank-and-the-bangas-the-crocodile-tickets/14795943",
+   "type": "concert",
+   "tickets": {
+    "box": null,
+    "resale": 0,
+    "checked": "2026-11-10T22:53:04.745Z",
+    "from": 52.45
+   }
+  },
+  {
+   "venue": "Moore Theatre",
+   "title": "Syd - Early Entry VIP Upgrade",
+   "date": "2026-11-10",
+   "time": "20:00:00",
+   "url": "https://www.vipnation.com/tour_date/syd-seattle-wa-11-10-2026",
+   "type": "concert"
+  },
+  {
+   "venue": "Tractor Tavern",
+   "title": "Other Lives w/ Kelcey Ayer",
+   "date": "2026-11-10",
+   "time": "20:00:00",
+   "url": "https://www.ticketweb.com/event/other-lives-w-kelcey-ayer-tractor-tickets/14919013",
+   "type": "concert"
+  },
+  {
+   "venue": "Showbox at the Market",
+   "title": "L7 with Nobro",
+   "date": "2026-11-10",
+   "time": "20:00:00",
+   "url": "https://www.axs.com/events/1435102/l7-tickets?skin=showboxpresents&src=AEGLIVE_WSHBXSEA030115VEN001"
   }
  ]
 }
