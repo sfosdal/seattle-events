@@ -11916,6 +11916,362 @@
    "date": "2026-11-11",
    "time": "20:30:00",
    "url": "https://www.ticketweb.com/event/emmett-montgomery-and-brett-hamil-clock-out-lounge-tickets/14951413"
+  },
+  {
+   "venue": "Convention Center",
+   "title": "AMP 2026 Annual Meeting & Expo",
+   "date": "2026-11-12",
+   "time": "",
+   "url": "https://seattlecc.com/upcoming-events/?eventid=36236",
+   "type": "expo",
+   "building": "Arch Building"
+  },
+  {
+   "venue": "Convention Center",
+   "title": "Mountains to Sound Greenway Trust 2026",
+   "date": "2026-11-12",
+   "time": "",
+   "url": "https://mtsgreenway.org/get-involved/events/annual-celebration/",
+   "type": "community",
+   "building": "Summit Building"
+  },
+  {
+   "venue": "Owl 'n Thistle",
+   "title": "Danny Godinez",
+   "date": "2026-11-12",
+   "time": "",
+   "url": "https://owlnthistle.com/live-music-schedule",
+   "type": "concert"
+  },
+  {
+   "venue": "KEXP",
+   "title": "Music Heals: Grief",
+   "date": "2026-11-12",
+   "time": "05:00:00",
+   "url": "https://www.kexp.org/events/kexp-events/music-heals-grief-2026/",
+   "end": "19:00:00"
+  },
+  {
+   "venue": "Around Pioneer Square",
+   "title": "Second Thursday: Live Music Lunch Hour with The Marco de Carvalho Trio featuring Hans Teuber and Jeff Busch",
+   "date": "2026-11-12",
+   "time": "12:00",
+   "url": "https://pioneersquare.org/our-events/second-thursday-live-music-lunch-hour-with-the-marco-de-carvalho-trio-featuring-hans-teuber-and-jeff-busch/",
+   "type": "community"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "You Can See Everything",
+   "date": "2026-11-12",
+   "time": "15:45:00",
+   "url": "https://www.siff.net/cinema/in-theaters/you-can-see-everything",
+   "movie": true,
+   "end": "18:39:00"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "Wild Horse Nine",
+   "date": "2026-11-12",
+   "time": "16:00:00",
+   "url": "https://www.siff.net/cinema/in-theaters/wild-horse-nine",
+   "movie": true,
+   "end": "17:58:00"
+  },
+  {
+   "venue": "SIFF Cinema Downtown",
+   "title": "Godzilla Minus Zero",
+   "date": "2026-11-12",
+   "time": "16:00:00",
+   "url": "https://www.siff.net/cinema/in-theaters/godzilla-minus-zero",
+   "movie": true,
+   "end": "18:15:00"
+  },
+  {
+   "venue": "SIFF Film Center",
+   "title": "Fatherland",
+   "date": "2026-11-12",
+   "time": "16:45:00",
+   "url": "https://www.siff.net/cinema/in-theaters/fatherland",
+   "movie": true,
+   "end": "18:07:00"
+  },
+  {
+   "venue": "Kerry Hall",
+   "title": "Broadway Inclusion Program @ Kerry Hall – Disney’s Beauty and The Beast",
+   "date": "2026-11-12",
+   "time": "17:00",
+   "url": "https://www.stgpresents.org/events/broadway-inclusion-program-kerry-hall-disneys-beauty-and-the-beast/",
+   "type": "arts"
+  },
+  {
+   "venue": "Town Hall Seattle",
+   "title": "2026 Fall Forum: Preserving History Through Seismic Innovation",
+   "date": "2026-11-12",
+   "time": "18:00",
+   "url": "https://townhallseattle.org/event/sefw-2026-fall-forum/",
+   "type": "arts"
+  },
+  {
+   "venue": "Central Saloon",
+   "title": "Black Nite Crash + Glass Rabbit + Sam Cobra",
+   "date": "2026-11-12",
+   "time": "19:00",
+   "url": "https://centralsaloon.com/events/sam-cobra-glass-rabbit/",
+   "type": "concert"
+  },
+  {
+   "venue": "Triple Door",
+   "title": "Kat Robichaud's Misfit Cabaret presents \"Ghosted\"",
+   "date": "2026-11-12",
+   "time": "19:00",
+   "url": "https://thetripledoor.net/event/6501993/756653175/kat-robichaud-s-misfit-cabaret-presents-ghosted",
+   "type": "concert"
+  },
+  {
+   "venue": "Barboza",
+   "title": "Makenna DeCaro",
+   "date": "2026-11-12",
+   "time": "19:00",
+   "url": "https://www.thebarboza.com/events/detail/makenna-decaro-tickets-1621578",
+   "type": "concert"
+  },
+  {
+   "venue": "El Corazon",
+   "title": "Static Dress - Injury Episode USA Tour",
+   "date": "2026-11-12",
+   "time": "19:00",
+   "url": "https://www.elcorazonseattle.com/shows/static-dress-injury-episode-usa-tour-12-nov",
+   "type": "concert"
+  },
+  {
+   "venue": "Substation",
+   "title": "Triptides",
+   "date": "2026-11-12",
+   "time": "19:00",
+   "url": "https://www.eventbrite.com/e/triptides-tickets-1994275744436",
+   "type": "concert"
+  },
+  {
+   "venue": "The Crocodile",
+   "title": "Nekrogoblikon, Aborted, Signs of the Swarm, Party Cannon",
+   "date": "2026-11-12",
+   "time": "19:00:00",
+   "url": "https://www.ticketweb.com/event/nekrogoblikon-aborted-signs-of-the-the-crocodile-tickets/14978383",
+   "type": "concert",
+   "tickets": {
+    "box": null,
+    "resale": 0,
+    "checked": "2026-11-12T23:07:16.526Z",
+    "from": 55.3
+   }
+  },
+  {
+   "venue": "Neptune Theatre",
+   "title": "The Residency: A Night of NW Hip Hop",
+   "date": "2026-11-12",
+   "time": "19:00:00",
+   "url": "https://www.ticketmaster.com/the-residency-a-night-of-nw-seattle-washington-11-12-2026/event/0F00651C9C80A861",
+   "type": "concert"
+  },
+  {
+   "venue": "Moore Theatre",
+   "title": "Brett Goldstein: Sex, Death & Small Talk",
+   "date": "2026-11-12",
+   "time": "19:00:00",
+   "url": "https://www.ticketmaster.com/brett-goldstein-sex-death-small-talk-seattle-washington-11-12-2026/event/0F00650EF3982083",
+   "age21": true,
+   "type": "arts"
+  },
+  {
+   "venue": "Alaska Airlines Arena",
+   "title": "Washington Huskies Womens Basketball vs. CSU Bakersfield Roadrunners Womens Basketball",
+   "date": "2026-11-12",
+   "time": "19:00:00",
+   "url": "https://gohuskies.com/",
+   "type": "sports"
+  },
+  {
+   "venue": "SIFF Film Center",
+   "title": "Candy Mountain",
+   "date": "2026-11-12",
+   "time": "19:00:00",
+   "url": "https://www.siff.net/programs-and-events/the-open-road/candy-mountain",
+   "end": "20:43:00"
+  },
+  {
+   "venue": "Neumos",
+   "title": "Strongboi w/ Salami Rose Joe Louis",
+   "date": "2026-11-12",
+   "time": "19:00:00",
+   "url": "http://www.neumos.com",
+   "type": "concert"
+  },
+  {
+   "venue": "Seattle Jazz Fellowship",
+   "title": "Thomas Marriott",
+   "date": "2026-11-12",
+   "time": "19:30",
+   "url": "https://seattlejazzfellowship.org/events/mnljy9prmd393lt-6bsrx-kwk7l",
+   "type": "concert"
+  },
+  {
+   "venue": "Jazz Alley",
+   "title": "The Four Tops",
+   "date": "2026-11-12",
+   "time": "19:30",
+   "url": "https://www.jazzalley.com/www-home/artist.jsp?shownum=8834",
+   "type": "concert"
+  },
+  {
+   "venue": "Town Hall Seattle",
+   "title": "Psychedelic Salon: End-of-Life Psychedelic Care",
+   "date": "2026-11-12",
+   "time": "19:30",
+   "url": "https://townhallseattle.org/event/psychedelic-salon-end-of-life/",
+   "type": "arts"
+  },
+  {
+   "venue": "Royal Room",
+   "title": "Clouds of the West",
+   "date": "2026-11-12",
+   "time": "19:30",
+   "url": "https://www.strangertickets.com/events/185676622/clouds-of-the-west",
+   "type": "concert"
+  },
+  {
+   "venue": "Kerry Hall",
+   "title": "Try/Step/Trip",
+   "date": "2026-11-12",
+   "time": "19:30",
+   "url": "https://www.stgpresents.org/events/try-step-trip/",
+   "type": "arts"
+  },
+  {
+   "venue": "Kerry Hall",
+   "title": "Samba and Afro-Bahian with Deise Costa",
+   "date": "2026-11-12",
+   "time": "19:30",
+   "url": "https://www.stgpresents.org/events/samba-and-afro-bahian-with-deise-costa/",
+   "type": "arts"
+  },
+  {
+   "venue": "Climate Pledge Arena",
+   "title": "Garth Brooks - Blame It All On My Roots Arena Tour",
+   "date": "2026-11-12",
+   "time": "19:30:00",
+   "url": "https://www.ticketmaster.com/garth-brooks-blame-it-all-on-seattle-washington-11-12-2026/event/0F006550D31BB5DC",
+   "type": "concert"
+  },
+  {
+   "venue": "On the Boards",
+   "title": "Alex Tatarsky",
+   "date": "2026-11-12",
+   "time": "19:30:00",
+   "url": "https://ontheboards.org/events/26-27/sad-boys-in-harpy-land"
+  },
+  {
+   "venue": "Seattle Rep",
+   "title": "Eureka Day: Selling Fast!",
+   "date": "2026-11-12",
+   "time": "19:30:00",
+   "url": "https://www.seattlerep.org/plays/202627-season/eureka-day",
+   "type": "arts"
+  },
+  {
+   "venue": "Seattle Rep",
+   "title": "Eureka Day",
+   "date": "2026-11-12",
+   "time": "19:30:00",
+   "url": "https://www.seattlerep.org/plays/202627-season/eureka-day",
+   "type": "arts",
+   "soldOut": true
+  },
+  {
+   "venue": "Baba Yaga",
+   "title": "Boys in Blush",
+   "date": "2026-11-12",
+   "time": "20:00",
+   "url": "https://ma.to/event/boys-in-blush-12-nov-2026",
+   "type": "concert"
+  },
+  {
+   "venue": "El Corazon",
+   "title": "Cofgod / Kuwaisiana / PR for Monsters",
+   "date": "2026-11-12",
+   "time": "20:00",
+   "url": "https://www.elcorazonseattle.com/shows/cofgod-kuwaisiana-pr-for-monsters-12-nov",
+   "type": "concert"
+  },
+  {
+   "venue": "Sunset Tavern",
+   "title": "Kunty, 9-5 Hyperfuck, The Taste",
+   "date": "2026-11-12",
+   "time": "20:00",
+   "url": "https://dice.fm/event/6ae8e8218184de0001b020b0",
+   "end": "23:00",
+   "type": "concert"
+  },
+  {
+   "venue": "Tractor Tavern",
+   "title": "Margaret Glaspy: The I Am Both Tour",
+   "date": "2026-11-12",
+   "time": "20:00",
+   "url": "https://app.opendate.io/e/margaret-glaspy-the-i-am-both-tour-november-12-2026-761625",
+   "type": "concert"
+  },
+  {
+   "venue": "Paramount Theatre",
+   "title": "Not For Radio - A Summer In The Forest: North America Tour",
+   "date": "2026-11-12",
+   "time": "20:00:00",
+   "url": "https://www.ticketmaster.com/not-for-radio-a-summer-in-seattle-washington-11-12-2026/event/0F0064A59F478F79",
+   "type": "concert"
+  },
+  {
+   "venue": "Chop Suey",
+   "title": "porch kiss, Heavy Bloom, eishe, Brian Noyes",
+   "date": "2026-11-12",
+   "time": "20:00:00",
+   "url": "https://www.ticketweb.com/event/porch-kiss-heavy-bloom-eishe-chop-suey-tickets/14380944",
+   "type": "concert"
+  },
+  {
+   "venue": "Clock-Out Lounge",
+   "title": "*Sold Out* Clock-Out Lounge Presents: Tush!",
+   "date": "2026-11-12",
+   "time": "20:00:00",
+   "url": "https://www.ticketweb.com/event/sold-out-clock-out-lounge-clock-out-lounge-tickets/14376894"
+  },
+  {
+   "venue": "Showbox at the Market",
+   "title": "Yuki Chiba with Yonny",
+   "date": "2026-11-12",
+   "time": "20:00:00",
+   "url": "https://www.axs.com/events/1533680/yuki-chiba-tickets?skin=showboxpresents&src=AEGLIVE_WSHBXSEA030115VEN001"
+  },
+  {
+   "venue": "Hidden Hall",
+   "title": "Geordie Kieffer",
+   "date": "2026-11-12",
+   "time": "20:30:00",
+   "url": "https://www.ticketweb.com/event/geordie-kieffer-hidden-hall-tickets/14291844",
+   "type": "concert"
+  },
+  {
+   "venue": "Substation",
+   "title": "Whales - Dangerous Waters Tour",
+   "date": "2026-11-12",
+   "time": "21:00",
+   "url": "https://www.eventbrite.com/e/whales-dangerous-waters-tour-tickets-1986266273894",
+   "type": "concert"
+  },
+  {
+   "venue": "Trinity Nightclub",
+   "title": "Y2K Thursdays At Trinity- Seattle’s #1 Thursday Night Party",
+   "date": "2026-11-12",
+   "time": "22:00",
+   "url": "https://www.eventbrite.com/e/y2k-thursdays-at-trinity-seattles-1-thursday-night-party-tickets-1998022910310",
+   "type": "concert"
   }
  ]
 }
