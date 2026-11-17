@@ -13654,6 +13654,183 @@
    "time": "22:00:00",
    "url": "https://www.ticketweb.com/event/flammable-chop-suey-tickets/14002474",
    "type": "concert"
+  },
+  {
+   "venue": "Owl 'n Thistle",
+   "title": "Aqualizer",
+   "date": "2026-11-16",
+   "time": "",
+   "url": "https://owlnthistle.com/live-music-schedule",
+   "type": "concert"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "You Can See Everything",
+   "date": "2026-11-16",
+   "time": "15:45:00",
+   "url": "https://www.siff.net/cinema/in-theaters/you-can-see-everything",
+   "movie": true,
+   "end": "18:39:00"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "Paper Tiger [35mm]",
+   "date": "2026-11-16",
+   "time": "16:00:00",
+   "url": "https://www.siff.net/cinema/in-theaters/paper-tiger-(35mm)",
+   "movie": true,
+   "end": "17:54:00"
+  },
+  {
+   "venue": "SIFF Cinema Downtown",
+   "title": "Godzilla Minus Zero",
+   "date": "2026-11-16",
+   "time": "16:00:00",
+   "url": "https://www.siff.net/cinema/in-theaters/godzilla-minus-zero",
+   "movie": true,
+   "end": "18:15:00"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "Wild Horse Nine",
+   "date": "2026-11-16",
+   "time": "16:15:00",
+   "url": "https://www.siff.net/cinema/in-theaters/wild-horse-nine",
+   "movie": true,
+   "end": "18:13:00"
+  },
+  {
+   "venue": "Central Saloon",
+   "title": "Lovely Colours + Chairs For Giants // Band In Seattle – Live Taping!",
+   "date": "2026-11-16",
+   "time": "18:00",
+   "url": "https://centralsaloon.com/events/band-in-seattle-season-12/",
+   "type": "concert"
+  },
+  {
+   "venue": "Showbox at the Market",
+   "title": "Arch Enemy & The Black Dahlia Murder with Septicflesh, Crypta, and Thrown Into Exile",
+   "date": "2026-11-16",
+   "time": "18:00:00",
+   "url": "https://www.axs.com/events/1451139/arch-enemy-the-black-dahlia-murder-tickets?skin=showboxpresents&src=AEGLIVE_WSHBXSEA030115VEN001"
+  },
+  {
+   "venue": "Kerry Hall",
+   "title": "Party Dances with Amy O’Neal",
+   "date": "2026-11-16",
+   "time": "18:30",
+   "url": "https://www.stgpresents.org/events/party-dances-with-amy-oneal/",
+   "type": "arts"
+  },
+  {
+   "venue": "Paramount Theatre",
+   "title": "Underoath - Define the Great Line 20th Anniversary Tour",
+   "date": "2026-11-16",
+   "time": "18:30:00",
+   "url": "https://www.ticketmaster.com/underoath-define-the-great-line-20th-seattle-washington-11-16-2026/event/0F0064C4AE4ABBB2",
+   "type": "concert",
+   "tickets": {
+    "box": 0,
+    "resale": 0,
+    "checked": "2026-11-14T18:30:15.324Z",
+    "from": 65.13
+   },
+   "soldOut": true
+  },
+  {
+   "venue": "Barboza",
+   "title": "Bayonne",
+   "date": "2026-11-16",
+   "time": "19:00",
+   "url": "https://www.thebarboza.com/events/detail/bayonne-tickets-1415454",
+   "type": "concert"
+  },
+  {
+   "venue": "Nectar Lounge",
+   "title": "DAMAG3 with The Neighborhood Kids - Ages 21+",
+   "date": "2026-11-16",
+   "time": "19:00:00",
+   "url": "http://nectarlounge.com/"
+  },
+  {
+   "venue": "Showbox SoDo",
+   "title": "Story of the Year & Silverstein with Stand Atlantic and Footballhead",
+   "date": "2026-11-16",
+   "time": "19:00:00",
+   "url": "https://www.axs.com/events/1534964/story-of-the-year-silverstein-tickets?skin=showboxpresents&src=AEGLIVE_WSHBXSEA030115VEN001"
+  },
+  {
+   "venue": "SIFF Film Center",
+   "title": "Wild Boys of the Road",
+   "date": "2026-11-16",
+   "time": "19:00:00",
+   "url": "https://www.siff.net/programs-and-events/the-open-road/wild-boys-of-the-road",
+   "end": "20:07:00"
+  },
+  {
+   "venue": "Seattle Jazz Fellowship",
+   "title": "Fellowship Jam Session",
+   "date": "2026-11-16",
+   "time": "19:30",
+   "url": "https://seattlejazzfellowship.org/events/fellowship-jam-session-wd2l6-yynsx-r7xsj-rne75-nfkxk-nj5nl-yjrs9",
+   "type": "concert"
+  },
+  {
+   "venue": "Town Hall Seattle",
+   "title": "Post Midterms: Across Social Justice Movements, What Comes Next?",
+   "date": "2026-11-16",
+   "time": "19:30",
+   "url": "https://townhallseattle.org/event/post-midterms/",
+   "type": "arts"
+  },
+  {
+   "venue": "Royal Room",
+   "title": "What's Going On: New Music Mondays",
+   "date": "2026-11-16",
+   "time": "19:30",
+   "url": "https://www.strangertickets.com/events/186962378/what-s-going-on-new-music-mondays",
+   "type": "concert"
+  },
+  {
+   "venue": "Tractor Tavern",
+   "title": "Tractor Tavern & Sonic Boom Record Club",
+   "date": "2026-11-16",
+   "time": "19:30:00",
+   "url": "https://www.ticketweb.com/event/tractor-tavern-sonic-boom-tractor-tickets/14343134",
+   "type": "concert"
+  },
+  {
+   "venue": "Neumos",
+   "title": "Olivia O'Brien",
+   "date": "2026-11-16",
+   "time": "20:00",
+   "url": "https://www.neumos.com/events/detail/olivia-obrien-tickets-1462897",
+   "type": "concert"
+  },
+  {
+   "venue": "El Corazon",
+   "title": "Killer Dwarfs",
+   "date": "2026-11-16",
+   "time": "20:00",
+   "url": "https://www.elcorazonseattle.com/shows/killer-dwarfs-16-nov",
+   "type": "concert"
+  },
+  {
+   "venue": "Sunset Tavern",
+   "title": "Katzenväter, David's Van, FarReaches",
+   "date": "2026-11-16",
+   "time": "20:00",
+   "url": "https://dice.fm/event/6abc144586ac8a00012a6609",
+   "end": "23:00",
+   "type": "concert"
+  },
+  {
+   "venue": "Baba Yaga",
+   "title": "Denise Jvlia",
+   "date": "2026-11-16",
+   "time": "20:00",
+   "url": "https://ma.to/event/denise-jvlia-16-nov-2026",
+   "type": "concert"
   }
  ]
 }
