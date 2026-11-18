@@ -13831,6 +13831,332 @@
    "time": "20:00",
    "url": "https://ma.to/event/denise-jvlia-16-nov-2026",
    "type": "concert"
+  },
+  {
+   "venue": "Owl 'n Thistle",
+   "title": "Jazz Jam — Seattle's longest-running jazz night",
+   "date": "2026-11-17",
+   "time": "",
+   "url": "https://owlnthistle.com/live-music-schedule",
+   "type": "concert"
+  },
+  {
+   "venue": "Tacoma Dome",
+   "title": "Thanksgiving Turkey Giveaway",
+   "date": "2026-11-17",
+   "time": "11:00",
+   "url": "https://www.tacomadome.org/events/detail/turkey-giveaway-2026",
+   "type": "concert"
+  },
+  {
+   "venue": "Kerry Hall",
+   "title": "Kerry Hall Fiber Club",
+   "date": "2026-11-17",
+   "time": "12:00",
+   "url": "https://www.stgpresents.org/events/kerry-hall-fiber-club/",
+   "type": "arts"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "You Can See Everything",
+   "date": "2026-11-17",
+   "time": "15:45:00",
+   "url": "https://www.siff.net/cinema/in-theaters/you-can-see-everything",
+   "movie": true,
+   "end": "18:39:00"
+  },
+  {
+   "venue": "The Vera Project",
+   "title": "Screen Printing Open Session",
+   "date": "2026-11-17",
+   "time": "16:00:00",
+   "url": "https://link.dice.fm/o1394f745e89",
+   "type": "community",
+   "end": "20:00:00"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "Paper Tiger [35mm]",
+   "date": "2026-11-17",
+   "time": "16:00:00",
+   "url": "https://www.siff.net/cinema/in-theaters/paper-tiger-(35mm)",
+   "movie": true,
+   "end": "17:54:00"
+  },
+  {
+   "venue": "SIFF Cinema Downtown",
+   "title": "Godzilla Minus Zero",
+   "date": "2026-11-17",
+   "time": "16:00:00",
+   "url": "https://www.siff.net/cinema/in-theaters/godzilla-minus-zero",
+   "movie": true,
+   "end": "18:15:00"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "Wild Horse Nine",
+   "date": "2026-11-17",
+   "time": "16:15:00",
+   "url": "https://www.siff.net/cinema/in-theaters/wild-horse-nine",
+   "movie": true,
+   "end": "18:13:00"
+  },
+  {
+   "venue": "Kerry Hall",
+   "title": "STG’s Local Vocals Choir Class",
+   "date": "2026-11-17",
+   "time": "18:00",
+   "url": "https://www.stgpresents.org/events/stgs-local-vocals-choir-class/",
+   "type": "arts"
+  },
+  {
+   "venue": "Central Saloon",
+   "title": "Lil Lebowsxi • Iris Kymm // Band In Seattle – Season 12 Live Taping!",
+   "date": "2026-11-17",
+   "time": "18:30",
+   "url": "https://centralsaloon.com/events/band-in-seattle-season-12-2/",
+   "type": "concert"
+  },
+  {
+   "venue": "Town Hall Seattle",
+   "title": "Sentient",
+   "date": "2026-11-17",
+   "time": "19:00",
+   "url": "https://townhallseattle.org/event/sentient/",
+   "type": "arts"
+  },
+  {
+   "venue": "Neumos",
+   "title": "Maddie Zahm",
+   "date": "2026-11-17",
+   "time": "19:00",
+   "url": "https://www.neumos.com/events/detail/maddie-zahm-tickets-1476428",
+   "type": "concert"
+  },
+  {
+   "venue": "Barboza",
+   "title": "VALÉ",
+   "date": "2026-11-17",
+   "time": "19:00",
+   "url": "https://www.thebarboza.com/events/detail/vale-tickets-1460691",
+   "type": "concert"
+  },
+  {
+   "venue": "Substation",
+   "title": "Agriculture",
+   "date": "2026-11-17",
+   "time": "19:00",
+   "url": "https://www.eventbrite.com/e/agriculture-tickets-1992395887734",
+   "type": "concert"
+  },
+  {
+   "venue": "Alaska Airlines Arena",
+   "title": "Huskies Men's Basketball vs Simon Fraser",
+   "date": "2026-11-17",
+   "time": "19:00",
+   "url": "https://admin.gohuskies.com/calendar.aspx?game_id=25670&sport_id=5",
+   "type": "sports"
+  },
+  {
+   "venue": "Chop Suey",
+   "title": "Dead Butterflies",
+   "date": "2026-11-17",
+   "time": "19:00:00",
+   "url": "https://www.ticketweb.com/event/dead-butterflies-chop-suey-tickets/14359164",
+   "type": "concert",
+   "tickets": {
+    "box": null,
+    "resale": 0,
+    "checked": "2026-11-16T23:12:39.981Z",
+    "from": 19.31
+   }
+  },
+  {
+   "venue": "Nectar Lounge",
+   "title": "Dev Lemons",
+   "date": "2026-11-17",
+   "time": "19:00:00",
+   "url": "http://nectarlounge.com/",
+   "type": "concert"
+  },
+  {
+   "venue": "The Vera Project",
+   "title": "Surely Tempo",
+   "date": "2026-11-17",
+   "time": "19:00:00",
+   "url": "https://link.dice.fm/R978543c3c64",
+   "type": "concert",
+   "end": "23:00:00"
+  },
+  {
+   "venue": "SIFF Film Center",
+   "title": "Her Song",
+   "date": "2026-11-17",
+   "time": "19:00:00",
+   "url": "https://www.siff.net/cinema/in-theaters/her-song",
+   "movie": true,
+   "end": "20:45:00"
+  },
+  {
+   "venue": "Seattle Jazz Fellowship",
+   "title": "Paul de Barros reads from “Jackson Street After Hours” with Ken Steiner",
+   "date": "2026-11-17",
+   "time": "19:30",
+   "url": "https://seattlejazzfellowship.org/events/fellowship-jam-session-wd2l6-yynsx-r7xsj-rne75-nfkxk-nj5nl-yjrs9-jy725",
+   "type": "concert"
+  },
+  {
+   "venue": "Triple Door",
+   "title": "John McCutcheon",
+   "date": "2026-11-17",
+   "time": "19:30",
+   "url": "https://thetripledoor.net/event/6564946/762036305/john-mccutcheon",
+   "type": "concert"
+  },
+  {
+   "venue": "Jazz Alley",
+   "title": "Cherry Poppin' Daddies",
+   "date": "2026-11-17",
+   "time": "19:30",
+   "url": "https://www.jazzalley.com/www-home/artist.jsp?shownum=8833",
+   "type": "concert"
+  },
+  {
+   "venue": "Town Hall Seattle",
+   "title": "The Naghash Ensemble of Armenia",
+   "date": "2026-11-17",
+   "time": "19:30",
+   "url": "https://townhallseattle.org/event/the-naghash-ensemble-of-armenia/",
+   "type": "arts"
+  },
+  {
+   "venue": "Royal Room",
+   "title": "Zoë Lewis & Friends",
+   "date": "2026-11-17",
+   "time": "19:30",
+   "url": "https://www.strangertickets.com/events/186970259/zo-lewis-friends",
+   "type": "concert"
+  },
+  {
+   "venue": "Moore Theatre",
+   "title": "Sankai Juku \"KOSA\"",
+   "date": "2026-11-17",
+   "time": "19:30:00",
+   "url": "https://www.ticketmaster.com/sankai-juku-kosa-seattle-washington-11-17-2026/event/0F0064C5E5643A1A",
+   "type": "arts"
+  },
+  {
+   "venue": "Showbox at the Market",
+   "title": "Turnover with Nothing and Trauma Ray",
+   "date": "2026-11-17",
+   "time": "19:30:00",
+   "url": "https://www.axs.com/events/1496268/turnover-tickets?skin=showboxpresents&src=AEGLIVE_WSHBXSEA030115VEN001"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "My Night at Maud's",
+   "date": "2026-11-17",
+   "time": "19:30:00",
+   "url": "https://www.siff.net/programs-and-events/nouvelles-femmes/my-night-at-mauds",
+   "end": "21:15:00"
+  },
+  {
+   "venue": "El Corazon",
+   "title": "Seb El Zin",
+   "date": "2026-11-17",
+   "time": "20:00",
+   "url": "https://www.elcorazonseattle.com/shows/dadbaud-la-luxx-wet-peynt-seb-el-zin-cyranetic-17-nov",
+   "type": "concert"
+  },
+  {
+   "venue": "Sunset Tavern",
+   "title": "Tractor Tavern Presents: Babehoven w/Pileup",
+   "date": "2026-11-17",
+   "time": "20:00",
+   "url": "https://dice.fm/event/6a6a91aefdb7fd00019b5460",
+   "end": "23:00",
+   "soldOut": true,
+   "type": "concert"
+  },
+  {
+   "venue": "Neptune Theatre",
+   "title": "RHYE",
+   "date": "2026-11-17",
+   "time": "20:00",
+   "url": "https://www.stgpresents.org/events/rhye/",
+   "type": "concert"
+  },
+  {
+   "venue": "Climate Pledge Arena",
+   "title": "KATSEYE: The Wildworld Tour",
+   "date": "2026-11-17",
+   "time": "20:00:00",
+   "url": "https://www.ticketmaster.com/katseye-the-wildworld-tour-seattle-washington-11-17-2026/event/0F0064A9D030C333",
+   "type": "concert",
+   "tickets": {
+    "box": 14,
+    "resale": 632,
+    "checked": "2026-11-12T23:07:29.093Z",
+    "from": 129.5
+   }
+  },
+  {
+   "venue": "Paramount Theatre",
+   "title": "Tyla - The A*POP World Tour",
+   "date": "2026-11-17",
+   "time": "20:00:00",
+   "url": "https://www.ticketmaster.com/tyla-the-apop-world-tour-seattle-washington-11-17-2026/event/0F00655DBA7187E3",
+   "type": "concert",
+   "tickets": {
+    "box": null,
+    "resale": 0,
+    "checked": "2026-11-14T18:30:35.569Z",
+    "from": 49.1
+   }
+  },
+  {
+   "venue": "Baba Yaga",
+   "title": "Pretty Sick",
+   "date": "2026-11-17",
+   "time": "20:00:00",
+   "url": "https://babayagaseattle.com/"
+  },
+  {
+   "venue": "Tractor Tavern",
+   "title": "Tractor Presents: Babehoven w/ Pileup AT The Sunset",
+   "date": "2026-11-17",
+   "time": "20:00:00",
+   "url": "https://www.ticketweb.com/event/tractor-presents-babehoven-w-pileup-tractor-tickets/15000533",
+   "type": "concert"
+  },
+  {
+   "venue": "Tractor Tavern",
+   "title": "Natural Child w/ Smoker Dad",
+   "date": "2026-11-17",
+   "time": "20:00:00",
+   "url": "https://www.ticketweb.com/event/natural-child-w-smoker-dad-tractor-tickets/14851763",
+   "type": "concert"
+  },
+  {
+   "venue": "Showbox SoDo",
+   "title": "Bonobo with 1-800 GIRLS",
+   "date": "2026-11-17",
+   "time": "20:00:00",
+   "url": "https://www.axs.com/events/1479406/bonobo-tickets?skin=showboxpresents&src=AEGLIVE_WSHBXSEA030115VEN001"
+  },
+  {
+   "venue": "Clock-Out Lounge",
+   "title": "Hierophant Booking Presents: Devil Master w/ P.I.L.A.U., Dark Meditation",
+   "date": "2026-11-17",
+   "time": "20:30:00",
+   "url": "https://www.ticketweb.com/event/hierophant-booking-presents-devil-master-clock-out-lounge-tickets/14302284",
+   "type": "concert",
+   "tickets": {
+    "box": null,
+    "resale": 0,
+    "checked": "2026-11-16T23:12:48.402Z",
+    "from": 29.3
+   }
   }
  ]
 }
