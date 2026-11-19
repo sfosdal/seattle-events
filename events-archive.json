@@ -14157,6 +14157,236 @@
     "checked": "2026-11-16T23:12:48.402Z",
     "from": 29.3
    }
+  },
+  {
+   "venue": "Convention Center",
+   "title": "2026 ABRCMS",
+   "date": "2026-11-18",
+   "time": "",
+   "url": "https://abrcms.org/",
+   "type": "expo",
+   "building": "Summit Building"
+  },
+  {
+   "venue": "Pacific Science Center",
+   "title": "King Gizzard & the Lizard Wizard",
+   "date": "2026-11-18",
+   "time": "",
+   "url": "https://pacificsciencecenter.org/events/kinggizzard/"
+  },
+  {
+   "venue": "Kerry Hall",
+   "title": "STG Dance for PD® at Kerry Hall",
+   "date": "2026-11-18",
+   "time": "11:00",
+   "url": "https://www.stgpresents.org/events/stg-dance-for-pd-at-kerry-hall/",
+   "type": "arts"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "You Can See Everything",
+   "date": "2026-11-18",
+   "time": "15:45:00",
+   "url": "https://www.siff.net/cinema/in-theaters/you-can-see-everything",
+   "movie": true,
+   "end": "18:39:00"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "Wild Horse Nine",
+   "date": "2026-11-18",
+   "time": "16:00:00",
+   "url": "https://www.siff.net/cinema/in-theaters/wild-horse-nine",
+   "movie": true,
+   "end": "17:58:00"
+  },
+  {
+   "venue": "SIFF Cinema Downtown",
+   "title": "Godzilla Minus Zero",
+   "date": "2026-11-18",
+   "time": "16:00:00",
+   "url": "https://www.siff.net/cinema/in-theaters/godzilla-minus-zero",
+   "movie": true,
+   "end": "18:15:00"
+  },
+  {
+   "venue": "Town Hall Seattle",
+   "title": "Known Wishes: Financial Planning for Life’s Final Chapter",
+   "date": "2026-11-18",
+   "time": "18:00",
+   "url": "https://townhallseattle.org/event/known-wishes-financial-planning-for-lifes-final-chapter/",
+   "type": "arts"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "Sweetheart",
+   "date": "2026-11-18",
+   "time": "18:00:00",
+   "url": "https://www.siff.net/programs-and-events/cinema-italian-style-2026/sweetheart",
+   "end": "19:32:00"
+  },
+  {
+   "venue": "Clock-Out Lounge",
+   "title": "Raised By TV Events Presents: all ages Friends Thanksgiving Eps Trivia Night",
+   "date": "2026-11-18",
+   "time": "18:30:00",
+   "url": "https://www.ticketweb.com/event/raised-by-tv-events-presents-clock-out-lounge-tickets/14294694",
+   "tickets": {
+    "box": null,
+    "resale": 0,
+    "checked": "2026-11-16T23:13:03.692Z",
+    "from": 11.3
+   }
+  },
+  {
+   "venue": "Central Saloon",
+   "title": "Diving Board + 3rd On Pike",
+   "date": "2026-11-18",
+   "time": "19:00",
+   "url": "https://centralsaloon.com/events/diving-board-3rd-on-pike-2/",
+   "type": "concert"
+  },
+  {
+   "venue": "Neumos",
+   "title": "Clarion",
+   "date": "2026-11-18",
+   "time": "19:00",
+   "url": "https://www.neumos.com/events/detail/clarion-tickets-1521572",
+   "type": "concert"
+  },
+  {
+   "venue": "Barboza",
+   "title": "Jervis Campbell",
+   "date": "2026-11-18",
+   "time": "19:00",
+   "url": "https://www.thebarboza.com/events/detail/jervis-campbell-tickets-1439907",
+   "type": "concert"
+  },
+  {
+   "venue": "Baba Yaga",
+   "title": "Poysenberry, Living With A Bear",
+   "date": "2026-11-18",
+   "time": "19:00",
+   "url": "https://ma.to/event/poysenberry-live-at-baba-yaga-2026-11-18",
+   "type": "concert"
+  },
+  {
+   "venue": "Nectar Lounge",
+   "title": "Louie TheSinger",
+   "date": "2026-11-18",
+   "time": "19:00:00",
+   "url": "http://nectarlounge.com/",
+   "type": "concert"
+  },
+  {
+   "venue": "Showbox at the Market",
+   "title": "State Champs with Cartel, Taylor Acorn, and Like Roses",
+   "date": "2026-11-18",
+   "time": "19:00:00",
+   "url": "https://www.axs.com/events/1484026/state-champs-tickets?skin=showboxpresents&src=AEGLIVE_WSHBXSEA030115VEN001"
+  },
+  {
+   "venue": "The Vera Project",
+   "title": "AAA Fest: Veracity Presents",
+   "date": "2026-11-18",
+   "time": "19:00:00",
+   "url": "https://link.dice.fm/K37d29285d4d",
+   "type": "concert",
+   "end": "23:00:00"
+  },
+  {
+   "venue": "Seattle Jazz Fellowship",
+   "title": "Sarah Hanahan",
+   "date": "2026-11-18",
+   "time": "19:30",
+   "url": "https://seattlejazzfellowship.org/events/mnljy9prmd393lt-6bsrx-kwk7l-7mkjh-pnhfw-a3xtn-y4579",
+   "type": "concert"
+  },
+  {
+   "venue": "Triple Door",
+   "title": "Oz Noy Trio featuring Dave Weckl & Brian Charette",
+   "date": "2026-11-18",
+   "time": "19:30",
+   "url": "https://thetripledoor.net/event/6546501/760377853/oz-noy-trio-featuring-dave-weckl-brian-charette",
+   "type": "concert"
+  },
+  {
+   "venue": "Jazz Alley",
+   "title": "Cherry Poppin' Daddies",
+   "date": "2026-11-18",
+   "time": "19:30",
+   "url": "https://www.jazzalley.com/www-home/artist.jsp?shownum=8833",
+   "type": "concert"
+  },
+  {
+   "venue": "Royal Room",
+   "title": "What’s Going On--Night One: Conduction Workshop and Art of the Trio",
+   "date": "2026-11-18",
+   "time": "19:30",
+   "url": "https://www.strangertickets.com/events/186961367/what-s-going-on-night-one-conduction-workshop-and-art-of-the-trio",
+   "type": "concert"
+  },
+  {
+   "venue": "Sunset Tavern",
+   "title": "The Gallaghers (LP Release), Runaway Satellite, Hire Stranger",
+   "date": "2026-11-18",
+   "time": "19:30",
+   "url": "https://dice.fm/event/6aac80889771b7000139b56c",
+   "end": "22:30",
+   "type": "concert"
+  },
+  {
+   "venue": "El Corazon",
+   "title": "Christian Death",
+   "date": "2026-11-18",
+   "time": "20:00",
+   "url": "https://www.elcorazonseattle.com/shows/christian-death-18-nov",
+   "type": "concert"
+  },
+  {
+   "venue": "Substation",
+   "title": "socialHOUSE Presents: Julian Fijma",
+   "date": "2026-11-18",
+   "time": "20:00",
+   "url": "https://www.eventbrite.com/e/socialhouse-presents-julian-fijma-tickets-1996666754010",
+   "type": "concert"
+  },
+  {
+   "venue": "Neptune Theatre",
+   "title": "Todd Rundgren",
+   "date": "2026-11-18",
+   "time": "20:00",
+   "url": "https://www.stgpresents.org/events/todd-rundgren/",
+   "type": "concert"
+  },
+  {
+   "venue": "Tractor Tavern",
+   "title": "Maximiano w/ Wishing Well, Jordan Wesley Campbell",
+   "date": "2026-11-18",
+   "time": "20:00",
+   "url": "https://app.opendate.io/e/maximiano-w-wishing-well-jordan-wesley-campbell-november-18-2026-784789",
+   "type": "concert"
+  },
+  {
+   "venue": "Showbox SoDo",
+   "title": "KINO",
+   "date": "2026-11-18",
+   "time": "20:00:00",
+   "url": "https://www.axs.com/events/1405847/kino-tickets?skin=showboxpresents&src=AEGLIVE_WSHBXSEA030115VEN001"
+  },
+  {
+   "venue": "Chop Suey",
+   "title": "WIG!",
+   "date": "2026-11-18",
+   "time": "21:00:00",
+   "url": "https://www.ticketweb.com/event/wig-chop-suey-tickets/14412474",
+   "type": "concert",
+   "tickets": {
+    "box": null,
+    "resale": 0,
+    "checked": "2026-11-16T23:13:05.578Z",
+    "from": 13.41
+   }
   }
  ]
 }
