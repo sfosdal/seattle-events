@@ -15156,6 +15156,516 @@
    "url": "https://dice.fm/event/6ac823b8c2c5950001670fe4",
    "soldOut": true,
    "type": "concert"
+  },
+  {
+   "venue": "Convention Center",
+   "title": "2026 ABRCMS",
+   "date": "2026-11-21",
+   "time": "",
+   "url": "https://abrcms.org/",
+   "type": "expo",
+   "building": "Summit Building"
+  },
+  {
+   "venue": "Convention Center",
+   "title": "Pacific Marine Expo 2026",
+   "date": "2026-11-21",
+   "time": "",
+   "url": "https://seattlecc.com/upcoming-events/?eventid=37476",
+   "type": "expo",
+   "building": "Arch Building"
+  },
+  {
+   "venue": "Pacific Science Center",
+   "title": "Brewology",
+   "date": "2026-11-21",
+   "time": "",
+   "url": "https://pacificsciencecenter.org/events/brewology/"
+  },
+  {
+   "venue": "Seattle Center",
+   "title": "2026 Seattle Christmas Market",
+   "date": "2026-11-21",
+   "time": "",
+   "url": "https://www.seattlecenter.com/events/event-calendar/2026-seattle-christmas-market-x43753"
+  },
+  {
+   "venue": "Owl 'n Thistle",
+   "title": "Irish Cover Band",
+   "date": "2026-11-21",
+   "time": "",
+   "url": "https://owlnthistle.com/live-music-schedule",
+   "type": "concert"
+  },
+  {
+   "venue": "Central Saloon",
+   "title": "Brawl Of The Wild: U of M Griz vs. Msu Bobcats",
+   "date": "2026-11-21",
+   "time": "10:00",
+   "url": "https://centralsaloon.com/events/brawl-of-the-wild-u-of-m-griz-vs-msu-bobcats/",
+   "type": "concert"
+  },
+  {
+   "venue": "Seattle Center",
+   "title": "International Gem & Jewelry Show",
+   "date": "2026-11-21",
+   "time": "10:00:00",
+   "url": "https://www.seattlecenter.com/events/event-calendar/international-gem-and-jewelry-show-x47819",
+   "type": "expo"
+  },
+  {
+   "venue": "Town Hall Seattle",
+   "title": "Saturday Family Concert: The Rhapsody House Band",
+   "date": "2026-11-21",
+   "time": "11:00",
+   "url": "https://townhallseattle.org/event/saturday-family-concert-the-rhapsody-house-band/",
+   "type": "arts"
+  },
+  {
+   "venue": "The Vera Project",
+   "title": "Gem Arbogast & 12 Page Apology",
+   "date": "2026-11-21",
+   "time": "11:00:00",
+   "url": "https://link.dice.fm/Q491d6bee824",
+   "type": "concert",
+   "end": "14:00:00"
+  },
+  {
+   "venue": "Waterfront Park",
+   "title": "The Stories Water Keeps",
+   "date": "2026-11-21",
+   "time": "12:00",
+   "url": "https://waterfrontparkseattle.org/blog/event/the-stories-water-keeps/?date=202611211200",
+   "type": "community"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "You Can See Everything",
+   "date": "2026-11-21",
+   "time": "12:30:00",
+   "url": "https://www.siff.net/cinema/in-theaters/you-can-see-everything",
+   "movie": true,
+   "end": "15:24:00"
+  },
+  {
+   "venue": "SIFF Cinema Downtown",
+   "title": "Godzilla Minus Zero",
+   "date": "2026-11-21",
+   "time": "12:30:00",
+   "url": "https://www.siff.net/cinema/in-theaters/godzilla-minus-zero",
+   "movie": true,
+   "end": "14:45:00"
+  },
+  {
+   "venue": "Husky Stadium",
+   "title": "Washington Huskies vs Indiana Hoosiers",
+   "date": "2026-11-21",
+   "time": "12:30:00",
+   "url": "https://gohuskies.com/sports/football/schedule",
+   "type": "sports",
+   "watch": {
+    "tv": [
+     "Peacock"
+    ]
+   }
+  },
+  {
+   "venue": "Children's Theatre",
+   "title": "Page and Play: Story Time | Chicka Chicka Boom Boom: The Holiday Show",
+   "date": "2026-11-21",
+   "time": "13:00:00",
+   "url": "https://www.sct.org/onstage/productions/page-and-play-story-time-chicka-chicka-boom-boom-the-holiday-show/",
+   "type": "community"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "Club Kid",
+   "date": "2026-11-21",
+   "time": "13:30:00",
+   "url": "https://www.siff.net/cinema/in-theaters/club-kid",
+   "movie": true,
+   "end": "15:31:00"
+  },
+  {
+   "venue": "Children's Theatre",
+   "title": "Chicka Chicka Boom Boom: The Holiday Show",
+   "date": "2026-11-21",
+   "time": "14:00:00",
+   "url": "https://www.sct.org/onstage/productions/chicka-chicka-boom-boom-holiday-2026/",
+   "type": "arts"
+  },
+  {
+   "venue": "Seattle Center",
+   "title": "Chicka Chicka Boom Boom: The Holiday Show",
+   "date": "2026-11-21",
+   "time": "14:00:00",
+   "url": "https://www.seattlecenter.com/events/event-calendar/chicka-chicka-boom-boom-the-holiday-show-x51738"
+  },
+  {
+   "venue": "Waterfront Park",
+   "title": "Waterfront Park Firepit Socials",
+   "date": "2026-11-21",
+   "time": "15:00",
+   "url": "https://waterfrontparkseattle.org/blog/event/waterfront-park-firepit-socials/?date=202611211500",
+   "type": "community"
+  },
+  {
+   "venue": "Around Pioneer Square",
+   "title": "Live Music: Michael Nicolella",
+   "date": "2026-11-21",
+   "time": "15:00",
+   "url": "https://pioneersquare.org/our-events/live-music-michael-nicolella/",
+   "type": "community"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "Where is the Fiesta?",
+   "date": "2026-11-21",
+   "time": "15:00:00",
+   "url": "https://www.siff.net/programs-and-events/cinema-italian-style-2026/where-is-the-fiesta",
+   "end": "16:42:00"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "Raise the Red Lantern",
+   "date": "2026-11-21",
+   "time": "16:30:00",
+   "url": "https://www.siff.net/cinema/in-theaters/raise-the-red-lantern",
+   "movie": true,
+   "end": "18:22:00"
+  },
+  {
+   "venue": "Paramount Theatre",
+   "title": "Josh Johnson's Comedy Band Camp",
+   "date": "2026-11-21",
+   "time": "17:00:00",
+   "url": "https://www.ticketmaster.com/josh-johnsons-comedy-band-camp-seattle-washington-11-21-2026/event/0F00645BABDAB14A",
+   "type": "arts",
+   "tickets": {
+    "box": null,
+    "resale": 0,
+    "checked": "2026-11-21T00:53:37.402Z",
+    "from": 103.59
+   }
+  },
+  {
+   "venue": "Paramount Theatre",
+   "title": "Comedy Band Camp Essentials Upgrade",
+   "date": "2026-11-21",
+   "time": "17:00:00",
+   "url": "https://www.ticketmaster.com/comedy-band-camp-essentials-upgrade-seattle-washington-11-21-2026/event/0F0064861ECBE435",
+   "tickets": {
+    "box": 256,
+    "resale": 0,
+    "checked": "2026-11-21T00:53:39.947Z",
+    "from": 80.25
+   }
+  },
+  {
+   "venue": "KEXP",
+   "title": "Audioasis Live",
+   "date": "2026-11-21",
+   "time": "17:00:00",
+   "url": "https://www.kexp.org/events/kexp-events/audioasis-live-4-2026/",
+   "end": "21:00:00"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "The Kidnapping of Arabella",
+   "date": "2026-11-21",
+   "time": "17:30:00",
+   "url": "https://www.siff.net/programs-and-events/cinema-italian-style-2026/the-kidnapping-of-arabella",
+   "end": "19:17:00"
+  },
+  {
+   "venue": "Barboza",
+   "title": "1 Umbrella",
+   "date": "2026-11-21",
+   "time": "18:00",
+   "url": "https://www.thebarboza.com/events/detail/1-umbrella-tickets-1608447",
+   "type": "concert"
+  },
+  {
+   "venue": "The Crocodile",
+   "title": "2Dead Boyz x The Underachievers: “NO1LIVESFOREVER Tour",
+   "date": "2026-11-21",
+   "time": "18:00",
+   "url": "https://calendar.thecrocodile.com/shows/2dead-boyz-x-the-underachievers-no1livesforever-tour-21-nov",
+   "type": "concert"
+  },
+  {
+   "venue": "The Vera Project",
+   "title": "Aaa Fest: Ajj, Kimya Dawson, Foot Ox, carter c",
+   "date": "2026-11-21",
+   "time": "18:00:00",
+   "url": "https://link.dice.fm/w574c9b3d691",
+   "type": "concert",
+   "end": "22:00:00",
+   "soldOut": true
+  },
+  {
+   "venue": "Children's Theatre",
+   "title": "Chicka Chicka Boom Boom: The Holiday Show",
+   "date": "2026-11-21",
+   "time": "18:00:00",
+   "url": "https://www.sct.org/onstage/productions/chicka-chicka-boom-boom-holiday-2026/",
+   "type": "arts"
+  },
+  {
+   "venue": "Seattle Center",
+   "title": "Chicka Chicka Boom Boom: The Holiday Show",
+   "date": "2026-11-21",
+   "time": "18:00:00",
+   "url": "https://www.seattlecenter.com/events/event-calendar/chicka-chicka-boom-boom-the-holiday-show-x51739"
+  },
+  {
+   "venue": "Neptune Theatre",
+   "title": "Emily Catalano",
+   "date": "2026-11-21",
+   "time": "18:30:00",
+   "url": "https://www.ticketmaster.com/emily-catalano-seattle-washington-11-21-2026/event/0F0064D0A29993B3",
+   "type": "arts"
+  },
+  {
+   "venue": "Central Saloon",
+   "title": "Sugar Of A Down (System Of A Down) • Falling Forever (Evanescence) • One-X (Three Days Grace)",
+   "date": "2026-11-21",
+   "time": "19:00",
+   "url": "https://centralsaloon.com/events/sugar-of-a-down-system-of-a-down-falling-forever-evanescence-one-x-three-days-grace/",
+   "type": "concert"
+  },
+  {
+   "venue": "Neumos",
+   "title": "Julien Baker",
+   "date": "2026-11-21",
+   "time": "19:00",
+   "url": "https://www.neumos.com/events/detail/julien-baker-tickets-1596350",
+   "type": "concert"
+  },
+  {
+   "venue": "SIFF Film Center",
+   "title": "Disorder",
+   "date": "2026-11-21",
+   "time": "19:00:00",
+   "url": "https://www.siff.net/cinema/in-theaters/disorder-(现实是过去的未来)",
+   "movie": true,
+   "end": "19:58:00"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "Wild Horse Nine",
+   "date": "2026-11-21",
+   "time": "19:15:00",
+   "url": "https://www.siff.net/cinema/in-theaters/wild-horse-nine",
+   "movie": true,
+   "end": "21:13:00"
+  },
+  {
+   "venue": "Seattle Jazz Fellowship",
+   "title": "Matt Williams",
+   "date": "2026-11-21",
+   "time": "19:30",
+   "url": "https://seattlejazzfellowship.org/events/mnljy9prmd393lt-6bsrx-kwk7l-7mkjh-pnhfw-a3xtn-h9zwp-tzj6l",
+   "type": "concert"
+  },
+  {
+   "venue": "Triple Door",
+   "title": "3rd Secret Acoustic",
+   "date": "2026-11-21",
+   "time": "19:30",
+   "url": "https://thetripledoor.net/event/6717781/778142757/3rd-secret-acoustic",
+   "type": "concert"
+  },
+  {
+   "venue": "Jazz Alley",
+   "title": "The Taj Mahal Quartet",
+   "date": "2026-11-21",
+   "time": "19:30",
+   "url": "https://www.jazzalley.com/www-home/artist.jsp?shownum=8830",
+   "type": "concert"
+  },
+  {
+   "venue": "Town Hall Seattle",
+   "title": "Fall Concert",
+   "date": "2026-11-21",
+   "time": "19:30",
+   "url": "https://townhallseattle.org/event/fall-concert-4/",
+   "type": "arts"
+  },
+  {
+   "venue": "Royal Room",
+   "title": "What’s Going On: NY in the 80s/Electric Circus plays the Mudd Club",
+   "date": "2026-11-21",
+   "time": "19:30",
+   "url": "https://www.strangertickets.com/events/186961382/what-s-going-on-ny-in-the-80s-electric-circus-plays-the-mudd-club",
+   "type": "concert"
+  },
+  {
+   "venue": "El Corazon",
+   "title": "Kisw (99.9 FM) Metal Shop presents: Psycroptic",
+   "date": "2026-11-21",
+   "time": "19:30",
+   "url": "https://www.elcorazonseattle.com/shows/psycroptic-21-nov",
+   "type": "concert"
+  },
+  {
+   "venue": "El Corazon",
+   "title": "The OBGM's - Heart Problems Tour",
+   "date": "2026-11-21",
+   "time": "20:00",
+   "url": "https://www.elcorazonseattle.com/shows/the-obgm-s-heart-problems-tour-21-nov",
+   "type": "concert"
+  },
+  {
+   "venue": "Moore Theatre",
+   "title": "Switchfoot",
+   "date": "2026-11-21",
+   "time": "20:00",
+   "url": "https://www.stgpresents.org/events/switchfoot/",
+   "type": "concert"
+  },
+  {
+   "venue": "Nectar Lounge",
+   "title": "POLYRHYTHMICS - Ages 21+",
+   "date": "2026-11-21",
+   "time": "20:00:00",
+   "url": "http://nectarlounge.com/",
+   "type": "concert"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "Love Fits Everything",
+   "date": "2026-11-21",
+   "time": "20:00:00",
+   "url": "https://www.siff.net/programs-and-events/cinema-italian-style-2026/love-fits-everything",
+   "end": "21:36:00"
+  },
+  {
+   "venue": "Sunset Tavern",
+   "title": "Drag the River w/ Dewey Nielsen Band, Good Dirt",
+   "date": "2026-11-21",
+   "time": "20:30",
+   "url": "https://dice.fm/event/6a18a2eeb2653b0001c09f7b",
+   "end": "23:30",
+   "type": "concert"
+  },
+  {
+   "venue": "Paramount Theatre",
+   "title": "Josh Johnson's Comedy Band Camp",
+   "date": "2026-11-21",
+   "time": "20:30:00",
+   "url": "https://www.ticketmaster.com/josh-johnsons-comedy-band-camp-seattle-washington-11-21-2026/event/0F00645BABD5B143",
+   "type": "arts",
+   "tickets": {
+    "box": null,
+    "resale": 0,
+    "checked": "2026-11-21T00:54:00.169Z",
+    "from": 103.59
+   }
+  },
+  {
+   "venue": "Paramount Theatre",
+   "title": "Comedy Band Camp Essentials Upgrade",
+   "date": "2026-11-21",
+   "time": "20:30:00",
+   "url": "https://www.ticketmaster.com/comedy-band-camp-essentials-upgrade-seattle-washington-11-21-2026/event/0F0064861EC6E42E"
+  },
+  {
+   "venue": "Clock-Out Lounge",
+   "title": "Outland Presents: A Bloody Bloody Disco w/ Mobiius, Kota Kira, Sophixi, & Keypr",
+   "date": "2026-11-21",
+   "time": "20:30:00",
+   "url": "https://www.ticketweb.com/event/outland-presents-a-bloody-bloody-clock-out-lounge-tickets/14357094",
+   "type": "concert",
+   "tickets": {
+    "box": null,
+    "resale": 0,
+    "checked": "2026-11-20T19:48:59.112Z",
+    "from": 20.03
+   }
+  },
+  {
+   "venue": "Tractor Tavern",
+   "title": "KEXP Presents! The Cactus Blossoms w/ Devin Champlin (Night Two)",
+   "date": "2026-11-21",
+   "time": "20:30:00",
+   "url": "https://www.ticketweb.com/event/kexp-presents-the-cactus-blossoms-tractor-tickets/14231644",
+   "type": "concert"
+  },
+  {
+   "venue": "Neptune Theatre",
+   "title": "Emily Catalano",
+   "date": "2026-11-21",
+   "time": "21:00:00",
+   "url": "https://www.ticketmaster.com/emily-catalano-seattle-washington-11-21-2026/event/0F00653EB274AE54",
+   "type": "arts",
+   "tickets": {
+    "box": null,
+    "resale": 0,
+    "checked": "2026-11-17T01:09:28.889Z",
+    "from": 55.1
+   }
+  },
+  {
+   "venue": "Chop Suey",
+   "title": "Bae Rave - A Night of R&B Bae Remixes, Edits & Originals",
+   "date": "2026-11-21",
+   "time": "21:00:00",
+   "url": "https://www.ticketweb.com/event/bae-rave-a-chop-suey-tickets/14338384",
+   "type": "concert",
+   "tickets": {
+    "box": null,
+    "resale": 0,
+    "checked": "2026-11-20T19:49:03.131Z",
+    "from": 7.23
+   }
+  },
+  {
+   "venue": "Showbox at the Market",
+   "title": "Jai Wolf with Conrad.",
+   "date": "2026-11-21",
+   "time": "21:00:00",
+   "url": "https://www.axs.com/events/1495149/jai-wolf-tickets?skin=showboxpresents&src=AEGLIVE_WSHBXSEA030115VEN001"
+  },
+  {
+   "venue": "Trinity Nightclub",
+   "title": "Reload Saturdays at Trinity • Entertaining Seattle's Dance Community",
+   "date": "2026-11-21",
+   "time": "22:00",
+   "url": "https://www.eventbrite.com/e/reload-saturdays-at-trinity-entertaining-seattles-dance-community-tickets-1997645264762",
+   "type": "concert"
+  },
+  {
+   "venue": "The Rendezvous",
+   "title": "DNB + Ukg",
+   "date": "2026-11-21",
+   "time": "22:00",
+   "url": "https://therendezvous.strangertickets.com/events/188978604/dnb-ukg",
+   "type": "concert"
+  },
+  {
+   "venue": "Substation",
+   "title": "Emancipator",
+   "date": "2026-11-21",
+   "time": "22:00",
+   "url": "https://www.eventbrite.com/e/emancipator-tickets-1995149991332",
+   "type": "concert"
+  },
+  {
+   "venue": "The Crocodile",
+   "title": "Gimme Gimme Disco - 21+",
+   "date": "2026-11-21",
+   "time": "22:00:00",
+   "url": "https://www.thecrocodile.com",
+   "type": "concert"
+  },
+  {
+   "venue": "The Black Lodge",
+   "title": "AAA: Late Night w/ Jonah Ray, Demi Adejuyigbe",
+   "date": "2026-11-21",
+   "time": "22:30",
+   "url": "https://dice.fm/event/6ac823c09aa36d00014f882c",
+   "type": "concert"
   }
  ]
 }
