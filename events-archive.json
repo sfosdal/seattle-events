@@ -16160,6 +16160,248 @@
    "time": "20:00",
    "url": "https://www.elcorazonseattle.com/shows/jen-howard-23-nov",
    "type": "concert"
+  },
+  {
+   "venue": "Owl 'n Thistle",
+   "title": "Jazz Jam — Seattle's longest-running jazz night",
+   "date": "2026-11-24",
+   "time": "",
+   "url": "https://owlnthistle.com/live-music-schedule",
+   "type": "concert"
+  },
+  {
+   "venue": "Clock-Out Lounge",
+   "title": "Tuesdays With Kev- Valerie and Her Week of Wonders (free movie night)",
+   "date": "2026-11-24",
+   "time": "",
+   "url": "https://clockoutlounge.com/tm-event/tuesdays-with-kev-valerie-and-her-week-of-wonders-free-movie-night/",
+   "type": "concert"
+  },
+  {
+   "venue": "KEXP",
+   "title": "Emma Ruth Rundle Live on KEXP (Open To The Public)",
+   "date": "2026-11-24",
+   "time": "12:00:00",
+   "url": "https://www.kexp.org/events/kexp-events/emma-ruth-rundle-live-on-kexp-kexp_526854/",
+   "end": "12:30:00"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "Wild Horse Nine",
+   "date": "2026-11-24",
+   "time": "15:45:00",
+   "url": "https://www.siff.net/cinema/in-theaters/wild-horse-nine",
+   "movie": true,
+   "end": "17:43:00"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "Raise the Red Lantern",
+   "date": "2026-11-24",
+   "time": "16:00:00",
+   "url": "https://www.siff.net/cinema/in-theaters/raise-the-red-lantern",
+   "movie": true,
+   "end": "17:52:00"
+  },
+  {
+   "venue": "SIFF Cinema Downtown",
+   "title": "Godzilla Minus Zero",
+   "date": "2026-11-24",
+   "time": "16:00:00",
+   "url": "https://www.siff.net/cinema/in-theaters/godzilla-minus-zero",
+   "movie": true,
+   "end": "18:15:00"
+  },
+  {
+   "venue": "Seattle Center",
+   "title": "2026 Seattle Christmas Market",
+   "date": "2026-11-24",
+   "time": "16:00:00",
+   "url": "https://www.seattlecenter.com/events/event-calendar/2026-seattle-christmas-market-x43757"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "Club Kid",
+   "date": "2026-11-24",
+   "time": "16:30:00",
+   "url": "https://www.siff.net/cinema/in-theaters/club-kid",
+   "movie": true,
+   "end": "18:31:00"
+  },
+  {
+   "venue": "Kerry Hall",
+   "title": "STG’s Local Vocals Choir Class",
+   "date": "2026-11-24",
+   "time": "18:00",
+   "url": "https://www.stgpresents.org/events/stgs-local-vocals-choir-class/",
+   "type": "arts"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "You Can See Everything",
+   "date": "2026-11-24",
+   "time": "18:45:00",
+   "url": "https://www.siff.net/cinema/in-theaters/you-can-see-everything",
+   "movie": true,
+   "end": "21:39:00"
+  },
+  {
+   "venue": "Central Saloon",
+   "title": "Industry Tuesday w/ The Red Permanence + Paned",
+   "date": "2026-11-24",
+   "time": "19:00",
+   "url": "https://centralsaloon.com/events/industry-tuesday/",
+   "type": "concert"
+  },
+  {
+   "venue": "Neumos",
+   "title": "Emma Ruth Rundle",
+   "date": "2026-11-24",
+   "time": "19:00",
+   "url": "https://www.neumos.com/events/detail/emma-ruth-rundle-tickets-1535118",
+   "type": "concert"
+  },
+  {
+   "venue": "Moore Theatre",
+   "title": "Prateek Kuhad",
+   "date": "2026-11-24",
+   "time": "19:00",
+   "url": "https://www.stgpresents.org/events/prateek-kuhad/",
+   "status": "cancelled",
+   "type": "concert",
+   "statusSince": "2026-10-29T01:20:28.080Z"
+  },
+  {
+   "venue": "Belltown Yacht Club",
+   "title": "Fraxiom, Draz, Paintscratcher",
+   "date": "2026-11-24",
+   "time": "19:00",
+   "url": "https://dice.fm/event/6a8df2f5c2a7590001991946",
+   "end": "23:00",
+   "type": "concert"
+  },
+  {
+   "venue": "Chop Suey",
+   "title": "Scrambler Jam!",
+   "date": "2026-11-24",
+   "time": "19:00",
+   "url": "https://chopsuey.com/tm-event/scrambler-jam-15/",
+   "type": "concert"
+  },
+  {
+   "venue": "Neptune Theatre",
+   "title": "Senses Fail Presents Still Searching",
+   "date": "2026-11-24",
+   "time": "19:00:00",
+   "url": "https://www.ticketmaster.com/senses-fail-presents-still-searching-seattle-washington-11-24-2026/event/0F0064D0E257F406",
+   "type": "concert",
+   "tickets": {
+    "box": 57,
+    "resale": 1,
+    "checked": "2026-11-23T00:34:42.331Z",
+    "from": 39.5
+   }
+  },
+  {
+   "venue": "Clock-Out Lounge",
+   "title": "Tuesdays With Kev- Valerie and Her Week of Wonders (free movie night)",
+   "date": "2026-11-24",
+   "time": "19:00:00",
+   "url": "https://www.ticketweb.com/event/tuesdays-with-kev-valerie-clock-out-lounge-tickets/14411754",
+   "tickets": {
+    "box": null,
+    "resale": 0,
+    "checked": "2026-11-23T00:10:11.122Z",
+    "from": 0
+   }
+  },
+  {
+   "venue": "Tractor Tavern",
+   "title": "Ballard Food Bank Benefit featuring Mike Frazier & Friends, Hosted by DJ Troy Nelson",
+   "date": "2026-11-24",
+   "time": "19:00:00",
+   "url": "https://www.ticketweb.com/event/ballard-food-bank-benefit-featuring-tractor-tickets/14335224",
+   "type": "concert"
+  },
+  {
+   "venue": "Showbox SoDo",
+   "title": "SAOSIN with Silent Planet, Like Moths to Flames, and Save Us",
+   "date": "2026-11-24",
+   "time": "19:00:00",
+   "url": "https://www.axs.com/events/1433012/saosin-tickets?skin=showboxpresents&src=AEGLIVE_WSHBXSEA030115VEN001"
+  },
+  {
+   "venue": "The Vera Project",
+   "title": "Babe Haven",
+   "date": "2026-11-24",
+   "time": "19:00:00",
+   "url": "https://link.dice.fm/J11750e6a081",
+   "type": "concert",
+   "end": "23:00:00"
+  },
+  {
+   "venue": "Seattle Jazz Fellowship",
+   "title": "Julian Speaks",
+   "date": "2026-11-24",
+   "time": "19:30",
+   "url": "https://seattlejazzfellowship.org/events/julian-speaks-1-x254l",
+   "type": "concert"
+  },
+  {
+   "venue": "Triple Door",
+   "title": "Janis Siegel",
+   "date": "2026-11-24",
+   "time": "19:30",
+   "url": "https://thetripledoor.net/event/6698292/776071861/janis-siegel",
+   "type": "concert"
+  },
+  {
+   "venue": "Jazz Alley",
+   "title": "The Taj Mahal Quartet",
+   "date": "2026-11-24",
+   "time": "19:30",
+   "url": "https://www.jazzalley.com/www-home/artist.jsp?shownum=8830",
+   "type": "concert"
+  },
+  {
+   "venue": "Royal Room",
+   "title": "Opera on Tap",
+   "date": "2026-11-24",
+   "time": "19:30",
+   "url": "https://www.strangertickets.com/events/185715432/opera-on-tap",
+   "type": "concert"
+  },
+  {
+   "venue": "Sunset Tavern",
+   "title": "Your Jack, Sabrina Saed, Frankie Beach",
+   "date": "2026-11-24",
+   "time": "20:00",
+   "url": "https://dice.fm/event/6ae17cc30f8280000165f88b",
+   "end": "23:00",
+   "type": "concert"
+  },
+  {
+   "venue": "Paramount Theatre",
+   "title": "Scott Bradlee's Postmodern Jukebox",
+   "date": "2026-11-24",
+   "time": "20:00:00",
+   "url": "https://www.ticketmaster.com/scott-bradlees-postmodern-jukebox-seattle-washington-11-24-2026/event/0F00649ED359E61C",
+   "type": "concert",
+   "tickets": {
+    "box": null,
+    "resale": 0,
+    "checked": "2026-11-21T00:55:00.540Z",
+    "from": 49.1
+   }
+  },
+  {
+   "venue": "SIFF Film Center",
+   "title": "Beware! The Devil’s Wrath",
+   "date": "2026-11-24",
+   "time": "20:00:00",
+   "url": "https://www.siff.net/cinema/in-theaters/beware-the-devils-wrath-special-screening-qanda",
+   "movie": true,
+   "end": "21:32:00"
   }
  ]
 }
