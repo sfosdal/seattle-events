@@ -16402,6 +16402,261 @@
    "url": "https://www.siff.net/cinema/in-theaters/beware-the-devils-wrath-special-screening-qanda",
    "movie": true,
    "end": "21:32:00"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "Wild Horse Nine",
+   "date": "2026-11-25",
+   "time": "16:00:00",
+   "url": "https://www.siff.net/cinema/in-theaters/wild-horse-nine",
+   "movie": true,
+   "end": "17:58:00"
+  },
+  {
+   "venue": "SIFF Cinema Downtown",
+   "title": "Elsinore",
+   "date": "2026-11-25",
+   "time": "16:00:00",
+   "url": "https://www.siff.net/cinema/in-theaters/elsinore",
+   "movie": true,
+   "end": "17:51:00"
+  },
+  {
+   "venue": "Seattle Center",
+   "title": "2026 Seattle Christmas Market",
+   "date": "2026-11-25",
+   "time": "16:00:00",
+   "url": "https://www.seattlecenter.com/events/event-calendar/2026-seattle-christmas-market-x43758"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "Paper Tiger",
+   "date": "2026-11-25",
+   "time": "16:15:00",
+   "url": "https://www.siff.net/cinema/in-theaters/paper-tiger",
+   "movie": true,
+   "end": "18:09:00"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "Club Kid",
+   "date": "2026-11-25",
+   "time": "16:30:00",
+   "url": "https://www.siff.net/cinema/in-theaters/club-kid",
+   "movie": true,
+   "end": "18:31:00"
+  },
+  {
+   "venue": "Children's Theatre",
+   "title": "Chicka Chicka Boom Boom: The Holiday Show",
+   "date": "2026-11-25",
+   "time": "17:00:00",
+   "url": "https://www.sct.org/onstage/productions/chicka-chicka-boom-boom-holiday-2026/",
+   "type": "arts"
+  },
+  {
+   "venue": "Seattle Center",
+   "title": "Chicka Chicka Boom Boom: The Holiday Show",
+   "date": "2026-11-25",
+   "time": "17:00:00",
+   "url": "https://www.seattlecenter.com/events/event-calendar/chicka-chicka-boom-boom-the-holiday-show-x51742"
+  },
+  {
+   "venue": "Climate Pledge Arena",
+   "title": "Seattle Kraken vs. Chicago Blackhawks",
+   "date": "2026-11-25",
+   "time": "18:40:00",
+   "url": "https://www.ticketmaster.com/seattle-kraken-vs-chicago-blackhawks-seattle-washington-11-25-2026/event/0F0064C4A071A2AD",
+   "type": "sports",
+   "watch": {
+    "tv": [
+     "Prime Video",
+     "KING",
+     "KONG"
+    ]
+   },
+   "tickets": {
+    "box": 0,
+    "resale": 0,
+    "checked": "2026-11-21T00:23:45.115Z",
+    "from": 97.17
+   },
+   "soldOut": true
+  },
+  {
+   "venue": "Barboza",
+   "title": "SAP",
+   "date": "2026-11-25",
+   "time": "19:00",
+   "url": "https://www.thebarboza.com/events/detail/sap-tickets-1580336",
+   "type": "concert"
+  },
+  {
+   "venue": "El Corazon",
+   "title": "Distant - Into Despair USA Tour 2026",
+   "date": "2026-11-25",
+   "time": "19:00",
+   "url": "https://www.elcorazonseattle.com/shows/distant-into-despair-usa-tour-2026-25-nov",
+   "type": "concert"
+  },
+  {
+   "venue": "Moore Theatre",
+   "title": "Alter Bridge",
+   "date": "2026-11-25",
+   "time": "19:00",
+   "url": "https://www.stgpresents.org/events/alter-bridge/",
+   "type": "concert"
+  },
+  {
+   "venue": "Emerald Queen Casino",
+   "title": "Sleigh the Mic",
+   "date": "2026-11-25",
+   "time": "19:00",
+   "url": "https://www.emeraldqueen.com/karaoke/",
+   "type": "concert"
+  },
+  {
+   "venue": "The Vera Project",
+   "title": "Spanish Love Songs",
+   "date": "2026-11-25",
+   "time": "19:00:00",
+   "url": "https://link.dice.fm/bdd219facbd0",
+   "type": "concert",
+   "end": "23:00:00",
+   "soldOut": true
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "You Can See Everything",
+   "date": "2026-11-25",
+   "time": "19:00:00",
+   "url": "https://www.siff.net/cinema/in-theaters/you-can-see-everything",
+   "movie": true,
+   "end": "21:54:00"
+  },
+  {
+   "venue": "SIFF Film Center",
+   "title": "Taste of Cherry",
+   "date": "2026-11-25",
+   "time": "19:00:00",
+   "url": "https://www.siff.net/programs-and-events/the-open-road/taste-of-cherry",
+   "end": "20:39:00"
+  },
+  {
+   "venue": "accesso ShoWare Center",
+   "title": "Seattle Thunderbirds vs. Tri-City Americans",
+   "date": "2026-11-25",
+   "time": "19:05:00",
+   "url": "https://www.accessoshowarecenter.com/events",
+   "type": "sports"
+  },
+  {
+   "venue": "Triple Door",
+   "title": "Joel Astley and Ben Rice & the PDX Hustle",
+   "date": "2026-11-25",
+   "time": "19:30",
+   "url": "https://thetripledoor.net/event/6793415/786318388/joel-astley-and-ben-rice-the-pdx-hustle",
+   "type": "concert"
+  },
+  {
+   "venue": "Jazz Alley",
+   "title": "The Taj Mahal Quartet",
+   "date": "2026-11-25",
+   "time": "19:30",
+   "url": "https://www.jazzalley.com/www-home/artist.jsp?shownum=8830",
+   "type": "concert"
+  },
+  {
+   "venue": "Royal Room",
+   "title": "Karin Kajita Jazz Quintet/Broadway in Blue",
+   "date": "2026-11-25",
+   "time": "19:30",
+   "url": "https://www.strangertickets.com/events/187350814/karin-kajita-jazz-quintet-broadway-in-blue",
+   "type": "concert"
+  },
+  {
+   "venue": "Chop Suey",
+   "title": "Bupp! Gameshow Night!",
+   "date": "2026-11-25",
+   "time": "19:30:00",
+   "url": "https://www.ticketweb.com/event/bupp-gameshow-night-chop-suey-tickets/14410904",
+   "tickets": {
+    "box": null,
+    "resale": 0,
+    "checked": "2026-11-23T00:10:15.641Z",
+    "from": 14.99
+   }
+  },
+  {
+   "venue": "Showbox at the Market",
+   "title": "Boston Manor with Ben Quad, Super Sometimes",
+   "date": "2026-11-25",
+   "time": "19:30:00",
+   "url": "https://www.axs.com/events/1462887/boston-manor-tickets?skin=showboxpresents&src=AEGLIVE_WSHBXSEA030115VEN001"
+  },
+  {
+   "venue": "Seattle Rep",
+   "title": "Technical Dress Rehearsal",
+   "date": "2026-11-25",
+   "time": "19:30:00",
+   "url": "https://www.seattlerep.org/support/donor-events-scroller/technical-dress-rehearsal-for-peter-pan-goes-wrong",
+   "type": "arts"
+  },
+  {
+   "venue": "Sunset Tavern",
+   "title": "Dead Bar's 6th Annual Amateur Night ft: Dead Bars, Bad Tats (reunion), Tripe, Danbert Nobacon (of Chumbawamba)",
+   "date": "2026-11-25",
+   "time": "20:00",
+   "url": "https://dice.fm/event/6a97ace61edebd0001a65b3b",
+   "end": "23:00",
+   "type": "concert"
+  },
+  {
+   "venue": "Nectar Lounge",
+   "title": "Thankful Dead",
+   "date": "2026-11-25",
+   "time": "20:00:00",
+   "url": "http://nectarlounge.com/"
+  },
+  {
+   "venue": "Tractor Tavern",
+   "title": "Dusty 45s w/ Heels to the Hardwood",
+   "date": "2026-11-25",
+   "time": "20:00:00",
+   "url": "https://www.ticketweb.com/event/dusty-45s-w-heels-to-tractor-tickets/14360404",
+   "type": "concert"
+  },
+  {
+   "venue": "El Corazon",
+   "title": "AYRIA - 13 Stitches 2026 Tour",
+   "date": "2026-11-25",
+   "time": "20:30",
+   "url": "https://www.elcorazonseattle.com/shows/ayria-13-stitches-2026-tour-25-nov",
+   "type": "concert"
+  },
+  {
+   "venue": "The Rendezvous",
+   "title": "Eris popstar Benny",
+   "date": "2026-11-25",
+   "time": "21:00",
+   "url": "https://therendezvous.strangertickets.com/events/189215584/eris-popstar-benny",
+   "type": "concert"
+  },
+  {
+   "venue": "Substation",
+   "title": "Skream (Open to Close)",
+   "date": "2026-11-25",
+   "time": "21:00",
+   "url": "https://www.eventbrite.com/e/skream-open-to-close-tickets-1999719040481",
+   "type": "concert"
+  },
+  {
+   "venue": "Trinity Nightclub",
+   "title": "Black Wednesday! • Thanksgiving Pre Party!",
+   "date": "2026-11-25",
+   "time": "22:00",
+   "url": "https://www.eventbrite.com/e/black-wednesday-thanksgiving-pre-party-tickets-2004691375870",
+   "type": "concert"
   }
  ]
 }
