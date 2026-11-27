@@ -16657,6 +16657,75 @@
    "time": "22:00",
    "url": "https://www.eventbrite.com/e/black-wednesday-thanksgiving-pre-party-tickets-2004691375870",
    "type": "concert"
+  },
+  {
+   "venue": "Owl 'n Thistle",
+   "title": "Danny Godinez",
+   "date": "2026-11-26",
+   "time": "",
+   "url": "https://owlnthistle.com/live-music-schedule",
+   "type": "concert"
+  },
+  {
+   "venue": "Central Saloon",
+   "title": "Thanksgiving @ Central Saloon – We’re Open!",
+   "date": "2026-11-26",
+   "time": "11:00",
+   "url": "https://centralsaloon.com/events/thanksgiving-central-saloon-were-open/",
+   "type": "concert"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "Club Kid",
+   "date": "2026-11-26",
+   "time": "12:45:00",
+   "url": "https://www.siff.net/cinema/in-theaters/club-kid",
+   "movie": true,
+   "end": "14:46:00"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "Wild Horse Nine",
+   "date": "2026-11-26",
+   "time": "13:00:00",
+   "url": "https://www.siff.net/cinema/in-theaters/wild-horse-nine",
+   "movie": true,
+   "end": "14:58:00"
+  },
+  {
+   "venue": "SIFF Cinema Downtown",
+   "title": "Elsinore",
+   "date": "2026-11-26",
+   "time": "13:00:00",
+   "url": "https://www.siff.net/cinema/in-theaters/elsinore",
+   "movie": true,
+   "end": "14:51:00"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "Paper Tiger",
+   "date": "2026-11-26",
+   "time": "13:15:00",
+   "url": "https://www.siff.net/cinema/in-theaters/paper-tiger",
+   "movie": true,
+   "end": "15:09:00"
+  },
+  {
+   "venue": "SIFF Cinema Uptown",
+   "title": "You Can See Everything",
+   "date": "2026-11-26",
+   "time": "16:00:00",
+   "url": "https://www.siff.net/cinema/in-theaters/you-can-see-everything",
+   "movie": true,
+   "end": "18:54:00"
+  },
+  {
+   "venue": "Kerry Hall",
+   "title": "Broadway Inclusion Program @ Kerry Hall – Disney’s Beauty and The Beast",
+   "date": "2026-11-26",
+   "time": "17:00",
+   "url": "https://www.stgpresents.org/events/broadway-inclusion-program-kerry-hall-disneys-beauty-and-the-beast/",
+   "type": "arts"
   }
  ]
 }
